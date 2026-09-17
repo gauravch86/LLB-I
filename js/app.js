@@ -56,38 +56,63 @@
     return { page: page || "overview", id: id || "" };
   }
 
+  const EXTRA_PAGES = { overview: 1, strategy: 1, resources: 1 };
+
   function headerOffset() {
     const top = document.querySelector(".topbar");
     const nav = document.querySelector(".subject-nav");
     return (top ? top.offsetHeight : 72) + (nav ? nav.offsetHeight : 58) + 10;
   }
 
-  function scrollToHashTarget(id, smooth) {
-    const target =
-      (id && document.getElementById("topic-" + id)) ||
-      (id && document.getElementById("sec-" + id)) ||
-      document.querySelector("#main article.topic, #main .hero, #main");
-    const y = target
-      ? Math.max(0, window.scrollY + target.getBoundingClientRect().top - headerOffset())
-      : 0;
-    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    window.scrollTo({ top: y, left: 0, behavior: smooth && !reduce ? "smooth" : "auto" });
+  function revealSidebarLink() {
     const active = document.querySelector(".topic-link.active");
-    if (active && active.scrollIntoView) active.scrollIntoView({ block: "nearest" });
+    const nav = document.getElementById("topicNav");
+    if (!active || !nav) return;
+    const a = active.getBoundingClientRect();
+    const n = nav.getBoundingClientRect();
+    if (a.top < n.top) nav.scrollTop -= n.top - a.top;
+    else if (a.bottom > n.bottom) nav.scrollTop += a.bottom - n.bottom;
+  }
+
+  function scrollToHashTarget(id, smooth) {
+    const target = id
+      ? document.getElementById("topic-" + id) || document.getElementById("sec-" + id)
+      : document.querySelector("#main .hero, #main article.topic, #main .panel");
+    if (!target) return false;
+    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const y = Math.max(0, window.scrollY + target.getBoundingClientRect().top - headerOffset());
+    window.scrollTo({ top: y, left: 0, behavior: smooth && !reduce ? "smooth" : "auto" });
+    revealSidebarLink();
+    return true;
   }
 
   function afterPaint(fn) {
     requestAnimationFrame(() => requestAnimationFrame(fn));
   }
 
+  function queueScroll(id, smooth) {
+    const run = (s) => scrollToHashTarget(id || "", s);
+    afterPaint(() => run(smooth));
+    [50, 160, 400].forEach((ms) => setTimeout(() => run(false), ms));
+  }
+
   function go(page, id) {
     const next = id ? `#/${page}/${id}` : `#/${page}`;
-    if (location.hash === next) {
-      scrollToHashTarget(id || "", true);
-      sidebar.classList.remove("open");
+    const { page: cur } = parseHash();
+    const already = location.hash === next;
+    sidebar.classList.remove("open");
+    if (already) {
+      queueScroll(id || "", true);
       return;
     }
-    location.hash = next;
+    history.pushState({ page, id: id || "" }, "", next);
+    if (EXTRA_PAGES[page] && page === cur) {
+      navTabs();
+      renderSidebar();
+      queueScroll(id || "", true);
+      return;
+    }
+    render();
   }
 
   function destroyCharts() {
@@ -360,6 +385,7 @@
         ]
       },
       options: {
+        animation: false,
         plugins: { legend: { display: false } },
         scales: {
           y: { beginAtZero: true, max: 100, ticks: { color: "#b8ae97" }, grid: { color: "rgba(212,175,55,0.12)" } },
@@ -385,7 +411,7 @@
     if (page === "overview") paintHeatChart();
     sidebar.classList.remove("open");
     main.focus({ preventScroll: true });
-    afterPaint(() => scrollToHashTarget(id, false));
+    queueScroll(id, false);
   }
 
   function searchIndex() {
@@ -469,6 +495,7 @@
   });
 
   window.addEventListener("hashchange", render);
+  window.addEventListener("popstate", render);
   document.querySelector(".brand").addEventListener("click", () => go("overview"));
 
   const savedTheme = localStorage.getItem(THEME_KEY) || "dark";

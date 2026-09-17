@@ -123,7 +123,8 @@
         <h1>Primary textbooks, exam drill, secondary refs</h1>
         <p class="lede">The five books below are the <strong>authoritative physical shelf</strong> this site tracks for structure, landmark cases, and depth. Read the matching chapter there; this website is original teaching prose (syllabus + bare acts + public case law + PYQ themes). It does not reproduce those textbooks or Unique/Nitin Q&amp;A.</p>
 
-        <h2 class="section-title" id="sec-publishers">1. Primary textbooks (buy / use)</h2>
+        <section id="sec-publishers">
+        <h2 class="section-title">1. Primary textbooks (buy / use)</h2>
         <table class="compare">
           <thead><tr><th>Paper</th><th>Book</th><th>How this site tracks it</th></tr></thead>
           <tbody>
@@ -135,6 +136,7 @@
           </tbody>
         </table>
         <p>Also keep on the desk: <strong>Jain Book Agency</strong> Constitution (post-Art. 370 abolition reprint), <strong>BNS 2023 bare</strong>, <strong>Contract Act 1872 bare</strong>, <strong>CPA 2019 bare</strong>.</p>
+        </section>
 
         <h2 class="section-title">2. Unique Q&amp;A — exam drill only</h2>
         <p>Unique Law Series / Nitin Prakashan (Meerut) “30 Questions &amp; Answers” is what you already own for CCS question <em>shape</em>. Use it <strong>after</strong> Paranjape/Kumar/Bangia + this site + the bare act — never as first principles.</p>
@@ -169,7 +171,8 @@
           <div class="pub-card"><strong>CPA 2019</strong><p>Commissions, not 1986 Forums. Know 2021 pecuniary revision. Bangia Torts later editions include this Act.</p></div>
         </div>
 
-        <h2 class="section-title" id="sec-youtube">YouTube (search titles — playlists move)</h2>
+        <section id="sec-youtube">
+        <h2 class="section-title">YouTube (search titles — playlists move)</h2>
         <div class="yt-row">
           <div class="yt-card"><strong>StudyIQ Judiciary</strong><p>@studyiqjudiciary — Consti + BNS marathons.</p></div>
           <div class="yt-card"><strong>StudyIQ After LL.B</strong><p>@StudyIQAfterLLB — BNS one-shots, juris shorts.</p></div>
@@ -179,9 +182,12 @@
           <div class="yt-card"><strong>Law Prep / Judiciary Gold / Adda247 JS</strong><p>PYQ/MCQ drill and capsules.</p></div>
         </div>
         <p>Hygiene: prefer 2024+ uploads for BNS and CPA 2019; confirm every section in Paranjape BNS / Bangia / Kumar, then the bare act.</p>
-        <h2 class="section-title" id="sec-bnsmap">BNS ↔ IPC map (syllabus offences — for older PYQs)</h2>
+        </section>
+        <section id="sec-bnsmap">
+        <h2 class="section-title">BNS ↔ IPC map (syllabus offences — for older PYQs)</h2>
         <p>Paranjape writes in BNS numbers. When you drill 2022–23 CCS papers, convert IPC cites with this table. Filter is live.</p>
         ${bnsTable()}
+        </section>
         <h2 class="section-title">Public PYQ hubs</h2>
         <ul>
           <li><a href="https://ccsullb.blogspot.com/" target="_blank" rel="noopener">ccsullb.blogspot.com</a> — transcribed papers</li>

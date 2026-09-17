@@ -255,6 +255,10 @@ body {
   scroll-margin-top: calc(var(--top) + var(--nav) + 10px);
 }
 
+#main section[id^="sec-"] {
+  scroll-margin-top: calc(var(--top) + var(--nav) + 10px);
+}
+
 .kicker {
   font-family: var(--mono);
   font-size: 0.75rem;
