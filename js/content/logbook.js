@@ -3,6 +3,30 @@
   g.LLB = g.LLB || {};
   /* Newest first. paper: K-1001…K-1005 or "site". topicId must match a real card id (empty for site-only). */
   g.LLB.logbook = [
+    { date: "2026-09-17", type: "added", paper: "K-1001", topicId: "j-def-evolution", title: "Definitions — evolution of jurisprudence", note: "Dedicated card: vertical timeline, gold spine (ought → command → form → courts → first principles → social ends), ABAH-GSP mnemonic, thinker table, PYQ outline." },
+    { date: "2026-09-17", type: "updated", paper: "K-1001", topicId: "j-intro", title: "Introduction — definition, nature, scope, importance", note: "Compact definitions-evolution timeline on the intro card; pointer to the dedicated teaching spine." },
+    { date: "2026-09-17", type: "updated", paper: "K-1001", topicId: "j-natural", title: "Natural Law — classical and revival (Stammler, Kohler)", note: "Timeline: classical NL → early-modern rights → Austin eclipse → Stammler/Kohler revival." },
+    { date: "2026-09-17", type: "updated", paper: "K-1001", topicId: "j-analytical", title: "Analytical School — Austin, Kelsen, H.L.A. Hart", note: "Timeline: command (1832) → pure pyramid (1934) → primary/secondary rules (1961)." },
+    { date: "2026-09-17", type: "updated", paper: "K-1001", topicId: "j-historical", title: "Historical School — Savigny and Sir Henry Maine", note: "Timeline: Savigny 1814 Volksgeist → Maine 1861 status-to-contract." },
+    { date: "2026-09-17", type: "updated", paper: "K-1001", topicId: "j-socio", title: "Sociological School — Pound and Duguit", note: "Timeline: Ihering purpose → Ehrlich living law → Duguit solidarity → Pound social engineering." },
+
+    { date: "2026-09-17", type: "updated", paper: "K-1002", topicId: "c-21", title: "Article 21 — life and personal liberty", note: "Timeline: Gopalan 1950 → Maneka 1978 → Puttaswamy 2017." },
+    { date: "2026-09-17", type: "updated", paper: "K-1002", topicId: "c-fr-dpsp-cases", title: "FR vs DPSP — Champakam, Golaknath, Kesavananda, Minerva Mills", note: "Timeline: Golaknath 1967 → Kesavananda 1973 → Minerva Mills 1980." },
+    { date: "2026-09-17", type: "updated", paper: "K-1002", topicId: "c-15-16-reservation", title: "Articles 15–16 — reservation, Indra Sawhney, EWS / Janhit", note: "Timeline: Indra Sawhney 1992 → Nagaraj/Jarnail promotions → 103rd EWS / Janhit 2022." },
+    { date: "2026-09-17", type: "updated", paper: "K-1002", topicId: "c-19a", title: "Freedom of speech and expression — Art. 19(1)(a)", note: "Timeline: Romesh Thappar 1950 → Sakal/Bennett Coleman → Shreya Singhal 2015." },
+
+    { date: "2026-09-17", type: "updated", paper: "K-1003", topicId: "t-strict", title: "Strict liability and absolute liability", note: "Timeline: Rylands 1868 (strict, with excuses) → M.C. Mehta 1987 (absolute)." },
+    { date: "2026-09-17", type: "updated", paper: "K-1003", topicId: "t-vicarious", title: "Vicarious liability, State / sovereign immunity, joint tortfeasors", note: "Timeline: P&O/Vidyawati → Kasturilal 1965 → Nilabati Behera / Nagendra Rao 1993–94." },
+    { date: "2026-09-17", type: "updated", paper: "K-1003", topicId: "t-negligence", title: "Specific tort — Negligence", note: "Timeline: Donoghue 1932 neighbour principle → Indian reception (Subhagwanti / Jacob Mathew)." },
+
+    { date: "2026-09-17", type: "updated", paper: "K-1004", topicId: "cr-general", title: "General principles — crime, elements, stages, strict & constructive liability, common intention & common object", note: "Timeline: IPC 1860 → sedition 124A/Kedarnath → Joseph Shine adultery death → BNS 2023 (152, organised crime, 497 omitted)." },
+    { date: "2026-09-17", type: "updated", paper: "K-1004", topicId: "cr-homicide", title: "Offences against the human body — culpable homicide, murder, rash/negligent death", note: "Timeline: common-law malice → IPC 299/300 → BNS 100/101 numbering map (code evolution, not a new philosophy)." },
+
+    { date: "2026-09-17", type: "updated", paper: "K-1005", topicId: "k-eng-vs-indian", title: "English vs Indian law of consideration", note: "Timeline: Eastwood/Tweddle locks → s.2(d) 1872 + Chinnaya 1882 fork." },
+    { date: "2026-09-17", type: "updated", paper: "K-1005", topicId: "k-discharge", title: "Discharge of contracts, with special reference to frustration", note: "Timeline: Taylor 1863 / Krell 1903 → Satyabrata 1954 (hardship ≠ frustration)." },
+    { date: "2026-09-17", type: "updated", paper: "K-1005", topicId: "k-standard", title: "Standard form contracts", note: "Timeline: Olley/Thornton notice ladder → CPA 2019 unfair-contract overlay." },
+
+    { date: "2026-09-17", type: "added", paper: "site", topicId: "", title: "Evolution timelines UI", note: "Reusable vertical timeline (year badge → name → doctrine → what it replaced). Data in js/content/timelines.js." },
     { date: "2026-09-17", type: "added", paper: "site", topicId: "", title: "Logbook tab introduced", note: "What’s-new list with filters; titles jump to the live topic card." },
 
     { date: "2026-09-17", type: "added", paper: "K-1001", topicId: "j-akh", title: "Drill — Austin vs Kelsen vs Hart", note: "Standalone comparison table for the distinguish 10-marker." },

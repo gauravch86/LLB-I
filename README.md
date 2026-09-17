@@ -33,13 +33,13 @@ Sidebar depth is no longer school-level / FR-level only. A coverage pass added *
 
 | Paper | Was | Now | Examples |
 |-------|-----|-----|----------|
-| K-1001 | 7 | **16** | Historical jurisprudence vs legal history; law & morals; Austin–Kelsen–Hart drill; Bentham/Manu/Salmond/Stone shorts; Pound’s interests |
+| K-1001 | 7 | **17** | Historical jurisprudence vs legal history; law & morals; Austin–Kelsen–Hart drill; Bentham/Manu/Salmond/Stone shorts; Pound’s interests; **definitions-evolution card** |
 | K-1002 | 14 | **24** | Art. 12; eclipse/severability/waiver; FR suspension 358/359; five writs; expanded 21A / 23–24 / Duties; 15–16/EWS; Art. 300A bridge |
 | K-1003 | 9 | **22** | Nervous shock; res ipsa; medical negligence; contributory/composite; service vs for service; who may sue; deepened nuisance/trespass |
 | K-1004 | 8 | **27** | Dowry death BNS 80 vs IPC 304B; stalking 78; legal vs medical insanity; WR/WC & riot/affray; stages essay; snatching; child cluster |
 | K-1005 | 12 | **26** | Deepened contingent (ss.32–36) & standard form; novation s.62; wagering checklist; English vs Indian consideration; discharge checklist; quantum meruit |
 
-After merge to **`main`**, GitHub Pages at [https://gauravch86.github.io/LLB-I/](https://gauravch86.github.io/LLB-I/) auto-updates (hard-refresh if a tab still shows the old topic count). **115** sealable topics.
+After merge to **`main`**, GitHub Pages at [https://gauravch86.github.io/LLB-I/](https://gauravch86.github.io/LLB-I/) auto-updates (hard-refresh if a tab still shows the old topic count). **116** sealable topics. Evolution timelines (year → doctrine → what it replaced) sit on high-yield cards; Logbook titles jump to them.
 
 Still thinner / out of Sem-1 scope: kidnapping/abduction as its own row (still a table inside the body card); Art. 22 preventive detention (Sem-2-ish); CPA product-liability problem drills; electronic contracts (Bangia ch. 8, not on the CCS list); sources of law as a full Jurisprudence unit; `j-marx` remains the only standard-yield school card.
 
@@ -100,6 +100,9 @@ js/content/constitution.js
 js/content/torts.js
 js/content/crimes.js
 js/content/contract.js
+js/content/timelines.js     # evolution timeline data (year → thinker/case → shift)
+js/content/logbook.js
+js/timeline.js              # vertical timeline renderer
 assets/favicon.svg
 ```
 

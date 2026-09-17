@@ -607,6 +607,127 @@ button.log-title:hover { color: var(--gold-2); }
   .brand h1 { font-size: 1rem; }
 }
 
+.evo {
+  margin: 18px 0 8px;
+}
+.tl-hook {
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+.tl-spine {
+  font-family: var(--display);
+  font-size: 1.08rem;
+  line-height: 1.45;
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--gold) 12%, var(--elev-2));
+}
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0 2px;
+  position: relative;
+  --rail: 134px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: var(--rail);
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--gold), color-mix(in srgb, var(--teal) 70%, var(--gold)));
+}
+.timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 124px 1fr;
+  gap: 16px;
+  padding: 0 0 16px 0;
+}
+.timeline li:last-child { padding-bottom: 0; }
+.timeline li::after {
+  content: "";
+  position: absolute;
+  left: calc(var(--rail) - 4px);
+  top: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 3px var(--elev);
+  z-index: 1;
+}
+.tl-badge {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 4px;
+}
+.tl-year {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--gold);
+  background: var(--elev);
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 4px 8px;
+  text-align: center;
+  line-height: 1.25;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.tl-card {
+  background: var(--elev-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+.tl-card h3 {
+  margin: 0 0 2px;
+  font-size: 1rem;
+}
+.tl-work {
+  margin: 0 0 6px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--gold-2);
+}
+.tl-doctrine {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+}
+.tl-shift {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.tl-shift span {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 2px;
+}
+.tl-table { margin-top: 12px; }
+
+@media (max-width: 980px) {
+  .timeline { --rail: 8px; }
+  .timeline li {
+    grid-template-columns: 1fr;
+    padding-left: 28px;
+    gap: 8px;
+  }
+  .tl-badge { justify-content: flex-start; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
