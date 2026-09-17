@@ -1,4 +1,6 @@
 (function (global) {
+  let bound = false;
+
   function esc(s) {
     return String(s == null ? "" : s)
       .replace(/&/g, "&amp;")
@@ -27,16 +29,19 @@
     return `<ol class="timeline">
       ${(beats || [])
         .map((b) => {
-          const school = b.school
-            ? `<span class="tl-school tl-school-${esc(b.school)}">${esc(b.schoolLabel || b.school)}</span>`
+          const schoolKey = b.school || "";
+          const school = schoolKey
+            ? `<span class="tl-school tl-school-${esc(schoolKey)}">${esc(b.schoolLabel || schoolKey)}</span>`
             : "";
           const who = `<strong>${esc(b.name)}</strong>${school}`;
-          return `<li>
-            <span class="tl-node" aria-hidden="true"></span>
-            <article class="tl-card">
+          const def = b.defJob ? ` data-def="1"` : "";
+          return `<li data-school="${esc(schoolKey)}"${def}>
+            <span class="tl-node${schoolKey ? ` tl-node-${esc(schoolKey)}` : ""}" aria-hidden="true"></span>
+            <article class="tl-card${schoolKey ? ` tl-card-${esc(schoolKey)}` : ""}">
               <dl class="tl-fields">
                 ${field("Era / Year", `<span class="tl-year">${esc(b.year)}</span>`)}
                 ${field("Who", who)}
+                ${field("Where", b.country ? `<span class="tl-where">${esc(b.country)}</span>` : "")}
                 ${field("Landmark", b.work ? esc(b.work) : "")}
                 ${field("What they said", esc(b.doctrine))}
                 ${field("What they pushed back against", esc(b.shift))}
@@ -52,38 +57,81 @@
     if (!timeline.defInset) return spineHtml(timeline.spine);
     const d = timeline.defInset;
     return `<aside class="tl-def-strip">
-      <p class="tl-def-kicker">${esc(d.kicker || "Definitions inset — not a school")}</p>
+      <p class="tl-def-kicker">${esc(d.kicker || "Definitions inset — not the full rail")}</p>
       ${spineHtml(timeline.spine)}
       <p class="tl-def-mnemo"><strong>${esc(d.name)}</strong> ${esc(d.hook)}</p>
     </aside>`;
   }
 
-  function bandHtml(group) {
-    const mnemo = group.mnemonic
-      ? `<p class="tl-band-mnemo">This band only: <strong>${esc(group.mnemonic.name)}</strong> — ${esc(group.mnemonic.hook)}</p>`
-      : "";
-    return `<section class="tl-band tl-band-${esc(group.school)}">
-      <header class="tl-band-head">
-        <h3><span class="tl-school tl-school-${esc(group.school)}">${esc(group.title)}</span></h3>
-        ${mnemo}
-      </header>
-      ${beatsHtml(group.beats)}
-    </section>`;
+  function filterHtml(timeline) {
+    const filters = timeline.filters;
+    if (!filters || !filters.length) return "";
+    const btns = [{ id: "all", label: "All" }, ...filters]
+      .map(
+        (f, i) =>
+          `<button type="button" class="tl-filter${i === 0 ? " is-on" : ""}${f.school ? ` tl-school-${esc(f.school)}` : ""}" data-tl-filter="${esc(f.id)}"${f.school ? ` data-school="${esc(f.school)}"` : ""}>${esc(f.label)}</button>`
+      )
+      .join("");
+    return `<div class="tl-filters" role="toolbar" aria-label="Filter timeline">${btns}</div>`;
   }
 
-  function render(timeline, mode) {
+  function kernelsHtml(kernels) {
+    if (!kernels || !kernels.length) return "";
+    return `<footer class="tl-kernels">
+      ${kernels
+        .map(
+          (k) =>
+            `<p class="tl-kernel-line tl-kernel-${esc(k.school)}"><strong>${esc(k.scope || k.school)} only — ${esc(k.name)}</strong> ${esc(k.hook)}</p>`
+        )
+        .join("")}
+    </footer>`;
+  }
+
+  function applyFilter(section, key) {
+    section.querySelectorAll("[data-tl-filter]").forEach((btn) => {
+      btn.classList.toggle("is-on", btn.getAttribute("data-tl-filter") === key);
+    });
+    section.querySelectorAll(".timeline > li").forEach((li) => {
+      const match =
+        key === "all" ||
+        (key === "defs" && li.getAttribute("data-def") === "1") ||
+        li.getAttribute("data-school") === key;
+      li.hidden = !match;
+    });
+  }
+
+  function bindFilters() {
+    if (bound) return;
+    if (typeof document === "undefined" || !document.addEventListener) return;
+    bound = true;
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-tl-filter]");
+      if (!btn) return;
+      const section = btn.closest(".evo");
+      if (!section) return;
+      applyFilter(section, btn.getAttribute("data-tl-filter"));
+    });
+  }
+
+  function allBeats(timeline) {
+    if (timeline.beats) return timeline.beats;
+    return (timeline.groups || []).flatMap((g) => g.beats || []);
+  }
+
+  function render(timeline) {
     if (!timeline) return "";
     const hook = timeline.hook ? `<p class="tl-hook">${esc(timeline.hook)}</p>` : "";
     const note = timeline.note ? `<p class="search-query">${esc(timeline.note)}</p>` : "";
-    const rail = timeline.groups
-      ? timeline.groups.map(bandHtml).join("")
-      : beatsHtml(timeline.beats);
+    const rail = beatsHtml(allBeats(timeline));
+    bindFilters();
     return `<section class="evo" id="sec-${esc(timeline.id)}" data-jump="${esc(timeline.id)}">
       <h2 class="section-title">${esc(timeline.title || "Evolution timeline")}</h2>
       ${timeline.lede ? `<p class="lede">${esc(timeline.lede)}</p>` : ""}
       ${hook}
       ${defStripHtml(timeline)}
+      ${filterHtml(timeline)}
       ${rail}
+      ${kernelsHtml(timeline.kernels)}
       ${note}
     </section>`;
   }
@@ -94,25 +142,20 @@
     return (map[topicId] || [])
       .map((ref) => {
         const id = typeof ref === "string" ? ref : ref.id;
-        const mode = typeof ref === "string" ? "" : ref.mode || "";
-        return { timeline: catalog[id], mode };
+        return catalog[id];
       })
-      .filter((x) => x.timeline);
+      .filter(Boolean);
   }
 
   function renderForTopic(topicId) {
-    return forTopic(topicId)
-      .map((x) => render(x.timeline, x.mode))
-      .join("");
+    return forTopic(topicId).map(render).join("");
   }
 
   function searchBlob(topicId) {
     return forTopic(topicId)
-      .map(({ timeline }) => {
-        const groups = timeline.groups || [{ beats: timeline.beats }];
-        const beats = groups
-          .flatMap((g) => g.beats || [])
-          .map((b) => [b.year, b.name, b.schoolLabel, b.work, b.doctrine].join(" "))
+      .map((timeline) => {
+        const beats = allBeats(timeline)
+          .map((b) => [b.year, b.name, b.country, b.schoolLabel, b.work, b.doctrine].join(" "))
           .join(" ");
         return [timeline.title, timeline.hook, beats].join(" ");
       })
