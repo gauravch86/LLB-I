@@ -2,7 +2,7 @@
 
 Interactive, original study site for **CCS University Meerut** LL.B. 3-year **Semester 1** (paper codes **K-1001–K-1005**). Built for **Gaurav**, **HLM College, Ghaziabad**, December **2026** exams — an engineer moving into law, so the notes use systems analogies, decision trees, and comparison tables rather than textbook walls of text.
 
-Live on GitHub Pages once enabled (see below). Open `index.html` locally if you prefer.
+**Live URL:** [https://gauravch86.github.io/LLB-I/](https://gauravch86.github.io/LLB-I/) (enable Pages from `main` `/` if that still 404s — see below). Open `index.html` locally if you prefer.
 
 ## Papers
 
@@ -41,12 +41,18 @@ Open [http://localhost:8080](http://localhost:8080). Keyboard: `/` search, `Esc`
 
 ## GitHub Pages
 
-1. Repo **Settings → Pages**.
-2. Source: **Deploy from a branch**.
-3. Branch: `main` (or this feature branch while reviewing), folder: `/ (root)`.
-4. Site URL will be `https://gauravch86.github.io/LLB-I/`.
+**URL:** [https://gauravch86.github.io/LLB-I/](https://gauravch86.github.io/LLB-I/)
 
-`index.html` sits at the repository root. `.nojekyll` is included so GitHub Pages does not mangle the `_` paths if any appear later.
+Site files (`index.html` at repo root, plus `.nojekyll`) are on **`main`**. Same publish mode as Gaurav’s other Pages repos (branch, root `/`).
+
+If that URL still shows GitHub’s “Site not found”:
+
+1. Open **[Settings → Pages](https://github.com/gauravch86/LLB-I/settings/pages)**
+2. **Build and deployment → Source:** Deploy from a branch
+3. **Branch:** `main` · **Folder:** `/ (root)`
+4. **Save** — wait about a minute, then reload the URL
+
+A `gh-pages` branch is kept in sync as an alternate source if `main` is not listed.
 
 ## Official syllabus vs. exam titles
 
