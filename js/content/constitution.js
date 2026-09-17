@@ -422,18 +422,19 @@
         seq: 8,
         readAs: "Kumar ch. 10 — Right to Education",
         unit: 3,
-        yield: "standard",
-        tags: ["21a", "rte", "86th amendment"],
+        yield: "high",
+        tags: ["21a", "rte", "86th amendment", "unnikrishnan"],
         title: "Article 21A — Right to Education",
-        summary: "86th Amendment (2002): free and compulsory education of children aged 6–14, as the State may determine by law. RTE Act 2009 is the payload.",
-        explainer: `<p>Until 21A, education rode on 21 (<em>Unni Krishnan</em> — up to 14 as part of life; higher education not an FR in the same way) and DPSP 45 (original: free compulsory education up to 14). The 86th Amendment: inserted 21A; recast 45 toward early childhood care 0–6; added duty 51A(k) for parents/guardians.</p>
-        <p>RTE Act 2009: neighbourhood schools, 25% uneconomic weaker-section intake in private unaided (upheld with adjustments in <em>Society for Unaided Private Schools</em> — aided vs unaided, minority institutions carve-out under 30). <em>Pramati</em> exempted minority schools from RTE’s 12(1)(c) — a tension with inclusion that a good answer flags.</p>
-        <p>Justiciable FR, but the clause “as the State may, by law, determine” lets the statute shape content. Quality vs mere enrolment is the policy critique.</p>`,
+        summary: "86th Amendment (2002) pins free and compulsory education of children aged 6–14 as an FR. Unni Krishnan built the ramp via 21; RTE Act 2009 is the implementing statute. Dec 2024 Sec A.",
+        explainer: `<p><strong>Timeline (write this first):</strong> (1) original DPSP <strong>Art. 45</strong> — State shall endeavour to provide free and compulsory education for all children until they complete 14 years; (2) <em>Mohini Jain</em> (1992) treated capitation as offending the right to education read into 21; (3) <em>Unni Krishnan v State of A.P.</em> (1993) — education up to 14 is part of life under 21, but higher education is not an FR in the same way and can be regulated; (4) <strong>86th Constitutional Amendment, 2002</strong> — inserts <strong>Art. 21A</strong>, recasts 45 toward early childhood care and education for children below 6, and adds Fundamental Duty <strong>51A(k)</strong> (parent/guardian to provide opportunities for education to the child between 6 and 14); (5) <strong>RTE Act 2009</strong> (in force 1 Apr 2010) is the “as the State may, by law, determine” payload.</p>
+        <p><strong>Text of 21A:</strong> the State shall provide free and compulsory education to all children of the age of six to fourteen years in such manner as the State may, by law, determine. It is a justiciable FR, not a leftover Directive — but the clause hands the <em>content</em> (neighbourhood school, pupil–teacher ratio, 25% intake) to statute. Quality vs mere enrolment is the policy critique; do not write that 21A itself lists the 25% quota.</p>
+        <p><strong>RTE Act 2009 working kit:</strong> neighbourhood schools; no capitation / screening at entry for the 6–14 band; 25% seats in private unaided schools for children from weaker and disadvantaged groups (s.12(1)(c)), with reimbursement; norms for teachers and infrastructure. <em>Society for Unaided Private Schools of Rajasthan v Union of India</em> (2012) largely upheld 12(1)(c) for non-minority unaided schools. <em>Pramati Educational &amp; Cultural Trust</em> (2014) held that RTE’s 12(1)(c) does not apply to minority schools (aided or unaided) because of Art. 30 — flag the inclusion tension; do not pick a political fight, pick the holding.</p>
+        <p><strong>Exam close:</strong> 21A converted a Directive into an FR; 45 still covers 0–6; 51A(k) is the parent hook. Higher education remains 21/19(1)(g) regulatory terrain, not 21A.</p>`,
         analogy: {
           title: "21A is a pinned dependency of 21",
           body: "Education was a transitive dependency of life. 21A pins it as a first-party FR for ages 6–14, with RTE Act as the implementing package. 51A(k) is the parent-side hook."
         },
-        diagram: { type: "flow", steps: ["DPSP 45 (old)", "Unni Krishnan via 21", "86th Amendment → 21A", "RTE Act 2009"] },
+        diagram: { type: "flow", steps: ["DPSP 45 (old)", "Mohini Jain / Unni Krishnan via 21", "86th Amendment → 21A + recast 45 + 51A(k)", "RTE Act 2009", "Unaided 12(1)(c) vs Pramati minority carve-out"] },
         mnemonic: {
           name: "6–14 / 86th / RTE 2009",
           hook: "Free + compulsory; State-by-law; parent duty 51A(k).",
@@ -460,13 +461,14 @@
         seq: 9,
         readAs: "Kumar ch. 11 — Right against Exploitation",
         unit: 3,
-        yield: "standard",
+        yield: "high",
         tags: ["23", "24", "begar", "child labour", "trafficking"],
         title: "Right against exploitation — Articles 23–24",
-        summary: "23 kills traffic in persons and begar/forced labour (with a State-service exception). 24 bars hazardous child labour under 14.",
-        explainer: `<p><strong>Art. 23:</strong> prohibition of traffic in human beings, begar, and similar forms of forced labour. Exception: compulsory service for public purposes without discrimination on religion/race/caste/class. <em>People’s Union for Democratic Rights v Union of India</em> (Asiad workers): non-payment of minimum wage as forced labour. Horizontal: binds private contractors. Bonded labour statutes and the SC’s <em>Bandhua Mukti Morcha</em> supervision are the enforcement story.</p>
-        <p><strong>Art. 24:</strong> no child below 14 in factories, mines, or other hazardous employment. Child Labour (Prohibition and Regulation) Act / 2016 amendments; CLPRA vs RTE overlap — a child in school cannot be in a hazardous process. Non-hazardous family work is a statutory grey students over-simplify; stay with the constitutional prohibition and name the Act.</p>
-        <p>These articles are social FRs — closer to Duguit/Pound than to Austin. They also bind non-State actors more clearly than 19.</p>`,
+        summary: "23 kills traffic in persons, begar and forced labour (public-service exception). 24 bars hazardous child labour under 14. Horizontal social FRs — PUDR, Bandhua, child-labour statutes.",
+        explainer: `<p><strong>Art. 23(1):</strong> traffic in human beings, <em>begar</em>, and other similar forms of forced labour are prohibited; any contravention is an offence punishable by law. <em>Begar</em> is work without payment — the old corvée — but the Court did not freeze it as a museum word. <strong>Art. 23(2):</strong> the State may impose compulsory service for public purposes, without discrimination on religion, race, caste or class (conscription / social service flavour). That exception is the State’s, not a private employer’s.</p>
+        <p><strong>Forced labour is wider than chains:</strong> <em>People’s Union for Democratic Rights v Union of India</em> (Asiad workers, 1982) — paying less than the minimum wage is forced labour; economic compulsion plus a legal duty to pay the floor wage. The right is <strong>horizontal</strong>: it binds private contractors, not only ‘State’ under 12. <em>Bandhua Mukti Morcha v Union of India</em> (1984) — bonded labour; the Court treated PIL letters as petitions and kept supervising identification and rehabilitation under the Bonded Labour System (Abolition) Act, 1976. Trafficking is the human-commodity sibling — Immoral Traffic statutes / BNS trafficking offences are the criminal teeth; 23 is the constitutional hook.</p>
+        <p><strong>Art. 24:</strong> no child below the age of fourteen years shall be employed to work in any factory or mine or engaged in any other hazardous employment. It does not, by itself, ban every after-school errand; the constitutional floor is <em>hazardous</em> employment. The Child Labour (Prohibition and Regulation) Act, 1986 (amended 2016) and the RTE Act together: a child who should be in school under 21A should not be in a hazardous process. <em>M.C. Mehta v State of T.N.</em> (child labour in match-works) is the classic enforcement story — off hazardous work, into education, with a contribution corpus. Family/non-hazardous statutory greys exist; in the hall stay with 24’s text + the Act + Mehta, and do not invent a complete ban on all child work.</p>
+        <p>These are social FRs (Duguit/Pound flavour) and they bind private persons more clearly than Art. 19. Pair 24 with 21A/51A(k) in a 10-marker.</p>`,
         analogy: {
           title: "Forced labour is a stuck thread",
           body: "23 forbids conscripting private CPU without lawful public-purpose statute. Paying below minimum wage is still forced labour (PUDR) — like an infinite loop with no consideration. 24 is an age-gate on hazardous production."
@@ -474,13 +476,14 @@
         diagram: { type: "compare", headers: ["Article", "Core ban", "Key case / statute"], rows: [["23", "Trafficking, begar, forced labour", "PUDR; Bonded Labour Act"], ["24", "Hazardous child work <14", "Child labour statutes + RTE"]] },
         mnemonic: { name: "23 FORCE / 24 CHILD", hook: "Begar ≠ only historical corvée; underpayment counts.", recite: "Horizontal social rights. Public compulsory service is the 23 exception." },
         cases: [
-          { name: "PUDR v Union of India", citation: "(1982) 3 SCC 235", point: "Below-minimum-wage labour as forced labour." },
-          { name: "Bandhua Mukti Morcha v Union of India", citation: "(1984) 3 SCC 161", point: "Bonded labour; PIL enforcement." }
+          { name: "PUDR v Union of India", citation: "(1982) 3 SCC 235", point: "Below-minimum-wage labour as forced labour; horizontal." },
+          { name: "Bandhua Mukti Morcha v Union of India", citation: "(1984) 3 SCC 161", point: "Bonded labour; PIL enforcement." },
+          { name: "M.C. Mehta v State of Tamil Nadu", citation: "(1996) 6 SCC 756", point: "Child labour in hazardous match-works; education + corpus." }
         ],
         pyqs: [
-          { year: "theme", section: "B", marks: "10", q: "Right against exploitation.", outline: ["23+24 text; PUDR; child labour statute; horizontality."] }
+          { year: "theme", section: "B", marks: "10", q: "Right against exploitation.", outline: ["23 text + 23(2) exception; PUDR begar; Bandhua; 24 + CLPRA + Mehta; horizontality and 21A overlap."] }
         ],
-        check: ["PUDR holding.", "24 age and hazard.", "23 public-service exception."]
+        check: ["PUDR holding in one line.", "24 age, hazard, and a statute.", "23 public-service exception."]
       },
       {
         id: "c-25-28",
@@ -664,13 +667,26 @@
         seq: 14,
         readAs: "Kumar ch. 17 — Fundamental Duties",
         unit: 5,
-        yield: "standard",
+        yield: "high",
         tags: ["51a", "fundamental duties", "42nd"],
         title: "Fundamental Duties — Article 51A",
-        summary: "42nd Amendment borrowed a duty list (Sverdlovsk inspiration debates aside). Not directly justiciable, but they interpret rights and support statutes.",
-        explainer: `<p>Art. 51A (a)–(k): abide by the Constitution and respect its ideals, institutions, National Flag and Anthem; cherish noble ideals of the freedom struggle; uphold sovereignty, unity, integrity; defend the country; promote harmony and brotherhood, renounce practices derogatory to women; value composite culture; protect environment; scientific temper; safeguard public property, abjure violence; strive toward excellence; 86th Amendment (k) — parent/guardian to provide education to 6–14.</p>
-        <p>Swaran Singh Committee recommended duties. They are not FRs in reverse that the State can casually criminalise without a statute, but statutes (prevention of insults to National Honour, environmental law, IPC/BNS public-property) give teeth. Courts use 51A as an interpretive aid (<em>AIIMS Students’ Union</em>, environment cases pairing 51A(g) with 48A and 21). <em>Ranganath Mishra</em> / later reports: enforcement through education more than prosecution.</p>
-        <p>Exam: list any four if Section A; if long, discuss justiciability, relation to FRs (duties as civic republicanism), and one case using 51A(g).</p>`,
+        summary: "42nd Amendment added (a)–(j); 86th added (k). Not a self-executing sword, but courts read them with FRs and DPSPs. Dec 2024: any four Duties — list them cleanly.",
+        explainer: `<p><strong>Origin:</strong> Swaran Singh Committee; inserted by the <strong>42nd Amendment, 1976</strong> as Art. 51A (a)–(j). The <strong>86th Amendment, 2002</strong> added <strong>(k)</strong>. They sit in Part IVA. They are <em>not</em> FRs in reverse and not directly justiciable — no writ that says “I sue you solely because 51A exists” — but they are not decoration. Statutes give teeth (Prevention of Insults to National Honour; environment law; BNS mischief to public property). Courts use 51A as an <strong>interpretive aid</strong> when reading 21, 48A, education, and excellence in public institutions.</p>
+        <p><strong>The list (Dec 2024 “any four” — pick four you can quote, know all eleven):</strong></p>
+        <ol type="a">
+          <li>abide by the Constitution and respect its ideals and institutions, the National Flag and the National Anthem;</li>
+          <li>cherish and follow the noble ideals which inspired our national struggle for freedom;</li>
+          <li>uphold and protect the sovereignty, unity and integrity of India;</li>
+          <li>defend the country and render national service when called upon to do so;</li>
+          <li>promote harmony and the spirit of common brotherhood amongst all the people of India, and renounce practices derogatory to the dignity of women;</li>
+          <li>value and preserve the rich heritage of our composite culture;</li>
+          <li>protect and improve the natural environment (forests, lakes, rivers, wildlife) and have compassion for living creatures;</li>
+          <li>develop the scientific temper, humanism and the spirit of inquiry and reform;</li>
+          <li>safeguard public property and to abjure violence;</li>
+          <li>strive towards excellence in all spheres of individual and collective activity so that the nation constantly rises to higher levels of endeavour and achievement;</li>
+          <li>(86th) a parent or guardian to provide opportunities for education to his child or, as the case may be, ward between the age of six and fourteen years.</li>
+        </ol>
+        <p><strong>How they bite:</strong> <em>Rural Litigation</em> / <em>M.C. Mehta</em> environment line pairs <strong>51A(g) + 48A + 21</strong>. <em>AIIMS Students’ Union v AIIMS</em> used the excellence duty in reasoning. <em>Honourable mention:</em> a duty cannot, by itself, authorise a criminal conviction without a statute that defines the offence. <em>Ranganath Mishra</em> / later reports: civic education over prosecution. Relation to FRs: civic republicanism — rights last longer when the culture of duties is not empty.</p>`,
         analogy: {
           title: "Code of conduct, not a syscall",
           body: "Duties are CONTRIBUTING.md. You rarely get a kernel panic solely from 51A, but linters (courts) and extra packages (statutes) reference it. 51A(k) is the parent hook that matches 21A."
@@ -685,8 +701,455 @@
           { year: "Dec 2024", section: "A", marks: "4", q: "Any four Fundamental Duties.", outline: ["Quote four accurately; mention 42nd/86th."] },
           { year: "2022", section: "B", marks: "10", q: "Fundamental Duties.", outline: ["Origin; list clusters; justiciability; 51A(g)+(k); relation to FRs."] }
         ],
-        check: ["Four duties verbatim-ish.", "42nd vs 86th.", "Not independently enforceable."]
-      }
+        check: ["Four duties quoted, not paraphrased vaguely.", "42nd vs 86th.", "Not independently enforceable; 51A(g)+21+48A."]
+      },
+      {
+        id: "c-art12-state",
+        seq: 3.2,
+        readAs: "Kumar — Art. 12 ‘State’ (unpack from FR general)",
+        unit: 3,
+        yield: "high",
+        tags: ["article 12", "state", "other authorities", "instrumentality"],
+        title: "State under Article 12",
+        summary: "FRs generally bind the ‘State’. If the duty-bearer is not State, most of Part III does not fire. CCS essays die when you skip the tests.",
+        explainer: `<p><strong>Text:</strong> State includes (i) Government and Parliament of India, (ii) Government and Legislature of each State, (iii) all local or other authorities within the territory of India or under the control of the Government of India. The fight is always “other authorities.”</p>
+        <p><strong>Case ladder:</strong> <em>Rajasthan Electricity Board</em> — statutory corporations with power to make binding rules can be State. <em>Sukhdev Singh</em> — LIC/ONGC/IFC. <em>Ramana Dayaram Shetty</em> — instrumentality / agency; functional tests. <em>Ajay Hasia</em> — six-factor checklist (share capital, financial assistance, monopoly, deep and pervasive control, public function, department-transfer). <em>Pradeep Kumar Biswas</em> (seven-judge) — the decisive question is whether the body is functionally, financially and administratively dominated by government so that it is an instrumentality. Societies and companies can be in or out on facts.</p>
+        <p><strong>Not automatically State:</strong> every aided private college; BCCI was held not State in <em>Zee Telefilms</em> (but still amenable to 226 on other theories — mention, don’t confuse 12 with 226). Judiciary acting judicially is not ‘State’ for the purpose of being sued for a ‘law’ under 13 in the ordinary sense; administrative side can be.</p>
+        <p><strong>Horizontal pockets:</strong> Arts. 15(2), 17, 23, 24 bind private persons in terms. <em>Puttaswamy</em> privacy is primarily vertical. Do not write that every private WhatsApp group is Art. 12.</p>
+        <p><strong>Why it matters:</strong> writs, Art. 14 non-arbitrariness, 16 employment, campus admissions. A 10-marker should be tests + two cases + one exclusion.</p>`,
+        analogy: {
+          title: "Identity provider for Part III",
+          body: "Art. 12 is the IdP. If the actor is not in the IdP directory (instrumentality tests), most FR middleware will not authenticate the claim. 226 is a wider SSH path; 12 is the FR SSO."
+        },
+        diagram: {
+          type: "vflow",
+          steps: ["Text: govt / legislature / local / other authorities", "Statutory corporation? binding power?", "Instrumentality: finance + control + public function", "If yes → FR duties; if no → maybe 226 only"]
+        },
+        mnemonic: {
+          name: "GOV-LEG-LOCAL-OTHER",
+          hook: "Ajay Hasia factors; Biswas control. BCCI ≠ 12.",
+          recite: "Other authorities = instrumentalities of the State. Tests: deep control, finance, public function. Horizontal FRs are listed exceptions."
+        },
+        cases: [
+          { name: "Ajay Hasia v Khalid Mujib", citation: "(1981) 1 SCC 722", point: "Instrumentality checklist." },
+          { name: "Pradeep Kumar Biswas v Indian Institute of Chemical Biology", citation: "(2002) 5 SCC 111", point: "Control test restated by a larger bench." },
+          { name: "Zee Telefilms v Union of India", citation: "(2005) 4 SCC 649", point: "BCCI not State under 12." }
+        ],
+        pyqs: [
+          {
+            year: "theme",
+            section: "B",
+            marks: "10",
+            q: "What is ‘State’ under Article 12? Discuss with cases.",
+            outline: ["Quote 12; local vs other authorities; Ajay Hasia / Biswas; one exclusion; why it gates FRs."]
+          }
+        ],
+        check: ["Recite the text’s four buckets.", "Three instrumentality tests.", "One body held not State."]
+      },
+      {
+        id: "c-art13-doctrines",
+        seq: 3.4,
+        readAs: "Kumar — Art. 13; eclipse, severability, waiver",
+        unit: 3,
+        yield: "high",
+        tags: ["article 13", "eclipse", "severability", "waiver", "golaknath"],
+        title: "Article 13 — eclipse, severability, waiver",
+        summary: "Art. 13 is the voiding engine of Part III. Eclipse sleeps a pre-constitutional law; severability cuts the bad clause; waiver of FRs is generally refused.",
+        explainer: `<p><strong>Art. 13(1):</strong> pre-constitutional laws inconsistent with Part III are void to the extent of inconsistency. <strong>13(2):</strong> State shall not make a law taking away/abridging FRs; any such post-constitutional law is void to the extent of contravention. <strong>13(3):</strong> ‘law’ includes ordinance, order, bye-law, rule, regulation, notification, custom or usage. <strong>13(4):</strong> nothing in 13 applies to constitutional amendments (inserted after the Golaknath scare; 24th Amendment). Know the story: <em>Golaknath</em> treated amendments as ‘law’ under 13; 24th Amendment + <em>Kesavananda</em> restored amendment power subject to basic structure, not 13.</p>
+        <p><strong>Doctrine of eclipse:</strong> a pre-constitutional law inconsistent with an FR is not obliterated; it is <em>eclipsed</em> and unenforceable against persons who have the FR. If the shadow moves (amendment of the FR, or a claimant who is not a citizen for a citizen-only right), the law can revive. Classic: <em>Bhikaji Narain Dhakras</em> (pre-constitutional motor nationalisation vs Art. 19; 4th Amendment lifted the eclipse). Post-constitutional laws that violate FRs are stillborn — eclipse language is mainly for pre-1950 laws (exam nuance).</p>
+        <p><strong>Severability:</strong> if the offending part can be cut without rewriting the statute’s scheme, the rest lives (<em>R.M.D. Chamarbaugwala</em> — prize competitions). Tests: can the good stand alone? did the legislature intend a single inseverable scheme? Court will not redraft.</p>
+        <p><strong>Waiver:</strong> FRs are a matter of public policy, not a private bargain. <em>Basheshar Nath v CIT</em> — no waiver of Art. 14 even by a citizen who agreed. Distinguish contractual variation of ordinary rights.</p>
+        <p>2022 CCS asked eclipse &amp; severability in a long question — table them; do not fuse.</p>`,
+        analogy: {
+          title: "Deprecated API vs delete vs user opt-out",
+          body: "Eclipse = feature-flag the old API to sleep while the FR is in force; flip the flag and it can wake. Severability = delete one rotten function, keep the package. Waiver = users cannot opt out of the security policy (FRs)."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["Doctrine", "What it does", "Typical raw material"],
+          rows: [
+            ["Eclipse", "Sleeps pre-1950 law under an FR shadow", "Bhikaji Narain"],
+            ["Severability", "Cuts bad clause; rest lives", "Chamarbaugwala"],
+            ["Waiver", "Citizen cannot bargain away FR", "Basheshar Nath"]
+          ]
+        },
+        mnemonic: {
+          name: "SLEEP / CUT / NO OPT-OUT",
+          hook: "Eclipse sleeps. Severability cuts. Waiver refused.",
+          recite: "13(1) pre; 13(2) post. 13(4) amendments out of 13. Golaknath was the scare; Kesavananda/24th the reset."
+        },
+        cases: [
+          { name: "Bhikaji Narain Dhakras v State of M.P.", citation: "AIR 1955 SC 781", point: "Eclipse." },
+          { name: "R.M.D. Chamarbaugwala v Union of India", citation: "AIR 1957 SC 628", point: "Severability." },
+          { name: "Basheshar Nath v CIT", citation: "AIR 1959 SC 149", point: "No waiver of FRs." },
+          { name: "I.C. Golaknath v State of Punjab", citation: "AIR 1967 SC 1643", point: "Amendments as ‘law’ — later undone as to Art. 13." }
+        ],
+        pyqs: [
+          {
+            year: "2022",
+            section: "C",
+            marks: "20",
+            q: "Doctrine of eclipse and severability.",
+            outline: ["13(1)/(2); eclipse with Bhikaji; severability with tests + Chamarbaugwala; contrast post-constitutional stillborn laws; waiver if time."]
+          }
+        ],
+        check: ["Eclipse vs void ab initio.", "Two severability tests.", "Why 13(4) exists."]
+      },
+      {
+        id: "c-emergency-fr",
+        seq: 3.6,
+        readAs: "Kumar — suspension of FRs (Arts. 358–359)",
+        unit: 3,
+        yield: "high",
+        tags: ["emergency", "358", "359", "44th amendment", "adm jabalpur"],
+        title: "Emergency suspension of Fundamental Rights",
+        summary: "Art. 358 automatically suspends Art. 19 in a war/external-aggression Emergency. Art. 359 can suspend the right to move court — but 20 and 21 stay up after the 44th Amendment.",
+        explainer: `<p><strong>Art. 358:</strong> while a Proclamation of Emergency (Art. 352) on war or external aggression is in operation, Art. 19 does not restrict the State. The 44th Amendment took <em>armed rebellion</em> (internal) off this automatic 19-suspension. Laws and executive actions that would otherwise offend 19 are protected during that window, with savings on when they must end.</p>
+        <p><strong>Art. 359:</strong> the President may declare that the right to move any court for enforcement of specified FRs remains suspended. This is about the <em>remedy</em>, not a magical deletion of the right’s existence. <strong>44th Amendment:</strong> Arts. <strong>20 and 21 cannot be suspended</strong> under 359. That is the post-Emergency lock. Name it every time.</p>
+        <p><strong>ADM Jabalpur v Shivkant Shukla</strong> (1976) — habeas corpus during Emergency: majority held even 21 could not be moved. Khanna J. dissented. The 44th Amendment is the political answer; <em>Puttaswamy</em> later recorded that ADM Jabalpur was wrongly decided. Write remorse + lock, not a defence of the majority.</p>
+        <p><strong>Arts. 33–34:</strong> Parliament may restrict FRs of armed forces / forces charged with public order, and provide indemnity in martial-law areas. Different machine from 358/359.</p>
+        <p>Dec 2024 short note: “Conditions for suspension of FRs.” Spine: 352 types; 358 vs 359; 44th; 20/21; ADM Jabalpur one line.</p>`,
+        analogy: {
+          title: "Maintenance window with two services pinned up",
+          body: "358 is an automatic feature-flag that turns off the Art. 19 firewall during an external-war incident. 359 is a ticket that closes the helpdesk (court access) for listed FRs. 44th Amendment pinned Arts. 20 and 21 so they cannot be taken down even in incident response. ADM Jabalpur was the outage post-mortem."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Art. 358", "Art. 359"],
+          rows: [
+            ["What suspends", "Art. 19 itself (auto)", "Right to move court for listed FRs"],
+            ["Trigger", "352 war / external aggression (post-44th)", "Presidential order"],
+            ["20 & 21", "Not this article’s subject", "Cannot be suspended (44th)"]
+          ]
+        },
+        mnemonic: {
+          name: "358=19 AUTO · 359=COURT · 20/21 LOCK",
+          hook: "Khanna J. + 44th Amendment.",
+          recite: "Internal armed rebellion does not auto-kill 19 after 44th. Never write ADM Jabalpur as good law."
+        },
+        cases: [
+          { name: "ADM Jabalpur v Shivkant Shukla", citation: "(1976) 2 SCC 521", point: "Overruled in substance; 44th locked 20/21." },
+          { name: "K.S. Puttaswamy v Union of India", citation: "(2017) 10 SCC 1", point: "Expressly records ADM Jabalpur as wrong." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "A",
+            marks: "4",
+            q: "Conditions for suspension of FRs.",
+            outline: ["358 vs 359; 44th; 20 & 21 unsuspendable; war/external vs internal."]
+          }
+        ],
+        check: ["358 vs 359 in a table.", "Which FRs cannot be suspended.", "ADM Jabalpur status in 2026."]
+      },
+      {
+        id: "c-14-classification",
+        seq: 4.2,
+        readAs: "Kumar — Art. 14 reasonable classification",
+        unit: 3,
+        yield: "high",
+        tags: ["article 14", "intelligible differentia", "nexus", "royappa"],
+        title: "Article 14 — reasonable classification (intelligible differentia)",
+        summary: "Equals must be treated equally. Classification is allowed if there is an intelligible differentia and a rational nexus to the object. Royappa adds: no arbitrariness.",
+        explainer: `<p><strong>Two limbs:</strong> equality before the law (Dicey — no special privileges) and equal protection of the laws (US — equal treatment of equals). The State may classify. The old test (<em>State of W.B. v Anwar Ali Sarkar</em>; <em>Hanif Quareshi</em>):</p>
+        <ol>
+          <li><strong>Intelligible differentia</strong> — the class is marked by a real, understandable distinction (not a lottery of names).</li>
+          <li><strong>Rational nexus</strong> — that distinction must have a reasonable relation to the object of the statute.</li>
+        </ol>
+        <p>Under-inclusive / over-inclusive statutes can still fail. Special courts, taxing entries, and service rules are the usual fact-patterns. <strong>New doctrine:</strong> equality is antithetic to arbitrariness (<em>E.P. Royappa</em>, <em>Maneka</em>, <em>Ajay Hasia</em>). Even a ‘classified’ rule dies if it is a naked whim. Write both tests in a 20-marker; they stack.</p>
+        <p><strong>What 14 is not:</strong> a promise of identical treatment of unequals. Reservation fights live mainly in 15–16, but 14’s reasonableness remains the brake. Foreigners can claim 14 (and 21); 19 is citizen-centric.</p>
+        <p>Exam: define; two limbs; two-step classification; Royappa; one pass and one fail illustration; close with non-arbitrariness as the Indian upgrade.</p>`,
+        analogy: {
+          title: "Classifier with a documented objective",
+          body: "A feature flag is legal only if (1) the cohort is defined by a real field (intelligible differentia) and (2) that field is there for a bona fide product objective (nexus). Royappa is the WAF that kills flags created because a PM was in a mood."
+        },
+        diagram: {
+          type: "flow",
+          steps: ["Is there a class?", "Intelligible differentia?", "Nexus to object?", "Non-arbitrary (Royappa)?", "Survive 14"]
+        },
+        mnemonic: {
+          name: "DIFF + NEXUS + NOT WHIM",
+          hook: "Anwar Ali / Hanif classification; Royappa anti-arbitrary.",
+          recite: "14 allows reasonable classification, not unreasonable class legislation. Foreigners get 14."
+        },
+        cases: [
+          { name: "State of W.B. v Anwar Ali Sarkar", citation: "AIR 1952 SC 75", point: "Special courts — classification must not be arbitrary." },
+          { name: "E.P. Royappa v State of T.N.", citation: "(1974) 4 SCC 3", point: "Equality = antithesis of arbitrariness." },
+          { name: "Maneka Gandhi v Union of India", citation: "(1978) 1 SCC 248", point: "14–19–21 gold triangle; fairness." }
+        ],
+        pyqs: [
+          {
+            year: "2022",
+            section: "C",
+            marks: "20",
+            q: "Equality before law.",
+            outline: ["Two limbs; classification test; Royappa; cases; reservation pointer to 15–16."]
+          }
+        ],
+        check: ["Two limbs of 14.", "Two steps of classification.", "Royappa in one sentence."]
+      },
+      {
+        id: "c-15-16-reservation",
+        seq: 4.4,
+        readAs: "Kumar — Arts. 15–16 reservation (Indra Sawhney / Janhit / EWS)",
+        unit: 3,
+        yield: "high",
+        tags: ["reservation", "indra sawhney", "janhit", "ews", "creamy layer"],
+        title: "Articles 15–16 — reservation, Indra Sawhney, EWS / Janhit",
+        summary: "15–16 are the enabling engines of group justice. Indra Sawhney is the OS. 103rd Amendment EWS was upheld in Janhit Abhiyan 2022. Dec 2024 set a 20-marker on reservation policy.",
+        explainer: `<p><strong>15(1):</strong> no discrimination on religion, race, caste, sex, place of birth. <strong>15(3)–(6):</strong> special provisions for women/children; SEBCs/SCs/STs; 15(6) EWS. <strong>16(1):</strong> equality of opportunity in public employment. <strong>16(4):</strong> enabling provision for backward classes not adequately represented — a facet of equality, not its enemy (<em>Indra Sawhney</em>).</p>
+        <p><strong>Indra Sawhney (1992) payload (write as a list):</strong> 16(4) is enabling; caste can be a start for identifying backwardness among other indicators; 50% ceiling as a general rule (extraordinary situations apart); creamy layer exclusion for OBCs; no reservation in promotions (as original holding); no reservation in purely merit-super-speciality pockets as stated; carry-forward must still respect the ceiling in spirit. Later: 77th/85th Amendments + <em>M. Nagaraj</em> / <em>Jarnail Singh</em> for SC/ST promotions (creamy layer for SC/ST in promotions; no need to collect ‘backwardness’ data again in the Nagaraj sense as refined).</p>
+        <p><strong>EWS — 103rd Amendment, Art. 15(6)/16(6):</strong> up to 10% for economically weaker sections other than classes in 15(4)/16(4). <em>Janhit Abhiyan v Union of India</em> (2022) upheld it (majority); dissents worried about exclusion of SCs/STs/OBCs from the EWS pool and the 50% ceiling. For CCS: name the amendment, the 10% cap, that it is economic, and that the Court split.</p>
+        <p><strong>Ladder if the question is a full essay:</strong> <em>Champakam</em> → 1st Amendment (15(4)) → <em>Balaji</em> (50% idea) → <em>Devadasan</em> carry-forward → <em>N.M. Thomas</em> → <em>Indra Sawhney</em> → Nagaraj/Jarnail → EWS/Janhit. Conclude with 14’s reasonableness as the continuing brake.</p>`,
+        analogy: {
+          title: "Affirmative-action feature flags",
+          body: "15(4)/16(4) are documented feature flags for representation, not rogue forks of 14. Creamy layer is an exclusion filter so the flag hits the intended cohort. EWS is a separate economic flag with a 10% budget. 50% is the default quota budget; courts treat overruns as incidents."
+        },
+        diagram: {
+          type: "flow",
+          steps: ["Champakam / 1st Amd", "Balaji ceiling idea", "Indra Sawhney OS", "Nagaraj / Jarnail promotions", "103rd EWS / Janhit"]
+        },
+        mnemonic: {
+          name: "50% + CREAMY + EWS 10%",
+          hook: "Sawhney is the kernel. Janhit = 103rd upheld.",
+          recite: "16(4) enables. Creamy layer for OBCs. Promotions are a later statutory/judicial saga. EWS is economic and exclusive of 15(4) classes."
+        },
+        cases: [
+          { name: "Indra Sawhney v Union of India", citation: "(1992) Supp (3) SCC 217", point: "Mandal OS — ceiling, creamy layer, 16(4) nature." },
+          { name: "M. Nagaraj v Union of India", citation: "(2006) 8 SCC 212", point: "Promotion reservations — constitutional amendments upheld with conditions." },
+          { name: "Janhit Abhiyan v Union of India", citation: "(2023) 5 SCC 1", point: "EWS 103rd Amendment upheld." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "C",
+            marks: "20",
+            q: "Critically examine reservation policy with cases.",
+            outline: ["15–16 text; Sawhney list; promotions footnote; EWS/Janhit; 14 as brake; one critique (efficiency / exclusion debates) without a rant."]
+          }
+        ],
+        check: ["Four Indra Sawhney holdings.", "What 103rd added.", "Creamy layer: OBC vs SC/ST promotions nuance."]
+      },
+      {
+        id: "c-19-suite",
+        seq: 5.2,
+        readAs: "Kumar — Art. 19 suite (CCS lists only 19(1)(a); exam traps)",
+        unit: 3,
+        yield: "high",
+        tags: ["article 19", "freedoms", "reasonable restrictions"],
+        title: "Article 19 other freedoms — exam traps beside 19(1)(a)",
+        summary: "CCS Sem-1 names only 19(1)(a). Still know 19(1)(b)–(g) in one page so a restriction question or a ‘freedoms’ short note does not ambush you.",
+        explainer: `<p><strong>Official syllabus lists 19(1)(a) only.</strong> A 20-marker on speech/press should stay there. This card is the trap-sheet.</p>
+        <p><strong>19(1) suite:</strong> (a) speech and expression; (b) assembly; (c) association; (d) movement; (e) residence; (g) profession/occupation/trade/business. (f) property was deleted (44th). All are <strong>citizen</strong> rights. Each has its own restriction clause 19(2)–(6) — you cannot import 19(2) grounds into 19(6) or vice versa. That is the classic trap.</p>
+        <p><strong>Assembly (b)/(3):</strong> peaceful, without arms; restrictions for sovereignty/integrity and public order. <strong>Association (c)/(4):</strong> plus morality. <strong>Movement/residence (d)(e)/(5):</strong> interests of general public or protection of any scheduled tribe. <strong>Profession (g)/(6):</strong> reasonable restrictions in the interests of the general public, plus professional qualifications, plus State monopoly (nationalisation) — <em>19(6)</em> is how banks/coal/schools get special treatment.</p>
+        <p><strong>Reasonable restrictions:</strong> not just ‘named ground’ but proportional, not arbitrary (<em>Chintaman Rao</em>; post-Maneka reasonableness). Prior restraint on speech is especially suspect; profession licences must not be a monopoly of a private guild without 19(6) cover.</p>
+        <p><strong>What to do in the hall:</strong> if the question is press/speech, do not dump (b)–(g). If it says “freedoms under Art. 19,” list all, then develop (a) and one other. If it is a problem on a trade ban, you are in (g)/(6), not (a)/(2).</p>`,
+        analogy: {
+          title: "Six ports, six firewall rule-sets",
+          body: "Each 19(1) freedom is a port. Each 19(2)–(6) is a dedicated firewall ACL. Copy-pasting the speech ACL onto a trade port is a misconfiguration — and examiners hunt it."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["Freedom", "Clause", "Restriction article"],
+          rows: [
+            ["Speech/expression (press)", "(a)", "19(2)"],
+            ["Assembly", "(b)", "19(3)"],
+            ["Association", "(c)", "19(4)"],
+            ["Move / reside", "(d)(e)", "19(5)"],
+            ["Profession / trade", "(g)", "19(6) + State monopoly"]
+          ]
+        },
+        mnemonic: {
+          name: "S-A-A-M-R-P",
+          hook: "Speech Assembly Association Move Reside Profession. Property gone. Restrictions are clause-specific.",
+          recite: "Citizens only. Do not apply 19(2) to a shop-ban problem."
+        },
+        cases: [
+          { name: "Chintaman Rao v State of M.P.", citation: "AIR 1951 SC 118", point: "Reasonable restrictions — not arbitrary." },
+          { name: "Excel Wear v Union of India", citation: "(1978) 4 SCC 224", point: "19(1)(g) / restriction on closing business — flavour of profession freedom." }
+        ],
+        pyqs: [
+          {
+            year: "2022",
+            section: "C",
+            marks: "20",
+            q: "Freedoms under speech + restrictions.",
+            outline: ["Stay on 19(1)(a)/19(2) if that is the paper; one line that other freedoms exist with their own clauses."]
+          }
+        ],
+        check: ["List 19(1)(a)–(g) skipping (f).", "Match each to 19(2)–(6).", "State monopoly lives in 19(6)."]
+      },
+      {
+        id: "c-21-privacy",
+        seq: 7.2,
+        readAs: "Kumar — Art. 21 expansion (privacy, dignity, livelihood)",
+        unit: 3,
+        yield: "high",
+        tags: ["article 21", "puttaswamy", "privacy", "dignity", "livelihood"],
+        title: "Article 21 — privacy (Puttaswamy), dignity, livelihood",
+        summary: "After Maneka, 21 is a package manager. Three installs every CCS 20-marker should name: dignity, livelihood, privacy (Puttaswamy 2017).",
+        explainer: `<p><strong>Dignity:</strong> <em>Francis Coralie Mullin</em> — life is not mere animal existence; it includes dignity and the bare necessaries (and, in that case, a detenu’s right to meet family/lawyer). Dignity is the moral kernel that lets 21 absorb later rights without looking random.</p>
+        <p><strong>Livelihood:</strong> <em>Olga Tellis v Bombay Municipal Corporation</em> — pavement dwellers; the right to life includes the right to livelihood, because no person can live without the means of living. It is not an absolute right to a particular pavement; procedure to evict must still be just and fair. Pair with <em>Board of Trustees, Port of Bombay v Dilipkumar</em> / employment cases only if the question is service-flavoured.</p>
+        <p><strong>Privacy — K.S. Puttaswamy (2017) nine-judge:</strong> privacy is a fundamental right, intrinsic to 21 (and 14/19). Overrules the <em>M.P. Sharma</em> / <em>Kharak Singh</em> majority lines that denied a constitutional privacy right. Informational privacy, bodily autonomy, and the privacy of choice are in the holding’s gravitational field. Tests later used for the Aadhaar follow-on: legality, legitimate aim, proportionality. For Sem-1: name the bench size, the overruled cases, and that ADM Jabalpur was branded wrongly decided. Do not write a full Aadhaar dissertation unless asked.</p>
+        <p><strong>Preventive detention interface:</strong> Art. 22 is the special code (grounds, advisory board, 3-month rule). 21 still demands that the procedure be fair — post-Maneka you do not treat 22 as a complete code that ousts 21 (<em>Francis Coralie</em> was a detention case). 44th Amendment: 21 cannot be suspended in Emergency. If a PYQ is detention-heavy, open 22, then 21 dignity, then 44th lock.</p>
+        <p>Dec 2024 20-marker: expanding horizons of life and personal liberty — this card is the second half after Maneka.</p>`,
+        analogy: {
+          title: "Three packages on the 21 registry",
+          body: "Dignity is the core runtime. Livelihood is the I/O driver (no process lives without resources). Privacy is the memory-isolation guarantee — Puttaswamy made it a first-class syscall, not a courtesy flag."
+        },
+        diagram: {
+          type: "tree",
+          root: "Art. 21 post-Maneka",
+          branches: ["Dignity (Francis Coralie)", "Livelihood (Olga Tellis)", "Privacy (Puttaswamy)", "Environment / health / shelter (as asked)"]
+        },
+        mnemonic: {
+          name: "D-L-P",
+          hook: "Dignity · Livelihood · Privacy. Nine judges in 2017.",
+          recite: "Puttaswamy overrules Sharma/Kharak on ‘no privacy FR.’ 21 unsuspendable. 22 is detention procedure, not a 21 killer."
+        },
+        cases: [
+          { name: "Francis Coralie Mullin v UT of Delhi", citation: "(1981) 1 SCC 608", point: "Dignity; life ≠ animal existence." },
+          { name: "Olga Tellis v BMC", citation: "(1985) 3 SCC 545", point: "Livelihood." },
+          { name: "K.S. Puttaswamy v Union of India", citation: "(2017) 10 SCC 1", point: "Privacy FR; nine-judge." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "C",
+            marks: "20",
+            q: "Expanding horizons of Right to Life and Personal Liberty with cases.",
+            outline: ["Gopalan→Maneka; dignity; livelihood; privacy; one more (environment or health); 20/21 lock."]
+          }
+        ],
+        check: ["Francis Coralie one-liner.", "Olga Tellis holding with the eviction caveat.", "Puttaswamy: bench size + what it overruled."]
+      },
+      {
+        id: "c-32-writs",
+        seq: 12.2,
+        readAs: "Kumar — Art. 32 writ types",
+        unit: 3,
+        yield: "high",
+        tags: ["article 32", "writs", "habeas", "mandamus", "certiorari", "pil"],
+        title: "Writs under Article 32 — HMPCQ",
+        summary: "32 is itself an FR: the right to move the Supreme Court. Five writs: habeas, mandamus, prohibition, certiorari, quo warranto. PIL is standing-liberalisation, not a sixth writ.",
+        explainer: `<p><strong>Habeas corpus</strong> — produce the body; illegal detention. Emergency memory: ADM Jabalpur. <strong>Mandamus</strong> — command a public authority to perform a public duty (not to a private body as such; not to the President/Governor in some classic holdings; not to enforce a merely contractual duty). <strong>Prohibition</strong> — stop an inferior court/tribunal from exceeding jurisdiction (preventive). <strong>Certiorari</strong> — quash an already-made order of an inferior court/tribunal for want/excess of jurisdiction or error of law apparent (curative). <strong>Quo warranto</strong> — by what authority do you hold this public office? (usurper of an office created by law).</p>
+        <p><strong>Prohibition vs certiorari</strong> is the stock table: before vs after the order; both need a judicial/quasi-judicial body. Mandamus can go to administrative authorities for public duties. Habeas is liberty. Quo warranto is title to office.</p>
+        <p><strong>32 vs 226:</strong> 32 is an FR, only SC, only Part III (plus the Court’s later public-law expansion via PIL). 226 is wider (legal rights, not only FRs), High Courts, discretionary. You cannot abdicate 32 because 226 exists (<em>Romesh Thappar</em> flavour: 32 is a guaranteed remedy). <em>A.K. Gopalan</em> era compactness is gone; PIL letters, epistolary jurisdiction (<em>S.P. Gupta</em>, <em>Bandhua</em>) — Dec 2024 “floodgate” critique: write access for the voiceless <em>and</em> docket/separation-of-powers costs.</p>`,
+        analogy: {
+          title: "Five admin tools on the guarantor port",
+          body: "Habeas = rescue a killed process from an illegal jail. Mandamus = force a service to run its documented public job. Prohibition = SIGSTOP a tribunal acting out of scope. Certiorari = revert a bad commit. Quo warranto = who has root on this public box?"
+        },
+        diagram: {
+          type: "compare",
+          headers: ["Writ", "Job", "Typical target"],
+          rows: [
+            ["Habeas corpus", "Release illegal detention", "Police / exec detaining"],
+            ["Mandamus", "Do your public duty", "Public authority"],
+            ["Prohibition", "Stop excess jurisdiction", "Inferior court (pending)"],
+            ["Certiorari", "Quash excess / error of law", "Inferior court (done)"],
+            ["Quo warranto", "Title to public office", "Usurper"]
+          ]
+        },
+        mnemonic: {
+          name: "HMPCQ",
+          hook: "Habeas Mandamus Prohibition Certiorari Quo warranto.",
+          recite: "32 is an FR. 226 is wider. PIL liberalises standing, it is not a sixth writ."
+        },
+        cases: [
+          { name: "Romesh Thappar v State of Madras", citation: "AIR 1950 SC 124", point: "32 as guaranteed remedy." },
+          { name: "S.P. Gupta v Union of India", citation: "AIR 1982 SC 149", point: "PIL standing." },
+          { name: "Bandhua Mukti Morcha v Union of India", citation: "(1984) 3 SCC 161", point: "Epistolary / bonded labour." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "C",
+            marks: "20",
+            q: "PIL has opened a floodgate as constitutional remedy — Explain with cases.",
+            outline: ["32 text; five writs in a box; PIL standing cases; floodgate critique; 226 contrast."]
+          }
+        ],
+        check: ["HMPCQ with one line each.", "Prohibition vs certiorari.", "32 vs 226."]
+      },
+      {
+        id: "c-fr-dpsp-cases",
+        seq: 13.2,
+        readAs: "Kumar — FR vs DPSP case ladder",
+        unit: 4,
+        yield: "high",
+        tags: ["dpsp", "champakam", "golaknath", "kesavananda", "minerva mills"],
+        title: "FR vs DPSP — Champakam, Golaknath, Kesavananda, Minerva Mills",
+        summary: "The relationship essay is a case-ladder, not a sermon. Four names carry most of the marks: Champakam, Golaknath, Kesavananda, Minerva Mills.",
+        explainer: `<p><strong>Champakam Dorairajan (1951):</strong> communal communal GO vs Art. 29/15. DPSPs cannot override FRs; 37 says DPSPs are not enforceable. Political answer: <strong>1st Amendment</strong> (Art. 15(4)). Lesson: early Court treated Part III as trumps.</p>
+        <p><strong>Golaknath (1967):</strong> Parliament cannot abridge FRs by amendment — amendments are ‘law’ under 13. This is the FR-entrenchment high-water. Political answer: 24th Amendment. Not primarily a DPSP case, but it is the next rung whenever you narrate “can Parliament recast rights to implement Directives?”</p>
+        <p><strong>Kesavananda Bharati (1973):</strong> Parliament can amend any part, including FRs, but cannot damage the <strong>basic structure</strong>. 13(4)/24th survive; Golaknath’s absolute freeze dies. DPSPs can be pursued through amendment, but not by destroying the Constitution’s identity (judicial review, democracy, secularism, limited amendment power…).</p>
+        <p><strong>Minerva Mills (1980):</strong> 42nd Amendment’s attempt to give DPSPs (all of them, via an expanded 31C) immunity and to exclude judicial review of amendments (368 clauses) struck. Harmony: FRs and DPSPs are two wheels; to destroy FRs in the name of Directives is to destroy the basic structure. 31C limited to 39(b)(c) as originally conceived survives in the Kesavananda frame.</p>
+        <p><strong>After:</strong> courts interpret FRs in the light of Directives (environment, education, equal pay). 21A is the rare Directive that became an FR. Write this as implementation-by-interpretation, not Champakam revenge.</p>
+        <p>Dec 2024 10-marker: relationship with cases — this ladder is the whole answer.</p>`,
+        analogy: {
+          title: "Two branches, one merge policy",
+          body: "Champakam: FR branch always wins the merge. Golaknath: freeze the FR branch. Kesavananda: you may merge, but not delete the repo’s architecture. Minerva Mills: you may not force-merge all DPSP commits with review disabled."
+        },
+        diagram: {
+          type: "flow",
+          steps: ["Champakam: FR > DPSP", "1st Amd 15(4)", "Golaknath: freeze FRs", "Kesavananda: amend but basic structure", "Minerva Mills: harmony, not DPSP autocracy"]
+        },
+        mnemonic: {
+          name: "C-G-K-M",
+          hook: "Champakam · Golaknath · Kesavananda · Minerva.",
+          recite: "Trump → freeze → limited amend → two wheels. 31C is a 39(b)(c) shield, not a DPSP dictatorship."
+        },
+        cases: [
+          { name: "State of Madras v Champakam Dorairajan", citation: "AIR 1951 SC 226", point: "FR over DPSP; 1st Amendment follows." },
+          { name: "I.C. Golaknath v State of Punjab", citation: "AIR 1967 SC 1643", point: "Amendments cannot take FRs — later recast." },
+          { name: "Kesavananda Bharati v State of Kerala", citation: "(1973) 4 SCC 225", point: "Basic structure." },
+          { name: "Minerva Mills v Union of India", citation: "(1980) 3 SCC 625", point: "Harmony; 42nd overreach struck." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "B",
+            marks: "10",
+            q: "Relationship between FRs and DPSPs with cases.",
+            outline: ["37; C-G-K-M ladder; interpretive use today; 21A as the converted Directive."]
+          }
+        ],
+        check: ["Champakam holding + political sequel.", "Kesavananda in one sentence.", "Minerva Mills: what was struck."]
+      },
+      {
+        id: "c-300a",
+        seq: 14.2,
+        readAs: "Kumar — right to property after 44th (exam-adjacent bridge)",
+        unit: 5,
+        yield: "high",
+        tags: ["300a", "property", "44th amendment", "19(1)(f)", "31"],
+        title: "Article 300A — right to property (bridge card)",
+        summary: "44th Amendment deleted 19(1)(f) and 31; inserted 300A. Property is a constitutional legal right, not a Fundamental Right. 2022 shorts still poke it.",
+        explainer: `<p><strong>Old law (must narrate in four lines):</strong> Art. <strong>19(1)(f)</strong> was the FR to acquire, hold and dispose of property, with 19(5) restrictions. Art. <strong>31</strong> was the compensation/acquisition chapter — the political battlefield of zamindari, bank nationalisation, and <em>Kesavananda</em>. Property as an FR let people move the Supreme Court under 32 against acquisition statutes.</p>
+        <p><strong>44th Amendment, 1978:</strong> 19(1)(f) and 31 were omitted. <strong>Art. 300A</strong> was inserted in Part XII: “No person shall be deprived of his property save by authority of law.” That is a <em>constitutional</em> right (you can still go to a High Court under 226, and the provision binds the State), but it is <strong>not a Fundamental Right</strong>. Consequences: (1) no Art. 32 as of right for a pure 300A claim; (2) Parliament’s amendment story is different from Part III; (3) “authority of law” still kills executive confiscation without a statute (<em>Bishambhar Dayal Chandra Mohan</em> flavour — executive instructions are not enough); (4) the law must not be a fraud on power / manifestly arbitrary (later 14/21 overlay in acquisition cases — <em>K.T. Plantation</em>, <em>Vidya Devi</em>: even after 300A, the State cannot grab without legal authority and, in many settings, without compensation that is not a farce).</p>
+        <p><strong>What 300A is not:</strong> it is not a revival of 31(2)’s old compensation formula. It is not an FR. It is not a licence for the District Magistrate to tweet your land away. For Sem-1: this card exists because 2022-style shorts asked property after the 44th, and because a 19(1)(a) student sometimes invents 19(1)(f) as if it still lived. Official CCS FR list for K-1002 does <em>not</em> include 300A — treat it as insurance, not as a 20-marker home.</p>`,
+        analogy: {
+          title: "Demoted from SSO to ordinary ACL",
+          body: "19(1)(f)/31 were on the Part III SSO — Art. 32 as the password-reset. 300A is still a constitutional ACL (no deprivation without a statute) but it is no longer in the SSO directory. 226 still SSHes in; 32 does not open for this claim alone."
+        },
+        diagram: {
+          type: "flow",
+          steps: ["19(1)(f) + 31 as FRs", "44th Amendment deletes them", "300A: deprivation only by authority of law", "226 yes; 32 no; compensation is statute-shaped"]
+        },
+        mnemonic: {
+          name: "44th DEMOTED PROPERTY",
+          hook: "300A = law first, not an FR. 19(1)(f) is dead.",
+          recite: "Authority of law; no executive taking. Do not write 19(1)(f) as current FR."
+        },
+        cases: [
+          { name: "K.T. Plantation Pvt. Ltd. v State of Karnataka", citation: "(2011) 9 SCC 1", point: "300A is a constitutional right; acquisition still needs a valid law; compensation context." },
+          { name: "Vidya Devi v State of Himachal Pradesh", citation: "(2020) 2 SCC 569", point: "State cannot take without authority of law; 300A has real teeth against grabbing." }
+        ],
+        pyqs: [
+          { year: "2022", section: "A", marks: "4", q: "Right to property / Art. 300A.", outline: ["44th; 19(1)(f) & 31 gone; 300A text; FR vs constitutional right; 32 vs 226."] }
+        ],
+        check: ["What the 44th deleted.", "300A one-liner.", "Why it is not an FR."]
+      },
     ]
   };
 })(window);

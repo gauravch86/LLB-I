@@ -39,7 +39,7 @@
     ["Kidnapping", "IPC 359–363", "BNS 137", "From India / from lawful guardianship"],
     ["Abduction", "IPC 362", "BNS 138", "Force or deceit; continuing offence"],
     ["Theft", "IPC 378/379", "BNS 303", "Movable + dishonest + possession + moving"],
-    ["Snatching (new)", "—", "BNS 304", "BNS innovation — know the delta"],
+    ["Snatching (new)", "—", "BNS 304", "BNS innovation — dedicated topic card"],
     ["Extortion", "IPC 383/384", "BNS 308", "Fear of injury → delivery"],
     ["Robbery", "IPC 390", "BNS 309", "Theft or extortion + violence/fear"],
     ["Dacoity", "IPC 391/395", "BNS 310", "Robbery by five or more"],
@@ -47,8 +47,8 @@
     ["Sedition → sovereignty", "IPC 124A", "BNS 152", "Do not paste old 124A essays blindly"],
     ["Bigamy", "IPC 494", "BNS 82", "Marrying again during lifetime"],
     ["Adultery", "IPC 497", "Omitted", "Joseph Shine (2018) + BNS silence"],
-    ["Dowry death", "IPC 304B", "BNS 80", "Appears on some BNS PYQs"],
-    ["Stalking", "IPC 354D", "BNS 78", "Appeared in Dec 2024 BNS short notes"]
+    ["Dowry death", "IPC 304B", "BNS 80", "Dec 2024 20-marker — dedicated topic card"],
+    ["Stalking", "IPC 354D", "BNS 78", "Dec 2024 short — dedicated topic card"]
   ];
 
   function bnsTable() {
@@ -127,7 +127,7 @@
       return `<article class="topic" id="topic-publishers" data-jump="publishers">
         <p class="kicker">Gaurav’s shelf · then Unique drill · then extras</p>
         <h1>Primary textbooks, exam drill, secondary refs</h1>
-        <p class="lede">The five books below are the <strong>authoritative physical shelf</strong> this site tracks for structure, landmark cases, and depth. Read the matching chapter there; this website is original teaching prose (syllabus + bare acts + public case law + PYQ themes). It does not reproduce those textbooks or Unique/Nitin Q&amp;A.</p>
+        <p class="lede">The five books below are the <strong>authoritative physical shelf</strong> this site tracks for structure, landmark cases, and depth. Read the matching chapter there; this website is original teaching prose (syllabus + bare acts + public case law + PYQ themes). It does not reproduce those textbooks or Unique/Nitin Q&amp;A. Track new content in <button type="button" class="text-link" data-nav="logbook">Logbook</button>.</p>
 
         <h2 class="section-title">1. Primary textbooks (buy / use)</h2>
         <table class="compare">

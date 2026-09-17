@@ -56,7 +56,16 @@
     return { page: page || "overview", id: id || "" };
   }
 
-  const EXTRA_DEFAULTS = { overview: "dash", strategy: "method", resources: "publishers" };
+  const EXTRA_DEFAULTS = { overview: "dash", strategy: "method", resources: "publishers", logbook: "all" };
+  const LOG_FILTERS = [
+    ["all", "All"],
+    ["k1001", "Jurisprudence"],
+    ["k1002", "Constitution"],
+    ["k1003", "Torts + CPA"],
+    ["k1004", "Crimes"],
+    ["k1005", "Contract"],
+    ["site", "Site"]
+  ];
   let scrollToken = 0;
 
   function headerOffset() {
@@ -90,6 +99,10 @@
     if (page === "overview") return !!document.getElementById("topic-dash");
     if (page === "resources") return !!document.getElementById("topic-publishers");
     if (page === "strategy") return !!document.getElementById("topic-method");
+    if (page === "logbook") {
+      const el = document.getElementById("topic-logbook");
+      return !!(el && el.getAttribute("data-jump") === (parseHash().id || "all"));
+    }
     const paper = papers[page];
     if (!paper) return false;
     const first = sortedTopics(paper)[0];
@@ -167,6 +180,7 @@
       { id: "k1003", label: "Torts + CPA", small: "K-1003" },
       { id: "k1004", label: "Crimes · BNS", small: "K-1004" },
       { id: "k1005", label: "Contract-I", small: "K-1005" },
+      { id: "logbook", label: "Logbook", small: "What’s new" },
       { id: "strategy", label: "Exam strategy", small: "Dec 2026" },
       { id: "resources", label: "Resources", small: "Books + YT" }
     ];
@@ -184,7 +198,8 @@
     const paper = papers[page];
     filterRow.innerHTML = "";
     if (!paper) {
-      sidebarTitle.textContent = page === "resources" ? "Shelf" : page === "strategy" ? "Plan" : "Navigate";
+      sidebarTitle.textContent =
+        page === "resources" ? "Shelf" : page === "strategy" ? "Plan" : page === "logbook" ? "Logbook" : "Navigate";
       const extras =
         page === "resources"
           ? [
@@ -199,13 +214,15 @@
                 ["answers", "Answer formula"],
                 ["heatmap", "PYQ heatmap"]
               ]
-            : [
-                ["dash", "Dashboard"],
-                ["papers", "Five papers"],
-                ["countdown", "Dec 2026"],
-                ["heatmap", "PYQ heatmap"],
-                ["coverage", "Syllabus map"]
-              ];
+            : page === "logbook"
+              ? LOG_FILTERS
+              : [
+                  ["dash", "Dashboard"],
+                  ["papers", "Five papers"],
+                  ["countdown", "Dec 2026"],
+                  ["heatmap", "PYQ heatmap"],
+                  ["coverage", "Syllabus map"]
+                ];
       topicNav.innerHTML = extras
         .map(
           ([eid, label]) =>
@@ -331,7 +348,7 @@
     return `<section class="hero" id="topic-dash" data-jump="dash">
       <p class="kicker">Gaurav · Engineer → advocate track</p>
       <h2>Five papers, one operating system</h2>
-      <p class="lede">CCS University Meerut LL.B. 3-year Semester 1. HLM College, Ghaziabad. Target window: December 2026. Tone: systems, decision trees, comparison tables — not textbook sludge.</p>
+      <p class="lede">CCS University Meerut LL.B. 3-year Semester 1. HLM College, Ghaziabad. Target window: December 2026. Tone: systems, decision trees, comparison tables — not textbook sludge. Track new content in <button type="button" class="text-link" data-nav="logbook">Logbook</button>.</p>
       <div class="stat-row">
         <div class="stat"><b>${days}</b>days to Dec 2026 window</div>
         <div class="stat"><b>${n}/${t}</b>topics sealed</div>
@@ -384,18 +401,65 @@
     </section>
     <section class="panel" id="topic-coverage" data-jump="coverage">
       <h2 class="display">Official CCS Sem-1 map (nothing extra required)</h2>
-      <p>Checked against the <a href="https://cdn.ccsuniversity.ac.in/public/pdf/2025/08/2%20llb%20syllabus.pdf" target="_blank" rel="noopener">CCS LL.B. syllabus PDF (Aug 2025 CDN)</a>, papers K-1001–K-1005. Every numbered unit is on this site. A few sub-bullets are nested inside a parent topic rather than given their own left-nav row.</p>
+      <p>Checked against the <a href="https://cdn.ccsuniversity.ac.in/public/pdf/2025/08/2%20llb%20syllabus.pdf" target="_blank" rel="noopener">CCS LL.B. syllabus PDF (Aug 2025 CDN)</a>, papers K-1001–K-1005. Every numbered unit is on this site. A second wave of <strong>mid-grain PYQ cards</strong> (distinctions, ingredients lists, case ladders) now has its own left-nav rows so a 10-marker is not buried inside a school/chapter essay.</p>
       <table class="compare">
         <thead><tr><th>Paper</th><th>Official unit</th><th>On this site</th></tr></thead>
         <tbody>
-          <tr><td>K-1001</td><td>Intro; Natural (Stammler/Kohler); Analytical (Austin/Kelsen/Hart); Historical (Savigny/Maine); Sociological (Pound/Duguit); American Realism; Marxist economic</td><td>7 sidebar topics — full match</td></tr>
-          <tr><td>K-1002</td><td>Nature (federal + form of govt); Preamble; FR general; 14–18; 19(1)(a); 20; 21; 21A; 23–24; 25–28; 29–30; 32; DPSP; Duties</td><td>14 sidebar topics — full match. CCS lists only <em>19(1)(a)</em>, not 19(1)(b)–(g)</td></tr>
-          <tr><td>K-1003</td><td>Intro (incl. damnum/injuria, mental element, parties, strict/absolute); justifications; vicarious/State/joint; negligence, nuisance, trespass, defamation; CPA consumer / service / enforcement</td><td>9 topics. Strict/absolute also has its own Bangia-style chapter. “Who may sue” sits inside the intro topic</td></tr>
-          <tr><td>K-1004</td><td>General principles; inchoate; general exceptions; body; property; State/public tranquility; marriage (bigamy/adultery)</td><td>8 topics. Hurt/kidnap/assault etc. share one body chapter. Official PDF still says IPC; site teaches <strong>BNS first</strong> with IPC map (Dec 2024/25 papers title BNS)</td></tr>
-          <tr><td>K-1005</td><td>Purpose/scope; proposal; consideration/privity; lawful object; capacity/restitution; consent; standard form; void/voidable; contingent; quasi; discharge/frustration; compensation</td><td>12 topics — one per numbered CCS unit</td></tr>
+          <tr><td>K-1001</td><td>Intro; Natural (Stammler/Kohler); Analytical (Austin/Kelsen/Hart); Historical (Savigny/Maine); Sociological (Pound/Duguit); American Realism; Marxist economic</td><td>16 sidebar topics — school units plus Historical jurisprudence vs legal history; law &amp; morals; Austin–Kelsen–Hart drill; Bentham/Manu/Salmond/Stone shorts; Pound’s interests</td></tr>
+          <tr><td>K-1002</td><td>Nature (federal + form of govt); Preamble; FR general; 14–18; 19(1)(a); 20; 21; 21A; 23–24; 25–28; 29–30; 32; DPSP; Duties</td><td>24 sidebar topics — official units plus Art. 12; eclipse/severability/waiver; Emergency 358/359; 14 classification; 15–16/EWS; 19 suite traps; privacy; HMPCQ writs; FR–DPSP ladder; Art. 300A bridge. 21A / 23–24 / Duties expanded. CCS lists only <em>19(1)(a)</em></td></tr>
+          <tr><td>K-1003</td><td>Intro (incl. damnum/injuria, mental element, parties, strict/absolute); justifications; vicarious/State/joint; negligence, nuisance, trespass, defamation; CPA consumer / service / enforcement</td><td>22 topics. Pigeon-hole; who may sue; Rylands/Mehta/Kasturilal; Wagon Mound; res ipsa; medical negligence; contributory vs composite; nervous shock; nuisance/trespass deepened; service vs for service; CPA 2019 hierarchy</td></tr>
+          <tr><td>K-1004</td><td>General principles; inchoate; general exceptions; body; property; State/public tranquility; marriage (bigamy/adultery)</td><td>27 topics. Dedicated BNS cards include stages essay; definitions shorts; legal vs medical insanity; WR/WC &amp; riot/affray; dowry death 80 vs 304B; stalking 78; child cluster; snatching 304. Official PDF still says IPC; site teaches <strong>BNS first</strong></td></tr>
+          <tr><td>K-1005</td><td>Purpose/scope; proposal; consideration/privity; lawful object; capacity/restitution; consent; standard form; void/voidable; contingent; quasi; discharge/frustration; compensation</td><td>26 topics — CCS units plus offer vs ITT; English vs Indian consideration; CUFM; ss.26–28; wager vs contingent; contingent 32–36 tree; standard-form notice; novation s.62; discharge checklist; quantum meruit; Hadley/s.73</td></tr>
         </tbody>
       </table>
       <p><strong>Not Sem-1 (do not study these here):</strong> Jurisprudence-II concepts (person, possession, ownership — K-2001); Union Parliament/Executive (K-2002); Family Law; Contract-II. Infipark pages that swap K-1005 for Legal Method are not the official CCS PDF.</p>
+      <p>Track new content in <button type="button" class="text-link" data-nav="logbook">Logbook</button>.</p>
+    </section>`;
+  }
+
+  function logbookNavPage(paper) {
+    if (!paper || paper === "site") return "";
+    return String(paper).replace(/^K-/, "k");
+  }
+
+  function logbookHtml(filterId) {
+    const filter = filterId || "all";
+    const entries = (window.LLB && window.LLB.logbook) || [];
+    const shown = entries.filter((e) => {
+      if (filter === "all") return true;
+      if (filter === "site") return e.paper === "site";
+      return logbookNavPage(e.paper) === filter;
+    });
+    const chips = LOG_FILTERS.map(
+      ([fid, label]) =>
+        `<button type="button" class="chip ${fid === filter ? "on" : ""}" data-nav="logbook" data-topic="${fid}">${label}</button>`
+    ).join("");
+    const rows = shown
+      .map((e) => {
+        const jump = e.topicId && e.paper !== "site";
+        const title = jump
+          ? `<button type="button" class="log-title" data-nav="${logbookNavPage(e.paper)}" data-topic="${e.topicId}">${e.title}</button>`
+          : `<span class="log-title static">${e.title}</span>`;
+        return `<li class="log-entry">
+          <div class="log-meta">
+            <span class="badge log-${e.type}">${e.type}</span>
+            <span class="log-paper">${e.paper}</span>
+            <time datetime="${e.date}">${e.date}</time>
+          </div>
+          ${title}
+          <p class="log-note">${e.note || ""}</p>
+        </li>`;
+      })
+      .join("");
+    return `<section class="hero" id="topic-logbook" data-jump="${filter}">
+      <p class="kicker">What’s new · reverse chronological</p>
+      <h2>Logbook</h2>
+      <p class="lede">Every promised card in this expansion, clickable. Filter by paper; the title jumps to the live topic.</p>
+      <div class="filter-row log-chips">${chips}</div>
+      <p class="log-count">${shown.length} ${shown.length === 1 ? "entry" : "entries"} shown</p>
+    </section>
+    <section class="panel">
+      <ol class="log-list">${rows || "<li class=\"log-entry\">No entries in this filter.</li>"}</ol>
     </section>`;
   }
 
@@ -403,6 +467,7 @@
     if (page === "overview") return overviewHtml();
     if (page === "strategy") return extra.strategy(id);
     if (page === "resources") return extra.resources(id);
+    if (page === "logbook") return logbookHtml(id);
     const paper = papers[page];
     if (!paper) return `<section class="panel"><p>Unknown page.</p></section>`;
     const topics = sortedTopics(paper);
