@@ -318,7 +318,7 @@
     if (page === "overview") paintHeatChart();
     sidebar.classList.remove("open");
     main.focus({ preventScroll: true });
-    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+    window.scrollTo(0, 0);
   }
 
   function searchIndex() {
