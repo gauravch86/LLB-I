@@ -41,6 +41,7 @@
               <dl class="tl-fields">
                 ${field("Era / Year", `<span class="tl-year">${esc(b.year)}</span>`)}
                 ${field("Who", who)}
+                ${field("Where", b.country ? `<span class="tl-where">${esc(b.country)}</span>` : "")}
                 ${field("Landmark", b.work ? esc(b.work) : "")}
                 ${field("What they said", esc(b.doctrine))}
                 ${field("What they pushed back against", esc(b.shift))}
@@ -154,7 +155,7 @@
     return forTopic(topicId)
       .map((timeline) => {
         const beats = allBeats(timeline)
-          .map((b) => [b.year, b.name, b.schoolLabel, b.work, b.doctrine].join(" "))
+          .map((b) => [b.year, b.name, b.country, b.schoolLabel, b.work, b.doctrine].join(" "))
           .join(" ");
         return [timeline.title, timeline.hook, beats].join(" ");
       })
