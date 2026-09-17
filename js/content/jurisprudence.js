@@ -38,7 +38,7 @@
         <p><strong>Scope:</strong> (1) legal theory / schools; (2) legal concepts (person, right, liability — more Sem-2 in some schemes, but definitions still leak into Sem-1 answers); (3) sources of law; (4) law and allied disciplines (morals, economics, sociology). CCS Sem-1 K-1001 is school-heavy: Natural, Analytical, Historical, Sociological, Realist, Marxist.</p>
         <p><strong>Importance for an engineer-lawyer:</strong> statutes are APIs; jurisprudence is architecture. Without it you can recite S.10 of the Contract Act and still fail a “nature of law” essay. With it you can attack Austin in a Crimes mens rea question, or Pound in a Constitution social-justice question. Stone’s line that jurisprudence is “lawyers’ extroversion” is a regular short note: law looking outward at philosophy, sociology, economics.</p>
         <p><strong>Law and morals:</strong> keep a 10-mark pocket. Overlap (murder is illegal and immoral), divergence (parking tickets; some religious duties not legally enforced), and the positivist claim that validity ≠ merit. Hart vs Fuller is extra credit; CCS usually wants Austin/Kelsen “separation” plus a sociological critique.</p>
-        <p><strong>Definition evolution (do not skip):</strong> CCS still sets “trace the evolution of the definition of jurisprudence.” The rail on this card is the <strong>full Sem-1 cast</strong> (Ulpian to Hart, school chips on). ABAH-GSP is the gold definition inset, not the only story. Full table + PYQ outline: <button type="button" class="text-link" data-nav="k1001" data-topic="j-def-evolution">Definitions — evolution of jurisprudence</button>.</p>`,
+        <p><strong>Definition evolution (do not skip):</strong> CCS still sets “trace the evolution of the definition of jurisprudence.” The <strong>left-rail diagram</strong> on this card is school-sectioned (Natural → Analytical → Historical → Sociological → Realist/critical) with one chip per thinker. Gold <strong>B-A-H-G-S-P</strong> strip = definition jobs only; <strong>A→K→H</strong> and <strong>I→D→P</strong> sit on their school bands, not as floating legends. Dedicated card + PYQ: <button type="button" class="text-link" data-nav="k1001" data-topic="j-def-evolution">Definitions — evolution of jurisprudence</button>.</p>`,
         analogy: {
           title: "Compiler vs runtime",
           body: "Bare acts are runtime libraries. Jurisprudence is the language spec: types (right/duty), package managers (schools), and why two compilers (Austin vs Hart) reject each other’s programs. You do not ship production code from the spec alone — but you cannot debug a 20-marker without it."
@@ -92,7 +92,7 @@
           "Can answer the ‘one nation?’ short note in 8 lines.",
           "Can list three utilities with an Indian illustration.",
           "Can recite the ought → command → form → courts → first principles → social ends spine.",
-          "Can name Ulpian, Aquinas, Kelsen (Grundnorm), Hart, Allen, Realists, and Marx as rail extras."
+          "Can name Ulpian, Aquinas, Kelsen (Grundnorm), Hart, Allen, Realists, and Marx — and the one school chip each wears."
         ]
       },
       {
@@ -103,16 +103,16 @@
         yield: "high",
         tags: ["definition", "evolution", "austin", "holland", "gray", "salmond", "pound", "bentham", "ulpian", "allen", "kelsen", "hart", "marx", "realism", "timeline"],
         title: "Definitions — evolution of jurisprudence",
-        summary: "The 20-marker is a changelog. Gold inset = ABAH-GSP definition jobs. Primary rail = the whole Sem-1 cast, school-chipped, chronological.",
-        explainer: `<p>CCS will say some flavour of <em>trace the evolution of the definition of jurisprudence</em>. The fail mode is five unnamed sentences. The pass mode is a <strong>dated arc with school chips</strong>: each thinker inherits a problem and ships a new job for the word.</p>
-        <p><strong>Two artefacts, do not confuse them:</strong> (1) the gold <strong>ABAH-GSP inset</strong> — ought → command → form → courts → first principles → social ends — that is the definition-jobs 20-marker. (2) the <strong>primary rail</strong> — the whole Sem-1 cast in one scroll, including names CCS can ask as shorts (Ulpian, C.K. Allen, Realists, Marx) and the school kernels <strong>A→K→H</strong> (Austin → Kelsen <em>Grundnorm</em> → Hart) and <strong>I→D→P</strong> (Ihering → Duguit → Pound).</p>
-        <p><strong>Write the definition spine once, then expand from the rail:</strong> classical jurisprudence is philosophy of law/justice — law as <em>ought</em> (Aristotle, Ulpian’s <em>suum cuique</em>, Aquinas). Bentham keeps an ought (utility) but torches natural-rights mysticism. Austin (1832) makes jurisprudence the philosophy of <em>positive</em> law and splits is/ought. Historical school (Savigny/Maine) and Marx cut in from the side. Holland (1880) turns it into a <em>formal science</em>. Salmond (1902) gives first principles of civil law. Stammler/Kohler revive NL. Gray (1909) points the camera at <em>courts</em>. Duguit/Pound add social task. Allen maps sources. Realists predict courts. Kelsen’s <em>Grundnorm</em> and Hart’s secondary rules close the analytical kernel.</p>
-        <p><strong>Date hygiene:</strong> Salmond’s first edition slightly predates Gray’s book. Realists sit after Pound as a school even though Holmes (1897) is earlier. Marx is 1859 base/superstructure, not a 1920s afterthought. Bentham’s anti-rights blast is <em>Anarchical Fallacies</em> (written c. 1791; often taught with IPML 1789). Holland 1880 and Austin 1832 are not contested.</p>
+        summary: "The 20-marker is a changelog. Primary rail = school colour bands (one chip each). Gold B-A-H-G-S-P strip = definition jobs. A→K→H and I→D→P are band captions, not floating legends.",
+        explainer: `<p>CCS will say some flavour of <em>trace the evolution of the definition of jurisprudence</em>. The fail mode is five unnamed sentences. The pass mode is a <strong>dated arc with one school chip per thinker</strong>: each inherits a problem and ships a new job for the word.</p>
+        <p><strong>Three mnemonic callouts, scoped — do not mix them:</strong> (1) gold <strong>B-A-H-G-S-P</strong> strip — Bentham · Austin · Holland · Gray · Salmond · Pound — the definition-jobs 20-marker (ought → command → form → courts → first principles → social ends). (2) <strong>A→K→H</strong> lives only on the analytical band (Austin command → Kelsen <em>Grundnorm</em> → Hart). (3) <strong>I→D→P</strong> lives only on the sociological band (Ihering → Duguit → Pound). No other acronyms. Dual-tradition names get one CCS home chip; the other tradition is a word in Said / Challenged (Kohler = Natural, culture in Challenged; Gray = Analytical, realist in Challenged; Marx = Realist/critical, Pound in Challenged).</p>
+        <p><strong>Write the definition spine once, then walk the five bands:</strong> Natural — Aristotle, Ulpian’s <em>suum cuique</em>, Aquinas, Stammler, Kohler. Analytical — Bentham, Austin (1832), Holland, Salmond, Gray, C.K. Allen, Kelsen’s <em>Grundnorm</em>, Hart. Historical — Savigny, Maine. Sociological — Ihering, Duguit, Pound. Realist / critical — Marx, American Realists.</p>
+        <p><strong>Date hygiene:</strong> Salmond’s first edition slightly predates Gray’s book. Realists sit in their band even though Holmes (1897) is earlier. Marx is 1859 base/superstructure, not a 1920s afterthought. Bentham’s anti-rights blast is <em>Anarchical Fallacies</em> (written c. 1791; often taught with IPML 1789). Holland 1880 and Austin 1832 are not contested.</p>
         <p><strong>Compare questions:</strong> Austin vs Salmond = command-philosophy vs first-principles science. A→K→H = command vs pyramid vs ruleset (say <em>Grundnorm</em>). I→D→P = purpose vs solidarity vs engineering. Pound vs Marx = patch the machine vs name the class. Do not mash Holland into Austin; Holland is form, not a barking person.</p>
-        <p>Redraw the rail from memory. Then open Paranjape chapter 1 for the longer extracts — this card does not copy that book.</p>`,
+        <p>Redraw the left-rail from memory (year · who · landmark · said · pushed back). Then open Paranjape chapter 1 for the longer extracts — this card does not copy that book.</p>`,
         analogy: {
           title: "Same identifier, many APIs — plus the rest of the monorepo",
-          body: "ABAH-GSP is the public API changelog of the word ‘jurisprudence.’ The rail is the whole monorepo: Roman justice (Ulpian), medieval NL (Aquinas), historical growth (Savigny/Maine), class critique (Marx), sources toolkit (Allen), Realist production traces, Kelsen’s Grundnorm root commit, Hart’s CONTRIBUTING.md. Your 20-marker is git log of the identifier; shorts can ping any named package."
+          body: "B-A-H-G-S-P is the public API changelog of the word ‘jurisprudence.’ The school bands are the rest of the monorepo: Natural (Ulpian, Aquinas, Stammler, Kohler), Historical (Savigny/Maine), Sociological (Ihering, Duguit, Pound), Realist/critical (Marx, Holmes/Llewellyn/Frank), plus Allen’s sources toolkit and Kelsen’s Grundnorm root commit on the analytical band. Your 20-marker is git log of the identifier; shorts can ping any named package."
         },
         diagram: {
           type: "flow",
@@ -120,9 +120,9 @@
           steps: ["ought (philosophy)", "is/command (Austin)", "form (Holland)", "courts (Gray)", "first principles (Salmond)", "social ends (Pound)"]
         },
         mnemonic: {
-          name: "ABAH-GSP + A→K→H + I→D→P",
-          hook: "Definition inset: Aristotle Oughts · Bentham Burns · Austin Commands · Holland Formalizes · Gray Judges · Salmond First-principles · Pound Engineers. Analytical: Austin → Kelsen Grundnorm → Hart. Sociological: Ihering → Duguit → Pound.",
-          recite: "Rail extras you must still name: Ulpian suum cuique; Aquinas; Savigny/Maine; Marx superstructure; Stammler/Kohler; C.K. Allen sources; Holmes/Llewellyn/Frank."
+          name: "B-A-H-G-S-P",
+          hook: "Bentham · Austin · Holland · Gray · Salmond · Pound — gold strip only. Band legends: A→K→H (analytical) and I→D→P (sociological).",
+          recite: "Natural: Aristotle, Ulpian, Aquinas, Stammler, Kohler. Analytical: Bentham, Austin, Holland, Salmond, Gray, Allen, Kelsen, Hart. Historical: Savigny, Maine. Sociological: Ihering, Duguit, Pound. Realist/critical: Marx, American Realists."
         },
         cases: [
           { name: "Thinkers are the authorities", citation: "dated works, not SCC cites", point: "Ulpian Digest; Aquinas Summa; Austin 1832; Savigny 1814; Maine 1861; Holland 1880; Salmond 1902; Gray 1909; Kelsen 1934 (Grundnorm); Hart 1961; Pound c. 1922. Kesavananda is a one-line Indian landing for utility, not a definition source." },
@@ -135,9 +135,9 @@
             marks: "20",
             q: "Trace the evolution of the definition of jurisprudence. Which definition is most appropriate?",
             outline: [
-              "Open with the gold inset (ought → command → form → courts → first principles → social ends).",
-              "Walk the rail, not only ABAH-GSP: Ulpian justice; Aquinas; Bentham; Austin; Holland/Salmond/Gray; Pound. Name school chips.",
-              "Kernel asides: A→K→H (say Grundnorm); I→D→P; Marx vs Pound in four lines if time.",
+              "Open with the gold B-A-H-G-S-P inset (ought → command → form → courts → first principles → social ends).",
+              "Walk the five school bands (one chip each): Natural (Ulpian, Aquinas, Stammler, Kohler); Analytical; Historical; Sociological; Realist/critical.",
+              "Kernel asides stay on their bands: A→K→H (say Grundnorm); I→D→P; Marx vs Pound in four lines if time.",
               "One criticism each on the definition jobs (Austin too narrow; Holland empty of contents; Gray court-or-nothing; Pound who weighs interests?).",
               "Pick a hybrid close: Salmond’s first principles oriented to Pound’s social task — useful in an Indian courtroom paper."
             ]
@@ -167,7 +167,7 @@
           }
         ],
         check: [
-          "Recite ABAH-GSP without looking — and name Ulpian, Aquinas, Allen, Realists, Marx as rail extras.",
+          "Recite B-A-H-G-S-P without looking — and name each thinker’s one school chip.",
           "A→K→H with Grundnorm in the Kelsen sentence.",
           "I→D→P in one breath; Pound vs Marx in four lines.",
           "Austin vs Salmond in four lines."

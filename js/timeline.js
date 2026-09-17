@@ -18,6 +18,11 @@
     return `<p class="tl-spine">${lead}${parts.join("")}${spine.tail ? esc(spine.tail) : ""}</p>`;
   }
 
+  function field(label, inner) {
+    if (!inner) return "";
+    return `<div class="tl-field"><dt>${esc(label)}</dt><dd>${inner}</dd></div>`;
+  }
+
   function beatsHtml(beats) {
     return `<ol class="timeline">
       ${(beats || [])
@@ -25,59 +30,60 @@
           const school = b.school
             ? `<span class="tl-school tl-school-${esc(b.school)}">${esc(b.schoolLabel || b.school)}</span>`
             : "";
+          const who = `<strong>${esc(b.name)}</strong>${school}`;
           return `<li>
-            <div class="tl-badge"><span class="tl-year">${esc(b.year)}</span></div>
-            <div class="tl-card">
-              <p class="tl-k">Who</p>
-              <h3>${esc(b.name)}${school}</h3>
-              ${b.work ? `<p class="tl-work"><span>Landmark</span> ${esc(b.work)}</p>` : ""}
-              <p class="tl-doctrine"><span>Said</span> ${esc(b.doctrine)}</p>
-              <p class="tl-shift"><span>Challenged</span> ${esc(b.shift)}</p>
-            </div>
+            <span class="tl-node" aria-hidden="true"></span>
+            <article class="tl-card">
+              <dl class="tl-fields">
+                ${field("Era / Year", `<span class="tl-year">${esc(b.year)}</span>`)}
+                ${field("Who", who)}
+                ${field("Landmark", b.work ? esc(b.work) : "")}
+                ${field("What they said", esc(b.doctrine))}
+                ${field("What they pushed back against", esc(b.shift))}
+              </dl>
+            </article>
           </li>`;
         })
         .join("")}
     </ol>`;
   }
 
-  function insetsHtml(insets) {
-    if (!insets || !insets.length) return "";
-    return `<div class="tl-insets">${insets
-      .map(
-        (c) => `<aside class="mnemonic tl-inset"><h3>${esc(c.name)}</h3>
-        <p><strong>${esc(c.hook)}</strong></p>
-        ${c.recite ? `<p>${esc(c.recite)}</p>` : ""}</aside>`
-      )
-      .join("")}</div>`;
+  function defStripHtml(timeline) {
+    if (!timeline.defInset) return spineHtml(timeline.spine);
+    const d = timeline.defInset;
+    return `<aside class="tl-def-strip">
+      <p class="tl-def-kicker">${esc(d.kicker || "Definitions inset — not a school")}</p>
+      ${spineHtml(timeline.spine)}
+      <p class="tl-def-mnemo"><strong>${esc(d.name)}</strong> ${esc(d.hook)}</p>
+    </aside>`;
   }
 
-  function tableHtml(table) {
-    if (!table) return "";
-    const th = (table.headers || []).map((h) => `<th>${esc(h)}</th>`).join("");
-    const body = (table.rows || [])
-      .map((row) => `<tr>${row.map((c) => `<td>${c}</td>`).join("")}</tr>`)
-      .join("");
-    return `<div class="map-wrap tl-table">
-      <table class="compare">
-        <thead><tr>${th}</tr></thead>
-        <tbody>${body}</tbody>
-      </table>
-    </div>`;
+  function bandHtml(group) {
+    const mnemo = group.mnemonic
+      ? `<p class="tl-band-mnemo">This band only: <strong>${esc(group.mnemonic.name)}</strong> — ${esc(group.mnemonic.hook)}</p>`
+      : "";
+    return `<section class="tl-band tl-band-${esc(group.school)}">
+      <header class="tl-band-head">
+        <h3><span class="tl-school tl-school-${esc(group.school)}">${esc(group.title)}</span></h3>
+        ${mnemo}
+      </header>
+      ${beatsHtml(group.beats)}
+    </section>`;
   }
 
   function render(timeline, mode) {
     if (!timeline) return "";
-    const full = mode === "full" || (timeline.featured && mode !== "compact");
     const hook = timeline.hook ? `<p class="tl-hook">${esc(timeline.hook)}</p>` : "";
     const note = timeline.note ? `<p class="search-query">${esc(timeline.note)}</p>` : "";
+    const rail = timeline.groups
+      ? timeline.groups.map(bandHtml).join("")
+      : beatsHtml(timeline.beats);
     return `<section class="evo" id="sec-${esc(timeline.id)}" data-jump="${esc(timeline.id)}">
       <h2 class="section-title">${esc(timeline.title || "Evolution timeline")}</h2>
       ${timeline.lede ? `<p class="lede">${esc(timeline.lede)}</p>` : ""}
       ${hook}
-      ${spineHtml(timeline.spine)}
-      ${insetsHtml(timeline.insets)}
-      ${beatsHtml(timeline.beats)}
-      ${full ? tableHtml(timeline.table) : ""}
+      ${defStripHtml(timeline)}
+      ${rail}
       ${note}
     </section>`;
   }
@@ -103,7 +109,9 @@
   function searchBlob(topicId) {
     return forTopic(topicId)
       .map(({ timeline }) => {
-        const beats = (timeline.beats || [])
+        const groups = timeline.groups || [{ beats: timeline.beats }];
+        const beats = groups
+          .flatMap((g) => g.beats || [])
           .map((b) => [b.year, b.name, b.schoolLabel, b.work, b.doctrine].join(" "))
           .join(" ");
         return [timeline.title, timeline.hook, beats].join(" ");
