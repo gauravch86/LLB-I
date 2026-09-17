@@ -357,6 +357,66 @@ h2.display, .topic h1, .hero h2 {
 .shelf-banner { background: color-mix(in srgb, var(--gold) 14%, var(--elev-2)); }
 .analogy h3, .mnemonic h3, .note h3 { margin: 0 0 6px; font-size: 0.95rem; }
 
+button.text-link {
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--gold-2);
+  font: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+button.text-link:hover { color: var(--gold); }
+
+.log-chips { margin: 14px 0 8px; flex-wrap: wrap; }
+.log-count { color: var(--muted); margin: 0 0 4px; }
+.log-list { list-style: none; margin: 0; padding: 0; }
+.log-entry {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin: 0 0 10px;
+  background: var(--elev);
+}
+.log-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-bottom: 6px;
+}
+.log-meta time { font-family: var(--mono); }
+.log-paper { letter-spacing: 0.04em; }
+.badge.log-added { border-color: var(--teal); color: var(--teal); }
+.badge.log-updated { border-color: var(--gold); color: var(--gold-2); }
+.badge.log-fixed { border-color: var(--blue); color: var(--blue); }
+button.log-title {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1.12rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+button.log-title:hover { color: var(--gold-2); }
+.log-title.static {
+  display: block;
+  font-family: var(--display);
+  font-size: 1.12rem;
+  font-weight: 650;
+}
+.log-note { margin: 6px 0 0; color: var(--muted); }
+
 .diagram {
   margin: 16px 0;
   padding: 12px;

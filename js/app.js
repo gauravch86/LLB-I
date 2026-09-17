@@ -56,7 +56,16 @@
     return { page: page || "overview", id: id || "" };
   }
 
-  const EXTRA_DEFAULTS = { overview: "dash", strategy: "method", resources: "publishers" };
+  const EXTRA_DEFAULTS = { overview: "dash", strategy: "method", resources: "publishers", logbook: "all" };
+  const LOG_FILTERS = [
+    ["all", "All"],
+    ["k1001", "Jurisprudence"],
+    ["k1002", "Constitution"],
+    ["k1003", "Torts + CPA"],
+    ["k1004", "Crimes"],
+    ["k1005", "Contract"],
+    ["site", "Site"]
+  ];
   let scrollToken = 0;
 
   function headerOffset() {
@@ -90,6 +99,10 @@
     if (page === "overview") return !!document.getElementById("topic-dash");
     if (page === "resources") return !!document.getElementById("topic-publishers");
     if (page === "strategy") return !!document.getElementById("topic-method");
+    if (page === "logbook") {
+      const el = document.getElementById("topic-logbook");
+      return !!(el && el.getAttribute("data-jump") === (parseHash().id || "all"));
+    }
     const paper = papers[page];
     if (!paper) return false;
     const first = sortedTopics(paper)[0];
@@ -167,6 +180,7 @@
       { id: "k1003", label: "Torts + CPA", small: "K-1003" },
       { id: "k1004", label: "Crimes · BNS", small: "K-1004" },
       { id: "k1005", label: "Contract-I", small: "K-1005" },
+      { id: "logbook", label: "Logbook", small: "What’s new" },
       { id: "strategy", label: "Exam strategy", small: "Dec 2026" },
       { id: "resources", label: "Resources", small: "Books + YT" }
     ];
@@ -184,7 +198,8 @@
     const paper = papers[page];
     filterRow.innerHTML = "";
     if (!paper) {
-      sidebarTitle.textContent = page === "resources" ? "Shelf" : page === "strategy" ? "Plan" : "Navigate";
+      sidebarTitle.textContent =
+        page === "resources" ? "Shelf" : page === "strategy" ? "Plan" : page === "logbook" ? "Logbook" : "Navigate";
       const extras =
         page === "resources"
           ? [
@@ -199,13 +214,15 @@
                 ["answers", "Answer formula"],
                 ["heatmap", "PYQ heatmap"]
               ]
-            : [
-                ["dash", "Dashboard"],
-                ["papers", "Five papers"],
-                ["countdown", "Dec 2026"],
-                ["heatmap", "PYQ heatmap"],
-                ["coverage", "Syllabus map"]
-              ];
+            : page === "logbook"
+              ? LOG_FILTERS
+              : [
+                  ["dash", "Dashboard"],
+                  ["papers", "Five papers"],
+                  ["countdown", "Dec 2026"],
+                  ["heatmap", "PYQ heatmap"],
+                  ["coverage", "Syllabus map"]
+                ];
       topicNav.innerHTML = extras
         .map(
           ([eid, label]) =>
@@ -331,7 +348,7 @@
     return `<section class="hero" id="topic-dash" data-jump="dash">
       <p class="kicker">Gaurav · Engineer → advocate track</p>
       <h2>Five papers, one operating system</h2>
-      <p class="lede">CCS University Meerut LL.B. 3-year Semester 1. HLM College, Ghaziabad. Target window: December 2026. Tone: systems, decision trees, comparison tables — not textbook sludge.</p>
+      <p class="lede">CCS University Meerut LL.B. 3-year Semester 1. HLM College, Ghaziabad. Target window: December 2026. Tone: systems, decision trees, comparison tables — not textbook sludge. Track new content in <button type="button" class="text-link" data-nav="logbook">Logbook</button>.</p>
       <div class="stat-row">
         <div class="stat"><b>${days}</b>days to Dec 2026 window</div>
         <div class="stat"><b>${n}/${t}</b>topics sealed</div>
@@ -396,6 +413,53 @@
         </tbody>
       </table>
       <p><strong>Not Sem-1 (do not study these here):</strong> Jurisprudence-II concepts (person, possession, ownership — K-2001); Union Parliament/Executive (K-2002); Family Law; Contract-II. Infipark pages that swap K-1005 for Legal Method are not the official CCS PDF.</p>
+      <p>Track new content in <button type="button" class="text-link" data-nav="logbook">Logbook</button>.</p>
+    </section>`;
+  }
+
+  function logbookNavPage(paper) {
+    if (!paper || paper === "site") return "";
+    return String(paper).replace(/^K-/, "k");
+  }
+
+  function logbookHtml(filterId) {
+    const filter = filterId || "all";
+    const entries = (window.LLB && window.LLB.logbook) || [];
+    const shown = entries.filter((e) => {
+      if (filter === "all") return true;
+      if (filter === "site") return e.paper === "site";
+      return logbookNavPage(e.paper) === filter;
+    });
+    const chips = LOG_FILTERS.map(
+      ([fid, label]) =>
+        `<button type="button" class="chip ${fid === filter ? "on" : ""}" data-nav="logbook" data-topic="${fid}">${label}</button>`
+    ).join("");
+    const rows = shown
+      .map((e) => {
+        const jump = e.topicId && e.paper !== "site";
+        const title = jump
+          ? `<button type="button" class="log-title" data-nav="${logbookNavPage(e.paper)}" data-topic="${e.topicId}">${e.title}</button>`
+          : `<span class="log-title static">${e.title}</span>`;
+        return `<li class="log-entry">
+          <div class="log-meta">
+            <span class="badge log-${e.type}">${e.type}</span>
+            <span class="log-paper">${e.paper}</span>
+            <time datetime="${e.date}">${e.date}</time>
+          </div>
+          ${title}
+          <p class="log-note">${e.note || ""}</p>
+        </li>`;
+      })
+      .join("");
+    return `<section class="hero" id="topic-logbook" data-jump="${filter}">
+      <p class="kicker">What’s new · reverse chronological</p>
+      <h2>Logbook</h2>
+      <p class="lede">Every promised card in this expansion, clickable. Filter by paper; the title jumps to the live topic.</p>
+      <div class="filter-row log-chips">${chips}</div>
+      <p class="log-count">${shown.length} ${shown.length === 1 ? "entry" : "entries"} shown</p>
+    </section>
+    <section class="panel">
+      <ol class="log-list">${rows || "<li class=\"log-entry\">No entries in this filter.</li>"}</ol>
     </section>`;
   }
 
@@ -403,6 +467,7 @@
     if (page === "overview") return overviewHtml();
     if (page === "strategy") return extra.strategy(id);
     if (page === "resources") return extra.resources(id);
+    if (page === "logbook") return logbookHtml(id);
     const paper = papers[page];
     if (!paper) return `<section class="panel"><p>Unknown page.</p></section>`;
     const topics = sortedTopics(paper);

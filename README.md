@@ -14,7 +14,7 @@ Interactive, original study site for **CCS University Meerut** LL.B. 3-year **Se
 | **K-1004** | Law of Crimes-I | **Dr. N.V. Paranjape** — *The Bharatiya Nyaya Sanhita, 2023*. **BNS first**, IPC mapping for older PYQs. Official syllabus PDF still says IPC; public Dec 2024/2025 papers title BNS. |
 | **K-1005** | Contract-I (General Principles) | **Dr. R.K. Bangia** — *Law of Contract* (Contract-I; ICA Ss. 1–75). |
 
-Also included: **Overview** (progress + PYQ heatmap), **Exam strategy**, and **Resources** (primary shelf → Unique drill → secondary refs, YouTube, BNS↔IPC map).
+Also included: **Overview** (progress + PYQ heatmap), **Logbook** (what’s new — click a title to jump to the card), **Exam strategy**, and **Resources** (primary shelf → Unique drill → secondary refs, YouTube, BNS↔IPC map).
 
 ## How to study (topic → PYQ → seal)
 
