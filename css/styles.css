@@ -44,7 +44,8 @@
 
 html, body { margin: 0; min-height: 100%; }
 html {
-  scroll-padding-top: calc(var(--top) + var(--nav) + 10px);
+  scroll-padding-top: calc(var(--top) + var(--nav) + 12px);
+  overflow-anchor: none;
 }
 
 body {
@@ -255,8 +256,10 @@ body {
   scroll-margin-top: calc(var(--top) + var(--nav) + 10px);
 }
 
-#main section[id^="sec-"] {
-  scroll-margin-top: calc(var(--top) + var(--nav) + 10px);
+#main section[id^="sec-"],
+#main [id^="topic-"],
+#main [data-jump] {
+  scroll-margin-top: calc(var(--top) + var(--nav) + 12px);
 }
 
 .kicker {

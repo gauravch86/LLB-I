@@ -56,12 +56,13 @@
     return { page: page || "overview", id: id || "" };
   }
 
-  const EXTRA_PAGES = { overview: 1, strategy: 1, resources: 1 };
+  const EXTRA_DEFAULTS = { overview: "dash", strategy: "method", resources: "publishers" };
+  let scrollToken = 0;
 
   function headerOffset() {
     const top = document.querySelector(".topbar");
     const nav = document.querySelector(".subject-nav");
-    return (top ? top.offsetHeight : 72) + (nav ? nav.offsetHeight : 58) + 10;
+    return (top ? top.offsetHeight : 72) + (nav ? nav.offsetHeight : 58) + 12;
   }
 
   function revealSidebarLink() {
@@ -74,14 +75,33 @@
     else if (a.bottom > n.bottom) nav.scrollTop += a.bottom - n.bottom;
   }
 
-  function scrollToHashTarget(id, smooth) {
-    const target = id
-      ? document.getElementById("topic-" + id) || document.getElementById("sec-" + id)
-      : document.querySelector("#main .hero, #main article.topic, #main .panel");
+  function findJumpTarget(id) {
+    if (id) {
+      return (
+        document.getElementById("topic-" + id) ||
+        document.getElementById("sec-" + id) ||
+        document.querySelector("#main [data-jump=\"" + id + "\"]")
+      );
+    }
+    return document.querySelector("#main .hero, #main article.topic[id], #main .panel[id]");
+  }
+
+  function pageAlreadyMounted(page) {
+    if (page === "overview") return !!document.getElementById("topic-dash");
+    if (page === "resources") return !!document.getElementById("topic-publishers");
+    if (page === "strategy") return !!document.getElementById("topic-method");
+    const paper = papers[page];
+    if (!paper) return false;
+    const first = sortedTopics(paper)[0];
+    return !!(first && document.getElementById("topic-" + first.id));
+  }
+
+  function scrollToHashTarget(id) {
+    const target = findJumpTarget(id);
     if (!target) return false;
-    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const y = Math.max(0, window.scrollY + target.getBoundingClientRect().top - headerOffset());
-    window.scrollTo({ top: y, left: 0, behavior: smooth && !reduce ? "smooth" : "auto" });
+    const scroller = document.scrollingElement || document.documentElement;
+    const y = Math.max(0, scroller.scrollTop + target.getBoundingClientRect().top - headerOffset());
+    scroller.scrollTop = y;
     revealSidebarLink();
     return true;
   }
@@ -90,26 +110,43 @@
     requestAnimationFrame(() => requestAnimationFrame(fn));
   }
 
-  function queueScroll(id, smooth) {
-    const run = (s) => scrollToHashTarget(id || "", s);
-    afterPaint(() => run(smooth));
-    [50, 160, 400].forEach((ms) => setTimeout(() => run(false), ms));
+  function queueScroll(id) {
+    const token = ++scrollToken;
+    const run = () => {
+      if (token !== scrollToken) return;
+      scrollToHashTarget(id || "");
+    };
+    run();
+    afterPaint(run);
+    [32, 80, 160, 320, 640, 1000].forEach((ms) => setTimeout(run, ms));
+  }
+
+  function syncChrome() {
+    navTabs();
+    renderSidebar();
   }
 
   function go(page, id) {
     const next = id ? `#/${page}/${id}` : `#/${page}`;
-    const { page: cur } = parseHash();
-    const already = location.hash === next;
     sidebar.classList.remove("open");
-    if (already) {
-      queueScroll(id || "", true);
+    if (location.hash === next) {
+      queueScroll(id || "");
       return;
     }
     history.pushState({ page, id: id || "" }, "", next);
-    if (EXTRA_PAGES[page] && page === cur) {
-      navTabs();
-      renderSidebar();
-      queueScroll(id || "", true);
+    if (pageAlreadyMounted(page)) {
+      syncChrome();
+      queueScroll(id || "");
+      return;
+    }
+    render();
+  }
+
+  function onRouteChange() {
+    const { page, id } = parseHash();
+    if (pageAlreadyMounted(page)) {
+      syncChrome();
+      queueScroll(id || "");
       return;
     }
     render();
@@ -291,18 +328,18 @@
         </div>`;
       })
       .join("");
-    return `<section class="hero" id="sec-dash">
+    return `<section class="hero" id="topic-dash" data-jump="dash">
       <p class="kicker">Gaurav · Engineer → advocate track</p>
       <h2>Five papers, one operating system</h2>
       <p class="lede">CCS University Meerut LL.B. 3-year Semester 1. HLM College, Ghaziabad. Target window: December 2026. Tone: systems, decision trees, comparison tables — not textbook sludge.</p>
       <div class="stat-row">
-        <div class="stat" id="sec-countdown"><b>${days}</b>days to Dec 2026 window</div>
+        <div class="stat"><b>${days}</b>days to Dec 2026 window</div>
         <div class="stat"><b>${n}/${t}</b>topics sealed</div>
         <div class="stat"><b>500</b>theory marks</div>
         <div class="stat"><b>BNS</b>primary for Crimes</div>
       </div>
     </section>
-    <section class="panel" id="sec-papers">
+    <section class="panel" id="topic-papers" data-jump="papers">
       <h2 class="display">Papers</h2>
       <div class="grid-cards">${cards}</div>
     </section>
@@ -331,12 +368,21 @@
         <p>Official CCS PDF (Aug 2025 CDN) still lists K-1001–K-1005, with Paper IV titled IPC. Public Dec 2024/2025 papers title Crimes as Bharatiya Nyaya Sanhita 2023. This site follows <strong>Paranjape BNS</strong> first with IPC mapping. Infipark “revision” pages that swap Contract for Legal Method do not displace the official K-1005 paper unless HLM issues a circular.</p>
       </aside>
     </section>
-    <section class="panel" id="sec-heatmap">
+    <section class="panel" id="topic-countdown" data-jump="countdown">
+      <h2 class="display">December 2026 window</h2>
+      <p>Treat this as a hard deadline, not a vibe. ${days} days remain from today. Five theory papers × 100 marks. Seal topics only when you can write a timed outline without scrolling this site.</p>
+      <div class="stat-row">
+        <div class="stat"><b>${days}</b>days remaining</div>
+        <div class="stat"><b>5 × 100</b>theory marks</div>
+        <div class="stat"><b>${n}/${t}</b>topics sealed</div>
+      </div>
+    </section>
+    <section class="panel" id="topic-heatmap" data-jump="heatmap">
       <h2 class="display">PYQ frequency (theme heatmap)</h2>
       <p>Relative weight from public CCS transcriptions 2018–2025 — not an official mark scheme. Use it to sequence revision, not to skip syllabus tails.</p>
       <canvas id="heatChart" height="120"></canvas>
     </section>
-    <section class="panel" id="sec-coverage">
+    <section class="panel" id="topic-coverage" data-jump="coverage">
       <h2 class="display">Official CCS Sem-1 map (nothing extra required)</h2>
       <p>Checked against the <a href="https://cdn.ccsuniversity.ac.in/public/pdf/2025/08/2%20llb%20syllabus.pdf" target="_blank" rel="noopener">CCS LL.B. syllabus PDF (Aug 2025 CDN)</a>, papers K-1001–K-1005. Every numbered unit is on this site. A few sub-bullets are nested inside a parent topic rather than given their own left-nav row.</p>
       <table class="compare">
@@ -411,7 +457,7 @@
     if (page === "overview") paintHeatChart();
     sidebar.classList.remove("open");
     main.focus({ preventScroll: true });
-    queueScroll(id, false);
+    queueScroll(id || EXTRA_DEFAULTS[page] || "", false);
   }
 
   function searchIndex() {
@@ -494,8 +540,8 @@
     if (e.key === "Escape") searchOverlay.hidden = true;
   });
 
-  window.addEventListener("hashchange", render);
-  window.addEventListener("popstate", render);
+  window.addEventListener("hashchange", onRouteChange);
+  window.addEventListener("popstate", onRouteChange);
   document.querySelector(".brand").addEventListener("click", () => go("overview"));
 
   const savedTheme = localStorage.getItem(THEME_KEY) || "dark";
