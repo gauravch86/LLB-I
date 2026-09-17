@@ -438,6 +438,396 @@
           { year: "Dec 2024", section: "B", marks: "10", q: "District consumer redressal forum.", outline: ["Now District Commission; jurisdiction figures; composition in outline."] }
         ],
         check: ["s.2(7) inclusion/exclusion.", "Shantha rule.", "2019 names + 2021 pecuniary bands."]
+      },
+      {
+        id: "t-pigeonhole",
+        seq: 1.2,
+        readAs: "Bangia — nature of tort (Winfield vs Salmond)",
+        unit: 1,
+        yield: "high",
+        tags: ["pigeon-hole", "winfield", "salmond", "nominate torts"],
+        title: "Pigeon-hole theory of torts",
+        summary: "Salmond: tort is a law of nominate wrongs — if it does not fit a pigeon-hole, it is not a tort. Winfield: it is a general principle of liability with named torts as illustrations. Dec 2024 short-noted this.",
+        explainer: `<p><strong>Salmond’s pigeon-holes:</strong> there is no general liability for all unjust harm. The plaintiff must fit the facts into a recognised tort (negligence, trespass, defamation, nuisance, conversion…). New holes can be added by statute or slow common-law growth, but the court does not invent a residual ‘unjust harm’ action. This is conservative and predictable.</p>
+        <p><strong>Winfield:</strong> tort is a breach of a duty primarily fixed by law; the duty is toward persons generally; it is redressible by an action for unliquidated damages. Named torts are the working catalogue, but the principle is general. Courts can recognise new duties (privacy, new negligence situations) without waiting for Parliament to drill a hole.</p>
+        <p><strong>India:</strong> closer to a mixed practice. We still plead nominate torts. <em>M.C. Mehta</em> absolute liability is a new hole drilled by the Court. Constitutional torts (Nilabati Behera) sit beside, not inside, Winfield. Exam: define both; one illustration of a new hole; conclude that CCS answers should still name a tort, not dump ‘unjustness.’</p>
+        <p><strong>Not the same as:</strong> damnum sine injuria (that is about legal injury). Pigeon-hole is about whether the <em>cause of action</em> exists as a type.</p>`,
+        analogy: {
+          title: "Enum vs open exception class",
+          body: "Salmond: errors must match an enum (Trespass, Negligence, …) or the compiler rejects the brief. Winfield: a base Exception class exists; named torts are subclasses. Mehta added a new subclass at runtime."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Salmond", "Winfield"],
+          rows: [
+            ["Picture", "Closed pigeon-holes", "General liability principle"],
+            ["New wrongs", "Wait for a new hole", "Duty can be recognised"],
+            ["Exam use", "Plead a named tort", "Explain growth (Mehta, privacy)"]
+          ]
+        },
+        mnemonic: {
+          name: "HOLES vs PRINCIPLE",
+          hook: "Salmond = nominate holes. Winfield = general duty.",
+          recite: "Dec 2024 Section A: pigeon-hole. Write both names and one Indian new-hole."
+        },
+        cases: [
+          { name: "M.C. Mehta v Union of India", citation: "(1987) 1 SCC 395", point: "New hole: absolute liability — Winfield-friendly growth." },
+          { name: "Ashby v White", citation: "(1703) 2 Ld Raym 938", point: "Injuria sine damno — a recognised hole (right to vote), not ‘any unfairness.’" }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "A",
+            marks: "4",
+            q: "Pigeon Hole Theory.",
+            outline: ["Salmond; Winfield contrast; one Indian illustration."]
+          }
+        ],
+        check: ["Salmond in one sentence.", "Winfield in one sentence.", "Why damnum/injuria is a different card."]
+      },
+      {
+        id: "t-rylands-elements",
+        seq: 4.2,
+        readAs: "Bangia — Rylands v Fletcher elements + exceptions",
+        unit: 1,
+        yield: "high",
+        tags: ["rylands", "strict liability", "non-natural", "escape"],
+        title: "Rylands v Fletcher — elements and exceptions",
+        summary: "Strict liability: who brings a dangerous thing onto land and lets it escape is liable, even without negligence — unless an exception fires. Absolute liability (Mehta) later pulls those exceptions out.",
+        explainer: `<p><strong>Ingredients (write as a checklist):</strong> (1) a <strong>dangerous thing</strong> likely to do mischief if it escapes; (2) <strong>brought on</strong> the land by the defendant (not a natural accumulation); (3) <strong>non-natural user</strong> of land (<em>Rickards v Lothian</em> — ordinary water in a basin is natural; a reservoir in Blackburn J.’s industrial England was not); (4) <strong>escape</strong> from the defendant’s premises; (5) <strong>damage</strong> of a foreseeable type (Wagon Mound later colours remoteness even here in some treatments).</p>
+        <p><strong>Exceptions (the ‘leaky tank has excuses’ list):</strong> Act of God; act of a stranger (third-party unforeseeable); plaintiff’s own default / consent (<em>volenti</em>); statutory authority; (sometimes) common benefit. These are why Indian industrial disaster law moved to Mehta.</p>
+        <p><strong>India:</strong> Rylands was received, then found too English-land-based for a chemical plant in a crowded city. Still write the elements — Dec 2024 Section A ‘Strict Liability’ wants this checklist, then one line pointing to absolute liability as the Indian upgrade.</p>`,
+        analogy: {
+          title: "Hazardous payload + escape event",
+          body: "You imported a dangerous dependency into your VPC (brought on), it was not a default OS daemon (non-natural), it leaked across the subnet (escape), and it toasted a neighbour. Strict liability does not ask whether your SRE was negligent — unless an exception (act of God, a stranger’s exploit you could not foresee, the plaintiff opened the port) applies."
+        },
+        diagram: {
+          type: "vflow",
+          steps: ["Dangerous thing", "Brought onto land", "Non-natural user", "Escape", "Damage — then scan exceptions"]
+        },
+        mnemonic: {
+          name: "D-B-N-E-D",
+          hook: "Dangerous · Brought · Non-natural · Escape · Damage. Then God / stranger / plaintiff / statute.",
+          recite: "Blackburn J. + Cairns non-natural. Mehta subtracts the exception list for hazardous industry."
+        },
+        cases: [
+          { name: "Rylands v Fletcher", citation: "(1868) LR 3 HL 330", point: "Parent strict-liability rule." },
+          { name: "Rickards v Lothian", citation: "[1913] AC 263", point: "Non-natural user." },
+          { name: "Read v Lyons", citation: "[1947] AC 156", point: "No escape, no Rylands (explosion inside the factory)." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "A",
+            marks: "4",
+            q: "Strict Liability.",
+            outline: ["Rylands ingredients; two exceptions; one line Mehta."]
+          }
+        ],
+        check: ["Five ingredients.", "Four exceptions.", "Why ‘escape’ failed in Read v Lyons."]
+      },
+      {
+        id: "t-mehta-absolute",
+        seq: 4.4,
+        readAs: "Bangia — absolute liability (M.C. Mehta)",
+        unit: 1,
+        yield: "high",
+        tags: ["absolute liability", "mehta", "oleum", "hazardous"],
+        title: "Absolute liability — M.C. Mehta (no Rylands excuses)",
+        summary: "An enterprise engaged in a hazardous or inherently dangerous activity in India owes an absolute, non-delegable duty. No Act-of-God / stranger defences. Measure of damages can be correlated to capacity.",
+        explainer: `<p><em>M.C. Mehta v Union of India</em> (Oleum gas leak, 1986/87) refused to keep Indian victims inside Rylands. The Court declared a distinct Indian rule: if an enterprise is engaged in hazardous or inherently dangerous activity and harm results, it is <strong>absolutely liable</strong> to compensate. The duty is <strong>non-delegable</strong>. Defences that save a Rylands defendant do not save this enterprise. Quantum: the larger and more prosperous the enterprise, the greater the amount of compensation — a deterrence/capacity idea (write carefully; it is not a licence to invent punitive jackpots in every district-court tort).</p>
+        <p><strong>Why:</strong> Bhopal’s shadow; crowded Indian land use; Rylands’ 19th-century land-escape picture does not fit a chemical plant in Delhi. <strong>vs Rylands:</strong> no need to prove non-natural user in the English sense; no escape-from-land technicality as the soul of the tort; no exception catalogue. <strong>vs negligence:</strong> no duty/breach fight.</p>
+        <p>Later environment / Art. 21 cases ride this policy. Public-liability insurance statutes are the legislative cousin. Exam: facts of oleum; rule; contrast table with Rylands; one critique (indeterminate ‘hazardous’; quantification).</p>`,
+        analogy: {
+          title: "Nuclear plant with zero excuses",
+          body: "Rylands is a leaky tank with a documented exception list. Mehta is a reactor: if you chose to run that process in this city, the incident response bill is yours — you cannot blame a lightning strike, a contractor, or ‘we followed English land law.’"
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Rylands strict", "Mehta absolute"],
+          rows: [
+            ["Activity", "Dangerous thing + non-natural land", "Hazardous / inherently dangerous enterprise"],
+            ["Escape", "Needed", "Harm from the activity"],
+            ["Defences", "God / stranger / statute / plaintiff", "Not available"],
+            ["Damages flavour", "Make good the leak", "Also deterrence / capacity"]
+          ]
+        },
+        mnemonic: {
+          name: "HAZARD → ABSOLUTE → NO EXCUSE",
+          hook: "Oleum leak. Non-delegable. Capacity-sensitive quantum.",
+          recite: "Do not write Mehta as ‘Rylands without the word escape.’ It is a different Indian rule."
+        },
+        cases: [
+          { name: "M.C. Mehta v Union of India", citation: "(1987) 1 SCC 395", point: "Absolute liability declared." },
+          { name: "Union Carbide (Bhopal) litigation", citation: "settlement / later orders", point: "Policy backdrop — do not fake a neat ratio." }
+        ],
+        pyqs: [
+          {
+            year: "theme",
+            section: "C",
+            marks: "20",
+            q: "Distinguish strict and absolute liability.",
+            outline: ["Rylands ingredients + exceptions; Mehta facts + rule; table; Indian policy; critique."]
+          }
+        ],
+        check: ["Oleum facts in three lines.", "Non-delegable + no defences.", "How quantum talk differs from Rylands."]
+      },
+      {
+        id: "t-kasturilal",
+        seq: 3.2,
+        readAs: "Bangia — State liability / sovereign immunity evolution",
+        unit: 3,
+        yield: "high",
+        tags: ["kasturilal", "sovereign immunity", "peninsular", "nilabati"],
+        title: "Sovereign immunity evolution — Kasturilal to modern State liability",
+        summary: "Old English crown immunity + Kasturilal’s sovereign/non-sovereign split no longer decides Indian State torts. Dec 2024 asked this almost in those words.",
+        explainer: `<p><strong>P. &amp; O. Steam Navigation</strong> (1861): East India Company liable for non-sovereign functions (repair of a ship like a private person) but not for sovereign ones. That colonial fork haunted Article 300 (‘old Government of India’ liabilities).</p>
+        <p><strong>Kasturilal Ralia Ram Jain v State of U.P.</strong> (1965): gold seized by police from a merchant; kept in police custody; misappropriated by a constable. Court: police power is sovereign; no damages. This is the high-water of immunity — and the case every later bench is embarrassed by.</p>
+        <p><strong>Erosion:</strong> <em>State of Rajasthan v Vidyawati</em> (jeep, driver, non-sovereign). <em>Nagendra Rao</em> (1994) — the distinction is outdated; in a welfare/republic the State should answer like any employer, especially where fundamental rights and statutory duties are in play. <em>Nilabati Behera</em> — constitutional tort compensation under 32/226 for custodial death, regardless of Kasturilal. <em>N. Nagendra Rao</em> / later motor and medical lines treat employment-course negligence as vicarious liability of the State.</p>
+        <p>Dec 2024 20-marker: “Old distinction between sovereign and non-sovereign functions no longer invoked…” — agree, with the ladder, then one line that some military/diplomatic cores may still be argued, but police custody of a citizen’s gold is not that core.</p>`,
+        analogy: {
+          title: "Crown plugin removed from the kernel",
+          body: "Kasturilal left a rootkit: if the process was labelled ‘sovereign,’ the crash report was dropped. Nagendra Rao / Nilabati uninstalled the plugin. Vicarious liability of the State is now the default driver; constitutional tort is a privileged interrupt for FR breaches."
+        },
+        diagram: {
+          type: "flow",
+          steps: ["P&O sovereign split", "Vidyawati: jeep = non-sovereign", "Kasturilal: police gold = sovereign (high-water)", "Nagendra Rao: split outdated", "Nilabati: constitutional tort"]
+        },
+        mnemonic: {
+          name: "KASTURI STUCK → NAGENDRA OPEN",
+          hook: "1965 immunity; 1994 welfare-state liability; 32 compensation.",
+          recite: "Do not defend Kasturilal. Tell the story and land on Nagendra Rao + Nilabati."
+        },
+        cases: [
+          { name: "Kasturilal Ralia Ram Jain v State of U.P.", citation: "AIR 1965 SC 1039", point: "Sovereign police function — immunity (now criticised)." },
+          { name: "N. Nagendra Rao & Co. v State of A.P.", citation: "(1994) 6 SCC 205", point: "Distinction no longer decisive." },
+          { name: "Nilabati Behera v State of Orissa", citation: "(1993) 2 SCC 746", point: "Public-law compensation." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "C",
+            marks: "20",
+            q: "Old distinction between sovereign and non-sovereign functions no longer invoked to determine State liability — Comment with cases.",
+            outline: ["P&O; Kasturilal facts; Vidyawati; Nagendra Rao; Nilabati; conclude the quote is correct."]
+          }
+        ],
+        check: ["Kasturilal facts.", "Nagendra Rao holding.", "Constitutional tort vs private law damages."]
+      },
+      {
+        id: "t-remoteness",
+        seq: 7.2,
+        readAs: "Bangia — remoteness of damage (Wagon Mound)",
+        unit: 4,
+        yield: "high",
+        tags: ["remoteness", "wagon mound", "polemis", "foreseeability"],
+        title: "Remoteness of damage — Wagon Mound",
+        summary: "Even after duty, breach, and cause-in-fact, the loss may be too remote. Re Polemis (directness) lost. Wagon Mound (foreseeable type of damage) is the working test.",
+        explainer: `<p><strong>Cause-in-fact</strong> (but-for / material contribution) is not enough. <strong>Remoteness</strong> asks: is this the kind of harm the law will charge to the defendant?</p>
+        <p><strong>Re Polemis (1921):</strong> if the negligent act was the direct cause, even unforeseeable damage (spark → ship burnt) was recoverable. Harsh on defendants; a directness test.</p>
+        <p><strong>Wagon Mound (No. 1) [1961]:</strong> furnace oil in Sydney harbour; welding; fire. Privy Council: the defendant is liable only for damage of a <strong>kind that was reasonably foreseeable</strong>. Pollution of the wharf might have been on the radar; the fire, on those facts, was held not foreseeable. <strong>Wagon Mound (No. 2)</strong> later found fire foreseeable on slightly different findings — teach that foreseeability is fact-sensitive.</p>
+        <p><strong>Thin skull:</strong> you take the victim as you find them as to <em>extent</em> once the <em>type</em> of injury is foreseeable. Eggshell-skull is not a licence to recover a wholly different kind of harm.</p>
+        <p>India follows foreseeability of kind. Pair with contributory negligence (apportionment) — different issue. Contract remoteness is Hadley/s.73; do not mix papers.</p>`,
+        analogy: {
+          title: "Alert type vs blast radius",
+          body: "Duty/breach is ‘you shipped a bad build.’ Remoteness is ‘which incident types were in the risk model?’ Polemis billed you for every cascade. Wagon Mound bills you for the alert classes a reasonable SRE would have on the dashboard. Thin skull: once ‘burn’ is a known class, the victim’s extra-sensitive skin is your problem."
+        },
+        diagram: {
+          type: "flow",
+          steps: ["Duty", "Breach", "But-for cause", "Foreseeable KIND of damage? (Wagon Mound)", "Extent including thin skull"]
+        },
+        mnemonic: {
+          name: "KIND not DIRECTNESS",
+          hook: "Polemis = direct. Wagon Mound = foreseeable type.",
+          recite: "Thin skull goes to extent, not to a new kind. Contract Hadley is a different statute."
+        },
+        cases: [
+          { name: "Overseas Tankship (UK) Ltd v Morts Dock (Wagon Mound No. 1)", citation: "[1961] AC 388", point: "Foreseeable kind." },
+          { name: "Re Polemis", citation: "[1921] 3 KB 560", point: "Directness — no longer the preferred test." }
+        ],
+        pyqs: [
+          {
+            year: "theme",
+            section: "B",
+            marks: "10",
+            q: "Remoteness of damage in tort.",
+            outline: ["Polemis vs Wagon Mound; kind vs extent; thin skull; one Indian sentence."]
+          }
+        ],
+        check: ["Polemis rule.", "Wagon Mound rule.", "Thin skull vs kind."]
+      },
+      {
+        id: "t-contributory",
+        seq: 7.4,
+        readAs: "Bangia — contributory vs composite negligence",
+        unit: 4,
+        yield: "high",
+        tags: ["contributory negligence", "composite", "apportionment"],
+        title: "Contributory vs composite negligence",
+        summary: "Contributory: plaintiff’s own want of care reduces (does not automatically kill) the claim. Composite: two defendants’ negligence combines against an innocent plaintiff — joint and several liability.",
+        explainer: `<p><strong>Contributory negligence:</strong> the plaintiff failed to take reasonable care for their own safety, and that failure was a cause of the damage. Common-law history: it was once a complete defence (harsh). Statutes / Indian practice: <strong>apportionment</strong> — damages reduced in proportion to the plaintiff’s share of responsibility (see also motor-accident practice). Last-opportunity doctrine is a historical patch; do not build the whole answer on it.</p>
+        <p><strong>Composite negligence:</strong> two or more defendants are negligent; the plaintiff is not at fault (or their fault is not the issue). Example: two drivers collide and injure a pedestrian. Each defendant is liable for the whole vis-à-vis the plaintiff (<strong>joint and several</strong>); contribution among defendants is their problem. This is why the pedestrian does not have to sue in percentages.</p>
+        <p><strong>Table it:</strong> whose fault; effect on the plaintiff; contribution. Do not call a two-car crash ‘contributory’ if the injured person is a bystander — that is composite.</p>`,
+        analogy: {
+          title: "Blame percentages vs two bad servers, one user",
+          body: "Contributory: the user also pasted their password — reduce the payout. Composite: two microservices both dropped the request and fried an innocent client — the client can recover 100% from either team; they can fight the invoice internally."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Contributory", "Composite"],
+          rows: [
+            ["Who slipped", "Plaintiff + defendant", "Two (or more) defendants"],
+            ["Plaintiff’s position", "Partly author of own loss", "Innocent (typically)"],
+            ["Result", "Apportion / reduce damages", "Each D liable in full to P"]
+          ]
+        },
+        mnemonic: {
+          name: "P’s SHARE vs TWO Ds",
+          hook: "Contributory = cut P’s cheque. Composite = P can pick either D for 100%.",
+          recite: "Bystander hit by two cars is composite, not contributory."
+        },
+        cases: [
+          { name: "Municipal Corporation of Greater Bombay v Laxman Iyer", citation: "(2003) 8 SCC 731", point: "Flavour of composite / apportionment in accident settings — pair with Bangia illustrations." },
+          { name: "English Law Reform (Contributory Negligence) Act 1945 idea", citation: "comparative", point: "Apportionment replaced the all-or-nothing bar — Indian courts follow the justice of that idea." }
+        ],
+        pyqs: [
+          {
+            year: "theme",
+            section: "B",
+            marks: "10",
+            q: "Distinguish contributory and composite negligence.",
+            outline: ["Definitions; table; one illustration each; joint and several vs reduction."]
+          }
+        ],
+        check: ["Contributory ≠ complete bar today.", "Composite: plaintiff innocent.", "Joint and several meaning."]
+      },
+      {
+        id: "t-nervous-shock",
+        seq: 7.6,
+        readAs: "Bangia — nervous shock",
+        unit: 4,
+        yield: "high",
+        tags: ["nervous shock", "psychiatric", "foreseeability"],
+        title: "Nervous shock (psychiatric injury)",
+        summary: "Negligence can found a claim for psychiatric injury, but not for every sob. Reasonable foreseeability of shock to a person of ordinary phlegm, plus proximity. Dec 2024 Section B.",
+        explainer: `<p>Ordinary grief is not a tort. <strong>Nervous shock</strong> (modern: recognisable psychiatric illness — not mere tears) can be: (1) to a person in the zone of physical danger (primary victim); (2) to a bystander with close ties who sees the accident or its immediate aftermath (secondary victim — tighter controls).</p>
+        <p><strong>English markers</strong> (Indian papers still cite them): <em>Dulieu v White</em> (shock from reasonable fear for oneself); <em>Hambrook v Stokes</em> (mother, children, runaway lorry); <em>McLoughlin v O’Brian</em> (aftermath at hospital, close family); <em>Alcock</em> (Hillsborough — limits on secondary victims: relationship, proximity in time and space, means of perception — television of a disaster is usually not enough).</p>
+        <p><strong>Working Indian exam test:</strong> was psychiatric injury to this class of person reasonably foreseeable? Was there proximity? Was the claimant of ordinary fortitude (no eggshell psyche as to <em>whether</em> shock is foreseeable; thin skull may still go to extent once the type is in)? Dec 2024 asked this under negligence — nest it inside duty/breach/damage, do not invent a free-standing tort unless the facts are pure shock.</p>`,
+        analogy: {
+          title: "Alert fatigue vs a genuine PagerDuty trauma",
+          body: "The law will not compensate every sad dashboard. It will compensate a recognisable psychiatric injury to someone who was in the blast radius or a close relative who walked into the immediate wreckage — if a reasonable observer would have seen that risk. Watching the outage on TV from another city is Alcock-out."
+        },
+        diagram: {
+          type: "decision",
+          title: "Recognisable psychiatric injury?",
+          yes: "Primary (in danger) or secondary (close + proximate)?",
+          no: "Ordinary grief — no tort"
+        },
+        mnemonic: {
+          name: "ILLNESS + FORESEE + PROXIMITY",
+          hook: "Not mere tears. Alcock limits secondary victims.",
+          recite: "Dec 2024: nervous shock under negligence. Name Dulieu / McLoughlin / Alcock."
+        },
+        cases: [
+          { name: "Dulieu v White & Sons", citation: "[1901] 2 KB 669", point: "Shock from fear for oneself." },
+          { name: "McLoughlin v O’Brian", citation: "[1983] 1 AC 410", point: "Aftermath; close family." },
+          { name: "Alcock v Chief Constable of South Yorkshire", citation: "[1992] 1 AC 310", point: "Secondary-victim limits." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "B",
+            marks: "10",
+            q: "Nervous shock under negligence.",
+            outline: ["Place inside negligence; psychiatric illness; primary vs secondary; foreseeability; Alcock limits."]
+          }
+        ],
+        check: ["Why grief is not enough.", "Primary vs secondary.", "Three English names."]
+      },
+      {
+        id: "t-defamation-defences",
+        seq: 5.2,
+        readAs: "Bangia — defamation defences (full set)",
+        unit: 4,
+        yield: "high",
+        tags: ["defamation", "justification", "fair comment", "privilege", "apology"],
+        title: "Defamation — defences in full",
+        summary: "FAME is the tort. The 20-marker is won on defences: truth, fair comment, privilege (absolute/qualified), and the apology/statute pocket. Dec 2024 Q11.",
+        explainer: `<p><strong>Justification / truth:</strong> substantial truth of the defamatory sting. In civil tort (unlike some old criminal flavours) truth is a defence; public-good add-on is the criminal-law cousin (IPC 499 exception / BNS). Still plead truth carefully — a failed justification can aggravate damages.</p>
+        <p><strong>Fair comment / honest opinion:</strong> comment, not a disguised allegation of fact; on a matter of public interest; based on true facts; honest (even if biased). Reviews, editorials, cricket umpires in the letters page.</p>
+        <p><strong>Absolute privilege:</strong> Parliament (Arts. 105/194 flavour), judicial proceedings and fair reports of them, communication between high officers of State in official duty. No malice enquiry.</p>
+        <p><strong>Qualified privilege:</strong> duty/interest to communicate to a person with a corresponding duty/interest (references, police complaints, board minutes). Defeated by <strong>malice</strong> (improper motive / knowledge of falsity).</p>
+        <p><strong>Consent</strong> to publication. <strong>Apology</strong> / offer of amends under statutes (Press / CrPC cousins) may mitigate. <strong>Innocent dissemination</strong> (bookseller, host — evolving with intermediaries). Do not dump Art. 19(1)(a) as a complete defence; it is the constitutional backdrop, and 19(2) lists defamation as a restriction ground.</p>`,
+        analogy: {
+          title: "Publish pipeline with allow-lists",
+          body: "Truth = the payload hashes match reality. Fair comment = opinion layer on disclosed facts. Absolute privilege = kernel log that cannot be sued. Qualified privilege = internal memo on a need-to-know channel, revoked if you mailed it with malice."
+        },
+        diagram: {
+          type: "tree",
+          root: "Defamation defences",
+          branches: ["Truth", "Fair comment", "Absolute privilege", "Qualified privilege (− malice)", "Consent / apology / innocent spread"]
+        },
+        mnemonic: {
+          name: "T-FC-AP-QP",
+          hook: "Truth · Fair comment · Absolute privilege · Qualified privilege (malice kills QP).",
+          recite: "19(1)(a) is not a magic wand. Dec 2024 wanted ingredients + defences."
+        },
+        cases: [
+          { name: "Rustom K. Karanjia v K.M.D. Thackersey", citation: "AIR 1970 Bom 424", point: "Indian press / damages flavour." },
+          { name: "T.S. Bhatia / English privilege classics", citation: "Bangia list", point: "Use one parliamentary and one judicial illustration." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "C",
+            marks: "20",
+            q: "Ingredients of defamation + defences.",
+            outline: ["FAME; libel/slander; four defences with one illustration each; malice and QP; 19(2)."]
+          }
+        ],
+        check: ["Truth vs fair comment.", "Absolute vs qualified privilege.", "How malice operates."]
+      },
+      {
+        id: "t-cpa-hierarchy",
+        seq: 9.2,
+        readAs: "Bangia / CPA 2019 — commissions, unfair trade, product liability",
+        unit: 5,
+        yield: "high",
+        tags: ["cpa 2019", "commissions", "unfair trade", "product liability"],
+        title: "CPA 2019 — commission hierarchy, unfair trade, product liability",
+        summary: "District → State → National Commissions (2021 pecuniary reset). 2019 added unfair contracts, product liability, misleading ads. Translate every old ‘Forum’ PYQ.",
+        explainer: `<p><strong>Hierarchy:</strong> District Commission → State Commission → National Commission → Supreme Court (as provided). <strong>2021 pecuniary (write these):</strong> District up to ₹50 lakh; State ₹50 lakh–₹2 crore; National above ₹2 crore. Original 2019 figures were higher — examiners still mix them; name the revision.</p>
+        <p><strong>Unfair trade practice / misleading advertisement:</strong> 2019 Central Authority (CCPA) can crack down on false ads, including endorser duties. Commissions still give consumer-wise refund/compensation. Do not confuse the regulator with the three-tier commission ladder.</p>
+        <p><strong>Product liability (Ch. VI CPA 2019):</strong> product manufacturer, seller, service provider can be liable for a defective product that causes harm — a statutory cousin of strict ideas, with documented defences (misuse, substantial alteration, common-knowledge danger, etc.). This is the Bangia/CPA upgrade Unique 1986 books miss.</p>
+        <p><strong>Unfair contract:</strong> one-sided terms (excessive deposits, unilateral termination) can be nullified in consumer disputes. E-comm: complainant’s residence as a jurisdictional convenience.</p>
+        <p>Dec 2024: how to write a complaint / State Commission procedure — contents, limitation 2 years, mediation, reliefs, appeal.</p>`,
+        analogy: {
+          title: "Support tiers + a product-recall statute",
+          body: "District/State/National are L1–L3 support with money caps. CCPA is the platform-trust and safety team for ads. Product liability is a statutory warranty that the SKU will not maim, even if the sales contract tried to shrink-wrap it away."
+        },
+        diagram: {
+          type: "vflow",
+          steps: ["Complaint (2 years)", "District / State / National (pecuniary + territory)", "Mediation option → order", "Appeal up", "CCPA track for ads (parallel)"]
+        },
+        mnemonic: {
+          name: "50L / 2CR / ABOVE",
+          hook: "2021 bands. Product liability is new. Forums are dead vocabulary.",
+          recite: "Always correct Forum→Commission in a 2024 PYQ."
+        },
+        cases: [
+          { name: "Indian Medical Association v V.P. Shantha", citation: "(1995) 6 SCC 651", point: "Still the service case — 2019 did not abolish it." },
+          { name: "Lucknow Development Authority v M.K. Gupta", citation: "(1994) 1 SCC 243", point: "Housing as service." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "C",
+            marks: "20",
+            q: "Procedure before State Consumer Dispute Redressal Forum.",
+            outline: ["Rename Commission; who files; pecuniary; contents; limitation; mediation; reliefs; appeal; one line product liability if time."]
+          }
+        ],
+        check: ["2021 pecuniary bands.", "CCPA vs commissions.", "Product-liability defendants."]
       }
     ]
   };

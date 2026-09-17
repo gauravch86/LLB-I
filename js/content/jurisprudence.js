@@ -453,6 +453,385 @@
           "One paragraph distinguishing Marx from Pound.",
           "One Indian constitutional illustration."
         ]
+      },
+      {
+        id: "j-hist-vs-legalhist",
+        seq: 3.2,
+        readAs: "Paranjape — Historical School (stock distinction)",
+        unit: 4,
+        yield: "high",
+        tags: ["historical jurisprudence", "legal history", "savigny", "maine", "distinction"],
+        title: "Distinction — Historical Jurisprudence vs Legal History",
+        summary: "Legal history = what happened in a particular system. Historical jurisprudence = what history teaches about the nature of law.",
+        explainer: `<p><strong>One-liner (write this in the first 90 seconds):</strong> Legal history is the <em>descriptive chronology</em> of a particular legal system; historical jurisprudence is a <em>theory of law</em> that uses history to explain what law <em>is</em> and how it grows. CCS loves this as a 10-marker and as a trap inside a Savigny/Maine 20-marker. Mixing them is how you lose the distinction marks even when you remember Volksgeist.</p>
+        <p><strong>Legal history</strong> answers: what did this polity actually do? It is a log of statutes, courts, conquests, receptions, repeals. Examples: how the East India Company courts sat; when the Contract Act 1872 was passed; how the IPC travelled into the BNS. Output = a timeline of <em>one repo</em>. Method = archive, gazette, case-report chronology. It does not, by itself, tell you whether law is command, spirit, or solidarity.</p>
+        <p><strong>Historical jurisprudence</strong> answers: what does the historical process teach about the <em>nature</em> of law? Savigny’s <em>Volksgeist</em> is not a date; it is a hypothesis that law is the organic product of a people’s consciousness and that hasty codes fail. Maine’s <strong>status → contract</strong> is not a King-list; it is a developmental law of progressive societies. Output = a theory you can contrast with Austin (command) and Pound (engineering). Method = comparative history in the service of legal theory.</p>
+        <table class="compare">
+          <thead><tr><th></th><th>Legal history</th><th>Historical jurisprudence</th></tr></thead>
+          <tbody>
+            <tr><td><strong>What it is</strong></td><td>Descriptive chronology of a particular system</td><td>A school of legal theory that reads history for the nature of law</td></tr>
+            <tr><td><strong>Question</strong></td><td>What happened here, and in what order?</td><td>What is law, if we take growth seriously?</td></tr>
+            <tr><td><strong>Scope</strong></td><td>One jurisdiction / one epoch (Mughal, Company, Republic)</td><td>General claims (Volksgeist; status→contract) tested across systems</td></tr>
+            <tr><td><strong>Method</strong></td><td>Archive, statute book, case chronology</td><td>Comparative-historical method aimed at theory</td></tr>
+            <tr><td><strong>Output</strong></td><td>A logbook: dates, receptions, repeals</td><td>A hypothesis about law (Savigny / Maine)</td></tr>
+            <tr><td><strong>Engineer analogy</strong></td><td><code>git log</code> of one repo</td><td>A theory of how ecosystems of repos evolve</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Exam trap:</strong> “Discuss the Historical School” is <em>not</em> an invitation to narrate English legal history from Magna Carta. Two Savigny paragraphs + Maine’s formula + this distinction table beats five pages of dates. Conversely, a paper that asks the distinction by name must not collapse into a Volksgeist essay with no contrast row.</p>
+        <p><strong>CCS 10/20-marker tip:</strong> Open with the one-liner. Draw the six-row table. Give one Indian illustration of each (history: 1860 IPC enactment; jurisprudence: Maine on village communities as a theory of status). Close: a good lawyer needs the logbook <em>and</em> the hypothesis — but they are not the same subject. Paranjape’s Historical School chapter is the theory side; your Constitution/Crimes papers supply the logbook.</p>`,
+        analogy: {
+          title: "git log vs evolutionary theory",
+          body: "Legal history is git log of linux.git — commits, authors, merges, one tree. Historical jurisprudence is a theory of how open-source ecosystems evolve: why forks happen, why hasty rewrites die, why some APIs ossify into status and others become contract. Savigny is the engineer forbidding a greenfield rewrite; Maine is the anthropologist of version jumps. Neither is a changelog."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["Lens", "Legal history", "Historical jurisprudence"],
+          rows: [
+            ["Object", "One system’s past", "Nature of law via the past"],
+            ["Typical output", "Timeline / reception story", "Volksgeist; status→contract"],
+            ["Failure mode", "Antiquarianism with no theory", "Theory with no dates at all"]
+          ]
+        },
+        mnemonic: {
+          name: "LOGBOOK vs HYPOTHESIS",
+          hook: "Legal history = Logbook. Historical jurisprudence = Hypothesis about law.",
+          recite: "History of law = what happened in this repo. Historical jurisprudence = what history teaches about the nature of law — Savigny spirit, Maine status-to-contract."
+        },
+        cases: [
+          { name: "Savigny, Vom Beruf (1814)", citation: "anti-codification pamphlet", point: "Theory, not a German statute list — the Volksgeist claim is jurisprudence." },
+          { name: "Maine, Ancient Law (1861)", citation: "status → contract", point: "Comparative hypothesis about progressive societies, not a casebook of English kings." },
+          { name: "IPC 1860 / Contract Act 1872", citation: "Indian logbook", point: "Legal-history facts. Use them to test (and criticise) Savigny: India did get midnight codes." }
+        ],
+        pyqs: [
+          {
+            year: "stock CCS",
+            section: "B",
+            marks: "10",
+            q: "What is the distinction between historical jurisprudence and legal history?",
+            outline: [
+              "One-liner: chronology of a system vs theory of law drawn from history.",
+              "Six-row table (what / question / scope / method / output / analogy).",
+              "Legal history = descriptive logbook; give one Indian date-fact.",
+              "Historical jurisprudence = Savigny Volksgeist + Maine status→contract as THEORY.",
+              "Exam close: a 20-marker on the Historical School still needs this distinction in one paragraph so you are not writing a history dissertation."
+            ]
+          },
+          {
+            year: "theme",
+            section: "C",
+            marks: "20",
+            q: "Discuss the Historical School. Is it the same as legal history?",
+            outline: ["Savigny + Maine payload; then an explicit ‘no’ with the table; Analytical contrast if the question also asks it."]
+          }
+        ],
+        check: [
+          "Recite the one-liner without hedging.",
+          "Draw the six-row table from memory (including the git-log analogy).",
+          "Give one Indian illustration of legal history and one of historical jurisprudence."
+        ]
+      },
+      {
+        id: "j-austin-cmd",
+        seq: 2.2,
+        readAs: "Paranjape — Analytical School (Austin unpacked)",
+        unit: 3,
+        yield: "high",
+        tags: ["austin", "command", "sovereign", "sanction", "habit of obedience"],
+        title: "Austin’s command theory — sovereign, sanction, habit of obedience",
+        summary: "Austin’s kernel: law is the command of a sovereign backed by a sanction, in an independent political society marked by habitual obedience. CCS still sets 20-markers on this sentence.",
+        explainer: `<p>Unpack the machine; do not just chant “command theory.” A <strong>command</strong> is a wish of a rational being, signified to another, with an evil to be incurred if it is not complied with. That evil is the <strong>sanction</strong>. Not every request is law (a friend’s advice has no sovereign evil). Not every evil is a legal sanction (social boycott is not Austin’s State sanction).</p>
+        <p><strong>Sovereign:</strong> a person or determinate body, not in a habit of obedience to a like superior, who receives habitual obedience from the bulk of a given society. Marks: determinate; legally illimitable (no legal limitation — political/moral limits do not count for Austin); habit of obedience from the bulk. Independent political society = that relationship. “Bulk” lets him ignore rebels and infants.</p>
+        <p><strong>Province of jurisprudence:</strong> positive law (law set by political superiors to inferiors). Positive morality (international law, club rules, fashion) is analogue, not law properly so called. Divine law is another department. This is why Austin called jurisprudence “the philosophy of positive law.”</p>
+        <p><strong>Stock critiques (write four, not twelve):</strong> (1) custom and judge-made law are not easy “commands”; (2) international law exists without a global sovereign; (3) constitutional law limits sovereigns — Austin has to call it positive morality; (4) habit of obedience is sociological smuggling; (5) criminal-law bias — private law looks odd as a threat. Hart’s “gunman” enlarged: obligation ≠ being obliged.</p>
+        <p><strong>Indian landing:</strong> Parliament looks Austinian until you hit basic structure, judicial review, and federal lists. Use that as a critique paragraph, not as “Austin is useless.” Sanction-picture still maps Crimes (BNS punishments) better than it maps Art. 21.</p>`,
+        analogy: {
+          title: "Root user + kill -9",
+          body: "Sovereign = unique root, no sudoers file above it. Command = a signed syscall. Sanction = kill -9 if you ignore it. Habit of obedience = the cluster actually routes to that root. Constitutional basic-structure is a hypervisor Austin refused to admit."
+        },
+        diagram: {
+          type: "vflow",
+          steps: ["Determinate superior", "Wish + signification", "Sanctioned evil", "Habitual obedience of the bulk", "Independent political society → positive law"]
+        },
+        mnemonic: {
+          name: "C-S-S-H",
+          hook: "Command · Sanction · Sovereign · Habit of obedience.",
+          recite: "Law properly so called is the command of a legally unlimited sovereign, backed by a sanction, in a society that actually obeys."
+        },
+        cases: [
+          { name: "Austin, The Province of Jurisprudence Determined", citation: "1832 lectures", point: "Primary text — not a case. Quote command/sanction/sovereign." },
+          { name: "Kesavananda Bharati", citation: "(1973) 4 SCC 225", point: "Indian counter-example: constituent power is legally limited. Use as critique, not as Austin’s illustration." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2023",
+            section: "C",
+            marks: "20",
+            q: "‘Jurisprudence is the philosophy of Positive Law’ (Austin) — Discuss.",
+            outline: ["Quote; command/sovereign/sanction/habit; province vs positive morality; four critiques; Indian constitutional limit; residual use in criminal law."]
+          }
+        ],
+        check: [
+          "Define command without saying ‘order’ and stopping.",
+          "List four marks of the Austinian sovereign.",
+          "Explain why Austin demotes international law."
+        ]
+      },
+      {
+        id: "j-hart-rules",
+        seq: 2.4,
+        readAs: "Paranjape — Analytical School (Hart)",
+        unit: 3,
+        yield: "high",
+        tags: ["hart", "primary rules", "secondary rules", "rule of recognition"],
+        title: "Hart — primary/secondary rules and the rule of recognition",
+        summary: "Hart upgrades Austin: a legal system is the union of primary duty-rules and secondary power-rules, closed by a rule of recognition officials actually use.",
+        explainer: `<p><strong>Primary rules</strong> impose duties (do not kill; pay tax). A society with only primary rules suffers: uncertainty (what is the rule?), staticity (how do we change it?), inefficiency (who decides disputes?). <strong>Secondary rules</strong> are rules about rules:</p>
+        <ul>
+          <li><strong>Recognition</strong> — the master test of validity (in the UK: what the Queen-in-Parliament enacts…; in India: a more complex pedigree including the Constitution and the Court’s basic-structure overlay).</li>
+          <li><strong>Change</strong> — confer power to legislate / repeal / amend.</li>
+          <li><strong>Adjudication</strong> — confer power to decide disputes and to make that decision authoritative.</li>
+        </ul>
+        <p>The <strong>rule of recognition</strong> is a social rule practised by officials, not a command and not a Grundnorm in Kelsen’s transcendental sense. Internal point of view: officials <em>use</em> it as a standard, not merely predict sanctions. Hart’s gunman situation: being obliged (gun) ≠ having an obligation (rule).</p>
+        <p><strong>Vs Austin:</strong> habit is not a rule; sanctions are not the essence of obligation; the sovereign is not legally illimitable (power-conferring rules include limits). <strong>Vs Kelsen:</strong> validity still chains, but the top is a practised social rule, not a presupposed ought. <strong>Vs Realists:</strong> rules have a core of settled meaning; scepticism is for the penumbra.</p>
+        <p><strong>Exam close:</strong> Indian students should not write “the Constitution is the rule of recognition” as if that ended the debate — officials (including the Court) also practise amendment limits. That is the interesting Hartian sentence.</p>`,
+        analogy: {
+          title: "Repo + CODEOWNERS + CI",
+          body: "Primary rules = application code (do X). Recognition = CODEOWNERS + protected-branch policy officials actually enforce. Change = who may merge. Adjudication = the tribunal that closes the issue. Austin only modelled kill -9. Hart modelled git permissions."
+        },
+        diagram: {
+          type: "tree",
+          root: "Legal system (Hart)",
+          branches: ["Primary: duties", "Secondary: recognition", "Secondary: change", "Secondary: adjudication"]
+        },
+        mnemonic: {
+          name: "R-C-A on duties",
+          hook: "Primary duties; secondary Recognition, Change, Adjudication.",
+          recite: "Hart: union of primary and secondary rules. Rule of recognition is what officials practise as the validity test."
+        },
+        cases: [
+          { name: "Hart, The Concept of Law", citation: "1961", point: "Ch. V–VI — primary/secondary; ch. VI rule of recognition." },
+          { name: "Indian basic structure as practised recognition", citation: "Kesavananda line", point: "Officials treat some amendment outputs as invalid — a Hartian social rule, not an Austinian habit." }
+        ],
+        pyqs: [
+          {
+            year: "theme",
+            section: "B",
+            marks: "10",
+            q: "Explain Hart’s distinction between primary and secondary rules. What is the rule of recognition?",
+            outline: ["Defects of a primary-only world; three secondary rules; recognition as social practice; contrast Austin and Kelsen in four lines."]
+          }
+        ],
+        check: [
+          "Name the three secondary rules without looking.",
+          "Why ‘habit of obedience’ is not enough.",
+          "One Indian sentence on the rule of recognition."
+        ]
+      },
+      {
+        id: "j-analytical-vs-natural",
+        seq: 2.6,
+        readAs: "Paranjape — Analytical vs Natural (stock contrast)",
+        unit: 2,
+        yield: "high",
+        tags: ["analytical", "natural law", "is ought", "positivism"],
+        title: "Analytical School vs Natural Law",
+        summary: "Analytical positivism separates validity from merit (is). Natural law measures human law by reason or justice (ought). CCS sets this as a distinguish question beside Austin/Kelsen.",
+        explainer: `<p><strong>Analytical:</strong> law is a social fact of a particular kind (command, norm, rule). Validity is pedigree, not goodness. Austin, Kelsen, (soft) Hart. You can say “this is law but it is wicked.”</p>
+        <p><strong>Natural law:</strong> law participates in reason/justice. An unjust edict is defective as law (Aquinas, Fuller, Radbruch in the extreme). Stammler: just-law method with variable content. Validity and merit leak into each other.</p>
+        <table class="compare">
+          <thead><tr><th></th><th>Analytical</th><th>Natural</th></tr></thead>
+          <tbody>
+            <tr><td>Core question</td><td>What is valid law in this system?</td><td>What is law worthy of the name?</td></tr>
+            <tr><td>Is/ought</td><td>Separated (positivist)</td><td>Connected (moral test)</td></tr>
+            <tr><td>Typical names</td><td>Austin, Kelsen, Hart</td><td>Aquinas, Locke, Stammler, Fuller</td></tr>
+            <tr><td>Nazi-law problem</td><td>May still be ‘law’, then resist politically</td><td>Extreme injustice fails as law</td></tr>
+            <tr><td>Indian echo</td><td>Art. 13 pedigree + parliamentary form</td><td>Preamble justice; basic-structure morality</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Do not</strong> write that positivists love injustice. Write that they refuse to let disagreement about justice decide the <em>existence</em> question. Hart vs Fuller (1958) is extra credit: inner morality of law (Fuller’s eight failures) vs separation (Hart).</p>`,
+        analogy: {
+          title: "Compile-time vs lint",
+          body: "Analytical: did this commit pass the merge-gate (pedigree)? Natural law: even a merged commit can be ‘not software’ if it violates the language’s moral type system. Fuller is a linter so strict it claims un-linted code is not a program."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["Axis", "Analytical", "Natural"],
+          rows: [
+            ["Validity", "Source / pedigree", "Reason / justice"],
+            ["Wicked statute", "Law, but criticise", "May fail as law"],
+            ["CCS names", "Austin Kelsen Hart", "Stammler Kohler + classics"]
+          ]
+        },
+        mnemonic: {
+          name: "IS vs OUGHT",
+          hook: "Analytical = is (valid). Natural = ought (just).",
+          recite: "Positivists separate existence from merit. Natural lawyers measure human law by reason. Indian public law uses both sentences."
+        },
+        cases: [
+          { name: "Hart, Positivism and the Separation of Law and Morals", citation: "71 Harv. L. Rev. 593 (1958)", point: "Separation thesis — exam extra." },
+          { name: "Fuller, The Morality of Law", citation: "inner morality", point: "Eight ways a ‘system’ fails to be law." }
+        ],
+        pyqs: [
+          {
+            year: "theme",
+            section: "B",
+            marks: "10",
+            q: "Distinguish the Analytical and Natural Law schools.",
+            outline: ["Is/ought table; names; Nazi-law / Radbruch as one paragraph; Indian Preamble vs Art. 13."]
+          }
+        ],
+        check: [
+          "One sentence each on is and ought.",
+          "Why Hart is still a positivist after talking about morality of duty.",
+          "Stammler’s ‘variable content’ in one line."
+        ]
+      },
+      {
+        id: "j-socio-vs-hist",
+        seq: 3.4,
+        readAs: "Paranjape — Sociological vs Historical",
+        unit: 5,
+        yield: "high",
+        tags: ["pound", "savigny", "sociological", "historical"],
+        title: "Sociological School vs Historical School",
+        summary: "Both reject Austin’s midnight command. Historical school watches growth from the people’s past; sociological school watches law’s present social task and engineers interests.",
+        explainer: `<p>Stock CCS contrast (often tucked inside Pound or Savigny essays). <strong>Shared enemy:</strong> law as the whim of a legally unlimited sovereign. <strong>Fork:</strong> Savigny looks backward (custom, Volksgeist, organic growth; legislation is late and dangerous). Pound looks sideways and forward (interests now; jural postulates of this civilisation; legislation and judging as engineering tools).</p>
+        <p>Maine’s status→contract is a historical law of motion. Pound’s social interests (general security, conservation of resources, individual life) are a <em>present inventory</em> that can justify labour codes Maine would have called a return to status. Duguit’s solidarity is closer to sociology than to Volksgeist romance: interdependence now, not folk-spirit then.</p>
+        <p><strong>Method:</strong> Historical = comparative legal history in aid of theory. Sociological = empirical/functional — effects, institutions, pressure groups. <strong>Attitude to reform:</strong> Historical is conservative-leaning (do not cut the organic tissue). Sociological is reformist-leaning (re-balance the scheduler). <strong>Indian Constitution</strong> is a sociological document with historical materials: it did not wait for a single Volksgeist.</p>`,
+        analogy: {
+          title: "Archaeology vs SRE",
+          body: "Historical school = archaeologists of the monolith (how it grew, do not rewrite). Sociological school = SREs looking at latency and fairness of running processes, then shipping patches. Same production system; different dashboards."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Historical", "Sociological"],
+          rows: [
+            ["Time arrow", "Past → present (growth)", "Present interests → reform"],
+            ["Hero", "Savigny / Maine", "Pound / Duguit"],
+            ["Law is", "People’s spirit / evolution", "Social task / solidarity"],
+            ["Legislation", "Suspect if premature", "A tool of engineering"]
+          ]
+        },
+        mnemonic: {
+          name: "GROW vs SCHEDULE",
+          hook: "Historical grows. Sociological schedules.",
+          recite: "Both anti-Austin. Savigny: organic past. Pound: engineer present claims with minimum friction."
+        },
+        cases: [
+          { name: "Labour statutes vs freedom of contract", citation: "legislative trend", point: "Pound-engineering against Maine’s high-water contract." },
+          { name: "Personal law persistence", citation: "constitutional pluralism", point: "Historical leftover that sociological reform still fights over." }
+        ],
+        pyqs: [
+          {
+            year: "theme",
+            section: "B",
+            marks: "10",
+            q: "Distinguish the Historical and Sociological schools.",
+            outline: ["Shared anti-command thesis; time-arrow table; Savigny vs Pound; one Indian illustration each; Maine/Duguit as flavour."]
+          }
+        ],
+        check: [
+          "Name the shared enemy in one line.",
+          "Four-row table from memory.",
+          "Why the Constitution is closer to Pound than Savigny."
+        ]
+      },
+      {
+        id: "j-law-morals",
+        seq: 4.5,
+        readAs: "Paranjape — law and morals (Hart–Fuller / Devlin pocket)",
+        unit: 1,
+        yield: "high",
+        tags: ["law and morals", "hart", "fuller", "devlin", "wolfenden"],
+        title: "Law and morals — overlap, separation, Hart–Fuller, Hart–Devlin",
+        summary: "Murder is illegal and immoral; parking is often only legal. Positivists separate validity from merit; Fuller and Devlin pull morals back in at different joints. CCS 2023 set a 10-marker here.",
+        explainer: `<p><strong>Three maps:</strong> (1) overlap (homicide, theft, fraud); (2) law without moral heat (tax rates, limitation periods); (3) morals without legal enforcement (many private lies, some religious duties). Do not write “law = morals.”</p>
+        <p><strong>Austin/Kelsen/Hart (separation):</strong> a norm can be valid and iniquitous. Hart’s 1958 essay: keep the existence question clean so criticism stays possible. Nazi ‘laws’ can be called law, then condemned — or, if you prefer Radbruch, extreme injustice drops out of law. CCS usually wants the separation plus a sociological critique, not a full Radbruch seminar.</p>
+        <p><strong>Hart vs Fuller:</strong> Fuller — law has an inner morality (generality, publicity, prospectivity, clarity, non-contradiction, possibility of compliance, constancy, congruence of official action). A system that fails these is not a legal system. Hart — those are principles of efficacy, not a moral test of validity; a wicked but formally complete code is still law.</p>
+        <p><strong>Hart vs Devlin (Wolfenden):</strong> should the criminal law enforce society’s moral majority (Devlin: disintegration thesis — shared morals bind society)? Hart (Mill flavour): harm principle; private immorality is not the law’s business. Indian landing: constitutional morality vs popular morality (<em>Navtej Johar</em> is extra, not Sem-1 core, but one line is gold). Do not drag Art. 377 into a jurisprudence 10-marker unless you have time.</p>
+        <p><strong>10-marker spine:</strong> define; three-circle overlap; separation thesis; one sentence Fuller; one sentence Devlin; Indian example (sati legally banned against ‘customary morals’).</p>`,
+        analogy: {
+          title: "Type checker vs community guidelines",
+          body: "Separation: the compiler can accept a cruel program if it types. Fuller: a compiler that randomly changes keywords is not a compiler. Devlin: the platform should ban what the village finds disgusting. Hart: ban harm, not disgust."
+        },
+        diagram: {
+          type: "tree",
+          root: "Law × morals",
+          branches: ["Overlap (core crimes)", "Law only (technical rules)", "Morals only (private vice)", "Debates: Fuller / Devlin"]
+        },
+        mnemonic: {
+          name: "O-S-F-D",
+          hook: "Overlap · Separation · Fuller inner morality · Devlin enforcement.",
+          recite: "Law and morals intersect but are not identical. Hart separates validity from merit; Fuller loads procedure with morality; Devlin wants the criminal law to police the moral majority."
+        },
+        cases: [
+          { name: "Wolfenden Report (1957)", citation: "UK", point: "Backdrop of Hart–Devlin — private homosexual acts and the harm principle." },
+          { name: "Fuller–Hart exchange", citation: "Harvard Law Review 1958", point: "Inner morality vs separation." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2023",
+            section: "B",
+            marks: "10",
+            q: "Law and Morals.",
+            outline: ["Overlap/divergence; positivist separation; Fuller one para; Devlin one para; Indian custom-vs-statute illustration."]
+          }
+        ],
+        check: [
+          "Three-circle map in 30 seconds.",
+          "Fuller vs Hart in four lines.",
+          "Devlin’s disintegration claim in one sentence."
+        ]
+      },
+      {
+        id: "j-pound-interests",
+        seq: 5.2,
+        readAs: "Paranjape — Pound (interests taxonomy)",
+        unit: 5,
+        yield: "high",
+        tags: ["pound", "interests", "jural postulates", "social engineering"],
+        title: "Pound’s classification of interests (and jural postulates)",
+        summary: "The 20-marker on social engineering is lost if you cannot inventory Individual / Public / Social interests and say what a jural postulate is.",
+        explainer: `<p>Pound’s engineering metaphor is empty without the inventory. Law maximises satisfied claims with minimum friction. Claims are classified so the scheduler has labels:</p>
+        <ul>
+          <li><strong>Individual interests:</strong> personality (body, honour, privacy); domestic relations; substance (property, succession, contract, employment).</li>
+          <li><strong>Public interests:</strong> interests of the State as a juristic person — efficient administration, territorial integrity, fiscus.</li>
+          <li><strong>Social interests:</strong> general security (peace, health, transactions); security of social institutions (family, religion, political); general morals; conservation of social resources; general progress (economic, political, cultural); individual life (claim to a human existence — the bridge to Art. 21 essays).</li>
+        </ul>
+        <p><strong>Jural postulates</strong> of a civilisation: the background assumptions a given society treats as reasonable (others will not aggress; they will not deceive in bargains; they will control things they have created). Postulates are historical — they change — which is how Pound stays compatible with a mild historical school without becoming Savigny.</p>
+        <p><strong>How to use in an answer:</strong> pick one Indian conflict (environment vs industry; reservation vs open competition; labour vs contract freedom) and show two interests colliding, then the statute/court as the engineering act. <strong>Critique:</strong> who weighs? measuring friction is political; American progressive bias.</p>`,
+        analogy: {
+          title: "QoS classes + sysctl",
+          body: "Individual / Public / Social = traffic classes. Jural postulates = default sysctl of this civilisation. Social engineering = retune QoS so the cluster meets the SLA with minimum packet drop (friction)."
+        },
+        diagram: {
+          type: "tree",
+          root: "Pound interests",
+          branches: ["Individual (personality / domestic / substance)", "Public (State as person)", "Social (security, morals, resources, progress, individual life)"]
+        },
+        mnemonic: {
+          name: "IPS + POSTULATES",
+          hook: "Individual · Public · Social. Postulates = default assumptions of the civilisation.",
+          recite: "Name three social interests (security, morals, resources) and one Indian collision before you praise ‘engineering.’"
+        },
+        cases: [
+          { name: "M.C. Mehta line", citation: "Art. 21 environment", point: "Social interest in resources vs individual enterprise." },
+          { name: "Indra Sawhney", citation: "(1992) Supp (3) SCC 217", point: "Engineering between open competition (individual) and representation (social). Do not over-import — one line." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024 & 2023",
+            section: "C",
+            marks: "20",
+            q: "Social Engineering — classify the interests. What are jural postulates?",
+            outline: ["Define engineering; IPS inventory with examples; postulates; Indian collision; critiques."]
+          }
+        ],
+        check: [
+          "Recite IPS with two examples each.",
+          "Define jural postulates without saying ‘justice’.",
+          "One collision, two interests, one statute."
+        ]
       }
     ]
   };

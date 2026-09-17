@@ -371,6 +371,459 @@
           { year: "theme", section: "B", marks: "10", q: "Adultery.", outline: ["Old 497; constitutional defects; Joseph Shine; BNS omission; civil residual."] }
         ],
         check: ["82 ingredients + exception.", "Joseph Shine holdings.", "Do not cite 497 as live criminal law."]
+      },
+      {
+        id: "cr-mens-rea",
+        seq: 1.2,
+        readAs: "Paranjape BNS — elements of crime (actus reus / mens rea)",
+        unit: 1,
+        yield: "high",
+        tags: ["mens rea", "actus reus", "actus non facit", "strict liability"],
+        title: "Mens rea and actus reus",
+        summary: "Actus non facit reum nisi mens sit rea: a forbidden act plus a guilty mind, unless the statute is a strict-liability offence. Dec 2024 quoted the maxim; 2022 asked mens rea as a mid-marker.",
+        explainer: `<p><strong>Actus reus:</strong> a willed bodily movement (or a legally relevant omission where duty exists), plus the prescribed circumstances and consequences. Sleepwalking / reflex is not a willed act. Possession can be an actus if knowledge is built in.</p>
+        <p><strong>Mens rea:</strong> the mental element the definition requires — intention, knowledge, rashness, negligence, dishonesty, fraudulently (BNS/IPC definition clauses). Not a single mood called ‘guilt.’ Transfer of malice / transferred intent still works when A aims at B and hits C.</p>
+        <p><strong>Maxim:</strong> <em>actus non facit reum nisi mens sit rea</em> — the act does not make a person guilty unless the mind is also guilty. Dec 2024 Section A. Exceptions: public-welfare / strict-liability offences (food adulteration, some traffic, some economic statutes) where the statute is silent and the penalty/regulatory purpose shows Parliament did not want a mens rea fight. Common-law presumption of mens rea (<em>Sherras v De Rutzen</em>; Indian <em>State of Maharashtra v M.H. George</em> flavour) still opens the essay.</p>
+        <p><strong>BNS:</strong> definitions of dishonestly, fraudulently, reason to believe, voluntarily live in the general part (learn the numbers from the bare act). Strict / constructive liability also sit in this paper’s general-principles unit — 3(5) common intention is constructive, not ‘no mens rea.’</p>`,
+        analogy: {
+          title: "Forbidden syscall + intent flag",
+          body: "Actus reus is the syscall that is not on the allow-list. Mens rea is the intent flag in the process (knowing, intending, dishonest). Strict liability is a watchdog that kills the process on the syscall alone — rare, and you must justify why the statute dropped the flag."
+        },
+        diagram: {
+          type: "tree",
+          root: "Crime",
+          branches: ["Actus reus (willed act/omission + circumstances)", "Mens rea (as defined)", "Unless statute is strict-liability"]
+        },
+        mnemonic: {
+          name: "ACT + MIND (unless statute strips the mind)",
+          hook: "Dec 2024 maxim. Constructive liability ≠ no mens rea.",
+          recite: "Intention / knowledge / rashness / negligence / dishonesty are different flags. Name the one in the section."
+        },
+        cases: [
+          { name: "Sherras v De Rutzen", citation: "[1895] 1 QB 918", point: "Presumption of mens rea." },
+          { name: "State of Maharashtra v Mayer Hans George", citation: "AIR 1965 SC 722", point: "Statutory offence / mens rea — Indian discussion piece." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024 BNS",
+            section: "A",
+            marks: "4",
+            q: "Actus non facit reum nisi mens sit rea.",
+            outline: ["Translate; act + mind; exception for strict liability; one illustration."]
+          },
+          { year: "2022", section: "B", marks: "10", q: "Mens rea.", outline: ["Define; forms; maxim; statutory silence; constructive liability contrast."] }
+        ],
+        check: ["Translate the maxim.", "Four species of mens rea.", "When strict liability is argued."]
+      },
+      {
+        id: "cr-mistake",
+        seq: 2.2,
+        readAs: "Paranjape BNS — mistake of fact vs law (ss.14, 17)",
+        unit: 3,
+        yield: "high",
+        tags: ["mistake of fact", "mistake of law", "bns 14", "bns 17"],
+        title: "Mistake of fact vs mistake of law",
+        summary: "Mistake of fact can excuse (BNS 14 / 17). Mistake of law almost never does. 2022 short-noted mistake of fact; the distinction is a standard 10-marker.",
+        explainer: `<p><strong>BNS 14 (IPC 76):</strong> nothing is an offence if done by a person who is, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith believes himself to be, bound by law to do it. Classic: soldier firing under a lawful-looking order that is, in fact, a mistake of identity/facts.</p>
+        <p><strong>BNS 17 (IPC 79):</strong> nothing is an offence if done by a person justified by law, or who by reason of a mistake of fact and not a mistake of law in good faith believes himself justified. Classic: arresting the wrong man in good faith believing a warrant/facts that would justify arrest.</p>
+        <p><strong>Mistake of law:</strong> ignorantia juris non excusat. You cannot defend a theft by saying you thought the BNS did not apply in this district. Tax and regulatory statutes sometimes create specific reliefs; that is not the general criminal exception.</p>
+        <p><strong>Good faith</strong> (BNS definition): due care and attention — not mere honesty of a fool. A wild rumour is not a 14/17 fact.</p>
+        <p>Pair with private defence: a mistake of fact about the threat can still feed BNS 34–44 if reasonable. Pair with bigamy: mistake of law about personal law is usually fatal; mistake of fact about the spouse’s death (seven-year exception) is a different clause.</p>`,
+        analogy: {
+          title: "Wrong config vs ‘I didn’t read the RFC’",
+          body: "Mistake of fact: you SSH’d into the wrong box because the inventory DB pointed there in good faith. Mistake of law: you deleted production and say you thought the security policy was optional. 14/17 only cover the inventory error, with due care."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Mistake of fact (14/17)", "Mistake of law"],
+          rows: [
+            ["Excuse?", "Yes, if good faith + due care", "Generally no"],
+            ["Illustration", "Wrong person under a justified-looking arrest", "‘I didn’t know this was an offence’"],
+            ["IPC cousins", "76 / 79", "ignorantia juris"]
+          ]
+        },
+        mnemonic: {
+          name: "FACT YES / LAW NO",
+          hook: "14 bound-by-law; 17 justified-by-law. Both need good faith.",
+          recite: "Good faith = due care, not a shrug."
+        },
+        cases: [
+          { name: "R v Prince (contrast)", citation: "(1875) LR 2 CCR 154", point: "English cautionary tale on fact/law — use lightly; Indian 14/17 text controls." },
+          { name: "State of Orissa v Khora Ghasi / Indian 79 illustrations", citation: "commentary illustrations", point: "Hunt with good-faith belief in a dangerous animal — fact, not law." }
+        ],
+        pyqs: [
+          { year: "2022", section: "A", marks: "4", q: "Mistake of fact.", outline: ["14/17; good faith; contrast law."] }
+        ],
+        check: ["14 vs 17 in one line each.", "Why good faith ≠ honesty alone.", "Law mistake default rule."]
+      },
+      {
+        id: "cr-intoxication",
+        seq: 2.4,
+        readAs: "Paranjape BNS — drunkenness (ss.23–24)",
+        unit: 3,
+        yield: "high",
+        tags: ["intoxication", "bns 23", "bns 24", "voluntary", "involuntary"],
+        title: "Intoxication — involuntary vs voluntary (BNS 23–24)",
+        summary: "Involuntary intoxication can wipe mens rea (BNS 23). Voluntary intoxication is almost never a defence; BNS 24 still treats you as knowing what a sober person would know when the offence needs intent/knowledge.",
+        explainer: `<p><strong>BNS 23 (IPC 85):</strong> nothing is an offence if the person, at the time, is incapable of knowing the nature of the act or that it is wrong/contrary to law, by reason of intoxication <em>caused without his knowledge or against his will</em>. Spiked drink; forced intoxication. This is a true incapacity defence, cousin to unsoundness of mind (BNS 22 / IPC 84), but the cause is the drink you did not choose.</p>
+        <p><strong>BNS 24 (IPC 86):</strong> where an act is not an offence unless done with a particular intent or knowledge, a person who does it in a state of intoxication shall be dealt with as if he had the same knowledge as he would have had if not intoxicated, unless the thing that intoxicated him was administered without his knowledge or against his will. Translation: voluntary drunks keep <em>knowledge</em> imputed; specific <em>intent</em> debates are narrower and dangerous to over-claim in CCS answers. Do not write “I was drunk so no murder.”</p>
+        <p><strong>Exam:</strong> table involuntary vs voluntary; link 23 to 22’s McNaughten-style knowledge test; warn that Dutch courage is aggravation in sentencing talk, not a defence. 2022 short notes included good faith / injury — intoxication still rotates as a general-exception 10-marker.</p>`,
+        analogy: {
+          title: "Poisoned input vs you pip-installed vodka",
+          body: "BNS 23: someone injected malware into your runtime — you are not treated as the author. BNS 24: you apt-get installed the vodka yourself. The OS still charges you with the knowledge a sober process would have had. You do not get to drop the intent flag because you pulled the flask."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Involuntary (23)", "Voluntary (24)"],
+          rows: [
+            ["How the drink arrived", "Without knowledge / against will", "Self-administered"],
+            ["Defence?", "Yes, if capacity to know is gone", "Knowledge imputed; not a general defence"],
+            ["Cousin", "Unsoundness (22)", "Dutch courage (aggravation talk)"]
+          ]
+        },
+        mnemonic: {
+          name: "SPIKED = 23 · SELF = 24",
+          hook: "24 imputes knowledge of the sober person.",
+          recite: "Never use vodka to downgrade murder to accident."
+        },
+        cases: [
+          { name: "Director of Public Prosecutions v Beard (contrast)", citation: "[1920] AC 479", point: "English specific-intent discussion — do not let it overwrite BNS 24’s text." },
+          { name: "Indian 85/86 commentary illustrations", citation: "Paranjape BNS", point: "Stick to the statute’s without-knowledge / against-will clause." }
+        ],
+        pyqs: [
+          {
+            year: "theme",
+            section: "B",
+            marks: "10",
+            q: "How far is drunkenness a defence under the BNS?",
+            outline: ["23 vs 24 table; knowledge imputation; unsoundness cousin; one problem fact-pattern."]
+          }
+        ],
+        check: ["23’s two gates (without knowledge / against will).", "What 24 imputes.", "Why murder is not ‘reduced’ by a flask."]
+      },
+      {
+        id: "cr-pd-limits",
+        seq: 2.6,
+        readAs: "Paranjape BNS — private defence body vs property (ss.34–44)",
+        unit: 3,
+        yield: "high",
+        tags: ["private defence", "bns 38", "bns 41", "body", "property"],
+        title: "Private defence — body vs property limits (when death is allowed)",
+        summary: "Shield, not sword. Body and property have different death-justifying lists (BNS 38 vs 41). 2022 asked when private defence of person extends to death.",
+        explainer: `<p><strong>Shared limits (BNS 34–37 / IPC 96–99 flavour):</strong> no private defence against an act that does not reasonably cause apprehension of harm; no more harm than necessary; no defence if there is time to fetch public authorities (with the usual caveats about suddenness); no defence against an act of a public servant acting in good faith under colour of office unless it reasonably causes the apprehension of death/grievous hurt.</p>
+        <p><strong>Body — death allowed (BNS 38 / IPC 100 list):</strong> assault reasonably causing apprehension of death; of grievous hurt; of rape / grievous sexual assault; of kidnapping/abducting; of wrongfully confining in circumstances that may reasonably cause apprehension that the victim will be unable to have recourse to public authorities. Recite the list; do not invent ‘insult’ as a death case.</p>
+        <p><strong>Property — death allowed (BNS 41 / IPC 103 list):</strong> robbery; house-breaking by night; mischief by fire on a human dwelling; theft/mischief/house-trespass in circumstances of reasonable apprehension of death/grievous hurt if private defence is not used. Property-alone daytime theft is not a shooting licence.</p>
+        <p>2022 20-marker: private defence of person when it extends to death — open with shield principle, dump BNS 38 list, one illustration, then the public-servant and excess caveats. Map IPC 100 in parentheses for old PYQs.</p>`,
+        analogy: {
+          title: "Firewall drop rules, not a proactive DDoS",
+          body: "Body-list = drop packets that look like kill/rape/kidnap. Property-list = drop the night-raid / robbery / fire-on-dwelling packets. You do not SYN-flood the neighbour because they pinged your garden gnome (daytime theft)."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Body (BNS 38)", "Property (BNS 41)"],
+          rows: [
+            ["Death OK if", "Death / GH / rape / kidnap / sealed confinement apprehension", "Robbery / night house-breaking / fire on dwelling / theft-with-death-apprehension"],
+            ["Not death", "Mere insult or simple hurt", "Ordinary daytime theft"]
+          ]
+        },
+        mnemonic: {
+          name: "SHIELD · 38 BODY · 41 PROPERTY",
+          hook: "Time to call police? Then usually no PD. Excess harm kills the defence.",
+          recite: "IPC 100/103 live in parentheses. Public-servant good-faith acts are a special fence."
+        },
+        cases: [
+          { name: "Darshan Singh v State of Punjab", citation: "(2010) 2 SCC 333", point: "Accused need not prove PD beyond reasonable doubt; burden nuances." },
+          { name: "Jai Dev / English 100-list illustrations", citation: "SC line", point: "Apprehension must be reasonable." }
+        ],
+        pyqs: [
+          {
+            year: "2022",
+            section: "C",
+            marks: "20",
+            q: "Private defence of person (when extends to death).",
+            outline: ["Shield principle; limits; BNS 38 list with IPC 100 in brackets; excess; public servant; one case."]
+          }
+        ],
+        check: ["Four body-death situations.", "Three property-death situations.", "The ‘time to fetch police’ limit."]
+      },
+      {
+        id: "cr-murder-exceptions",
+        seq: 4.2,
+        readAs: "Paranjape BNS — murder exceptions (grave provocation etc.)",
+        unit: 4,
+        yield: "high",
+        tags: ["murder", "exceptions", "provocation", "bns 101", "ipc 300"],
+        title: "Murder exceptions under BNS (grave provocation and the rest)",
+        summary: "If the case is culpable homicide, the five (classic) exceptions pull it out of murder into punishable CH. Grave and sudden provocation is the celebrity; learn all five.",
+        explainer: `<p>Structure: BNS 100 CH definition → BNS 101 murder when the CH matches the special clauses → <strong>exceptions</strong> to 101 (IPC 300 exceptions mapped). If an exception applies, it is still homicide, still punishable, but not murder (BNS 105 / IPC 304 flavour — write the current number from the bare act).</p>
+        <p><strong>Exception 1 — grave and sudden provocation:</strong> the offender loses self-control; provocation is grave and sudden; not sought as an excuse; not given by a thing done in obedience to law / by a public servant in lawful exercise / in private defence. Words may or may not suffice — facts. Cooling-off kills the exception.</p>
+        <p><strong>Exception 2 — private defence exceeded in good faith</strong> without an intention to do more harm than necessary. <strong>Exception 3 — public servant</strong> exceeding powers in good faith, believing himself bound/justified. <strong>Exception 4 — sudden fight</strong> in the heat of passion upon a sudden quarrel, without premeditation, not taking undue advantage or acting cruelly. <strong>Exception 5 — consent</strong> of a person above 18 (euthanasia/duel flavour — narrow and dangerous).</p>
+        <p>Govinda / Inder Singh Deo style facts still teach the CH/murder line; exceptions are the second engine. Dec 2023/24 20-markers on CH vs murder should spend a dedicated paragraph here, not only on ‘intention vs knowledge.’</p>`,
+        analogy: {
+          title: "Murder is the bullseye; exceptions are documented downgrade paths",
+          body: "101 is the kill-bit. Exceptions are RFCs that downgrade the ticket from murder to CH-not-murder if provocation/sudden-fight/PD-excess/public-servant/consent actually match. Cooling-off is a timeout that closes the provocation RFC."
+        },
+        diagram: {
+          type: "tree",
+          root: "CH that looks like murder",
+          branches: ["E1 provocation", "E2 PD exceeded", "E3 public servant", "E4 sudden fight", "E5 consent"]
+        },
+        mnemonic: {
+          name: "P-PD-PS-SF-C",
+          hook: "Provocation · Private defence excess · Public servant · Sudden fight · Consent.",
+          recite: "Exception ≠ acquittal. It is still culpable homicide."
+        },
+        cases: [
+          { name: "Reg. v Govinda", citation: "(1876) 1 Bom 342", point: "CH vs murder teaching case." },
+          { name: "K.M. Nanavati v State of Maharashtra", citation: "AIR 1962 SC 605", point: "Grave and sudden provocation — cooling time / words." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2023 / 2024",
+            section: "C",
+            marks: "20",
+            q: "Differentiate murder and culpable homicide (BNS).",
+            outline: ["100 vs 101; then the five exceptions as the downgrade engine; Govinda; Nanavati on provocation."]
+          }
+        ],
+        check: ["Five exceptions by name.", "Provocation: grave + sudden + no cooling.", "Exception is not an acquittal."]
+      },
+      {
+        id: "cr-hurt-gh",
+        seq: 5.2,
+        readAs: "Paranjape BNS — hurt vs grievous hurt",
+        unit: 4,
+        yield: "high",
+        tags: ["hurt", "grievous hurt", "bns 114", "bns 116", "ipc 320"],
+        title: "Hurt vs grievous hurt (the eight-clause list)",
+        summary: "Hurt is bodily pain, disease or infirmity. Grievous hurt is a closed list (BNS 116 / IPC 320). 2022 short-noted grievous hurt — recite the eight.",
+        explainer: `<p><strong>Hurt (BNS 114 / IPC 319):</strong> whoever causes bodily pain, disease or infirmity to any person. No skin-break requirement. A slap that hurts is hurt.</p>
+        <p><strong>Grievous hurt (BNS 116 / IPC 320) — list (memorise):</strong> (1) emasculation; (2) permanent privation of the sight of either eye; (3) permanent privation of the hearing of either ear; (4) privation of any member or joint; (5) destruction or permanent impairing of the powers of any member or joint; (6) permanent disfiguration of the head or face; (7) fracture or dislocation of a bone or tooth; (8) any hurt which endangers life or which causes the sufferer to be during the space of twenty days in severe bodily pain or unable to follow ordinary pursuits.</p>
+        <p>The 20-day clause is not ‘hospital for 20 days automatically = grievous’ — it is severe pain or inability to follow ordinary pursuits. Fracture is enough even if the person is back at work. Weapons / poison / grievous hurt endangering life have aggravated sections — only open them if the question is a problem.</p>
+        <p>Pair with criminal force (BNS 129) and assault (BNS 130): force vs gesture. Wrongful restraint/confinement is a different hole.</p>`,
+        analogy: {
+          title: "Minor incident vs P0 bodily outage",
+          body: "Hurt is a P2 — pain/disease/infirmity. Grievous is a closed P0 catalogue: lost eye, fracture, 20-day outage of ordinary life, disfigured face. Do not invent a ninth clause because the facts were messy."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Hurt 114", "Grievous 116"],
+          rows: [
+            ["Definition", "Pain / disease / infirmity", "Eight enumerated harms"],
+            ["Example", "Punch, bruise", "Fracture, lost eye, 20-day disablement"],
+            ["Exam job", "Define", "Recite the list"]
+          ]
+        },
+        mnemonic: {
+          name: "E-E-E-M-M-D-F-20",
+          hook: "Emasculation, Eye, Ear, Member, Member’s power, Disfigure, Fracture, 20-days.",
+          recite: "320 IPC = 116 BNS. Fracture alone is grievous."
+        },
+        cases: [
+          { name: "Statutory list is the authority", citation: "BNS 116", point: "Cases illustrate ‘disfigure’ or ‘20 days’ — the list is the syllabus." }
+        ],
+        pyqs: [
+          { year: "2022", section: "A", marks: "4", q: "Grievous hurt.", outline: ["114 vs 116; recite eight; 20-day nuance."] }
+        ],
+        check: ["Hurt in one line.", "Eight GH clauses.", "20-day is not mere hospitalisation."]
+      },
+      {
+        id: "cr-theft-ladder",
+        seq: 7.2,
+        readAs: "Paranjape BNS — theft, extortion, robbery, dacoity",
+        unit: 4,
+        yield: "high",
+        tags: ["theft", "extortion", "robbery", "dacoity", "bns 303"],
+        title: "Theft vs extortion vs robbery vs dacoity (the ladder)",
+        summary: "Theft takes; extortion obtains by fear; robbery is theft-or-extortion plus violence/fear immediately; dacoity is robbery by five. 2022 and 2024 both climb this ladder.",
+        explainer: `<p><strong>Theft (BNS 303 / IPC 378):</strong> dishonest intention to take movable property out of the possession of any person without that person’s consent, and moving it to such taking. Five ingredients: movable; possession of another; dishonest; without consent; moving. 2023 asked a problem on house entry + box moved (attempt vs theft — movement is the completion of theft).</p>
+        <p><strong>Extortion (BNS 308 / IPC 383):</strong> intentionally putting a person in fear of injury and thereby dishonestly inducing delivery of property/valuable security. The victim <em>hands over</em>. Fear, not stealth.</p>
+        <p><strong>Robbery (BNS 309 / IPC 390):</strong> theft becomes robbery if, in order to the committing of the theft, or in committing, or in carrying away, the offender causes/attempts death, hurt, or wrongful restraint, or puts in fear of instant death/hurt/wrongful restraint. Extortion becomes robbery if the fear is of instant death/hurt/restraint and the offender is in the presence of the victim. Instant + presence is the extortion-robbery gate.</p>
+        <p><strong>Dacoity (BNS 310 / IPC 391):</strong> robbery by five or more. Attempt and assembly for dacoity have their own teeth. Snatching (BNS 304) is a BNS extra — short note only.</p>
+        <p>Dec 2024 BNS: theft vs extortion. 2022: theft→robbery. Table, then one problem sentence.</p>`,
+        analogy: {
+          title: "Stealth take → scare-mail → gun in the room → gang",
+          body: "Theft = silent git clone of someone else’s repo. Extortion = you email a bomb threat and they push the keys. Robbery = the threat or hurt is instant and you are in the room (or the theft is accompanied by hurt/fear). Dacoity = five clones with the same raid."
+        },
+        diagram: {
+          type: "flow",
+          steps: ["Theft (move + dishonest + no consent)", "Extortion (fear → delivery)", "Robbery (instant violence/fear overlay)", "Dacoity (≥5)"]
+        },
+        mnemonic: {
+          name: "MOVE / FEAR / INSTANT / FIVE",
+          hook: "303 · 308 · 309 · 310. Presence+instant is the extortion-robbery key.",
+          recite: "If the box was only moved, theft may already be complete. If five, think 310."
+        },
+        cases: [
+          { name: "Pyare Lal Bhargava v State of Rajasthan", citation: "AIR 1963 SC 1094", point: "Temporary taking can still be theft if dishonest." },
+          { name: "State illustrations in BNS 303/309", citation: "bare-act illustrations", point: "Recite two; they are written for this exam." }
+        ],
+        pyqs: [
+          { year: "Dec 2024 BNS", section: "C", marks: "20", q: "Theft under BNS; difference from extortion.", outline: ["303 ingredients; 308; table; robbery teaser."] },
+          { year: "2022", section: "C", marks: "20", q: "When theft becomes robbery.", outline: ["390/309 overlays; illustrations; dacoity one para."] }
+        ],
+        check: ["Five theft ingredients.", "Extortion: delivery by fear.", "When extortion becomes robbery."]
+      },
+      {
+        id: "cr-cheating",
+        seq: 7.4,
+        readAs: "Paranjape BNS — cheating essentials (s.318)",
+        unit: 4,
+        yield: "high",
+        tags: ["cheating", "bns 318", "ipc 415", "deception"],
+        title: "Cheating — essentials (BNS 318)",
+        summary: "Deception + dishonest inducement to deliver property or to do/omit an act the victim would not otherwise do, causing or likely to cause harm. Dec 2024 short-noted cheating.",
+        explainer: `<p><strong>BNS 318 (IPC 415):</strong> whoever, by deceiving any person, fraudulently or dishonestly induces that person to deliver any property, or to consent that any person shall retain property, or intentionally induces the person to do or omit anything which they would not do/omit if not so deceived, and which act/omission causes or is likely to cause damage/harm to body, mind, reputation or property, cheats.</p>
+        <p><strong>Ingredients:</strong> (1) deception (false representation, or conduct; mere non-disclosure is not always enough); (2) fraudulent or dishonest inducement; (3) delivery of property / retention consent / induced act-omission; (4) harm or likelihood of harm of the listed kinds. Mens rea at the <em>time of the promise</em> matters: a later failure to perform a genuine promise is contract, not cheating. <em>Hridaya Ranjan Prasad Verma</em> flavour: dishonest intention from the beginning.</p>
+        <p><strong>Aggravations:</strong> cheating by personation; 318/420-style ‘dishonestly inducing delivery’ with heavier punishment — confirm the BNS number in the bare act before the hall. Vs theft: cheating uses the victim as the delivery agent; theft takes without consent. Vs extortion: fear of injury vs deceit.</p>`,
+        analogy: {
+          title: "Phish vs grab vs threaten",
+          body: "Cheating is a phishing form: the user types the password because the page lied. Theft is stealing the laptop. Extortion is ‘pay or we leak.’ If the startup honestly hoped to deliver and later failed, you are in Contract-I, not BNS 318."
+        },
+        diagram: {
+          type: "vflow",
+          steps: ["Deception", "Dishonest/fraudulent inducement at t0", "Delivery / act-omission", "Harm or likely harm"]
+        },
+        mnemonic: {
+          name: "LIE → HAND OVER → HARM",
+          hook: "Intention must exist at the promise, not only at the default.",
+          recite: "415 IPC = 318 BNS. Contrast theft and extortion in three lines."
+        },
+        cases: [
+          { name: "Hridaya Ranjan Prasad Verma v State of Bihar", citation: "(2000) 4 SCC 168", point: "Breach of contract vs cheating — intention at inception." },
+          { name: "Ram Jas v State of U.P.", citation: "(1970) 2 SCC 740", point: "Ingredients of 415/420 flavour." }
+        ],
+        pyqs: [
+          { year: "Dec 2024 BNS", section: "A", marks: "4", q: "Cheating.", outline: ["318 essentials; inception-intent; vs theft."] }
+        ],
+        check: ["Four ingredients.", "Why a failed loan is not automatically 318.", "Cheating vs theft vs extortion."]
+      },
+      {
+        id: "cr-unlawful-assembly",
+        seq: 6.2,
+        readAs: "Paranjape BNS — unlawful assembly & common object (ss.189–190)",
+        unit: 4,
+        yield: "high",
+        tags: ["unlawful assembly", "common object", "bns 189", "bns 190"],
+        title: "Unlawful assembly — essentials and common object",
+        summary: "Five or more; common object of the five listed kinds (BNS 189). Member liability for offences committed in prosecution of that object (BNS 190 / IPC 149). Dec 2024 Section B.",
+        explainer: `<p><strong>BNS 189 (IPC 141):</strong> an assembly of <strong>five or more</strong> persons is unlawful if the common object is: (1) to overawe government/legislature by criminal force or show of criminal force; (2) to resist the execution of any law or legal process; (3) to commit mischief, criminal trespass or any other offence; (4) by criminal force / show of it to take or obtain possession of any property, or to deprive a right, or to enforce a right/supposed right; (5) by criminal force / show of it to compel a person to do what they are not legally bound to do, or omit what they are legally entitled to do. Lawful meetings can <em>become</em> unlawful when the object forms — Dec 2024 asked this.</p>
+        <p><strong>BNS 190 (IPC 149):</strong> if an offence is committed by any member in prosecution of the common object, or such as the members knew to be likely, every person who is a member at that time is guilty. No need for a pre-concerted 3(5) plan. Membership + object + knowledge of likelihood.</p>
+        <p><strong>vs 3(5) / IPC 34:</strong> 34 needs shared intention and some participation (≥2). 149/190 needs five, object (which may form on the spot), and membership. Rioting (BNS 191) is force/violence by an unlawful assembly. Affray is two+ fighting in public to the disturbance of peace — no five, no object list.</p>`,
+        analogy: {
+          title: "Five in a raid channel with a pinned objective",
+          body: "189 is the channel: ≥5 users, pinned common object from the five-item menu. 190 is: if anyone in-channel commits an offence in prosecution of that object (or a likely one), every current member is billed. 3(5) is pair-programming the same commit — different product."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "BNS 3(5) / IPC 34", "BNS 189–190 / IPC 141–149"],
+          rows: [
+            ["Headcount", "≥2", "≥5"],
+            ["Mental link", "Common intention (concert)", "Common object (can form on spot)"],
+            ["Liability hook", "Participation in furtherance", "Membership at the time"]
+          ]
+        },
+        mnemonic: {
+          name: "FIVE OBJECTS · FIVE BODIES",
+          hook: "Overawe · resist law · offence · property/right by force · compel. Then 190 membership.",
+          recite: "Dec 2024: essentials of unlawful assembly. Lawful crowd can flip."
+        },
+        cases: [
+          { name: "Mizaji v State of U.P.", citation: "AIR 1959 SC 572", point: "Common object can form on the spot; 149 vs 34." },
+          { name: "Lalji v State of U.P.", citation: "(1989) 1 SCC 437", point: "Prosecution of common object." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024 BNS",
+            section: "B",
+            marks: "10",
+            q: "Essentials of unlawful assembly under BNS 2023; lawful vs unlawful gatherings.",
+            outline: ["189 five objects; five persons; when a lawful meeting turns; 190 overlay; 34 contrast."]
+          }
+        ],
+        check: ["Five objects.", "190 vs 3(5).", "Rioting vs affray in one line each."]
+      },
+      {
+        id: "cr-bns152",
+        seq: 6.4,
+        readAs: "Paranjape BNS — s.152 (ex-sedition)",
+        unit: 4,
+        yield: "high",
+        tags: ["sedition", "bns 152", "ipc 124a", "kedarnath"],
+        title: "Sedition → BNS 152 (do not paste a 124A essay)",
+        summary: "IPC 124A is gone. BNS 152 punishes acts endangering sovereignty, unity and integrity. Kedarnath’s ‘incitement to violence’ reading is history you must translate, not copy-paste.",
+        explainer: `<p><strong>IPC 124A</strong> (sedition): bringing or attempting to bring into hatred or contempt, or exciting disaffection towards, the Government established by law. <em>Kedarnath v State of Bihar</em> (1962) saved it by reading in a tendency to disorder / incitement to violence; mere strong criticism of government was not sedition. That case still explains old PYQs (Dec 2023 20-marker).</p>
+        <p><strong>BNS 152:</strong> the heading and text move to <strong>sovereignty, unity and integrity of India</strong> — exciting secession, armed rebellion, subversive activities, or encouraging feelings of separatist activities, by words/signs/electronic communication, etc. It is not a synonym stamp of 124A. Confirm the exact verbs on India Code before the hall; do not invent ‘disaffection towards the Government’ as the 2026 ratio.</p>
+        <p><strong>How to write 2026:</strong> (1) old 124A + Kedarnath in one paragraph (history); (2) quote 152’s protected interests; (3) table differences (object: Government vs sovereignty/unity/integrity; ‘disaffection’ vs secession/rebellion/subversion); (4) Art. 19(1)(a)/19(2) still frames the constitutional fight; (5) do not treat every protest as 152.</p>
+        <p>Dec 2023 asked sedition with cases — translate. A 2026 paper titled BNS wants 152 in the heading.</p>`,
+        analogy: {
+          title: "CVE renamed, payload changed",
+          body: "124A was a ‘hate the government’ CVE, patched by Kedarnath to require a violence/disorder tendency. 152 is a different CVE: sovereignty/unity/integrity and secessionist payloads. Copy-pasting the old patch notes onto the new CVE is a fail."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "IPC 124A", "BNS 152"],
+          rows: [
+            ["Interest protected", "Government established by law", "Sovereignty, unity, integrity"],
+            ["Famous limiter", "Kedarnath: violence/disorder", "Read the new verbs — do not assume Kedarnath maps 1:1"],
+            ["2026 heading", "History only", "Live offence"]
+          ]
+        },
+        mnemonic: {
+          name: "124A DEAD · 152 LIVE",
+          hook: "Kedarnath is the history paragraph. Secession/rebellion/subversion is the new payload.",
+          recite: "Never write ‘sedition s.124A’ as current BNS law."
+        },
+        cases: [
+          { name: "Kedar Nath Singh v State of Bihar", citation: "AIR 1962 SC 955", point: "Constitutional saving of 124A — historical for 2026." },
+          { name: "Balwant Singh v State of Punjab", citation: "(1995) 3 SCC 214", point: "Casual slogans ≠ sedition without more — still useful as 19(1)(a) hygiene." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2023",
+            section: "C",
+            marks: "20",
+            q: "Sedition with cases.",
+            outline: ["For 2026: 124A+Kedarnath history; then BNS 152 text-differences; 19(1)(a); Balwant Singh hygiene."]
+          }
+        ],
+        check: ["Kedarnath limiter in one line.", "What 152 protects (three words).", "One difference from 124A."]
+      },
+      {
+        id: "cr-attempt-prep",
+        seq: 3.2,
+        readAs: "Paranjape BNS — attempt vs preparation (s.62 + specific attempts)",
+        unit: 2,
+        yield: "high",
+        tags: ["attempt", "preparation", "bns 62", "ipc 511"],
+        title: "Attempt vs preparation (and when the line is crossed)",
+        summary: "Intention → preparation (usually not punishable) → attempt (punishable) → completion. The line is: acts done towards commission that are not merely remote. Dec 2023 20-marker; 2024 stages.",
+        explainer: `<p><strong>Four stages:</strong> (1) intention (not punishable alone); (2) preparation (gathering tools — generally not, except named offences: war, dacoity, coinage, etc.); (3) attempt (BNS 62 / IPC 511 general + specific attempt sections such as attempt to murder); (4) completed offence.</p>
+        <p><strong>Tests (write two, pick facts):</strong> proximity (how close to the last act); equivocality (would a reasonable observer see the crime in the acts?); last-act (too strict — English history). Indian illustrations: buying a match is preparation; lighting it against the haystack the victim is sleeping in is attempt. <em>Abhayanand Mishra</em> (false documents dispatched to the university) — attempt to cheat. <em>State of Maharashtra v Mohd. Yakub</em> — moving goods toward the border as attempt to smuggle, not mere preparation.</p>
+        <p><strong>Impossibility:</strong> legal vs factual. Trying to steal from an empty pocket can still be attempt (factual impossibility). Trying to ‘kill’ a corpse you know is a corpse is a different problem. Do not over-theorise; one sentence is enough.</p>
+        <p>BNS 62 is the general attempt net where no specific provision exists. Always check a specific attempt section first (attempt to murder is not a 62 orphan).</p>`,
+        analogy: {
+          title: "Half-compiled crime",
+          body: "Intention is an RFC. Preparation is cloning the repo and buying AWS credits. Attempt is pushing a deploy that would complete the offence if not interrupted. Completion is production-down. Empty-pocket theft is a deploy against a box that happened to be empty — still an attempt."
+        },
+        diagram: {
+          type: "flow",
+          steps: ["Intention", "Preparation (usually safe)", "Attempt (proximate / unequivocal)", "Completion"]
+        },
+        mnemonic: {
+          name: "I-P-A-C",
+          hook: "Intention Preparation Attempt Completion. 62 is residual.",
+          recite: "Named preparations (dacoity/war) are the exceptions. Abhayanand / Yakub for the line."
+        },
+        cases: [
+          { name: "Abhayanand Mishra v State of Bihar", citation: "AIR 1961 SC 1698", point: "Attempt to cheat — documents sent." },
+          { name: "State of Maharashtra v Mohd. Yakub", citation: "(1980) 3 SCC 57", point: "Attempt vs preparation — smuggling." }
+        ],
+        pyqs: [
+          { year: "Dec 2023", section: "C", marks: "20", q: "Intention, preparation and attempt.", outline: ["Four stages; tests; two cases; BNS 62 vs specific attempts."] },
+          { year: "Dec 2024 BNS", section: "C", marks: "20", q: "Stages of crime — liability & punishment.", outline: ["Same spine; add which stages attract punishment."] }
+        ],
+        check: ["Which stages are punishable.", "Two tests for attempt.", "One named preparation exception."]
       }
     ]
   };

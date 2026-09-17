@@ -27,6 +27,22 @@ Also included: **Overview** (progress + PYQ heatmap), **Exam strategy**, and **R
 
 Unique Law Series / Nitin Prakashan “30 Questions & Answers” is a **private question bank for last-week shape**, used **after** Paranjape / Kumar / Bangia.
 
+## Coverage expansion — PYQ + primary-book alignment
+
+Sidebar depth is no longer school-level / FR-level only. A coverage pass added **mid-grain cards** CCS actually sets as 10/20-markers (distinctions, ingredient lists, case ladders), aligned to Paranjape / Narender Kumar / Bangia chapter logic without copying those books.
+
+| Paper | Was | Now | Examples |
+|-------|-----|-----|----------|
+| K-1001 | 7 | **14** | Historical jurisprudence vs legal history; Austin command unpacked; Hart primary/secondary; law & morals; Pound’s interests |
+| K-1002 | 14 | **23** | Art. 12; eclipse/severability/waiver; Emergency 358/359; 14 classification; 15–16/EWS; 19 suite traps; Puttaswamy; HMPCQ; FR–DPSP ladder |
+| K-1003 | 9 | **18** | Pigeon-hole; Rylands elements; Mehta; Kasturilal evolution; Wagon Mound; contributory/composite; nervous shock; defamation defences; CPA 2019 hierarchy |
+| K-1004 | 8 | **19** | Mens rea; mistake; intoxication; PD death lists; murder exceptions; GH list; theft ladder; cheating; 189/190; BNS 152; attempt vs preparation |
+| K-1005 | 12 | **22** | Offer vs ITT; ss.4–6; past consideration; privity exceptions; minor+restitution; CUFM matrix; ss.26–28; wager vs contingent; frustration limits; Hadley |
+
+After merge to **`main`**, GitHub Pages at [https://gauravch86.github.io/LLB-I/](https://gauravch86.github.io/LLB-I/) auto-updates (hard-refresh if a tab still shows the old topic count).
+
+Still thinner for a later wave: kidnapping/abduction as its own Crimes row; Art. 22 preventive-detention as a full Constitution essay; CPA product-liability problem drills; BNS-only child/stalking short notes that appeared on some 2024 BA-LLB papers.
+
 ## Run locally
 
 No build step. Static HTML/CSS/JS (Chart.js from CDN).
