@@ -824,7 +824,301 @@
           { year: "Dec 2024 BNS", section: "C", marks: "20", q: "Stages of crime — liability & punishment.", outline: ["Same spine; add which stages attract punishment."] }
         ],
         check: ["Which stages are punishable.", "Two tests for attempt.", "One named preparation exception."]
-      }
+      },
+      {
+        id: "cr-stages",
+        seq: 1.4,
+        readAs: "Paranjape BNS — stages of crime (essay spine)",
+        unit: 2,
+        yield: "high",
+        tags: ["stages of crime", "intention", "preparation", "attempt", "commission"],
+        title: "Stages of crime — intention, preparation, attempt, commission",
+        summary: "Dec 2024 Sec C wants a full I-P-A-C essay, not only the attempt/preparation line. Which stages attract punishment is the marks.",
+        explainer: `<p><strong>Four stages (always in this order):</strong> (1) <strong>intention</strong> — the mental resolve to commit the offence; (2) <strong>preparation</strong> — arranging means; (3) <strong>attempt</strong> — acts done toward commission that cross from remote to proximate; (4) <strong>commission / completion</strong> — the offence as defined is fulfilled. The criminal law does not punish a naked wish. It generally does not punish preparation. It does punish attempt. It punishes completion. That distribution of liability <em>is</em> the essay.</p>
+        <p><strong>Intention:</strong> not punishable standing alone (you may intend to steal for years). Mens rea becomes relevant once an actus reus exists. Do not confuse ‘intention as a stage’ with ‘intention as mens rea of the completed crime.’</p>
+        <p><strong>Preparation:</strong> buying the knife, booking the ticket, assembling the gang at home. Rule: not punishable. <strong>Named exceptions</strong> (the paragraph that distinguishes a 20 from a 12): preparation to wage war; collecting arms; preparation for dacoity; some coinage/counterfeit and false-document preparations — confirm the live BNS numbers on India Code the night before. The policy: preparation is equivocal (a knife is also a kitchen tool); the named exceptions are too dangerous to wait.</p>
+        <p><strong>Attempt:</strong> the accused has moved from arranging means to doing acts that would complete the crime if not interrupted. Tests: proximity (how close to the last act); equivocality (would an observer read the crime in the acts?); last-act is too English-strict. <em>Abhayanand Mishra</em> (false papers dispatched to the university) — attempt to cheat. <em>Mohd. Yakub</em> (goods moved toward the smuggling frontier) — attempt, not mere preparation. Factual impossibility (empty pocket) can still be attempt; legal impossibility is a different, thinner point. BNS 62 is the residual attempt net; specific attempt sections (attempt to murder) eat first.</p>
+        <p><strong>Commission:</strong> every ingredient of the definition is present — theft’s ‘moving,’ murder’s death, etc. Punishment is the section’s own. Inchoate cousins (abetment, conspiracy) are parallel tracks, not a fifth stage — mention them in a close so the examiner sees you know the map. The sibling card (<code>cr-attempt-prep</code>) zooms the line; this card is the full spine Dec 2024 asked.</p>`,
+        analogy: {
+          title: "RFC → clone repo → push deploy → production down",
+          body: "Intention is an RFC nobody compiles. Preparation is cloning the repo and buying AWS credits. Attempt is pushing a deploy that would take production down if the pager had not killed it. Commission is the outage. Named preparation offences are the few RFCs the law treats as already on fire (war, dacoity)."
+        },
+        diagram: {
+          type: "flow",
+          steps: ["Intention (not punished)", "Preparation (usually not; named exceptions)", "Attempt (punished — proximity)", "Completion (full section)"]
+        },
+        mnemonic: {
+          name: "I-P-A-C",
+          hook: "Intention Preparation Attempt Commission. Only A and C (plus named P) attract punishment.",
+          recite: "Abhayanand / Yakub for the line. BNS 62 is residual. Conspiracy/abetment are side doors."
+        },
+        cases: [
+          { name: "Abhayanand Mishra v State of Bihar", citation: "AIR 1961 SC 1698", point: "Attempt to cheat — documents sent." },
+          { name: "State of Maharashtra v Mohd. Yakub", citation: "(1980) 3 SCC 57", point: "Attempt vs preparation — smuggling." }
+        ],
+        pyqs: [
+          { year: "Dec 2024 BNS", section: "C", marks: "20", q: "Stages of crime — liability and punishment.", outline: ["Four stages; which are punished; named preparation exceptions; tests + two cases; 62 vs specific attempt; abetment/conspiracy one para."] },
+          { year: "Dec 2023", section: "C", marks: "20", q: "Intention, preparation and attempt.", outline: ["Same spine; spend extra lines on the attempt tests."] }
+        ],
+        check: ["Which stages are punishable.", "Two named preparation exceptions.", "Two tests + two cases for attempt."]
+      },
+      {
+        id: "cr-defs-shorts",
+        seq: 1.6,
+        readAs: "Paranjape BNS — s.2 definitional shorts",
+        unit: 1,
+        yield: "high",
+        tags: ["definitions", "dishonestly", "fraudulently", "good faith", "injury", "movable"],
+        title: "Definition shorts — dishonestly, injury, wrongful loss, good faith, movable property",
+        summary: "Dec 2023 Sec A farmed the General Explanations. These are 4-markers: quote the idea, give one illustration, sit down. Confirm live BNS s.2 numbering on India Code.",
+        explainer: `<p><strong>Dishonestly:</strong> a person does a thing dishonestly who does it with the intention of causing <em>wrongful gain</em> to one person or <em>wrongful loss</em> to another. Theft’s mental element lives here. Wrongful gain/loss are gain/loss by unlawful means of property to which the person gaining is not legally entitled / the person losing is legally entitled. A temporary taking can still be dishonest (<em>Pyare Lal</em> flavour).</p>
+        <p><strong>Fraudulently:</strong> an act done with intent to defraud. Dishonestly is about property gain/loss; fraudulently is about deception (often in cheating / false documents). They overlap but are not synonyms — cheating needs fraudulent <em>or</em> dishonest inducement depending on the limb.</p>
+        <p><strong>Injury:</strong> any harm illegally caused to a person, in body, mind, reputation or property. Wider than ‘hurt’. Extortion’s ‘fear of injury’ uses this wide sense — reputation counts.</p>
+        <p><strong>Good faith:</strong> nothing is said to be done or believed in good faith which is done or believed <em>without due care and attention</em>. This is the opposite of the civil ‘honesty even if negligent’ flavour. For BNS exceptions (public servant, mistake), good faith is a due-care test. Write that contrast; it scores.</p>
+        <p><strong>Movable property:</strong> includes corporeal property of every description except land and things attached to the earth or permanently fastened to anything attached to the earth. Standing crops, once severed, become movable (theft illustrations). Electricity has a statutory theft path — don’t over-theorise; mention if the problem is a meter.</p>
+        <p><strong>Wrongful restraint’s cousin words</strong> sometimes appear: ‘voluntarily’, ‘reason to believe’. Voluntarily = knowing the consequences, not wanting them as a wish. One line if asked. Always check the BNS s.2 clause numbers in the hall; the ideas travelled from IPC 23–52 with rearrangements.</p>`,
+        analogy: {
+          title: "Typed enums in s.2",
+          body: "Dishonestly is a property-ledger flag (unlawful gain/loss). Fraudulently is a deception flag. Injury is any illegal harm packet (body/mind/reputation/property). Good faith in BNS is a due-care compiler, not a ‘I meant well’ comment. Movable is everything that is not still bolted to the earth."
+        },
+        diagram: {
+          type: "tree",
+          root: "s.2 shorts",
+          branches: ["Dishonestly (wrongful gain/loss)", "Fraudulently (intent to defraud)", "Injury (body/mind/reputation/property)", "Good faith (due care)", "Movable (not land)"]
+        },
+        mnemonic: {
+          name: "D-F-I-G-M",
+          hook: "Dishonestly Fraudulently Injury Good-faith Movable. Good faith ≠ civil honesty.",
+          recite: "Wrongful gain/loss define dishonestly. Injury is wider than hurt."
+        },
+        cases: [
+          { name: "Pyare Lal Bhargava v State of Rajasthan", citation: "AIR 1963 SC 1094", point: "Temporary dishonest taking can still be theft." }
+        ],
+        pyqs: [
+          { year: "Dec 2023", section: "A", marks: "4", q: "Movable property / injury / wrongful loss / good faith / dishonestly.", outline: ["Quote the idea; one illustration; one contrast (good faith vs civil; injury vs hurt)."] }
+        ],
+        check: ["Dishonestly in terms of wrongful gain/loss.", "BNS good faith = due care.", "Injury’s four objects."]
+      },
+      {
+        id: "cr-insanity",
+        seq: 2.8,
+        readAs: "Paranjape BNS — unsoundness of mind (s.22) as a distinguish",
+        unit: 3,
+        yield: "high",
+        tags: ["insanity", "legal insanity", "medical insanity", "mcnaughten", "bns 22"],
+        title: "Legal insanity vs medical insanity",
+        summary: "Dec 2024 Sec A. A psychiatrist’s diagnosis does not open s.22. The law asks a cognitive question at the time of the act: nature, or wrong/contrary to law.",
+        explainer: `<p><strong>Medical insanity:</strong> a clinical diagnosis — schizophrenia, psychosis, intellectual disability, mood disorder — made by a psychiatrist using medical criteria. It is evidence. It is not a verdict. Plenty of diagnosed persons know exactly what they are doing when they sign a cheque or strike a blow.</p>
+        <p><strong>Legal insanity (BNS 22 / IPC 84):</strong> nothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing (i) the nature of the act, or (ii) that he is doing what is either wrong or contrary to law. This is the <strong>McNaughten</strong> cognitive test (1843), not a volitional ‘irresistible impulse’ test (which India has not adopted as a substitute). The material time is <em>the moment of the act</em>, not the trial, not a lucid interval yesterday, not a hospital note next month.</p>
+        <p><strong>Why they diverge:</strong> medicine asks ‘what is the illness?’; law asks ‘did this illness destroy this cognitive capacity for this act?’ A person may be medically ill and legally responsible. A person may have no tidy ICD label and still satisfy 22 on the facts (rare, but the statute is cognitive, not diagnostic). Epilepsy, intoxication, and ‘psychopathic’ personality are exam traps — they do not auto-apply 22; run them through the test (and remember separate intoxication sections).</p>
+        <p><strong>Proof:</strong> prosecution proves the offence; the accused who pleads 22 bears an evidential burden. <em>Dahyabhai v State of Gujarat</em> — the accused may rely on prosecution evidence plus defence evidence; the standard is not ‘beyond reasonable doubt of insanity’ in the same way as the prosecution’s burden on the offence. <em>Hari Singh Gond</em> / later restatements: conduct before, during, after (fleeing, concealment, motive) is relevant to whether the cognitive limb is genuine. A medical certificate obtained after arrest is not a golden ticket.</p>
+        <p>Dec 2024: four to five marks. Table + McNaughten + Dahyabhai + ‘time of the act.’ Do not write a psychiatry essay.</p>`,
+        analogy: {
+          title: "Kernel panic at t=offence, not a PDF in the HR file",
+          body: "Medical insanity is a diagnostic ticket in the file. Legal insanity is a kernel panic at the exact moment of the syscall: the process could not know what it was doing, or that it was forbidden. A server can have a known chronic illness and still have been healthy at deploy time. Fleeing and hiding are logs that the kernel was up."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Medical insanity", "Legal insanity (s.22)"],
+          rows: [
+            ["Question", "What is the diagnosis?", "Did unsoundness destroy cognitive capacity for this act?"],
+            ["Time", "Clinical course", "The moment of the act"],
+            ["Authority", "Psychiatrist / ICD", "McNaughten / BNS 22"],
+            ["Result", "Evidence", "No offence if the test is met"]
+          ]
+        },
+        mnemonic: {
+          name: "NATURE OR WRONG AT T0",
+          hook: "McNaughten cognitive. Diagnosis ≠ s.22. Dahyabhai on burden.",
+          recite: "No irresistible-impulse shortcut. Conduct after the act can sink a fake plea."
+        },
+        cases: [
+          { name: "R v McNaughten", citation: "(1843) 10 Cl & Fin 200", point: "Cognitive test imported into s.22." },
+          { name: "Dahyabhai v State of Gujarat", citation: "AIR 1964 SC 1563", point: "Burden when insanity is pleaded." },
+          { name: "Hari Singh Gond v State of M.P.", citation: "(2008) 16 SCC 109", point: "Legal vs medical; conduct as evidence." }
+        ],
+        pyqs: [
+          { year: "Dec 2024 BNS", section: "A", marks: "4", q: "Legal insanity vs medical insanity.", outline: ["s.22 cognitive test; diagnosis is only evidence; time of act; Dahyabhai; one trap (impulse/intoxication)."] }
+        ],
+        check: ["s.22 two limbs.", "Why a diagnosis is not enough.", "Burden one-liner."]
+      },
+      {
+        id: "cr-wr-riot",
+        seq: 5.4,
+        readAs: "Paranjape BNS — WR/WC and riot/affray (distinguish pack)",
+        unit: 4,
+        yield: "high",
+        tags: ["wrongful restraint", "wrongful confinement", "rioting", "affray"],
+        title: "Distinguish — wrongful restraint vs confinement; rioting vs affray",
+        summary: "2023 Sec C asked both pairs. Two mini-tables. Do not merge them into the parent body/tranquility essays.",
+        explainer: `<p><strong>Wrongful restraint (BNS 126 / IPC 339):</strong> voluntarily obstructing any person so as to prevent that person from proceeding in any direction in which they have a right to proceed. A blocked corridor, a parked truck across a private path, a person standing in a gateway. There is still somewhere else in the world they can go — you have closed <em>a</em> direction, not the universe. Exception flavour: obstruction in good faith to prevent accident / by a person in possession of property (check the live proviso). <strong>Wrongful confinement (BNS 127 / IPC 340):</strong> wrongful restraint that prevents the person from proceeding beyond certain circumscribing limits — a room, a house, a locked compound, a circled group. Circle vs closed room is the classroom picture. Time can be short; the limits can be large (a village, a train compartment) so long as they are limits. Aggravations: confinement for three or more days, ten or more, secret confinement — only open if the problem supplies days.</p>
+        <p><strong>Table 1:</strong> WR = one direction blocked, residual liberty exists. WC = all exits of a defined space blocked. Every WC is WR; not every WR is WC. <em>Bird v Jones</em> (torts false-imprisonment cousin) is the same geometric idea.</p>
+        <p><strong>Rioting (BNS 191 / IPC 146):</strong> whenever force or violence is used by an unlawful assembly, or by any member of it, in prosecution of its common object, every member is guilty of rioting. Preconditions: an <strong>unlawful assembly</strong> (BNS 189: five or more + one of the five objects). Place need not be public. Weapons aggravate. <strong>Affray (BNS 194 / IPC 159–160):</strong> two or more persons fighting in a <strong>public place</strong>, disturbing the public peace. No five-person minimum, no common-object architecture, not an ‘assembly’ offence. A private brawl in a locked house is not affray (it may be hurt). A street fight of two is affray and not a riot.</p>
+        <p><strong>Table 2:</strong> headcount (5 vs 2); place (anywhere vs public); mental link (common object vs mere fight); membership liability vs personal fighting. 2023 wanted both tables in one answer — 10+10 inside a 20. Draw them.</p>`,
+        analogy: {
+          title: "Closed port vs locked security-group; raid channel vs street brawl",
+          body: "Wrongful restraint closes one port you had a right to use. Confinement shuts the security group: no egress. Rioting is a five-node channel with a pinned unlawful object that starts sending force packets — every member is billed. Affray is two processes punching in a public square and waking the neighbours; no channel protocol required."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["Pair", "A", "B"],
+          rows: [
+            ["WR / WC", "Block a direction (residual liberty)", "Block all beyond circumscribing limits"],
+            ["Riot / affray", "UA (≥5) + force in prosecution of object", "≥2 fighting in public, disturb peace"]
+          ]
+        },
+        mnemonic: {
+          name: "DIRECTION vs CIRCLE · FIVE vs TWO",
+          hook: "WC is a species of WR. Affray needs a public place; riot needs an UA.",
+          recite: "Every confinement is restraint. A two-person street fight is affray, not riot."
+        },
+        cases: [
+          { name: "Bird v Jones", citation: "(1845) 7 QB 742", point: "Partial obstruction ≠ total confinement (civil cousin — use the geometry)." },
+          { name: "Statutory text is the authority", citation: "BNS 126–127, 189–194", point: "Ingredients beat a case dump on these distinguish pairs." }
+        ],
+        pyqs: [
+          { year: "Dec 2023", section: "C", marks: "20", q: "Distinguish (a) rioting & affray (b) wrongful restraint & confinement.", outline: ["Two mini-tables; ingredients; one example each; every WC is WR; affray needs public place."] }
+        ],
+        check: ["WR vs WC in one geometric sentence.", "Riot’s two preconditions.", "Affray: two + public + peace."]
+      },
+      {
+        id: "cr-dowry-death",
+        seq: 8.2,
+        readAs: "Paranjape BNS — dowry death (s.80) vs IPC 304B",
+        unit: 4,
+        yield: "high",
+        tags: ["dowry death", "bns 80", "ipc 304b", "cruelty", "498a"],
+        title: "Dowry death — BNS vs IPC (Dec 2024 20-marker)",
+        summary: "Not on the classic printed K-1004 list; Dec 2024 still set it as a 20-marker. BNS 80 carries IPC 304B’s structure: 7 years, otherwise than normal circumstances, cruelty/harassment for dowry soon before death, presumption.",
+        explainer: `<p><strong>Why this card exists:</strong> the official CCS PDF still says IPC chapter-headings; public Dec 2024 BNS papers asked dowry death as a Section C 20-marker. <code>meta.js</code> already maps the row. A map is not an answer. Write BNS first, IPC in brackets, and do not invent a new offence.</p>
+        <p><strong>IPC 304B (the structure you already know):</strong> where the death of a woman is caused by burns or bodily injury, or occurs otherwise than under normal circumstances, within <strong>seven years of marriage</strong>, and it is shown that <strong>soon before her death</strong> she was subjected to cruelty or harassment by her husband or any relative of her husband <strong>for, or in connection with, a demand for dowry</strong>, such death is ‘dowry death’ and the husband/relative is deemed to have caused it. Punishment was imprisonment of not less than seven years, which may extend to life. ‘Dowry’ rode on the Dowry Prohibition Act definition. <strong>Cruelty</strong> for this purpose is the 498A-sense (wilful conduct likely to drive to suicide / grave injury, or harassment to coerce dowry) — <em>Shanti v State of Haryana</em> / <em>Kans Raj</em> flavour: ‘soon before’ is a relative term, not ‘minutes before,’ but a live link, not a stale quarrel from year one.</p>
+        <p><strong>BNS 80:</strong> the Sanhita restates this offence (confirm the exact verbs and the punishment band on India Code before the hall — do not freeze a number you have not checked). Exam method: (1) quote the four factual limbs — unnatural death / burns-injury, within seven years, cruelty or harassment soon before, dowry demand; (2) the deemed causation / presumption that puts a burden on the accused once the prosecution proves the limbs; (3) BNS cruelty section (the 498A child — BNS 85/86 cluster; confirm numbering) as the sibling charge often tried together; (4) what changed from IPC is <em>numbering and chapter placement</em>, not a philosophical rewrite — unlike BNS 152 vs 124A. Do not write ‘304B is repealed so the facts are no longer an offence.’</p>
+        <p><strong>How to write 20 marks:</strong> ingredients table; presumption; ‘soon before’ cases; distinction from 306/abetment of suicide and from 302; one paragraph on why the 7-year window exists (policy); close with BNS 80 as the live section and 304B as the citation of old PYQs. Evidence Act / BSA 113B-style presumption is the procedure cousin — name it, don’t lecture Evidence.</p>`,
+        analogy: {
+          title: "Same CVE, new identifier",
+          body: "304B was a specific CVE: unnatural death inside a 7-year marriage window plus a live dowry-cruelty link, with a presumption that shifts the explaining burden. BNS 80 is a re-ID of that CVE, not a new vulnerability class. 152 vs 124A is a different CVE. Do not treat every re-numbered section as a rewrite."
+        },
+        diagram: {
+          type: "vflow",
+          steps: ["Woman’s death (burns/injury/not normal)", "Within 7 years of marriage", "Soon before: cruelty/harassment for dowry", "Deemed causation / presumption", "BNS 80 (IPC 304B) + cruelty sibling"]
+        },
+        mnemonic: {
+          name: "7 YEARS · SOON BEFORE · DOWRY LINK",
+          hook: "Four limbs then a presumption. BNS 80 = 304B structure. Not 152-style rewrite.",
+          recite: "Soon before ≠ minutes, but a live nexus. Distinguish 302 and 306."
+        },
+        cases: [
+          { name: "Kans Raj v State of Punjab", citation: "(2000) 5 SCC 207", point: "Soon before; relative of husband; live link." },
+          { name: "Shanti v State of Haryana", citation: "(1991) 1 SCC 371", point: "304B ingredients early restatement." },
+          { name: "Satbir Singh v State of Haryana", citation: "(2021) 6 SCC 1", point: "Recent restatement of 304B / presumption hygiene." }
+        ],
+        pyqs: [
+          { year: "Dec 2024 BNS", section: "C", marks: "20", q: "Dowry death under BNS — compare with IPC.", outline: ["Why it is in the paper; four limbs; presumption; soon before; 498A/BNS cruelty sibling; 302/306 distinguish; ‘same CVE, new id’ close."] }
+        ],
+        check: ["Four limbs.", "What ‘soon before’ means.", "BNS 80 vs 152-style rewrite."]
+      },
+      {
+        id: "cr-stalking",
+        seq: 8.4,
+        readAs: "Paranjape BNS — stalking (s.78)",
+        unit: 4,
+        yield: "high",
+        tags: ["stalking", "bns 78", "ipc 354d"],
+        title: "Stalking (BNS 78)",
+        summary: "Dec 2024 Sec A short. IPC 354D travelled into BNS 78: repeated following/contact despite disinterest, or monitoring electronic communication. Not every unanswered text is 78.",
+        explainer: `<p><strong>IPC 354D</strong> (inserted 2013) punished a man who followed a woman and contacted, or attempted to contact, her to foster personal interaction repeatedly despite a clear indication of disinterest, or who monitored her use of the internet, email, or any other form of electronic communication. Exceptions: prevention or detection of crime by a person entrusted with that duty; compliance with a law / condition of any law; reasonable and justified conduct in the particular circumstances. Repeat offence attracted a heavier band.</p>
+        <p><strong>BNS 78:</strong> the Sanhita restates stalking (confirm gender-language and the exact exception clauses on India Code — do not freeze 2013 wording if the BNS text widened it). Exam payload: (1) the conduct is <em>repeated</em> personal following/contact after disinterest, or electronic monitoring; (2) it is not a one-off awkward message; (3) statutory exceptions for law-enforcement and reasonable conduct; (4) it sits with the sexual-harassment / voyeurism cluster, not with theft. Dec 2024 asked it as a short — ingredients + one exception + ‘354D → 78.’</p>
+        <p><strong>Do not:</strong> turn it into a 19(1)(a) essay; confuse it with BNS 152; write that any CCTV on a shop is stalking (the monitoring limb is of <em>her</em> electronic use / the following pattern, not ordinary security cameras). Pair with the meta.js map: this is a BNS-era extra that already appeared in a CCS-style paper.</p>`,
+        analogy: {
+          title: "Repeated unsolicited pings after RST, or scraping her inbox",
+          body: "Stalking is not one failed handshake. It is a retry loop after the other side sent RST (clear disinterest), or a packet-capture on her electronic channel. A law-enforcement tap with a legal basis is the exception. Shop CCTV on a till is not 78."
+        },
+        diagram: {
+          type: "decision",
+          q: "Repeated follow/contact after disinterest, or e-monitoring?",
+          yes: "BNS 78 unless a statutory exception (crime-detection / law / reasonable conduct)",
+          no: "Not stalking — maybe harassment, maybe nothing"
+        },
+        mnemonic: {
+          name: "REPEAT AFTER NO · OR E-MONITOR",
+          hook: "354D → 78. Exceptions for police/law/reasonableness.",
+          recite: "One awkward text is not 78. Confirm BNS gender/text in the bare act."
+        },
+        cases: [
+          { name: "Statutory offence — text first", citation: "BNS 78 / IPC 354D", point: "Short notes are won on ingredients, not on a famous party name." }
+        ],
+        pyqs: [
+          { year: "Dec 2024 BNS", section: "A", marks: "4", q: "Stalking.", outline: ["Repeated follow/contact after disinterest; e-monitoring; exceptions; 354D→78."] }
+        ],
+        check: ["Two modes of stalking.", "One statutory exception.", "IPC ancestor number."]
+      },
+      {
+        id: "cr-child",
+        seq: 8.6,
+        readAs: "Paranjape BNS — offences against child (Dec 2024 optional)",
+        unit: 4,
+        yield: "high",
+        tags: ["child", "bns 93", "bns 95", "pocso"],
+        title: "Offences against child under BNS",
+        summary: "Dec 2024 Sec C optional flavour. BNS gathered several child-specific offences that IPC scattered. POCSO still sits beside them — do not pretend BNS swallowed it.",
+        explainer: `<p><strong>Why a card:</strong> public Dec 2024 indexes offered an optional 20 on offences against children under BNS. The official Sem-1 list does not print a ‘child chapter’ as its own unit, but the Sanhita does cluster child offences, and a student who can name five of them looks prepared.</p>
+        <p><strong>Working kit (confirm numbers on India Code — BNS shuffled IPC 315–317, 366A, 372–373, 363A cousins):</strong> exposing or abandoning a child; concealing a birth; hiring, employing or engaging a child to commit an offence; procuration of a child; selling / buying a child for prostitution or illicit intercourse; kidnapping/abduction overlays when the victim is a child (BNS kidnapping from guardianship now uses the Sanhita’s ‘child’ definition — typically 18; check s.2). Sexual offences against children are primarily <strong>POCSO 2012</strong> (special Act, special court) — BNS rape/sexual-assault sections may also fire; write ‘POCSO is the dedicated statute; BNS is the general code’ so you do not dump a POCSO treatise into K-1004.</p>
+        <p><strong>How to write 10/20:</strong> (1) child as a protected class (age definition); (2) five named BNS offences with one-line actus reus each; (3) kidnapping from guardianship vs abduction when the victim is a child; (4) POCSO as the sexual-offence overlay; (5) one policy sentence (trafficking / child-labour / 23–24 Constitution). Do not invent section numbers you have not checked that morning.</p>`,
+        analogy: {
+          title: "A protected user class with extra syscalls",
+          body: "BNS adds child-only syscalls (abandonment, hiring a child as an offence-tool, buying/selling for prostitution) on top of the general offence APIs. POCSO is a specialised sexual-offence service that did not get merged into the monolith. Age is a type-check in s.2."
+        },
+        diagram: {
+          type: "tree",
+          root: "Child-protection stack",
+          branches: ["BNS child cluster (abandon / hire / procuration / sale)", "Kidnap from guardianship (age gate)", "POCSO (sexual offences)", "Consti 24 / child-labour statutes"]
+        },
+        mnemonic: {
+          name: "ABANDON · HIRE · PROCURE · SELL · POCSO",
+          hook: "Five names beat a fake section list. POCSO is not BNS.",
+          recite: "Confirm s.2 ‘child’ and the live numbers. Kidnapping age-gate is the Sem-1 overlap."
+        },
+        cases: [
+          { name: "Independent Thought v Union of India", citation: "(2017) 10 SCC 800", point: "Child-protection constitutional overlay (exception-2 / age) — one line if the question turns sexual." }
+        ],
+        pyqs: [
+          { year: "Dec 2024 BNS", section: "C", marks: "20", q: "Offences against child under BNS (optional flavour).", outline: ["Age; five BNS names; kidnap overlay; POCSO not swallowed; Consti 24 one line."] }
+        ],
+        check: ["Five named child offences without fake numbers.", "POCSO’s relation to BNS.", "Child definition lives in s.2."]
+      },
+      {
+        id: "cr-snatching",
+        seq: 7.6,
+        readAs: "Paranjape BNS — snatching (s.304)",
+        unit: 4,
+        yield: "high",
+        tags: ["snatching", "bns 304", "theft", "robbery"],
+        title: "Snatching (BNS 304)",
+        summary: "BNS novelty. Theft from any person by suddenly or quickly seizing or grabbing or taking away. Map-only until this card. Good short-note insurance between theft and robbery.",
+        explainer: `<p><strong>BNS 304</strong> (no tidy IPC ancestor): snatching is theft of movable property from a person by suddenly, quickly, forcibly, or unexpectedly seizing, grabbing, or taking away. Confirm the live wording — the idea is the street-chain / phone-yank that older papers had to squeeze into theft or robbery. Punishment is its own band (heavier than simple theft, typically lighter than robbery — check the section).</p>
+        <p><strong>Why it was invented:</strong> phone-snatching from a moving two-wheeler often failed a clean robbery (was there hurt, wrongful restraint, or fear of instant hurt?) and looked ‘more than’ quiet theft. 304 names the sudden-grab from the person.</p>
+        <p><strong>Sort it on the ladder:</strong> <em>theft</em> (303) — dishonest moving out of possession, may be secret, need not be from the person. <em>Snatching</em> (304) — theft <em>from the person</em> by a sudden grab. <em>Robbery</em> (309) — theft or extortion plus instant hurt/fear/restraint overlays. If the snatch is accompanied by hurt or fear of instant hurt, you may be in robbery; do not double-count blindly — specific vs general is a charging problem. Dec papers have not yet made this a 20-marker; a 4-marker is ‘define + place on the ladder + no IPC twin.’</p>`,
+        analogy: {
+          title: "A sudden grab syscall between clone and armed raid",
+          body: "Theft is a silent clone of someone else’s object. Snatching is yanking the device out of their hand as you ride past. Robbery is the same raid with a hurt/fear overlay. 304 exists because the yank was an ugly fit in both 303 and 309."
+        },
+        diagram: {
+          type: "flow",
+          steps: ["Theft 303 (move + dishonest)", "Snatching 304 (from the person, sudden grab)", "Robbery 309 (instant hurt/fear/restraint)"]
+        },
+        mnemonic: {
+          name: "SUDDEN GRAB FROM THE PERSON",
+          hook: "No IPC twin. Between 303 and 309.",
+          recite: "If hurt/fear of instant hurt is added, look at robbery. Don’t invent 304 as ‘new theft.’"
+        },
+        cases: [
+          { name: "Bare-act offence", citation: "BNS 304", point: "Novelty — ingredients and the ladder beat case-hunting." }
+        ],
+        pyqs: [
+          { year: "theme", section: "A", marks: "4", q: "Snatching under BNS.", outline: ["304 definition; vs theft; vs robbery; no IPC equivalent."] }
+        ],
+        check: ["304 in one sentence.", "Why it sits between theft and robbery.", "No IPC twin."]
+      },
     ]
   };
 })(window);

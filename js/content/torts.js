@@ -287,14 +287,14 @@
         seq: 6,
         readAs: "Bangia ch. 9 — nuisance",
         unit: 4,
-        yield: "standard",
+        yield: "high",
         tags: ["nuisance", "public", "private"],
         title: "Specific tort — Nuisance",
-        summary: "Unlawful interference with use or enjoyment of land (private) or with a public right (public). Duration, locality, and hypersensitivity matter.",
-        explainer: `<p><strong>Private nuisance:</strong> continuous or recurrent interference with use/enjoyment of land — smell, noise, vibration, encroaching roots, seepage. Who can sue: person with a proprietary or possessory interest (not a mere licensee — classic <em>Malone</em> limit, somewhat eased). Who is liable: creator, occupier, sometimes landlord. Ingredients: unreasonable user, damage (physical or amenity). Locality: a boiler in an industrial belt ≠ a boiler in a residential colony (<em>Sturges v Bridgman</em> “coming to the nuisance” is a weak defence). Hypersensitive plaintiff fails (<em>Robinson v Kilvert</em>).</p>
-        <p><strong>Public nuisance:</strong> act/omission affecting the public or a class — obstruction of highway, pollution. Criminal cousin exists (BNS public-nuisance chapter). Civil action by Attorney-General / relator, or by a private person who suffers <em>particular damage</em> beyond the common injury.</p>
-        <p>Defences: statutory authority, prescription (20 years), consent. Not: ‘I was here first’ as a complete answer; not that the activity is useful.</p>
-        <p>Distinguish trespass (direct, often one-off, actionable per se) from nuisance (indirect, typically ongoing, damage usually needed for amenity claims).</p>`,
+        summary: "Unlawful interference with use or enjoyment of land (private) or with a public right (public). Locality, duration, hypersensitivity, and particular damage decide the 4-marker. Dec 2024 Sec A.",
+        explainer: `<p><strong>Private nuisance:</strong> a continuous or recurrent unlawful interference with a person’s use or enjoyment of land, or of some right over or in connection with it. Typical payloads: smell, noise, vibration, smoke, seeping water, encroaching roots, sensible diminution of amenity. Ingredients to recite: (1) the claimant has a proprietary or possessory interest (a mere licensee classically failed — <em>Malone v Laskey</em>; later English/human-rights softening exists, but CCS still wants possession); (2) interference that is <em>substantial</em> and <em>unreasonable</em> judged by the locality (“what would be a nuisance in Belgrave Square would not necessarily be so in Bermondsey” — <em>Sturges v Bridgman</em>); (3) damage — physical injury to land is straightforward; amenity damage is enough if a normal user would feel it. Hypersensitive use fails (<em>Robinson v Kilvert</em> — extra-delicate paper). Who is liable: creator of the nuisance, occupier who continues/adopts it (<em>Sedleigh-Denfield</em>), sometimes a landlord who authorised it.</p>
+        <p><strong>Public nuisance:</strong> an act or omission that materially affects the reasonable comfort and convenience of a class of the public — blocked highway, polluted river, dangerous structure over a street. It is also a crime (BNS public-nuisance chapter). Civil suit: Attorney-General / relator action, <em>or</em> a private plaintiff who proves <strong>particular damage</strong> over and above the common injury (otherwise every passer-by would sue). <em>Soltau v De Held</em> is the textbook bell; Indian highway/pollution PILs often travel as public nuisance + Art. 21.</p>
+        <p><strong>Defences:</strong> statutory authority (strictly construed — if the statute authorises the <em>work</em>, reasonable residual nuisance may be paid for, not a licence to be reckless); prescription (20 years’ as-of-right enjoyment as if an easement — tricky, and does not cure a public nuisance); consent. <strong>Not defences:</strong> “I was here first” / coming to the nuisance as a complete answer (the doctor who arrives next to the confectioner in <em>Sturges</em> still won when the noise newly interfered with his consulting room); “the activity is useful”; “many others do it.”</p>
+        <p><strong>Trespass vs nuisance:</strong> trespass is <em>direct</em> (usually a one-off entry), actionable per se; nuisance is typically <em>indirect</em> and ongoing, and amenity claims need damage. A parked lorry on your land is trespass; smoke drifting over it is nuisance.</p>`,
         analogy: {
           title: "Noisy neighbour process",
           body: "Private nuisance is a process that doesn’t crash your VM but saturates shared I/O so your occupancy is miserable. Public nuisance saturates the public network. Coming-to-the-nuisance is moving house next to an existing batch job — weak defence if the job later intensifies."
@@ -308,7 +308,7 @@
             ["Damage", "Usually needed", "Particular damage for private suit", "Actionable per se"]
           ]
         },
-        mnemonic: { name: "UNREASONABLE USER", hook: "Locality + duration − hypersensitivity.", recite: "Private vs public. Particular damage to sue for public nuisance. Trespass is the direct cousin." },
+        mnemonic: { name: "UNREASONABLE USER", hook: "Locality + duration − hypersensitivity. Particular damage to sue for public nuisance.", recite: "Private vs public. Coming-to-the-nuisance is weak. Trespass is the direct cousin." },
         cases: [
           { name: "Sturges v Bridgman", citation: "(1879) 11 Ch D 852", point: "Locality; confectioner vs doctor." },
           { name: "Soltau v De Held", citation: "classic public nuisance", point: "Bell ringing / public inconvenience illustrations in textbooks." }
@@ -323,14 +323,14 @@
         seq: 8,
         readAs: "Bangia ch. 7, 18–19 — trespass to person, land, goods",
         unit: 4,
-        yield: "standard",
+        yield: "high",
         tags: ["trespass", "person", "land", "goods"],
         title: "Specific tort — Trespass",
-        summary: "Direct, intentional (or negligent in some readings) interference with person, land, or goods — often actionable per se.",
-        explainer: `<p><strong>Trespass to person:</strong> assault (apprehension of immediate force), battery (unlawful contact), false imprisonment (total restraint of liberty — not mere obstruction of one exit if others exist). Distinguish from Crimes: same facts may be both. Volenti, lawful arrest, self-defence.</p>
-        <p><strong>Trespass to land:</strong> unjustifiable direct entry, remaining, or placing objects. Possession, not ownership, founds the action. Continuing trespass (object left). Aerial/subsoil: cujus est solum is qualified by modern aviation. Defences: licence, necessity, justification of law.</p>
-        <p><strong>Trespass to goods (trespass de bonis asportatis) / conversion:</strong> conversion is dealing with goods in a manner inconsistent with the owner’s right (even honest buyers of stolen goods at common law — nemo dat echoes). Detinue (historical withholding) largely folded into conversion/statute.</p>
-        <p>Actionable per se: you need not prove rupee loss for land/person trespass. That is injuria sine damno in action.</p>`,
+        summary: "Direct interference with person, land, or goods — often actionable per se. Syllabus “Trespass” is the trio: assault/battery/false imprisonment; land; goods/conversion.",
+        explainer: `<p><strong>Trespass to the person</strong> is three nominate torts. <em>Assault:</em> an act that causes reasonable apprehension of immediate unlawful force (a raised fist, a loaded-looking gun pointed — words alone are historically weak unless they complete a gesture). <em>Battery:</em> the actual infliction of unlawful physical contact; any touching outside ordinary social contact can suffice — intention to contact, not necessarily to injure. <em>False imprisonment:</em> total restraint of liberty, without lawful justification, for any time however short. Partial obstruction of one path is not enough if another reasonable exit exists (<em>Bird v Jones</em> — blocked highway section). Knowledge of the detention is not essential in some readings (you can be locked in a room while asleep). Defences: volenti, lawful arrest, self-defence, parental/teacher leftover (now tightly statutory), medical consent.</p>
+        <p><strong>Trespass to land:</strong> unjustifiable <em>direct</em> interference with possession — entering, remaining after licence is revoked, or placing objects. Title is not the point; <strong>possession</strong> founds the action (even a squatter in possession can sue a later intruder). Continuing trespass: the dumped rubble stays a fresh wrong each day until removed. Aerial/subsoil: <em>cujus est solum</em> is qualified (overflight at ordinary height is not a farmer’s lawsuit; mining/cables still matter). Defences: licence, necessity, recaption of goods carefully, legal authority. Remedy: damages, injunction, sometimes ejection.</p>
+        <p><strong>Trespass to goods / conversion:</strong> trespass de bonis asportatis is direct interference (snatching the bag). <strong>Conversion</strong> is a dealing with goods in a manner seriously inconsistent with the owner’s right — sale, refusal to return after demand, using them as yours — even an honest buyer of stolen goods at common law (nemo dat echoes). Detinue (old withholding writ) has largely folded into conversion / statute. Actionable per se for land and person: injuria sine damno in action — you need not prove a rupee of loss.</p>
+        <p>Keep the exam axe: <strong>direct vs indirect</strong> (trespass vs nuisance); <strong>total vs partial restraint</strong> (false imprisonment vs mere obstruction); possession vs ownership for land.</p>`,
         analogy: {
           title: "Unauthorised packet on a private VLAN",
           body: "Trespass is a packet that was never allowed onto the interface — not a noisy-neighbour QoS problem (that’s nuisance). False imprisonment is locking every egress port. Conversion is treating someone else’s volume as yours."
@@ -719,7 +719,7 @@
         },
         diagram: {
           type: "decision",
-          title: "Recognisable psychiatric injury?",
+          q: "Recognisable psychiatric injury?",
           yes: "Primary (in danger) or secondary (close + proximate)?",
           no: "Ordinary grief — no tort"
         },
@@ -828,7 +828,168 @@
           }
         ],
         check: ["2021 pecuniary bands.", "CCPA vs commissions.", "Product-liability defendants."]
-      }
+      },
+      {
+        id: "t-who-may-sue",
+        seq: 1.4,
+        readAs: "Bangia — capacity: who may sue / who may be sued",
+        unit: 1,
+        yield: "high",
+        tags: ["capacity", "parties", "who may sue", "actio personalis"],
+        title: "Who may sue and who may be sued in tort",
+        summary: "Syllabus bullet + Bangia’s capacity chapter. A 10-marker of named exceptions: State, minor, corporation, husband-wife history, dead persons, foreign sovereigns, judicial officers.",
+        explainer: `<p><strong>Default:</strong> anyone whose legal right is violated may sue; anyone who committed or is vicariously liable for the tort may be sued. Capacity is the list of historic and statutory wrinkles. Write them as a checklist, not a novel.</p>
+        <p><strong>Who may sue:</strong> (1) <em>an adult of sound mind</em> — ordinary. (2) <em>Minor</em> — can sue by next friend; limitation often runs from majority for some claims. (3) <em>Person of unsound mind</em> — by next friend / guardian. (4) <em>Corporation</em> — for torts to property and reputation in its trading character; not for purely personal torts (assault on a company is a category error). (5) <em>Convict</em> — can sue; old civil death is gone. (6) <em>Alien friend</em> — yes; <em>alien enemy</em> — generally cannot sue in the municipal court unless licensed. (7) <em>Unborn child</em> — a child later born alive may, in limited settings, claim for prenatal injury (keep one line; do not invent a general tort personality). (8) <em>Husband and wife</em> — common-law unity is historical debris; spouses can sue each other in tort in modern Indian practice (flag, don’t lecture family law).</p>
+        <p><strong>Who may be sued:</strong> the same cast, plus (a) <strong>the State</strong> — suable under Art. 300, sovereign/non-sovereign distinction dying (<em>Nagendra Rao</em> — see vicarious card); (b) <strong>minors</strong> can be sued; parents are not automatically vicariously liable merely for parenthood (they may be for their own negligence in control); (c) <strong>corporations</strong> for ultra vires / servants’ torts in the course of employment; (d) <strong>independent contractors</strong> generally themselves, not the employer, with extra-hazardous / non-delegable leaks.</p>
+        <p><strong>Who classically may <em>not</em> (or only with a shield):</strong> (1) <em>actio personalis moritur cum persona</em> — a purely personal tort died with the person; Fatal Accidents statutes / survival provisions punch holes for dependants and estates — mention the idea, don’t dump English 1846 history; (2) <em>judicial officers</em> acting in jurisdiction, even if mistakenly — immunity for the judicial act; (3) <em>foreign sovereigns / ambassadors</em> — classic immunity, now statute-nuanced; (4) <em>no injuria, no locus</em> — a stranger to the right cannot sue (the damnum sine injuria cousin).</p>
+        <p>CCS plants this next to damnum/injuria. A 10-marker is six bullets + State + dead-person + minor.</p>`,
+        analogy: {
+          title: "ACL on the plaintiff and defendant objects",
+          body: "Capacity is the ACL: most users can open a ticket; some accounts are service accounts (corporations), some need a guardian token (minors), some processes die with the person (actio personalis) unless a survival statute forks the claim to the estate. The State lost its crown-plugin; foreign sovereigns still have a diplomatic skip-list."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["Person", "Sue?", "Be sued?"],
+          rows: [
+            ["Minor", "Yes, by next friend", "Yes; parent not auto-liable"],
+            ["Corporation", "Property/reputation in trade", "Yes, for servants’ torts"],
+            ["State", "N/A as plaintiff usually", "Yes — Art. 300; distinction dying"],
+            ["Deceased", "Estate / fatal-accident leaks", "Personal torts often die"]
+          ]
+        },
+        mnemonic: {
+          name: "MINOR-CORP-STATE-DEAD",
+          hook: "Next friend; Art. 300; actio personalis; judicial immunity.",
+          recite: "Alien enemy and foreign sovereign are the exotic shields. Parenthood ≠ vicarious liability."
+        },
+        cases: [
+          { name: "N. Nagendra Rao & Co v State of A.P.", citation: "(1994) 6 SCC 205", point: "State suability — point to the vicarious card." },
+          { name: "Actio personalis (doctrine)", citation: "common law + fatal-accident statutes", point: "Personal torts and the dead — name the maxim, then the statutory leak." }
+        ],
+        pyqs: [
+          { year: "theme", section: "B", marks: "10", q: "Who may sue and who may not be sued in tort?", outline: ["Default; minor; corporation; State; dead persons; judicial officers; alien enemy."] }
+        ],
+        check: ["Minor as plaintiff and defendant.", "State suability one-liner.", "Actio personalis + one leak."]
+      },
+      {
+        id: "t-res-ipsa",
+        seq: 7.3,
+        readAs: "Bangia — res ipsa loquitur (negligence add-on)",
+        unit: 4,
+        yield: "high",
+        tags: ["res ipsa loquitur", "evidence", "negligence"],
+        title: "Res ipsa loquitur",
+        summary: "The thing speaks for itself. A rule of evidence inside negligence, not a new tort. Dec 2024 Sec A. Three conditions, then it shifts the explaining burden.",
+        explainer: `<p><strong>Phrase:</strong> <em>res ipsa loquitur</em> — the thing speaks for itself. Some accidents tell their own story of negligence so loudly that the plaintiff need not particularise the exact careless act. It is <strong>not</strong> a third species of tort and not a presumption of law that always wins. It is an evidential device inside the tort of negligence.</p>
+        <p><strong>Three conditions (recite):</strong> (1) the accident is of a <em>kind that does not ordinarily happen</em> without negligence (barrels do not fly out of warehouse windows onto pedestrians in the ordinary course — <em>Byrne v Boadle</em>); (2) the thing / situation was under the defendant’s <em>exclusive control</em> (or the control of someone for whom the defendant is responsible); (3) the plaintiff did not contribute to the accident (the old ‘no contributory negligence’ limb — today contributory is more about apportionment, but the exam still lists it). If those fire, the defendant must come forward with an explanation consistent with due care. If the explanation is credible, the inference may drop; if not, the plaintiff has a free run to the fact-finder.</p>
+        <p><strong>Indian classroom set:</strong> clock-tower collapse (<em>Municipal Corporation of Delhi v Subhagwanti</em>); swab / instrument left in the body (medical — overlaps the medical-negligence card); bus on the pavement; bursting of a boiler in the defendant’s plant. <em>Scott v London &amp; St Katherine Docks</em> is the English sugar-bag cousin of Byrne.</p>
+        <p><strong>Limits:</strong> if the facts are as consistent with no-negligence (a latent defect no reasonable inspection would catch, a stranger’s intervention), res ipsa will not carry the plaintiff. Specific evidence of what actually happened may make the maxim unnecessary — you then prove duty/breach the long way. Dec 2024 wanted the label + three conditions + ‘evidence not tort.’</p>`,
+        analogy: {
+          title: "The incident is of a class that never happens on a healthy box",
+          body: "Res ipsa is when production pages you because a warehouse barrel hit a pedestrian — you do not need a stack trace of which intern unscrewed the latch. Exclusive control means it was your cluster. If you can show a third-party exploit or a physically impossible-to-detect hardware ghost, the inference dies."
+        },
+        diagram: {
+          type: "vflow",
+          steps: ["Accident of a kind that usually means negligence?", "Defendant’s control?", "Plaintiff not the author?", "If yes → D must explain due care"]
+        },
+        mnemonic: {
+          name: "KIND · CONTROL · NOT-P",
+          hook: "Byrne’s barrel. Subhagwanti’s tower. Evidence, not a new tort.",
+          recite: "Three conditions; then the explaining burden moves. A good explanation kills the inference."
+        },
+        cases: [
+          { name: "Byrne v Boadle", citation: "(1863) 2 H & C 722", point: "Barrel from a warehouse — the thing spoke." },
+          { name: "Municipal Corpn of Delhi v Subhagwanti", citation: "AIR 1966 SC 1750", point: "Clock tower collapse — res ipsa flavour." },
+          { name: "Scott v London & St Katherine Docks", citation: "(1865) 3 H & C 596", point: "Goods falling; classic English formula." }
+        ],
+        pyqs: [
+          { year: "Dec 2024", section: "A", marks: "4", q: "Res Ipsa Loquitur.", outline: ["Define; three conditions; evidential nature; one case."] }
+        ],
+        check: ["Three conditions.", "Why it is not a separate tort.", "One Indian + one English case."]
+      },
+      {
+        id: "t-medical-neg",
+        seq: 7.5,
+        readAs: "Bangia ch. 12 — professional / medical negligence",
+        unit: 4,
+        yield: "high",
+        tags: ["medical negligence", "bolam", "jacob mathew", "shantha"],
+        title: "Medical and professional negligence",
+        summary: "Bolam / Jacob Mathew: error of judgment ≠ negligence. A responsible body of professional opinion, not the angry patient, sets the civil standard. Criminal rashness is a higher bar.",
+        explainer: `<p><strong>Same four-stage pipeline</strong> (duty, breach, causation, damage) with a professional overlay. A doctor (or other professional) owes a duty to the patient who is in the professional relationship — not to the world at large in the Donoghue manufacturer sense, though hospitals owe duties to persons in their care. Consent that is not informed can travel as battery <em>and</em> as negligence; keep the labels clean.</p>
+        <p><strong>Breach — Bolam (1957):</strong> a professional is not negligent if they acted in accordance with a practice accepted as proper by a responsible body of professionals skilled in that art, even if another body disagrees. <em>Bolitho</em> later added: the court may discard an opinion that is not capable of logical analysis. India: <strong><em>Jacob Mathew v State of Punjab</em> (2005)</strong> — for criminal medical negligence, grossness is required; a mere error of judgment, or a course accepted by a professional body, is not an offence. Civilly, the Bolam flavour still dominates: you judge the doctor against competent peers at the time, not against hindsight or the best textbook in the library. <em>Kusum Sharma</em> restated the civil precautions (res ipsa sometimes helps when a swab is left in).</p>
+        <p><strong>What is not enough:</strong> an unsuccessful operation; a known complication that was disclosed; a choice between two recognised schools. <strong>What is enough:</strong> leaving the instrument in; operating on the wrong limb; ignoring a protocol every responsible peer would have followed; practising without skill you held out.</p>
+        <p><strong>CPA overlay:</strong> <em>IMA v V.P. Shantha</em> — medical services are ‘services’ unless rendered free of charge to all, or under a contract of personal service. So the same facts may be a tort suit, a consumer complaint, and (rarely) a criminal case. Do not mix the standards: consumer deficiency is statutory; criminal needs rashness/grossness; civil needs Bolam-breach + damage.</p>
+        <p>Other professionals (advocates, architects, carriers) use the same idea: the standard is the competent practitioner of that calling, not the reasonable bus passenger.</p>`,
+        analogy: {
+          title: "SRE on-call vs a criminal indictment",
+          body: "Bolam asks: did a responsible on-call rotation accept this runbook? Jacob Mathew says a criminal charge needs a dumpster-fire, not a failed deploy that still followed the runbook. Shantha opened a consumer ticket counter beside the tort court. Wrong-limb surgery is res ipsa; a known complication is not."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["Forum", "Standard", "Typical case"],
+          rows: [
+            ["Civil tort", "Bolam / competent peer", "Kusum Sharma line"],
+            ["Criminal", "Gross rashness (Jacob Mathew)", "Not a mere error of judgment"],
+            ["CPA", "Deficiency of service (Shantha)", "Paid hospital; not free-to-all"]
+          ]
+        },
+        mnemonic: {
+          name: "BOLAM + JACOB + SHANTHA",
+          hook: "Peer opinion; grossness for crime; CPA if paid service.",
+          recite: "Error of judgment ≠ negligence. Swab left in is the res ipsa gift."
+        },
+        cases: [
+          { name: "Bolam v Friern Hospital Management Committee", citation: "[1957] 1 WLR 582", point: "Responsible body of professional opinion." },
+          { name: "Jacob Mathew v State of Punjab", citation: "(2005) 6 SCC 1", point: "Criminal medical negligence — grossness; guidelines." },
+          { name: "Indian Medical Association v V.P. Shantha", citation: "(1995) 6 SCC 651", point: "Medical service under CPA." }
+        ],
+        pyqs: [
+          { year: "theme", section: "B", marks: "10", q: "Medical negligence.", outline: ["Duty; Bolam/Jacob Mathew; error of judgment; res ipsa pocket; Shantha; one illustration."] }
+        ],
+        check: ["Bolam in one sentence.", "Why Jacob Mathew is the criminal overlay.", "When CPA applies to a hospital."]
+      },
+      {
+        id: "t-service-vs-for",
+        seq: 9.4,
+        readAs: "Bangia / CPA — contract of service vs contract for service",
+        unit: 5,
+        yield: "high",
+        tags: ["contract of service", "contract for service", "shantha", "vicarious"],
+        title: "Contract of service vs contract for service",
+        summary: "Syllabus prints this as its own CPA bullet. Of service = employment (master–servant). For service = independent professional. It gates both vicarious liability and who is a ‘consumer.’",
+        explainer: `<p><strong>Contract <em>of</em> service:</strong> the master–servant relationship. The employer controls not only <em>what</em> is done but typically <em>how</em> it is done (control test), the work is integrated into the organisation (integration / organisation test), and the person is on the payroll with holidays and discipline. Result: (1) <strong>vicarious liability</strong> for torts in the course of employment; (2) generally <strong>not a consumer dispute</strong> against the employer — labour law, not CPA, is the channel for a servant’s wage/service quarrel.</p>
+        <p><strong>Contract <em>for</em> service:</strong> you hire an independent contractor / professional to produce a result. Control over method is limited; they bring their own tools, hire their own helpers, take business risk. Result: (1) generally <strong>no vicarious liability</strong> (exceptions: extra-hazardous work, non-delegable duties, negligent selection); (2) the hirer who pays for the professional service <strong>is a consumer</strong> of that service under CPA 2019 (subject to the commercial-purpose exclusion).</p>
+        <p><strong>Tests (write two):</strong> control; integration / whose business; whose tools; power to hire/fire; mutuality of obligation. <em>Dharangadhara Chemical Works</em> (labour-law classic) and <em>Ready Mixed Concrete</em> (English) are the control/organisation illustrations. No single test is mechanical — hospitals are the exam laboratory.</p>
+        <p><strong>IMA v V.P. Shantha (1995):</strong> medical services are CPA ‘services’ except (a) where they are rendered free of charge to everybody, or (b) under a contract of <em>personal</em> service (employment). A paying patient vs a doctor/hospital is almost always <em>for</em> service. A government hospital that is free to all may fall out; mixed hospitals (some paying, some free) have been treated as still in for the paying class — flag the issue. Consultants who are not servants can still attract hospital non-delegable duties in tort.</p>
+        <p>Dec papers bury this inside CPA. Elevate it: one table, Shantha, one vicarious sentence, sit down.</p>`,
+        analogy: {
+          title: "Payroll SSH key vs hired consultant",
+          body: "Of service = the engineer on your payroll with a company laptop and a manager who dictates the how. For service = you hired an external firm to ship a result; you do not vicariously inherit their intern’s tort, but you are their consumer if you paid. Shantha put the paying patient on the consultant side of the hospital, not on the employee roster."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Of service", "For service"],
+          rows: [
+            ["Relationship", "Master–servant / employment", "Independent contractor / professional"],
+            ["Vicarious liability", "Yes, course of employment", "Generally no (hazard / non-delegable leaks)"],
+            ["CPA", "Employee vs employer usually out", "Paying client is a consumer (Shantha)"]
+          ]
+        },
+        mnemonic: {
+          name: "OF = EMPLOYEE · FOR = CONSULTANT",
+          hook: "Control + integration. Shantha: medicine is for service unless free-to-all or personal service.",
+          recite: "Vicarious and consumer status flip on this distinction. Name two tests."
+        },
+        cases: [
+          { name: "Indian Medical Association v V.P. Shantha", citation: "(1995) 6 SCC 651", point: "Medical services and the personal-service exception." },
+          { name: "Dharangadhara Chemical Works v State of Saurashtra", citation: "AIR 1957 SC 264", point: "Control test in the employment/contractor border." }
+        ],
+        pyqs: [
+          { year: "theme", section: "B", marks: "10", q: "Contract of service and contract for service.", outline: ["Define both; tests; VL consequence; Shantha CPA consequence; one illustration."] }
+        ],
+        check: ["Two tests.", "Vicarious consequence.", "Shantha’s two exceptions."]
+      },
     ]
   };
 })(window);

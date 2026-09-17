@@ -422,18 +422,19 @@
         seq: 8,
         readAs: "Kumar ch. 10 — Right to Education",
         unit: 3,
-        yield: "standard",
-        tags: ["21a", "rte", "86th amendment"],
+        yield: "high",
+        tags: ["21a", "rte", "86th amendment", "unnikrishnan"],
         title: "Article 21A — Right to Education",
-        summary: "86th Amendment (2002): free and compulsory education of children aged 6–14, as the State may determine by law. RTE Act 2009 is the payload.",
-        explainer: `<p>Until 21A, education rode on 21 (<em>Unni Krishnan</em> — up to 14 as part of life; higher education not an FR in the same way) and DPSP 45 (original: free compulsory education up to 14). The 86th Amendment: inserted 21A; recast 45 toward early childhood care 0–6; added duty 51A(k) for parents/guardians.</p>
-        <p>RTE Act 2009: neighbourhood schools, 25% uneconomic weaker-section intake in private unaided (upheld with adjustments in <em>Society for Unaided Private Schools</em> — aided vs unaided, minority institutions carve-out under 30). <em>Pramati</em> exempted minority schools from RTE’s 12(1)(c) — a tension with inclusion that a good answer flags.</p>
-        <p>Justiciable FR, but the clause “as the State may, by law, determine” lets the statute shape content. Quality vs mere enrolment is the policy critique.</p>`,
+        summary: "86th Amendment (2002) pins free and compulsory education of children aged 6–14 as an FR. Unni Krishnan built the ramp via 21; RTE Act 2009 is the implementing statute. Dec 2024 Sec A.",
+        explainer: `<p><strong>Timeline (write this first):</strong> (1) original DPSP <strong>Art. 45</strong> — State shall endeavour to provide free and compulsory education for all children until they complete 14 years; (2) <em>Mohini Jain</em> (1992) treated capitation as offending the right to education read into 21; (3) <em>Unni Krishnan v State of A.P.</em> (1993) — education up to 14 is part of life under 21, but higher education is not an FR in the same way and can be regulated; (4) <strong>86th Constitutional Amendment, 2002</strong> — inserts <strong>Art. 21A</strong>, recasts 45 toward early childhood care and education for children below 6, and adds Fundamental Duty <strong>51A(k)</strong> (parent/guardian to provide opportunities for education to the child between 6 and 14); (5) <strong>RTE Act 2009</strong> (in force 1 Apr 2010) is the “as the State may, by law, determine” payload.</p>
+        <p><strong>Text of 21A:</strong> the State shall provide free and compulsory education to all children of the age of six to fourteen years in such manner as the State may, by law, determine. It is a justiciable FR, not a leftover Directive — but the clause hands the <em>content</em> (neighbourhood school, pupil–teacher ratio, 25% intake) to statute. Quality vs mere enrolment is the policy critique; do not write that 21A itself lists the 25% quota.</p>
+        <p><strong>RTE Act 2009 working kit:</strong> neighbourhood schools; no capitation / screening at entry for the 6–14 band; 25% seats in private unaided schools for children from weaker and disadvantaged groups (s.12(1)(c)), with reimbursement; norms for teachers and infrastructure. <em>Society for Unaided Private Schools of Rajasthan v Union of India</em> (2012) largely upheld 12(1)(c) for non-minority unaided schools. <em>Pramati Educational &amp; Cultural Trust</em> (2014) held that RTE’s 12(1)(c) does not apply to minority schools (aided or unaided) because of Art. 30 — flag the inclusion tension; do not pick a political fight, pick the holding.</p>
+        <p><strong>Exam close:</strong> 21A converted a Directive into an FR; 45 still covers 0–6; 51A(k) is the parent hook. Higher education remains 21/19(1)(g) regulatory terrain, not 21A.</p>`,
         analogy: {
           title: "21A is a pinned dependency of 21",
           body: "Education was a transitive dependency of life. 21A pins it as a first-party FR for ages 6–14, with RTE Act as the implementing package. 51A(k) is the parent-side hook."
         },
-        diagram: { type: "flow", steps: ["DPSP 45 (old)", "Unni Krishnan via 21", "86th Amendment → 21A", "RTE Act 2009"] },
+        diagram: { type: "flow", steps: ["DPSP 45 (old)", "Mohini Jain / Unni Krishnan via 21", "86th Amendment → 21A + recast 45 + 51A(k)", "RTE Act 2009", "Unaided 12(1)(c) vs Pramati minority carve-out"] },
         mnemonic: {
           name: "6–14 / 86th / RTE 2009",
           hook: "Free + compulsory; State-by-law; parent duty 51A(k).",
@@ -460,13 +461,14 @@
         seq: 9,
         readAs: "Kumar ch. 11 — Right against Exploitation",
         unit: 3,
-        yield: "standard",
+        yield: "high",
         tags: ["23", "24", "begar", "child labour", "trafficking"],
         title: "Right against exploitation — Articles 23–24",
-        summary: "23 kills traffic in persons and begar/forced labour (with a State-service exception). 24 bars hazardous child labour under 14.",
-        explainer: `<p><strong>Art. 23:</strong> prohibition of traffic in human beings, begar, and similar forms of forced labour. Exception: compulsory service for public purposes without discrimination on religion/race/caste/class. <em>People’s Union for Democratic Rights v Union of India</em> (Asiad workers): non-payment of minimum wage as forced labour. Horizontal: binds private contractors. Bonded labour statutes and the SC’s <em>Bandhua Mukti Morcha</em> supervision are the enforcement story.</p>
-        <p><strong>Art. 24:</strong> no child below 14 in factories, mines, or other hazardous employment. Child Labour (Prohibition and Regulation) Act / 2016 amendments; CLPRA vs RTE overlap — a child in school cannot be in a hazardous process. Non-hazardous family work is a statutory grey students over-simplify; stay with the constitutional prohibition and name the Act.</p>
-        <p>These articles are social FRs — closer to Duguit/Pound than to Austin. They also bind non-State actors more clearly than 19.</p>`,
+        summary: "23 kills traffic in persons, begar and forced labour (public-service exception). 24 bars hazardous child labour under 14. Horizontal social FRs — PUDR, Bandhua, child-labour statutes.",
+        explainer: `<p><strong>Art. 23(1):</strong> traffic in human beings, <em>begar</em>, and other similar forms of forced labour are prohibited; any contravention is an offence punishable by law. <em>Begar</em> is work without payment — the old corvée — but the Court did not freeze it as a museum word. <strong>Art. 23(2):</strong> the State may impose compulsory service for public purposes, without discrimination on religion, race, caste or class (conscription / social service flavour). That exception is the State’s, not a private employer’s.</p>
+        <p><strong>Forced labour is wider than chains:</strong> <em>People’s Union for Democratic Rights v Union of India</em> (Asiad workers, 1982) — paying less than the minimum wage is forced labour; economic compulsion plus a legal duty to pay the floor wage. The right is <strong>horizontal</strong>: it binds private contractors, not only ‘State’ under 12. <em>Bandhua Mukti Morcha v Union of India</em> (1984) — bonded labour; the Court treated PIL letters as petitions and kept supervising identification and rehabilitation under the Bonded Labour System (Abolition) Act, 1976. Trafficking is the human-commodity sibling — Immoral Traffic statutes / BNS trafficking offences are the criminal teeth; 23 is the constitutional hook.</p>
+        <p><strong>Art. 24:</strong> no child below the age of fourteen years shall be employed to work in any factory or mine or engaged in any other hazardous employment. It does not, by itself, ban every after-school errand; the constitutional floor is <em>hazardous</em> employment. The Child Labour (Prohibition and Regulation) Act, 1986 (amended 2016) and the RTE Act together: a child who should be in school under 21A should not be in a hazardous process. <em>M.C. Mehta v State of T.N.</em> (child labour in match-works) is the classic enforcement story — off hazardous work, into education, with a contribution corpus. Family/non-hazardous statutory greys exist; in the hall stay with 24’s text + the Act + Mehta, and do not invent a complete ban on all child work.</p>
+        <p>These are social FRs (Duguit/Pound flavour) and they bind private persons more clearly than Art. 19. Pair 24 with 21A/51A(k) in a 10-marker.</p>`,
         analogy: {
           title: "Forced labour is a stuck thread",
           body: "23 forbids conscripting private CPU without lawful public-purpose statute. Paying below minimum wage is still forced labour (PUDR) — like an infinite loop with no consideration. 24 is an age-gate on hazardous production."
@@ -474,13 +476,14 @@
         diagram: { type: "compare", headers: ["Article", "Core ban", "Key case / statute"], rows: [["23", "Trafficking, begar, forced labour", "PUDR; Bonded Labour Act"], ["24", "Hazardous child work <14", "Child labour statutes + RTE"]] },
         mnemonic: { name: "23 FORCE / 24 CHILD", hook: "Begar ≠ only historical corvée; underpayment counts.", recite: "Horizontal social rights. Public compulsory service is the 23 exception." },
         cases: [
-          { name: "PUDR v Union of India", citation: "(1982) 3 SCC 235", point: "Below-minimum-wage labour as forced labour." },
-          { name: "Bandhua Mukti Morcha v Union of India", citation: "(1984) 3 SCC 161", point: "Bonded labour; PIL enforcement." }
+          { name: "PUDR v Union of India", citation: "(1982) 3 SCC 235", point: "Below-minimum-wage labour as forced labour; horizontal." },
+          { name: "Bandhua Mukti Morcha v Union of India", citation: "(1984) 3 SCC 161", point: "Bonded labour; PIL enforcement." },
+          { name: "M.C. Mehta v State of Tamil Nadu", citation: "(1996) 6 SCC 756", point: "Child labour in hazardous match-works; education + corpus." }
         ],
         pyqs: [
-          { year: "theme", section: "B", marks: "10", q: "Right against exploitation.", outline: ["23+24 text; PUDR; child labour statute; horizontality."] }
+          { year: "theme", section: "B", marks: "10", q: "Right against exploitation.", outline: ["23 text + 23(2) exception; PUDR begar; Bandhua; 24 + CLPRA + Mehta; horizontality and 21A overlap."] }
         ],
-        check: ["PUDR holding.", "24 age and hazard.", "23 public-service exception."]
+        check: ["PUDR holding in one line.", "24 age, hazard, and a statute.", "23 public-service exception."]
       },
       {
         id: "c-25-28",
@@ -664,13 +667,26 @@
         seq: 14,
         readAs: "Kumar ch. 17 — Fundamental Duties",
         unit: 5,
-        yield: "standard",
+        yield: "high",
         tags: ["51a", "fundamental duties", "42nd"],
         title: "Fundamental Duties — Article 51A",
-        summary: "42nd Amendment borrowed a duty list (Sverdlovsk inspiration debates aside). Not directly justiciable, but they interpret rights and support statutes.",
-        explainer: `<p>Art. 51A (a)–(k): abide by the Constitution and respect its ideals, institutions, National Flag and Anthem; cherish noble ideals of the freedom struggle; uphold sovereignty, unity, integrity; defend the country; promote harmony and brotherhood, renounce practices derogatory to women; value composite culture; protect environment; scientific temper; safeguard public property, abjure violence; strive toward excellence; 86th Amendment (k) — parent/guardian to provide education to 6–14.</p>
-        <p>Swaran Singh Committee recommended duties. They are not FRs in reverse that the State can casually criminalise without a statute, but statutes (prevention of insults to National Honour, environmental law, IPC/BNS public-property) give teeth. Courts use 51A as an interpretive aid (<em>AIIMS Students’ Union</em>, environment cases pairing 51A(g) with 48A and 21). <em>Ranganath Mishra</em> / later reports: enforcement through education more than prosecution.</p>
-        <p>Exam: list any four if Section A; if long, discuss justiciability, relation to FRs (duties as civic republicanism), and one case using 51A(g).</p>`,
+        summary: "42nd Amendment added (a)–(j); 86th added (k). Not a self-executing sword, but courts read them with FRs and DPSPs. Dec 2024: any four Duties — list them cleanly.",
+        explainer: `<p><strong>Origin:</strong> Swaran Singh Committee; inserted by the <strong>42nd Amendment, 1976</strong> as Art. 51A (a)–(j). The <strong>86th Amendment, 2002</strong> added <strong>(k)</strong>. They sit in Part IVA. They are <em>not</em> FRs in reverse and not directly justiciable — no writ that says “I sue you solely because 51A exists” — but they are not decoration. Statutes give teeth (Prevention of Insults to National Honour; environment law; BNS mischief to public property). Courts use 51A as an <strong>interpretive aid</strong> when reading 21, 48A, education, and excellence in public institutions.</p>
+        <p><strong>The list (Dec 2024 “any four” — pick four you can quote, know all eleven):</strong></p>
+        <ol type="a">
+          <li>abide by the Constitution and respect its ideals and institutions, the National Flag and the National Anthem;</li>
+          <li>cherish and follow the noble ideals which inspired our national struggle for freedom;</li>
+          <li>uphold and protect the sovereignty, unity and integrity of India;</li>
+          <li>defend the country and render national service when called upon to do so;</li>
+          <li>promote harmony and the spirit of common brotherhood amongst all the people of India, and renounce practices derogatory to the dignity of women;</li>
+          <li>value and preserve the rich heritage of our composite culture;</li>
+          <li>protect and improve the natural environment (forests, lakes, rivers, wildlife) and have compassion for living creatures;</li>
+          <li>develop the scientific temper, humanism and the spirit of inquiry and reform;</li>
+          <li>safeguard public property and to abjure violence;</li>
+          <li>strive towards excellence in all spheres of individual and collective activity so that the nation constantly rises to higher levels of endeavour and achievement;</li>
+          <li>(86th) a parent or guardian to provide opportunities for education to his child or, as the case may be, ward between the age of six and fourteen years.</li>
+        </ol>
+        <p><strong>How they bite:</strong> <em>Rural Litigation</em> / <em>M.C. Mehta</em> environment line pairs <strong>51A(g) + 48A + 21</strong>. <em>AIIMS Students’ Union v AIIMS</em> used the excellence duty in reasoning. <em>Honourable mention:</em> a duty cannot, by itself, authorise a criminal conviction without a statute that defines the offence. <em>Ranganath Mishra</em> / later reports: civic education over prosecution. Relation to FRs: civic republicanism — rights last longer when the culture of duties is not empty.</p>`,
         analogy: {
           title: "Code of conduct, not a syscall",
           body: "Duties are CONTRIBUTING.md. You rarely get a kernel panic solely from 51A, but linters (courts) and extra packages (statutes) reference it. 51A(k) is the parent hook that matches 21A."
@@ -685,7 +701,7 @@
           { year: "Dec 2024", section: "A", marks: "4", q: "Any four Fundamental Duties.", outline: ["Quote four accurately; mention 42nd/86th."] },
           { year: "2022", section: "B", marks: "10", q: "Fundamental Duties.", outline: ["Origin; list clusters; justiciability; 51A(g)+(k); relation to FRs."] }
         ],
-        check: ["Four duties verbatim-ish.", "42nd vs 86th.", "Not independently enforceable."]
+        check: ["Four duties quoted, not paraphrased vaguely.", "42nd vs 86th.", "Not independently enforceable; 51A(g)+21+48A."]
       },
       {
         id: "c-art12-state",
@@ -1099,7 +1115,41 @@
           }
         ],
         check: ["Champakam holding + political sequel.", "Kesavananda in one sentence.", "Minerva Mills: what was struck."]
-      }
+      },
+      {
+        id: "c-300a",
+        seq: 14.2,
+        readAs: "Kumar — right to property after 44th (exam-adjacent bridge)",
+        unit: 5,
+        yield: "high",
+        tags: ["300a", "property", "44th amendment", "19(1)(f)", "31"],
+        title: "Article 300A — right to property (bridge card)",
+        summary: "44th Amendment deleted 19(1)(f) and 31; inserted 300A. Property is a constitutional legal right, not a Fundamental Right. 2022 shorts still poke it.",
+        explainer: `<p><strong>Old law (must narrate in four lines):</strong> Art. <strong>19(1)(f)</strong> was the FR to acquire, hold and dispose of property, with 19(5) restrictions. Art. <strong>31</strong> was the compensation/acquisition chapter — the political battlefield of zamindari, bank nationalisation, and <em>Kesavananda</em>. Property as an FR let people move the Supreme Court under 32 against acquisition statutes.</p>
+        <p><strong>44th Amendment, 1978:</strong> 19(1)(f) and 31 were omitted. <strong>Art. 300A</strong> was inserted in Part XII: “No person shall be deprived of his property save by authority of law.” That is a <em>constitutional</em> right (you can still go to a High Court under 226, and the provision binds the State), but it is <strong>not a Fundamental Right</strong>. Consequences: (1) no Art. 32 as of right for a pure 300A claim; (2) Parliament’s amendment story is different from Part III; (3) “authority of law” still kills executive confiscation without a statute (<em>Bishambhar Dayal Chandra Mohan</em> flavour — executive instructions are not enough); (4) the law must not be a fraud on power / manifestly arbitrary (later 14/21 overlay in acquisition cases — <em>K.T. Plantation</em>, <em>Vidya Devi</em>: even after 300A, the State cannot grab without legal authority and, in many settings, without compensation that is not a farce).</p>
+        <p><strong>What 300A is not:</strong> it is not a revival of 31(2)’s old compensation formula. It is not an FR. It is not a licence for the District Magistrate to tweet your land away. For Sem-1: this card exists because 2022-style shorts asked property after the 44th, and because a 19(1)(a) student sometimes invents 19(1)(f) as if it still lived. Official CCS FR list for K-1002 does <em>not</em> include 300A — treat it as insurance, not as a 20-marker home.</p>`,
+        analogy: {
+          title: "Demoted from SSO to ordinary ACL",
+          body: "19(1)(f)/31 were on the Part III SSO — Art. 32 as the password-reset. 300A is still a constitutional ACL (no deprivation without a statute) but it is no longer in the SSO directory. 226 still SSHes in; 32 does not open for this claim alone."
+        },
+        diagram: {
+          type: "flow",
+          steps: ["19(1)(f) + 31 as FRs", "44th Amendment deletes them", "300A: deprivation only by authority of law", "226 yes; 32 no; compensation is statute-shaped"]
+        },
+        mnemonic: {
+          name: "44th DEMOTED PROPERTY",
+          hook: "300A = law first, not an FR. 19(1)(f) is dead.",
+          recite: "Authority of law; no executive taking. Do not write 19(1)(f) as current FR."
+        },
+        cases: [
+          { name: "K.T. Plantation Pvt. Ltd. v State of Karnataka", citation: "(2011) 9 SCC 1", point: "300A is a constitutional right; acquisition still needs a valid law; compensation context." },
+          { name: "Vidya Devi v State of Himachal Pradesh", citation: "(2020) 2 SCC 569", point: "State cannot take without authority of law; 300A has real teeth against grabbing." }
+        ],
+        pyqs: [
+          { year: "2022", section: "A", marks: "4", q: "Right to property / Art. 300A.", outline: ["44th; 19(1)(f) & 31 gone; 300A text; FR vs constitutional right; 32 vs 226."] }
+        ],
+        check: ["What the 44th deleted.", "300A one-liner.", "Why it is not an FR."]
+      },
     ]
   };
 })(window);

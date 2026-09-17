@@ -832,7 +832,115 @@
           "Define jural postulates without saying ‘justice’.",
           "One collision, two interests, one statute."
         ]
-      }
+      },
+      {
+        id: "j-shorts",
+        seq: 1.2,
+        readAs: "Paranjape — definitions & thinkers (Sec A pack)",
+        unit: 1,
+        yield: "high",
+        tags: ["bentham", "manu", "salmond", "stone", "holland", "eye of law"],
+        title: "Sec A shorts — Bentham, Manu, Salmond, Stone, ‘eye of law’",
+        summary: "Four- and five-markers that CCS farms almost every year. Do not bury them inside the Analytical essay. Recite, tag the school, sit down.",
+        explainer: `<p><strong>Jeremy Bentham (Dec 2023 &amp; Dec 2024 Sec A):</strong> utilitarian reformer of the analytical family. Greatest happiness of the greatest number; law is a command, but Bentham is the <em>censor</em> who asks what law <em>ought</em> to be as well as the expositor of what it is. He attacks natural-law ‘fictions,’ wants codification, and invents much of the modern legislative-reform toolkit (pain/pleasure calculus, official secrets of judicial delay). <strong>Austin vs Bentham:</strong> Austin is drier — philosophy of <em>positive</em> law as it is, sovereign + sanction, less the reformer. Do not swap them. One-line close: Bentham supplies the reform engine; Austin supplies the command definition CCS quotes.</p>
+        <p><strong>Manu:</strong> the Indian opening that Sec A loves. <em>Manusmriti</em> as a Dharmaśāstra source — law mixed with dharma, varṇa-duty, king as enforcer not Austinian illimitable sovereign. Use him as a <em>pre-analytical</em> picture: law is not only a political superior’s command; it is a duty-order of a civilisation. Do not write a caste pamphlet; write: Indian jurisprudence has a textual root older than Austin, and Paranjape’s ‘Indian trends’ chapter starts here. Pair with the warning that colonial codes later overwrote much of this as municipal law.</p>
+        <p><strong>Salmond:</strong> “the science of the first principles of the civil law.” Also: law as the body of principles recognised and applied by the State in the administration of justice. Pigeon-hole theory of torts is Salmond’s (nominate torts). Useful because he is courtroom-facing: jurisprudence as the grammar of what courts actually enforce, not a theology of the Good.</p>
+        <p><strong>Julius Stone — “lawyers’ extroversion”:</strong> jurisprudence is the lawyer looking <em>outward</em> from doctrine toward philosophy, sociology, economics, history. It is not introverted case-cramming. Dec papers ask the phrase almost as a fill-in. Write: Stone’s point is utility — K-1001 exists so you can criticise a statute, not only recite it.</p>
+        <p><strong>“Eye of law” / Holland:</strong> Holland’s “formal science of positive law” treats jurisprudence as watching the <em>form</em> of legal relations (right, duty, person) with a scientific eye, not the contents of one code. If the short note is “eye of law,” answer: the legal eye sees jural relations, not moral deserts — then one sentence on why that is too thin (Realists / Pound).</p>
+        <p><strong>Exam method:</strong> 4 marks = 8–10 lines, one definition, one contrast, one Indian landing. Do not start a 20-marker on Austin when the question is Bentham.</p>`,
+        analogy: {
+          title: "Four named packages in the toolchain",
+          body: "Bentham is the reform linter. Austin is the type-checker that only accepts Command. Manu is a pre-colonial spec still cited as ancestry. Salmond is the stdlib of first principles. Stone is the reminder that the lawyer’s IDE has an ‘external libraries’ pane."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["Name", "One-liner to dump", "Do not confuse with"],
+          rows: [
+            ["Bentham", "Utilitarian censor + command; reform/codify", "Austin (expositor, drier)"],
+            ["Manu", "Dharmaśāstra duty-order, not Austin’s sovereign", "A modern Hindu Code essay"],
+            ["Salmond", "First principles of civil law; pigeon-holes", "Winfield (general liability)"],
+            ["Stone", "Lawyers’ extroversion — law looking out", "Realism’s ‘law is what courts do’ (Gray/Holmes)"]
+          ]
+        },
+        mnemonic: {
+          name: "B-M-S-S",
+          hook: "Bentham happiness · Manu dharma · Salmond first principles · Stone extroversion.",
+          recite: "Austin ≠ Bentham. Eye of law = Holland’s formal science. 4 marks: one contrast, sit down."
+        },
+        cases: [
+          { name: "Thinkers are the authorities", citation: "Paranjape ch. 1–2", point: "Sec A is a name-and-punch paper. Cite the phrase, not a Supreme Court case, unless the question is utility (then Kesavananda one line)." }
+        ],
+        pyqs: [
+          { year: "Dec 2024", section: "A", marks: "4", q: "Bentham’s contribution / Manu / Stone.", outline: ["Named one-liner; one contrast; one use in an Indian answer."] },
+          { year: "Dec 2023", section: "A", marks: "4", q: "Bentham; ‘lawyers’ extroversion’.", outline: ["Utilitarian reform vs Austin expositor; Stone = looking outward."] }
+        ],
+        check: ["Bentham vs Austin in two sentences.", "Stone’s phrase verbatim.", "Salmond’s definition + pigeon-hole tag."]
+      },
+      {
+        id: "j-akh",
+        seq: 2.5,
+        readAs: "Paranjape — Analytical School (Austin / Kelsen / Hart drill)",
+        unit: 3,
+        yield: "high",
+        tags: ["austin", "kelsen", "hart", "comparison", "grundnorm", "command"],
+        title: "Drill — Austin vs Kelsen vs Hart",
+        summary: "The distinguish 10-marker. Three positivists, three kernels: command, pyramid, ruleset. Do not mash them into ‘all haters of natural law.’",
+        explainer: `<p><strong>One-liner:</strong> Austin explains law as the sovereign’s command backed by sanction; Kelsen explains it as a pure hierarchy of norms ending in a presupposed Grundnorm; Hart explains it as the union of duty-imposing primary rules and power-conferring secondary rules (recognition, change, adjudication). All three separate law’s validity from its moral merit. That is the only safe generalisation. Everything else is a table.</p>
+        <table class="compare">
+          <thead><tr><th></th><th>Austin</th><th>Kelsen</th><th>Hart</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Kernel</strong></td><td>Sovereign + command + sanction</td><td>Norm + validity chain + Grundnorm</td><td>Primary duties + secondary power-rules</td></tr>
+            <tr><td><strong>What makes a rule ‘law’?</strong></td><td>It is a general command of a habitually obeyed, independent political superior</td><td>It is authorised by a higher norm, ultimately by the Grundnorm</td><td>It passes the officials’ rule of recognition (pedigree)</td></tr>
+            <tr><td><strong>Sovereign / State</strong></td><td>A person or determinate body, legally illimitable</td><td>The State <em>is</em> the legal order personified — no dualism</td><td>No gunman-sovereign; officials’ practice can bind the centre</td></tr>
+            <tr><td><strong>Sanction</strong></td><td>Evil visited on disobedience (the bark)</td><td>A directed coercive act stipulated by a norm</td><td>Not essential to every rule (power-conferring rules have no ‘bark’)</td></tr>
+            <tr><td><strong>Morals</strong></td><td>Positive morality is outside jurisprudence</td><td>Purity programme: expel sociology and ethics</td><td>Separation thesis; being obliged ≠ having an obligation</td></tr>
+            <tr><td><strong>Custom / judges / IL</strong></td><td>Awkward — become law only via tacit sovereign command; IL is positive morality</td><td>Custom is law if the higher norm so provides; IL can be a system with its own Grundnorm</td><td>Custom and precedent fit if the rule of recognition says so; IL is a borderline case he discusses</td></tr>
+            <tr><td><strong>Weak spot</strong></td><td>Constitutions that bind the legislature; successor problem; habits ≠ rules</td><td>Grundnorm is a fiction; revolutions are a new presupposition; empty of justice</td><td>Officials’ practice can look circular; open texture dumps hard cases into discretion</td></tr>
+            <tr><td><strong>Indian landing</strong></td><td>Art. 13 + basic structure kill the illimitable sovereign</td><td>26 Jan 1950 as a Grundnorm shift; basic structure as a fight over even the ‘highest’ norm</td><td>Constitution + legislation + precedent as India’s recognition practice</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Austin vs Kelsen (the 10-marker pair):</strong> command of a <em>person</em> vs impersonal ought-pyramid; sanction as a threatened evil vs a legal consequence; habitual obedience vs presupposed base; both separate morals, Kelsen more radically (even the ‘science’ must be pure). <strong>Hart vs Austin:</strong> gunman vs obligation; power-conferring rules (wills, contracts, legislation) are not commands; the sovereign can be legally limited. <strong>Hart vs Kelsen:</strong> social practice of officials vs a transcendental ought; English ordinary language vs continental norm-logic.</p>
+        <p><strong>How to write:</strong> dump the table (even a six-row sketch scores). One Indian sentence each. Close: they are allies against natural law and enemies on the picture of a legal system. The parent Analytical card holds the essays; this card is the distinguish drill.</p>`,
+        analogy: {
+          title: "Root shout / git ancestry / CONTRIBUTING.md",
+          body: "Austin = a root user who yells and kills processes. Kelsen = every commit is valid only if a parent commit authorised it; the orphan root commit is the Grundnorm you cloned. Hart = duty-code in src/ plus CONTRIBUTING.md (recognition), RFC process (change), CODEOWNERS (adjudication). Three operating systems, one ‘not morals’ kernel flag."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Austin", "Kelsen", "Hart"],
+          rows: [
+            ["OS metaphor", "Command", "Pyramid", "Ruleset"],
+            ["Base", "Sovereign habitually obeyed", "Grundnorm presupposed", "Rule of recognition practised"],
+            ["Fails at", "Limited constitutions", "Fictional base", "Circular official practice"]
+          ]
+        },
+        mnemonic: {
+          name: "C-P-R TABLE",
+          hook: "Command · Pyramid · Ruleset. Then RCA for Hart: Recognition, Change, Adjudication.",
+          recite: "Austin vs Kelsen is person-command vs pure-norm. Hart kills the gunman and the illimitable sovereign."
+        },
+        cases: [
+          { name: "Kesavananda Bharati v State of Kerala", citation: "(1973) 4 SCC 225", point: "Anti-Austin laboratory: even constituent power has a legal limit." },
+          { name: "Golaknath v State of Punjab", citation: "(1967) 2 SCR 762", point: "The ‘is amendment law under 13?’ fight is a pedigree/Grundnorm story." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2023",
+            section: "B",
+            marks: "10",
+            q: "Difference between Austin and Kelsen.",
+            outline: ["Command vs norm; person-sovereign vs impersonal order; sanction as evil vs coercive ought; morals; Grundnorm vs habitual obedience; one Indian line."]
+          },
+          {
+            year: "theme",
+            section: "C",
+            marks: "20",
+            q: "Salient features of the analytical school. Distinguish Austin, Kelsen and Hart.",
+            outline: ["Positivism features; then the full table; Hart’s three secondary rules; weak spots."]
+          }
+        ],
+        check: ["Draw the table without notes.", "Hart’s three secondary rules.", "One Indian landing that wounds Austin."]
+      },
     ]
   };
 })(window);
