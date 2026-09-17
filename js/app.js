@@ -56,8 +56,38 @@
     return { page: page || "overview", id: id || "" };
   }
 
+  function headerOffset() {
+    const top = document.querySelector(".topbar");
+    const nav = document.querySelector(".subject-nav");
+    return (top ? top.offsetHeight : 72) + (nav ? nav.offsetHeight : 58) + 10;
+  }
+
+  function scrollToHashTarget(id, smooth) {
+    const target =
+      (id && document.getElementById("topic-" + id)) ||
+      (id && document.getElementById("sec-" + id)) ||
+      document.querySelector("#main article.topic, #main .hero, #main");
+    const y = target
+      ? Math.max(0, window.scrollY + target.getBoundingClientRect().top - headerOffset())
+      : 0;
+    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: y, left: 0, behavior: smooth && !reduce ? "smooth" : "auto" });
+    const active = document.querySelector(".topic-link.active");
+    if (active && active.scrollIntoView) active.scrollIntoView({ block: "nearest" });
+  }
+
+  function afterPaint(fn) {
+    requestAnimationFrame(() => requestAnimationFrame(fn));
+  }
+
   function go(page, id) {
-    location.hash = id ? `#/${page}/${id}` : `#/${page}`;
+    const next = id ? `#/${page}/${id}` : `#/${page}`;
+    if (location.hash === next) {
+      scrollToHashTarget(id || "", true);
+      sidebar.classList.remove("open");
+      return;
+    }
+    location.hash = next;
   }
 
   function destroyCharts() {
@@ -110,7 +140,9 @@
             : [
                 ["dash", "Dashboard"],
                 ["papers", "Five papers"],
-                ["countdown", "Dec 2026"]
+                ["countdown", "Dec 2026"],
+                ["heatmap", "PYQ heatmap"],
+                ["coverage", "Syllabus map"]
               ];
       topicNav.innerHTML = extras
         .map(
@@ -179,7 +211,7 @@
     const shelf = paper.shelf
       ? `<aside class="note shelf-banner"><h3>Primary textbook</h3><p>${paper.shelf.primary}${topic.readAs ? ` · <em>${topic.readAs}</em>` : ""}. Site prose is original — use the book for full case extracts, then Unique only as a question drill.</p></aside>`
       : "";
-    return `<article class="topic">
+    return `<article class="topic" id="topic-${topic.id}">
       <div class="topic-head">
         <div>
           <p class="kicker">${paper.code} · ${topic.readAs || "Unit " + (topic.unit || "—")} ${topic.yield === "high" ? '<span class="badge">High-yield PYQ</span>' : ""}</p>
@@ -234,18 +266,18 @@
         </div>`;
       })
       .join("");
-    return `<section class="hero">
+    return `<section class="hero" id="sec-dash">
       <p class="kicker">Gaurav · Engineer → advocate track</p>
       <h2>Five papers, one operating system</h2>
       <p class="lede">CCS University Meerut LL.B. 3-year Semester 1. HLM College, Ghaziabad. Target window: December 2026. Tone: systems, decision trees, comparison tables — not textbook sludge.</p>
       <div class="stat-row">
-        <div class="stat"><b>${days}</b>days to Dec 2026 window</div>
+        <div class="stat" id="sec-countdown"><b>${days}</b>days to Dec 2026 window</div>
         <div class="stat"><b>${n}/${t}</b>topics sealed</div>
         <div class="stat"><b>500</b>theory marks</div>
         <div class="stat"><b>BNS</b>primary for Crimes</div>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel" id="sec-papers">
       <h2 class="display">Papers</h2>
       <div class="grid-cards">${cards}</div>
     </section>
@@ -274,10 +306,25 @@
         <p>Official CCS PDF (Aug 2025 CDN) still lists K-1001–K-1005, with Paper IV titled IPC. Public Dec 2024/2025 papers title Crimes as Bharatiya Nyaya Sanhita 2023. This site follows <strong>Paranjape BNS</strong> first with IPC mapping. Infipark “revision” pages that swap Contract for Legal Method do not displace the official K-1005 paper unless HLM issues a circular.</p>
       </aside>
     </section>
-    <section class="panel">
+    <section class="panel" id="sec-heatmap">
       <h2 class="display">PYQ frequency (theme heatmap)</h2>
       <p>Relative weight from public CCS transcriptions 2018–2025 — not an official mark scheme. Use it to sequence revision, not to skip syllabus tails.</p>
       <canvas id="heatChart" height="120"></canvas>
+    </section>
+    <section class="panel" id="sec-coverage">
+      <h2 class="display">Official CCS Sem-1 map (nothing extra required)</h2>
+      <p>Checked against the <a href="https://cdn.ccsuniversity.ac.in/public/pdf/2025/08/2%20llb%20syllabus.pdf" target="_blank" rel="noopener">CCS LL.B. syllabus PDF (Aug 2025 CDN)</a>, papers K-1001–K-1005. Every numbered unit is on this site. A few sub-bullets are nested inside a parent topic rather than given their own left-nav row.</p>
+      <table class="compare">
+        <thead><tr><th>Paper</th><th>Official unit</th><th>On this site</th></tr></thead>
+        <tbody>
+          <tr><td>K-1001</td><td>Intro; Natural (Stammler/Kohler); Analytical (Austin/Kelsen/Hart); Historical (Savigny/Maine); Sociological (Pound/Duguit); American Realism; Marxist economic</td><td>7 sidebar topics — full match</td></tr>
+          <tr><td>K-1002</td><td>Nature (federal + form of govt); Preamble; FR general; 14–18; 19(1)(a); 20; 21; 21A; 23–24; 25–28; 29–30; 32; DPSP; Duties</td><td>14 sidebar topics — full match. CCS lists only <em>19(1)(a)</em>, not 19(1)(b)–(g)</td></tr>
+          <tr><td>K-1003</td><td>Intro (incl. damnum/injuria, mental element, parties, strict/absolute); justifications; vicarious/State/joint; negligence, nuisance, trespass, defamation; CPA consumer / service / enforcement</td><td>9 topics. Strict/absolute also has its own Bangia-style chapter. “Who may sue” sits inside the intro topic</td></tr>
+          <tr><td>K-1004</td><td>General principles; inchoate; general exceptions; body; property; State/public tranquility; marriage (bigamy/adultery)</td><td>8 topics. Hurt/kidnap/assault etc. share one body chapter. Official PDF still says IPC; site teaches <strong>BNS first</strong> with IPC map (Dec 2024/25 papers title BNS)</td></tr>
+          <tr><td>K-1005</td><td>Purpose/scope; proposal; consideration/privity; lawful object; capacity/restitution; consent; standard form; void/voidable; contingent; quasi; discharge/frustration; compensation</td><td>12 topics — one per numbered CCS unit</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Not Sem-1 (do not study these here):</strong> Jurisprudence-II concepts (person, possession, ownership — K-2001); Union Parliament/Executive (K-2002); Family Law; Contract-II. Infipark pages that swap K-1005 for Legal Method are not the official CCS PDF.</p>
     </section>`;
   }
 
@@ -288,8 +335,7 @@
     const paper = papers[page];
     if (!paper) return `<section class="panel"><p>Unknown page.</p></section>`;
     const topics = sortedTopics(paper);
-    const topic = topics.find((t) => t.id === id) || topics[0];
-    return topicHtml(paper, topic);
+    return topics.map((t) => topicHtml(paper, t)).join("");
   }
 
   function paintHeatChart() {
@@ -339,7 +385,7 @@
     if (page === "overview") paintHeatChart();
     sidebar.classList.remove("open");
     main.focus({ preventScroll: true });
-    window.scrollTo(0, 0);
+    afterPaint(() => scrollToHashTarget(id, false));
   }
 
   function searchIndex() {
@@ -427,6 +473,7 @@
 
   const savedTheme = localStorage.getItem(THEME_KEY) || "dark";
   setTheme(savedTheme);
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
   if (!location.hash) location.hash = "#/overview";
   else render();
 })();
