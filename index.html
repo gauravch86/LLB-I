@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CCS University Meerut LL.B. Semester-1 study site for Gaurav, HLM College Ghaziabad. Jurisprudence, Constitutional Law, Torts, BNS Crimes, Contract — original notes, diagrams, PYQ outlines." />
+  <title>LL.B. I · CCS Meerut · Sem-1 Study Bench</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="bg-ornament" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand" data-nav="overview">
+      <img src="assets/favicon.svg" alt="" width="36" height="36" />
+      <div>
+        <p class="brand-kicker">CCS University Meerut · HLM Ghaziabad</p>
+        <h1>LL.B. Semester-1 Study Bench</h1>
+      </div>
+    </div>
+    <div class="top-tools">
+      <button type="button" id="searchBtn" class="icon-btn" aria-label="Search topics" title="Search (/)">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+      </button>
+      <button type="button" id="themeBtn" class="icon-btn" aria-label="Toggle colour theme">Theme</button>
+      <div class="progress-chip" id="globalProgress" title="Topics sealed">0/0 sealed</div>
+    </div>
+  </header>
+
+  <nav class="subject-nav" aria-label="Papers">
+    <div class="subject-scroll" id="subjectNav"></div>
+  </nav>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <h2 id="sidebarTitle">Topics</h2>
+        <div class="filter-row" id="filterRow"></div>
+      </div>
+      <nav class="topic-nav" id="topicNav" aria-label="Syllabus topics"></nav>
+    </aside>
+
+    <main id="main" class="main" tabindex="-1"></main>
+  </div>
+
+  <button type="button" class="fab-topics" id="topicsFab" aria-controls="sidebar">Topics</button>
+
+  <div class="search-overlay" id="searchOverlay" hidden>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="searchLabel">
+      <label id="searchLabel" for="searchInput">Search topics, cases, mnemonics</label>
+      <input id="searchInput" type="search" placeholder="e.g. Grundnorm, Maneka, frustration, BNS 103…" autocomplete="off" />
+      <ul id="searchResults"></ul>
+      <p class="search-hint">Esc to close · Enter to open first hit</p>
+    </div>
+  </div>
+
+  <footer class="site-foot">
+    <p>Original study writing for Gaurav · Dec 2026 exams. Cites bare acts, CCS public syllabus, landmark cases, and public PYQ <em>themes</em>. Does not reproduce Unique Law Series / Nitin Prakashan text.</p>
+    <p>Verify BNS section numbers on <a href="https://www.indiacode.nic.in/" rel="noopener" target="_blank">India Code</a> before the hall. Paper codes K-1001–K-1005 (student book may print Jurisprudence as K-101).</p>
+  </footer>
+
+  <noscript>
+    <p class="noscript">This study bench needs JavaScript enabled.</p>
+  </noscript>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="js/diagrams.js"></script>
+  <script src="js/content/meta.js"></script>
+  <script src="js/content/jurisprudence.js"></script>
+  <script src="js/content/constitution.js"></script>
+  <script src="js/content/torts.js"></script>
+  <script src="js/content/crimes.js"></script>
+  <script src="js/content/contract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

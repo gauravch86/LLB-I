@@ -1,0 +1,187 @@
+(function (global) {
+  global.LLB = global.LLB || {};
+  global.LLB.papers = global.LLB.papers || {};
+
+  const bnsRows = [
+    ["Common intention", "IPC 34", "BNS 3(5)", "Still the annual constructive-liability pair"],
+    ["Unlawful assembly", "IPC 141", "BNS 189", "≥5 persons + one of five objects"],
+    ["Common object (member liability)", "IPC 149", "BNS 190", "Membership + object; pre-concert not essential"],
+    ["Rioting", "IPC 146", "BNS 191", "Force/violence by unlawful assembly"],
+    ["Affray", "IPC 159", "BNS 194", "Two+ fighting in public, disturbing peace"],
+    ["Abetment", "IPC 107–120", "BNS 45–60", "Instigation / conspiracy / aid"],
+    ["Criminal conspiracy", "IPC 120A–120B", "BNS 61", "Agreement is the offence"],
+    ["Attempt (general)", "IPC 511", "BNS 62", "Plus specific attempts e.g. BNS 109"],
+    ["Mistake of fact (bound by law)", "IPC 76", "BNS 14", "Fact ≠ law"],
+    ["Mistake of fact (justified)", "IPC 79", "BNS 17", "Good-faith justification"],
+    ["Accident", "IPC 80", "BNS 18", "Lawful act, lawful manner, proper care"],
+    ["Necessity", "IPC 81", "BNS 19", "Without criminal intent, to prevent harm"],
+    ["Child under 7", "IPC 82", "BNS 20", "Absolute incapacity"],
+    ["Child 7–12 immature", "IPC 83", "BNS 21", "Understanding test"],
+    ["Unsoundness of mind", "IPC 84", "BNS 22", "Legal insanity, McNaughten logic"],
+    ["Involuntary intoxication", "IPC 85", "BNS 23", "Against will / without knowledge"],
+    ["Voluntary intoxication (intent)", "IPC 86", "BNS 24", "Knowledge presumed"],
+    ["Private defence (things done)", "IPC 96", "BNS 34", "Shield, not sword"],
+    ["Private defence body/property", "IPC 97", "BNS 35", "Subject to restrictions"],
+    ["No PD vs public servant etc.", "IPC 99", "BNS 37", "Also: more harm than necessary"],
+    ["PD body → death", "IPC 100", "BNS 38", "Enumerated deadly threats"],
+    ["PD property → death", "IPC 103", "BNS 41", "Robbery, night house-breaking, fire, etc."],
+    ["Culpable homicide", "IPC 299", "BNS 100", "Genus"],
+    ["Murder (definition)", "IPC 300", "BNS 101", "Species / bullseye"],
+    ["Punishment for murder", "IPC 302", "BNS 103", "§103(2) group murder — verify text"],
+    ["CH not amounting to murder", "IPC 304", "BNS 105", "Two parts survive in spirit"],
+    ["Death by negligence", "IPC 304A", "BNS 106", "Hit-and-run enhancement — know 106(2)"],
+    ["Hurt", "IPC 319", "BNS 114", "Bodily pain, disease, infirmity"],
+    ["Grievous hurt", "IPC 320", "BNS 116", "Eight clauses — list them"],
+    ["Wrongful restraint", "IPC 339", "BNS 126", "Obstructing direction of movement"],
+    ["Wrongful confinement", "IPC 340", "BNS 127", "Restraint from proceeding beyond bounds"],
+    ["Criminal force", "IPC 350", "BNS 129", "Force + intent/knowledge + without consent"],
+    ["Assault", "IPC 351", "BNS 130", "Gesture/prep causing apprehension"],
+    ["Kidnapping", "IPC 359–363", "BNS 137", "From India / from lawful guardianship"],
+    ["Abduction", "IPC 362", "BNS 138", "Force or deceit; continuing offence"],
+    ["Theft", "IPC 378/379", "BNS 303", "Movable + dishonest + possession + moving"],
+    ["Snatching (new)", "—", "BNS 304", "BNS innovation — know the delta"],
+    ["Extortion", "IPC 383/384", "BNS 308", "Fear of injury → delivery"],
+    ["Robbery", "IPC 390", "BNS 309", "Theft or extortion + violence/fear"],
+    ["Dacoity", "IPC 391/395", "BNS 310", "Robbery by five or more"],
+    ["Cheating", "IPC 415/420", "BNS 318", "Deception + inducing delivery/act"],
+    ["Sedition → sovereignty", "IPC 124A", "BNS 152", "Do not paste old 124A essays blindly"],
+    ["Bigamy", "IPC 494", "BNS 82", "Marrying again during lifetime"],
+    ["Adultery", "IPC 497", "Omitted", "Joseph Shine (2018) + BNS silence"],
+    ["Dowry death", "IPC 304B", "BNS 80", "Appears on some BNS PYQs"],
+    ["Stalking", "IPC 354D", "BNS 78", "Appeared in Dec 2024 BNS short notes"]
+  ];
+
+  function bnsTable() {
+    const rows = bnsRows
+      .map((r) => `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td></tr>`)
+      .join("");
+    return `<div class="map-wrap">
+      <input id="bnsFilter" type="search" placeholder="Filter map (e.g. murder, 149, adultery)…" oninput="window.LLB.filterBns(this.value)" />
+      <table class="compare" id="bnsTable">
+        <thead><tr><th>Concept</th><th>IPC (classic)</th><th>BNS 2023</th><th>Exam note</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+      <p class="search-query">Numbers confirmed against India Code BNS section titles + public comparative PDFs. Re-verify on <a href="https://www.indiacode.nic.in/handle/123456789/20062" target="_blank" rel="noopener">India Code</a> / <a href="https://uppolice.gov.in/site/writereaddata/siteContent/Three%20New%20Major%20Acts/202406281710564823BNS_IPC_Comparative.pdf" target="_blank" rel="noopener">UP Police comparative PDF</a> before the script.</p>
+    </div>`;
+  }
+
+  global.LLB.filterBns = function (q) {
+    const query = (q || "").toLowerCase();
+    document.querySelectorAll("#bnsTable tbody tr").forEach((tr) => {
+      tr.style.display = tr.textContent.toLowerCase().includes(query) ? "" : "none";
+    });
+  };
+
+  global.LLB.pages = {
+    strategy() {
+      return `<article class="topic">
+        <p class="kicker">Dec 2026 · 5 × 100</p>
+        <h1>Exam strategy for an engineer who thinks in systems</h1>
+        <p class="lede">CCS long answers reward named sections, named cases, and a visible structure — not originality of philosophy. Treat each 20-marker as a spec document: definition, essentials, authorities, distinction, criticism, conclusion.</p>
+        <h2 class="section-title">Weekly OS (repeat until December)</h2>
+        ${window.LLBDiagrams.render({ type: "flow", steps: ["Juris schools", "FR 12–32", "Torts + CPA", "BNS core", "Contract 2–75", "Timed PYQ"] })}
+        <table class="compare">
+          <thead><tr><th>Week slice</th><th>Hours</th><th>Output artefact</th></tr></thead>
+          <tbody>
+            <tr><td>Jurisprudence schools</td><td>6–8</td><td>7 one-pagers + Austin/Hart/Kelsen table from memory</td></tr>
+            <tr><td>Constitution FR</td><td>8–10</td><td>Art. 14 / 19 / 21 / 32 sheets with 3 cases each</td></tr>
+            <tr><td>Torts + CPA 2019</td><td>6–8</td><td>Maxim matrix + State-liability timeline + commission flowchart</td></tr>
+            <tr><td>Crimes BNS core</td><td>8–10</td><td>CH/murder tree + 3(5)/190 + property ladder + PD death lists</td></tr>
+            <tr><td>Contract formation→damages</td><td>8–10</td><td>S.10 state machine + S.25 exceptions + S.56 + S.73</td></tr>
+            <tr><td>PYQ writing</td><td>6</td><td>One timed 20-marker per paper</td></tr>
+          </tbody>
+        </table>
+        <h2 class="section-title">Answer formula (print this)</h2>
+        <ol>
+          <li><strong>Hook (2 lines):</strong> define the concept + name the statute/article/school.</li>
+          <li><strong>Essentials:</strong> numbered ingredients. Examiners tick lists.</li>
+          <li><strong>Authorities:</strong> 2–3 cases with one-line ratio (not story-time).</li>
+          <li><strong>Distinction / diagram:</strong> CH vs murder, 34 vs 149, strict vs absolute, void vs voidable.</li>
+          <li><strong>Indian illustration or critique:</strong> one paragraph.</li>
+          <li><strong>Close:</strong> answer the exact verb in the question (comment / distinguish / critically examine).</li>
+        </ol>
+        <aside class="analogy"><h3>Latency budget in the hall</h3>
+          <p>20-marker ≈ 25–30 minutes. 10-marker ≈ 12–14. Short notes ≈ 4–5. If you cannot name two cases in the first 8 minutes of an Art. 21 or Pound essay, you are in the wrong question — switch.</p>
+        </aside>
+        <h2 class="section-title">Paper-wise spine (write these cold)</h2>
+        <ul>
+          <li><strong>K-1001:</strong> Pound social engineering; Kelsen Grundnorm; Austin command + Hart critique; definition/nature/utility.</li>
+          <li><strong>K-1002:</strong> Quasi-federal; Art. 21 expansion; Art. 14 + reservation; FR–DPSP; Art. 32/PIL; 19(1)(a) press.</li>
+          <li><strong>K-1003:</strong> Damnum/injuria; strict vs absolute; State liability; defamation; CPA 2019 commissions.</li>
+          <li><strong>K-1004:</strong> CH vs murder in BNS numbers; 3(5) vs 190; private defence to death; theft ladder; stages of crime.</li>
+          <li><strong>K-1005:</strong> Proposal rules; consideration + exceptions; minor; free consent; frustration; quasi-contracts; damages.</li>
+        </ul>
+        <h2 class="section-title">Crimes conversion drill</h2>
+        <p>When you practise 2022–23 IPC papers, rewrite the heading with BNS numbers in the margin the same evening. Dec 2024/25 public files already title the paper BNS.</p>
+        <h2 class="section-title">Last 48 hours</h2>
+        <p>One A4 hook sheet (NASH-SRM, HMPCQ, FAME, OAC-CL, EDS). Bare Constitution (Jain), BNS bare, Contract Act. Nothing new except section flash.</p>
+      </article>`;
+    },
+    resources() {
+      return `<article class="topic">
+        <p class="kicker">Beyond Unique 30 Q&amp;A</p>
+        <h1>Publishers, YouTube, bare acts</h1>
+        <p class="lede">You already own Unique Law Series (Nitin Prakashan, Meerut) and a Jain Book Agency Constitution (post-Art. 370 abolition reprint). Unique is a question-shape trainer, not a doctrine engine. This page is the upgrade path.</p>
+        <h2 class="section-title">What Unique is good / bad for</h2>
+        ${window.LLBDiagrams.render({
+          type: "compare",
+          headers: ["Good", "Bad"],
+          rows: [
+            ["Seeing CCS-style long questions", "Learning first principles"],
+            ["Last 10–15 days recall", "Outdated CPA 1986 “Forum” vocabulary"],
+            ["Hindi-medium phrasing practice", "IPC-only Crimes answers after BNS papers began"],
+            ["Checking you did not miss a unit", "Case ratios and section precision"]
+          ]
+        })}
+        <h2 class="section-title">Bare acts (non-negotiable)</h2>
+        <div class="pub-grid">
+          <div class="pub-card"><strong>Constitution</strong><p>Jain Book Agency / Universal / Lexis — Arts. 12–32, 36–51, 51A, 352–360. India Code: <a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">indiacode.nic.in</a></p></div>
+          <div class="pub-card"><strong>BNS 2023</strong><p>Official Gazette / Universal BNS bare. Enforcement 1 July 2024. Do not answer Dec 2026 Crimes from an IPC-only Unique.</p></div>
+          <div class="pub-card"><strong>Contract Act 1872</strong><p>Ss. 2–75 especially 10–30, 56, 68–72, 73–75.</p></div>
+          <div class="pub-card"><strong>CPA 2019</strong><p>Commissions, not 1986 Forums. Know 2021 pecuniary revision.</p></div>
+        </div>
+        <h2 class="section-title">Recommended texts (official CCS list + student picks)</h2>
+        <table class="compare">
+          <thead><tr><th>Paper</th><th>Primary student book</th><th>Depth / classic</th></tr></thead>
+          <tbody>
+            <tr><td>K-1001</td><td>V.D. Mahajan — <em>Jurisprudence and Legal Theory</em> (EBC)</td><td>Dias; Salmond (Fitzgerald); Bodenheimer; Friedmann; Lloyd</td></tr>
+            <tr><td>K-1002</td><td>V.N. Shukla (M.P. Singh ed., EBC) or J.N. Pandey</td><td>M.P. Jain; H.M. Seervai (library); your Jain bare act beside them</td></tr>
+            <tr><td>K-1003</td><td>R.K. Bangia — <em>Law of Torts</em></td><td>Ratanlal &amp; Dhirajlal; V.K. Aggarwal (consumer); Winfield (reference)</td></tr>
+            <tr><td>K-1004</td><td>BNS bare + one 2024+ BNS↔IPC student commentary</td><td>Ratanlal IPC; K.D. Gaur; S.N. Misra for case law via IPC numbers</td></tr>
+            <tr><td>K-1005</td><td>Avtar Singh — <em>Law of Contract</em> (EBC)</td><td>Pollock &amp; Mulla; Bangia shorter; Anson</td></tr>
+          </tbody>
+        </table>
+        <p>Official CCS PDF also lists: Bodenheimer, Dias, Friedman, Lloyd, Paton, Salmond (Juris); Chander Pal, Hidayatullah, Tope (Consti); Aggarwal, Kapoor, Paranjape, Salmond, Winfield (Torts); Hari Singh Gaur, Nigam (Crimes); Anson, Desai, Moitra (Contract).</p>
+        <h2 class="section-title">Minimum shelf (budget order)</h2>
+        <ol>
+          <li>Constitution bare (have) + Shukla <em>or</em> M.P. Jain</li>
+          <li>Avtar Singh + Contract Act bare</li>
+          <li>Bangia Torts + CPA 2019 bare</li>
+          <li>BNS bare + one comparative book; keep old Ratanlal IPC for cases</li>
+          <li>Mahajan or Dias for Jurisprudence</li>
+        </ol>
+        <h2 class="section-title">YouTube (search titles — playlists move)</h2>
+        <div class="yt-row">
+          <div class="yt-card"><strong>StudyIQ Judiciary</strong><p>@studyiqjudiciary — Consti + BNS marathons.</p></div>
+          <div class="yt-card"><strong>StudyIQ After LL.B</strong><p>@StudyIQAfterLLB — BNS one-shots, juris shorts.</p></div>
+          <div class="yt-card"><strong>Law Wallah (PW)</strong><p>@LawWallahPW — Torts, Contract, FR foundations.</p></div>
+          <div class="yt-card"><strong>Unacademy Judiciary</strong><p>@UnacademyJudiciary — live Consti/Crimes.</p></div>
+          <div class="yt-card"><strong>LegalEdge After College</strong><p>@LegalEdgeAfterCollege — conceptual Consti.</p></div>
+          <div class="yt-card"><strong>Law Prep / Judiciary Gold / Adda247 JS</strong><p>PYQ/MCQ drill and capsules.</p></div>
+        </div>
+        <p>Hygiene: prefer 2024+ uploads for BNS and CPA 2019; watch at 1.25–1.5×; pause to write a 5-line skeleton; confirm every section on the bare act.</p>
+        <h2 class="section-title">BNS ↔ IPC map (syllabus offences)</h2>
+        ${bnsTable()}
+        <h2 class="section-title">Public PYQ hubs</h2>
+        <ul>
+          <li><a href="https://ccsullb.blogspot.com/" target="_blank" rel="noopener">ccsullb.blogspot.com</a> — transcribed papers</li>
+          <li><a href="https://www.ccsustudy.com/ccsu-llb-papers.html" target="_blank" rel="noopener">ccsustudy.com</a> — Dec 2024/2025 BNS filenames</li>
+          <li>Official syllabus PDF: <a href="https://cdn.ccsuniversity.ac.in/public/pdf/2025/08/2%20llb%20syllabus.pdf" target="_blank" rel="noopener">CCS CDN Aug 2025</a></li>
+        </ul>
+        <aside class="note"><h3>Copyright stance</h3>
+          <p>This website’s prose is original teaching material. It cites publicly available statutes, the CCS syllabus outline, landmark case names/holdings, and publicly blogged exam <em>themes</em>. It does not copy Unique Law Series, Nitin Prakashan, or other copyrighted Q&amp;A books.</p>
+        </aside>
+      </article>`;
+    }
+  };
+})(window);
