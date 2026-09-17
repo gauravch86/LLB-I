@@ -6,7 +6,10 @@
     code: "K-1004",
     title: "Law of Crimes-I (BNS 2023 + IPC map)",
     short: "Crimes · BNS",
-    blurb: "Official PDF still says IPC. Dec 2024/25 papers title BNS. Write BNS numbers; put IPC in parentheses. Student Unique book is BNS-labelled.",
+    blurb: "Tracks Paranjape’s BNS commentary. Official PDF still says IPC; Dec 2024/25 papers title BNS. IPC numbers stay in mapping tables.",
+    shelf: {
+      primary: "Dr. N.V. Paranjape — <em>The Bharatiya Nyaya Sanhita, 2023</em>"
+    },
     youtube: [
       { title: "Complete BNS one-shot", search: "Complete BNS in Hindi StudyIQ After LLB" },
       { title: "CH vs Murder BNS", search: "BNS vs IPC murder culpable homicide" },
@@ -15,12 +18,15 @@
     topics: [
       {
         id: "cr-general",
+        seq: 1,
+        readAs: "Paranjape BNS — preliminary, punishments, s.3(5) / unlawful assembly",
         unit: 1,
         yield: "high",
         tags: ["mens rea", "actus reus", "stages", "strict liability", "34", "149", "3(5)", "190"],
         title: "General principles — crime, elements, stages, strict & constructive liability, common intention & common object",
         summary: "Crime = public wrong with a statutory label. Default stack: actus reus + mens rea. Stages: intention → preparation → attempt → completion. Constructive liability: BNS 3(5) vs 190.",
-        explainer: `<p><strong>Concept of crime:</strong> a public wrong, prohibited by the Sanhita (or special statute), prosecuted in the name of the State, punishable with the BNS punishments (s.4: death, life, imprisonment, forfeiture, fine, community service — community service is a BNS novelty worth a short note). Blackstone/Kenny/Austin one-liners still decorate Section A. Moral turpitude is neither necessary nor sufficient (strict liability regulatory offences; adultery’s moral story vs its legal death).</p>
+        explainer: `<p>Paranjape’s BNS book follows the Sanhita: preliminary (ss.1–3, including common intention in <strong>s.3(5)</strong>), then punishments, then general exceptions. CCS still asks “crime, elements, stages, constructive liability” as one unit — write BNS numbers first, IPC in parentheses for 2022–23 papers and older SC citations.</p>
+        <p><strong>Concept of crime:</strong> a public wrong, prohibited by the Sanhita (or special statute), prosecuted in the name of the State, punishable with the BNS punishments (s.4: death, life, imprisonment, forfeiture, fine, community service — community service is a BNS novelty worth a short note). Blackstone/Kenny/Austin one-liners still decorate Section A. Moral turpitude is neither necessary nor sufficient (strict liability regulatory offences; adultery’s moral story vs its legal death).</p>
         <p><strong>Elements:</strong> (1) human being (in general); (2) <em>actus reus</em> — a willed act or legally relevant omission where duty exists; (3) <em>mens rea</em> — intention, knowledge, rashness, negligence as the section requires (<em>actus non facit reum nisi mens sit rea</em> — Dec 2024 BNS short note); (4) injury / forbidden result where result-crimes need it; (5) causation; (6) absence of a general exception (ss.14–44 BNS).</p>
         <p><strong>Stages (Dec 2023/24 20-markers):</strong> <em>intention</em> is not punishable; <em>preparation</em> generally not (exceptions: preparation to wage war, dacoity prep BNS 310(4), etc.); <em>attempt</em> is punishable (specific: BNS 109 attempt to murder; general: BNS 62 ≈ IPC 511) — proximity / last-act / equivocality tests from case law (<em>Abhayanand Mishra</em>, <em>State of Maharashtra v Mohd. Yakub</em>); <em>completion</em> is the offence itself. Impossible attempts: still often attempt if the actor’s plan would be a crime.</p>
         <p><strong>Strict liability:</strong> no mens rea required — typically public welfare (food adulteration, some NDPS readings, traffic). <em>Sherras v De Rutzen</em> presumption that mens rea is required unless statute clearly excludes it; Indian <em>State of Maharashtra v M.H. George</em> / <em>Kartar Singh</em> as context. Distinguish absolute liability in <em>torts</em> (Mehta) — don’t mix papers.</p>
@@ -75,6 +81,8 @@
       },
       {
         id: "cr-inchoate",
+        seq: 3,
+        readAs: "Paranjape BNS ch. on abetment, conspiracy, attempt (ss.45–62)",
         unit: 2,
         yield: "high",
         tags: ["abetment", "conspiracy", "attempt", "45", "61", "62"],
@@ -104,12 +112,15 @@
       },
       {
         id: "cr-exceptions",
+        seq: 2,
+        readAs: "Paranjape BNS — general exceptions &amp; private defence (ss.14–44)",
         unit: 3,
         yield: "high",
         tags: ["private defence", "insanity", "mistake", "intoxication", "14-44"],
         title: "General exceptions — mistake, accident, necessity, age, unsoundness, drunkenness, private defence",
         summary: "BNS ss.14–44 are the exception kernel. Private defence (34–44) is the 20-marker. Legal vs medical insanity is a BNS-paper short note.",
-        explainer: `<p>These are not ‘defences you invent’; they are statutory negatives of offence. Burden: prosecution proves the offence; accused may raise exception (evidential burden; see Evidence Act / BSA on general exceptions — mention without a treatise).</p>
+        explainer: `<p>In the Sanhita — and therefore in Paranjape — general exceptions (including private defence) come <strong>before</strong> abetment. CCS older IPC papers often asked inchoate offences first. Follow the book: lock ss.14–44, then do ch. 4 inchoate.</p>
+        <p>These are not ‘defences you invent’; they are statutory negatives of offence. Burden: prosecution proves the offence; accused may raise exception (evidential burden; see Evidence Act / BSA on general exceptions — mention without a treatise).</p>
         <p><strong>Mistake:</strong> s.14 (bound by law / mistake of fact) and s.17 (justified / mistake of fact). <em>Mistake of law is no excuse</em> — 2024 Contract paper even teased a cousin phrase. Fact vs law is the axe (<em>R v Prince</em> vs <em>R v Tolson</em> English pair; Indian <em>State of Orissa v Ram Bahadur Thapa</em> ghost-hunting sometimes taught).</p>
         <p><strong>Accident:</strong> s.18 — lawful act, lawful manner, lawful means, proper care and caution. <strong>Necessity:</strong> s.19 — without criminal intent, to prevent other harm; proportionate. Not a defence to murder in the Dudley &amp; Stephens English extreme (exam garnish).</p>
         <p><strong>Age:</strong> s.20 child &lt;7 doli incapax; s.21 child ≥7 &lt;12 and immature understanding. Juvenile Justice statute overlays procedure — don’t mix punishment with JJ Board process unless asked.</p>
@@ -154,6 +165,8 @@
       },
       {
         id: "cr-homicide",
+        seq: 4,
+        readAs: "Paranjape BNS — offences affecting life (ss.100–106)",
         unit: 4,
         yield: "high",
         tags: ["100", "101", "103", "105", "106", "murder", "culpable homicide"],
@@ -202,6 +215,8 @@
       },
       {
         id: "cr-body-other",
+        seq: 5,
+        readAs: "Paranjape BNS — hurt, restraint, assault, kidnapping (ss.114–138)",
         unit: 4,
         yield: "high",
         tags: ["hurt", "grievous", "kidnapping", "abduction", "wrongful restraint", "assault"],
@@ -239,6 +254,8 @@
       },
       {
         id: "cr-property",
+        seq: 7,
+        readAs: "Paranjape BNS — offences against property (ss.303–318)",
         unit: 4,
         yield: "high",
         tags: ["theft", "extortion", "robbery", "dacoity", "cheating", "303", "308", "309", "310", "318"],
@@ -277,6 +294,8 @@
       },
       {
         id: "cr-state",
+        seq: 6,
+        readAs: "Paranjape BNS — offences against the State &amp; public tranquility (ss.152, 189–194)",
         unit: 4,
         yield: "high",
         tags: ["152", "sedition", "unlawful assembly", "rioting", "affray", "189", "191", "194"],
@@ -317,12 +336,15 @@
       },
       {
         id: "cr-marriage",
+        seq: 8,
+        readAs: "Paranjape BNS — marriage offences (ss.80–87); BNS commentary places this chapter before the human-body chapter",
         unit: 4,
         yield: "standard",
         tags: ["bigamy", "adultery", "82", "joseph shine"],
         title: "Marriage offences — bigamy; adultery’s legal death",
         summary: "Bigamy (BNS 82) lives. Adultery (IPC 497) was struck in Joseph Shine and is omitted in BNS. Teach both because old PYQs still say ‘adultery.’",
-        explainer: `<p><strong>Bigamy — BNS 82 (IPC 494):</strong> marrying again during the lifetime of a spouse, the later marriage being void by reason of it. Exceptions: first marriage declared void; spouse absent for seven years not heard of (with disclosure). Personal law: Muslim polygamy authorised by personal law is the classic exam complication — 494 applies to those whose personal law makes the second marriage void (Hindus post-HMA s.17; Christians; etc.). Conversion to Islam to defeat monogamy has been judicially frowned on (<em>Sarla Mudgal</em>, <em>Lily Thomas</em>).</p>
+        explainer: `<p>Paranjape’s BNS commentary follows the Sanhita: offences relating to marriage (ss.80–87) sit in the women-and-children chapter, <strong>before</strong> culpable homicide. CCS still lists bigamy/adultery as a tail unit — we keep the topic last so PYQ drills feel familiar, but you should physically read it where Paranjape prints it.</p>
+        <p><strong>Bigamy — BNS 82 (IPC 494):</strong> marrying again during the lifetime of a spouse, the later marriage being void by reason of it. Exceptions: first marriage declared void; spouse absent for seven years not heard of (with disclosure). Personal law: Muslim polygamy authorised by personal law is the classic exam complication — 494 applies to those whose personal law makes the second marriage void (Hindus post-HMA s.17; Christians; etc.). Conversion to Islam to defeat monogamy has been judicially frowned on (<em>Sarla Mudgal</em>, <em>Lily Thomas</em>).</p>
         <p><strong>Adultery:</strong> IPC 497 was a gendered, husband-centric offence (woman not punished; husband of the woman as the ‘victim’). <em>Joseph Shine v Union of India</em> (2018) struck 497 as unconstitutional (Arts. 14, 15, 21 — privacy, dignity, equality). BNS does <strong>not</strong> revive it. 2022 short note ‘Bigamy’ still appears; older papers ask adultery. 2026 answers: history + unconstitutionality + omission. Civil/matrimonial remedies (divorce grounds) are not the same as a crime.</p>
         <p>Related BNS: s.81 deceitful cohabitation; s.84 enticing a married woman (a residual, controversial cousin — mention only if asked). Dowry death s.80 appeared in Dec 2024 BNS Q11 — off the old K-1004 marriage bullet but live in BNS papers; ingredients: death by burns/bodily injury / otherwise than under normal circumstances within 7 years of marriage + cruelty/harassment for dowry soon before death (presumption architecture in Evidence/BSA).</p>`,
         analogy: {

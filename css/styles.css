@@ -330,6 +330,7 @@ h2.display, .topic h1, .hero h2 {
 .analogy { background: color-mix(in srgb, var(--teal) 12%, var(--elev-2)); }
 .mnemonic { background: color-mix(in srgb, var(--gold) 12%, var(--elev-2)); }
 .note { background: color-mix(in srgb, var(--blue) 10%, var(--elev-2)); }
+.shelf-banner { background: color-mix(in srgb, var(--gold) 14%, var(--elev-2)); }
 .analogy h3, .mnemonic h3, .note h3 { margin: 0 0 6px; font-size: 0.95rem; }
 
 .diagram {

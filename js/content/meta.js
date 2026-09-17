@@ -114,52 +114,61 @@
         <h2 class="section-title">Crimes conversion drill</h2>
         <p>When you practise 2022–23 IPC papers, rewrite the heading with BNS numbers in the margin the same evening. Dec 2024/25 public files already title the paper BNS.</p>
         <h2 class="section-title">Last 48 hours</h2>
-        <p>One A4 hook sheet (NASH-SRM, HMPCQ, FAME, OAC-CL, EDS). Bare Constitution (Jain), BNS bare, Contract Act. Nothing new except section flash.</p>
+        <p>One A4 hook sheet (NASH-SRM, HMPCQ, FAME, OAC-CL, EDS). Physical stack: Paranjape Juris + Narender Kumar + Bangia Torts + Paranjape BNS + Bangia Contract, plus Jain Constitution bare, BNS bare, Contract Act. Unique only for question-shape. Nothing new except section flash.</p>
       </article>`;
     },
     resources() {
       return `<article class="topic">
-        <p class="kicker">Beyond Unique 30 Q&amp;A</p>
-        <h1>Publishers, YouTube, bare acts</h1>
-        <p class="lede">You already own Unique Law Series (Nitin Prakashan, Meerut) and a Jain Book Agency Constitution (post-Art. 370 abolition reprint). Unique is a question-shape trainer, not a doctrine engine. This page is the upgrade path.</p>
-        <h2 class="section-title">What Unique is good / bad for</h2>
+        <p class="kicker">Gaurav’s shelf · then Unique drill · then extras</p>
+        <h1>Primary textbooks, exam drill, secondary refs</h1>
+        <p class="lede">The five books below are the <strong>authoritative physical shelf</strong> this site tracks for structure, landmark cases, and depth. Read the matching chapter there; this website is original teaching prose (syllabus + bare acts + public case law + PYQ themes). It does not reproduce those textbooks or Unique/Nitin Q&amp;A.</p>
+
+        <h2 class="section-title">1. Primary textbooks (buy / use)</h2>
+        <table class="compare">
+          <thead><tr><th>Paper</th><th>Book</th><th>How this site tracks it</th></tr></thead>
+          <tbody>
+            <tr><td>K-1001</td><td>Dr. <strong>N.V. Paranjape</strong> — <em>Studies in Jurisprudence &amp; Legal Theory</em> (Central Law Agency)</td><td>Part I school order: meaning → analytical → historical → natural/ethical → sociological → realist → economic/Indian trends. Definitions + one critique per thinker.</td></tr>
+            <tr><td>K-1002</td><td>Dr. <strong>Narender Kumar</strong> — <em>Introduction To The Constitution Law Of India</em> (Allahabad Law Agency, <strong>latest edition</strong>)</td><td>Salient features → Preamble → FR general → equality → freedoms (19–22) → 21A → exploitation → religion → minorities → remedies → DPSPs → duties. Jain bare act beside it.</td></tr>
+            <tr><td>K-1003</td><td>Dr. <strong>R.K. Bangia</strong> — <em>Law of Torts</em> (Allahabad Law Agency; use an edition with <strong>CPA 2019</strong>)</td><td>Nature → general defences → vicarious / State → strict &amp; absolute (Bangia’s dedicated chapter) → defamation → nuisance → negligence → trespass → CPA commissions.</td></tr>
+            <tr><td>K-1004</td><td>Dr. <strong>N.V. Paranjape</strong> — <em>The Bharatiya Nyaya Sanhita, 2023</em></td><td><strong>BNS section numbers first.</strong> Exceptions then inchoate (Sanhita chapter order). IPC numbers stay in mapping tables for older PYQs and pre-2024 judgments.</td></tr>
+            <tr><td>K-1005</td><td>Dr. <strong>R.K. Bangia</strong> — <em>Law of Contract</em> (Contract-I; ICA Ss. 1–75 + Specific Relief as extra)</td><td>Formation → consideration → capacity → free consent → legality of object → void agreements → contingent → discharge/frustration → quasi → damages (s.73–74).</td></tr>
+          </tbody>
+        </table>
+        <p>Also keep on the desk: <strong>Jain Book Agency</strong> Constitution (post-Art. 370 abolition reprint), <strong>BNS 2023 bare</strong>, <strong>Contract Act 1872 bare</strong>, <strong>CPA 2019 bare</strong>.</p>
+
+        <h2 class="section-title">2. Unique Q&amp;A — exam drill only</h2>
+        <p>Unique Law Series / Nitin Prakashan (Meerut) “30 Questions &amp; Answers” is what you already own for CCS question <em>shape</em>. Use it <strong>after</strong> Paranjape/Kumar/Bangia + this site + the bare act — never as first principles.</p>
         ${window.LLBDiagrams.render({
           type: "compare",
-          headers: ["Good", "Bad"],
+          headers: ["Good for", "Bad for"],
           rows: [
             ["Seeing CCS-style long questions", "Learning first principles"],
             ["Last 10–15 days recall", "Outdated CPA 1986 “Forum” vocabulary"],
             ["Hindi-medium phrasing practice", "IPC-only Crimes answers after BNS papers began"],
-            ["Checking you did not miss a unit", "Case ratios and section precision"]
+            ["Checking you did not miss a unit", "Case ratios and section precision (use the five textbooks)"]
           ]
         })}
-        <h2 class="section-title">Bare acts (non-negotiable)</h2>
-        <div class="pub-grid">
-          <div class="pub-card"><strong>Constitution</strong><p>Jain Book Agency / Universal / Lexis — Arts. 12–32, 36–51, 51A, 352–360. India Code: <a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">indiacode.nic.in</a></p></div>
-          <div class="pub-card"><strong>BNS 2023</strong><p>Official Gazette / Universal BNS bare. Enforcement 1 July 2024. Do not answer Dec 2026 Crimes from an IPC-only Unique.</p></div>
-          <div class="pub-card"><strong>Contract Act 1872</strong><p>Ss. 2–75 especially 10–30, 56, 68–72, 73–75.</p></div>
-          <div class="pub-card"><strong>CPA 2019</strong><p>Commissions, not 1986 Forums. Know 2021 pecuniary revision.</p></div>
-        </div>
-        <h2 class="section-title">Recommended texts (official CCS list + student picks)</h2>
+
+        <h2 class="section-title">3. Secondary references (library / if you want more depth)</h2>
         <table class="compare">
-          <thead><tr><th>Paper</th><th>Primary student book</th><th>Depth / classic</th></tr></thead>
+          <thead><tr><th>Paper</th><th>Secondary (do not replace the five)</th></tr></thead>
           <tbody>
-            <tr><td>K-1001</td><td>V.D. Mahajan — <em>Jurisprudence and Legal Theory</em> (EBC)</td><td>Dias; Salmond (Fitzgerald); Bodenheimer; Friedmann; Lloyd</td></tr>
-            <tr><td>K-1002</td><td>V.N. Shukla (M.P. Singh ed., EBC) or J.N. Pandey</td><td>M.P. Jain; H.M. Seervai (library); your Jain bare act beside them</td></tr>
-            <tr><td>K-1003</td><td>R.K. Bangia — <em>Law of Torts</em></td><td>Ratanlal &amp; Dhirajlal; V.K. Aggarwal (consumer); Winfield (reference)</td></tr>
-            <tr><td>K-1004</td><td>BNS bare + one 2024+ BNS↔IPC student commentary</td><td>Ratanlal IPC; K.D. Gaur; S.N. Misra for case law via IPC numbers</td></tr>
-            <tr><td>K-1005</td><td>Avtar Singh — <em>Law of Contract</em> (EBC)</td><td>Pollock &amp; Mulla; Bangia shorter; Anson</td></tr>
+            <tr><td>K-1001</td><td>V.D. Mahajan; Dias; Salmond (Fitzgerald); Bodenheimer; CCS PDF also lists Friedmann, Lloyd, Paton</td></tr>
+            <tr><td>K-1002</td><td>V.N. Shukla (M.P. Singh); J.N. Pandey; M.P. Jain; H.M. Seervai (library); CCS PDF also lists Chander Pal, Hidayatullah, Tope</td></tr>
+            <tr><td>K-1003</td><td>Ratanlal &amp; Dhirajlal; V.K. Aggarwal (consumer); Winfield; CCS PDF also lists Kapoor, Paranjape (torts), Salmond</td></tr>
+            <tr><td>K-1004</td><td>Ratanlal IPC / K.D. Gaur / S.N. Misra for <em>case law still cited in IPC numbers</em>; India Code BNS; UP Police comparative PDF</td></tr>
+            <tr><td>K-1005</td><td>Avtar Singh; Pollock &amp; Mulla; Anson; CCS PDF also lists Desai, Kapoor, Moitra</td></tr>
           </tbody>
         </table>
-        <p>Official CCS PDF also lists: Bodenheimer, Dias, Friedman, Lloyd, Paton, Salmond (Juris); Chander Pal, Hidayatullah, Tope (Consti); Aggarwal, Kapoor, Paranjape, Salmond, Winfield (Torts); Hari Singh Gaur, Nigam (Crimes); Anson, Desai, Moitra (Contract).</p>
-        <h2 class="section-title">Minimum shelf (budget order)</h2>
-        <ol>
-          <li>Constitution bare (have) + Shukla <em>or</em> M.P. Jain</li>
-          <li>Avtar Singh + Contract Act bare</li>
-          <li>Bangia Torts + CPA 2019 bare</li>
-          <li>BNS bare + one comparative book; keep old Ratanlal IPC for cases</li>
-          <li>Mahajan or Dias for Jurisprudence</li>
-        </ol>
+
+        <h2 class="section-title">Bare acts (non-negotiable)</h2>
+        <div class="pub-grid">
+          <div class="pub-card"><strong>Constitution</strong><p>Jain Book Agency / Universal — Arts. 12–32, 36–51, 51A, 352–360. <a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">indiacode.nic.in</a></p></div>
+          <div class="pub-card"><strong>BNS 2023</strong><p>Pair the official text with Paranjape’s BNS commentary. Enforcement 1 July 2024.</p></div>
+          <div class="pub-card"><strong>Contract Act 1872</strong><p>Ss. 2–75 especially 10–30, 56, 68–72, 73–75. Bangia walks the same stretch.</p></div>
+          <div class="pub-card"><strong>CPA 2019</strong><p>Commissions, not 1986 Forums. Know 2021 pecuniary revision. Bangia Torts later editions include this Act.</p></div>
+        </div>
+
         <h2 class="section-title">YouTube (search titles — playlists move)</h2>
         <div class="yt-row">
           <div class="yt-card"><strong>StudyIQ Judiciary</strong><p>@studyiqjudiciary — Consti + BNS marathons.</p></div>
@@ -169,8 +178,9 @@
           <div class="yt-card"><strong>LegalEdge After College</strong><p>@LegalEdgeAfterCollege — conceptual Consti.</p></div>
           <div class="yt-card"><strong>Law Prep / Judiciary Gold / Adda247 JS</strong><p>PYQ/MCQ drill and capsules.</p></div>
         </div>
-        <p>Hygiene: prefer 2024+ uploads for BNS and CPA 2019; watch at 1.25–1.5×; pause to write a 5-line skeleton; confirm every section on the bare act.</p>
-        <h2 class="section-title">BNS ↔ IPC map (syllabus offences)</h2>
+        <p>Hygiene: prefer 2024+ uploads for BNS and CPA 2019; confirm every section in Paranjape BNS / Bangia / Kumar, then the bare act.</p>
+        <h2 class="section-title">BNS ↔ IPC map (syllabus offences — for older PYQs)</h2>
+        <p>Paranjape writes in BNS numbers. When you drill 2022–23 CCS papers, convert IPC cites with this table. Filter is live.</p>
         ${bnsTable()}
         <h2 class="section-title">Public PYQ hubs</h2>
         <ul>
@@ -179,7 +189,7 @@
           <li>Official syllabus PDF: <a href="https://cdn.ccsuniversity.ac.in/public/pdf/2025/08/2%20llb%20syllabus.pdf" target="_blank" rel="noopener">CCS CDN Aug 2025</a></li>
         </ul>
         <aside class="note"><h3>Copyright stance</h3>
-          <p>This website’s prose is original teaching material. It cites publicly available statutes, the CCS syllabus outline, landmark case names/holdings, and publicly blogged exam <em>themes</em>. It does not copy Unique Law Series, Nitin Prakashan, or other copyrighted Q&amp;A books.</p>
+          <p>Original teaching material only. Cites publicly available statutes, the CCS syllabus outline, landmark case names/holdings, and publicly blogged exam <em>themes</em>. Does not copy Unique Law Series, Nitin Prakashan, Paranjape, Narender Kumar, or Bangia prose, tables, or chapter text.</p>
         </aside>
       </article>`;
     }

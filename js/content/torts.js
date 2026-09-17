@@ -6,7 +6,10 @@
     code: "K-1003",
     title: "Law of Torts and Consumer Protection",
     short: "Torts + CPA",
-    blurb: "Civil wrongs outside contract + CPA 2019 commissions. Maxims and State liability are the annual spine.",
+    blurb: "Tracks Bangia: nature → defences → vicarious/State → strict/absolute → nominate torts → CPA 2019.",
+    shelf: {
+      primary: "Dr. R.K. Bangia — <em>Law of Torts</em> (Allahabad Law Agency; CPA 2019 edition)"
+    },
     youtube: [
       { title: "Rylands vs M.C. Mehta", search: "Rylands vs MC Mehta absolute liability" },
       { title: "CPA 2019 commissions", search: "CPA 2019 consumer commissions Hindi" },
@@ -15,43 +18,40 @@
     topics: [
       {
         id: "t-intro",
+        seq: 1,
+        readAs: "Bangia ch. 1 — nature of a tort (plus capacity notes from ch. 3)",
         unit: 1,
         yield: "high",
         tags: ["damnum", "injuria", "pigeon hole", "constituents"],
-        title: "Tortious liability — definition, constituents, damnum / injuria, mental element, parties, strict & absolute liability",
+        title: "Tortious liability — definition, constituents, damnum / injuria, mental element, parties",
         summary: "A tort is a civil wrong, other than a breach of contract, for which the remedy is unliquidated damages. Loss without legal injury is not a tort; legal injury without loss still is.",
         explainer: `<p><strong>Definition cluster:</strong> Winfield — tortious liability arises from the breach of a duty primarily fixed by law; this duty is toward persons generally; its breach is redressable by an action for unliquidated damages. Salmond — a civil wrong for which the remedy is a common-law action for unliquidated damages, and which is not exclusively the breach of a contract or trust. Fraser / Ratanlal exam lines: violation of a right <em>in rem</em> (against the world) rather than <em>in personam</em>.</p>
         <p><strong>Pigeon-hole theory (Salmond) vs Winfield:</strong> Salmond — you must fit a named tort (negligence, defamation…). Winfield — a general principle of liability for unjust harm, with defences. CCS Section A loves the label. Indian courts are pragmatic: they use nominate torts but stretch negligence and constitutional torts.</p>
         <p><strong>Constituents:</strong> (1) a wrongful act or omission; (2) legal damage (injuria); (3) legal remedy (usually damages; sometimes injunction/specific restitution). Mental element varies: some torts need intention (deceit, some trespass readings), negligence is fault without intent, strict/absolute skip fault.</p>
         <p><strong>Damnum sine injuria:</strong> damage without violation of a legal right → no action. <em>Gloucester Grammar School</em> (competition); <em>Mogul Steamship</em>; <em>Mayor of Bradford v Pickles</em> (malicious extraction of water on one’s land); Indian: <em>Ushaben v Bhagyalaxmi Chitra Mandir</em> style facts sometimes cited. <strong>Injuria sine damno:</strong> violation of a right without proved actual loss → actionable. <em>Ashby v White</em> (vote refused); <em>Marzetti v Williams</em> (banker’s refusal). This pair is the Dec 2024 20-marker spine: “mere causing of actual loss is not necessarily a tort but mere wrong without actual loss is a tort.”</p>
         <p><strong>Malice, motive, negligence:</strong> motive is generally irrelevant if the act is lawful (<em>Bradford v Pickles</em>; <em>Allen v Flood</em>) — except where malice is an ingredient (malicious prosecution) or qualified privilege is defeated. Negligence is both a specific tort and a mode of liability. Malice-in-law (wrongful act done intentionally without just cause) vs malice-in-fact (spite).</p>
-        <p><strong>Who may sue / be sued:</strong> generally any person with a right. Convicts can sue. Aliens (friendly) can. Husband-wife unity is historical debris (mostly gone). Independent contractor vs servant (see vicarious). The State (below). Minors can sue by next friend; can be sued; parent not automatically liable. Corporations: ultra vires issues. Deceased: survival statutes / fatal accidents — mention <em>fatal accidents</em> without dumping English 1846 Act history unless asked. Who may <em>not</em>: no right, no locus; judicial officers’ immunity for acts in jurisdiction; foreign sovereigns (classic — now nuanced).</p>
-        <p><strong>Strict liability — <em>Rylands v Fletcher</em>:</strong> a person who for his own purposes brings on his land and collects and keeps there anything likely to do mischief if it escapes, must keep it in at his peril. Ingredients: dangerous thing; escape; non-natural use. <strong>Defences:</strong> plaintiff’s default; act of God; consent / volenti; act of third party; statutory authority.</p>
-        <p><strong>Absolute liability — <em>M.C. Mehta v Union of India</em> (Oleum gas):</strong> an enterprise engaged in a hazardous or inherently dangerous industry owes an <em>absolute and non-delegable</em> duty; no <em>Rylands</em> defences; measure of compensation correlated to the enterprise’s size and capacity (also <em>Indian Council for Enviro-Legal Action</em>; Bhopal as the political shadow). This is India’s distinctive public-law tort.</p>`,
+        <p><strong>Who may sue / be sued:</strong> Bangia’s capacity chapter sits next: generally any person with a right. Convicts can sue. Aliens (friendly) can. Husband-wife unity is historical debris (mostly gone). Independent contractor vs servant (see vicarious). The State (Bangia ch. 5). Minors can sue by next friend; can be sued; parent not automatically liable. Corporations: ultra vires issues. Deceased: survival statutes / fatal accidents — mention <em>fatal accidents</em> without dumping English 1846 Act history unless asked. Who may <em>not</em>: no right, no locus; judicial officers’ immunity for acts in jurisdiction; foreign sovereigns (classic — now nuanced).</p>
+        <p>Bangia treats <strong>strict and absolute liability as a later dedicated chapter</strong> (after negligence/premises). CCS still plants the maxims in the intro unit — open that topic next; do not dump <em>Rylands</em> / <em>Mehta</em> here except as a one-line trailer.</p>`,
         analogy: {
           title: "Loss ≠ bug; right-breach = bug",
-          body: "Damnum sine injuria is a competitor taking your market share with a legal product — painful metrics, no SLA breach. Injuria sine damno is an authz violation that caused zero rupee loss — still a P0. Strict liability is a leaky tank with documented exceptions; absolute liability is a nuclear plant with the exceptions stripped."
+          body: "Damnum sine injuria is a competitor taking your market share with a legal product — painful metrics, no SLA breach. Injuria sine damno is an authz violation that caused zero rupee loss — still a P0."
         },
         diagram: {
           type: "compare",
-          headers: ["", "Strict (Rylands)", "Absolute (M.C. Mehta)"],
+          headers: ["Maxim", "Meaning", "Action?"],
           rows: [
-            ["Trigger", "Escape of dangerous thing; non-natural use", "Hazardous/inherently dangerous enterprise"],
-            ["Fault", "Not required", "Not required"],
-            ["Defences", "Act of God, third party, vis major, etc.", "None of the Rylands defences"],
-            ["Indian industrial disasters", "Classic English import", "Preferred framing"]
+            ["Damnum sine injuria", "Damage without legal injury", "No tort"],
+            ["Injuria sine damno", "Legal injury without proved loss", "Tort (actionable per se flavour)"]
           ]
         },
         mnemonic: {
           name: "LOSS WITHOUT RIGHT ≠ TORT",
-          hook: "Injuria is the legal hit. FAME is for defamation later; here remember Rylands vs Mehta.",
-          recite: "Unliquidated damages; right in rem. Damnum sine injuria no; injuria sine damno yes. Strict has excuses; absolute does not."
+          hook: "Injuria is the legal hit. Strict/absolute wait for Bangia’s later chapter.",
+          recite: "Unliquidated damages; right in rem. Damnum sine injuria no; injuria sine damno yes."
         },
         cases: [
           { name: "Ashby v White", citation: "(1703) 2 Ld Raym 938", point: "Injuria sine damno — vote." },
           { name: "Gloucester Grammar School", citation: "(1410) YB 11 Hen IV", point: "Competition loss without right-violation." },
-          { name: "Rylands v Fletcher", citation: "(1868) LR 3 HL 330", point: "Strict liability." },
-          { name: "M.C. Mehta v Union of India", citation: "(1987) 1 SCC 395", point: "Absolute liability." },
           { name: "Mayor of Bradford v Pickles", citation: "[1895] AC 587", point: "Motive generally irrelevant." }
         ],
         pyqs: [
@@ -67,17 +67,19 @@
             section: "A",
             marks: "4",
             q: "Pigeon Hole Theory / Damnum Sine Injuria / Strict Liability.",
-            outline: ["Salmond vs Winfield; Gloucester; Rylands ingredients."]
+            outline: ["Salmond vs Winfield; Gloucester; point to Bangia ch. 16 for Rylands if the short note is Strict Liability."]
           }
         ],
         check: [
           "Winfield + Salmond one-liners.",
           "Two cases per maxim.",
-          "Rylands ingredients + four defences vs Mehta."
+          "Who may sue / not be sued in four bullets."
         ]
       },
       {
         id: "t-justifications",
+        seq: 2,
+        readAs: "Bangia ch. 2 — general defences",
         unit: 2,
         yield: "high",
         tags: ["volenti", "necessity", "act of god", "statutory authority", "inevitable accident"],
@@ -128,6 +130,8 @@
       },
       {
         id: "t-vicarious",
+        seq: 3,
+        readAs: "Bangia ch. 4–5 — vicarious liability and the State",
         unit: 3,
         yield: "high",
         tags: ["vicarious", "sovereign immunity", "kasturilal", "joint tortfeasors"],
@@ -176,7 +180,70 @@
         check: ["Course of employment vs frolic.", "Kasturilal vs Nagendra Rao.", "Joint and several in one sentence."]
       },
       {
+        id: "t-strict",
+        seq: 4,
+        readAs: "Bangia ch. 16 — strict and absolute liability",
+        unit: 1,
+        yield: "high",
+        tags: ["rylands", "mehta", "strict", "absolute"],
+        title: "Strict liability and absolute liability",
+        summary: "Bangia isolates this as its own chapter: Rylands is the leaky tank with excuses; M.C. Mehta is the hazardous enterprise with none. CCS still plants both in the intro unit — write them here at Bangia depth.",
+        explainer: `<p>CCS bunches this with “nature of tort.” Bangia does not: after vicarious liability and (in his order) several nominate torts, he gives <strong>Rules of Strict and Absolute Liability</strong> a full chapter. For Dec 2026, treat it as a standalone 20-marker engine.</p>
+        <p><strong>Strict liability — <em>Rylands v Fletcher</em>:</strong> a person who for his own purposes brings on his land and collects and keeps there anything likely to do mischief if it escapes, must keep it in at his peril. Ingredients Indian answers must list: (1) dangerous thing; (2) brought/collected on land; (3) escape; (4) non-natural use of land. Damage is to the plaintiff from the escape.</p>
+        <p><strong>Defences (the whole point of calling it ‘strict’ not ‘absolute’):</strong> plaintiff’s default; act of God / vis major; consent / <em>volenti</em>; act of a stranger / third party; statutory authority. Inevitable accident is argued; it is weaker than Act of God. If the defendant was negligent in keeping the thing, you may also have ordinary negligence — but Rylands does not need proof of negligence.</p>
+        <p><strong>Absolute liability — <em>M.C. Mehta v Union of India</em> (Oleum gas, 1987):</strong> an enterprise engaged in a hazardous or inherently dangerous industry owes an <em>absolute and non-delegable</em> duty to the community; if harm results, liability is absolute. No Rylands defences. Compensation correlated to the magnitude and capacity of the enterprise (so a large chemical house cannot plead poverty). Follow-ons: <em>Indian Council for Enviro-Legal Action</em> (polluter pays in public law); Bhopal as the political shadow of why the Court refused English excuses.</p>
+        <p><strong>Exam trap:</strong> do not say “India abolished Rylands.” Rylands still explains water, electricity, and some escape cases. Hazardous industry / mass disaster framing → Mehta. Constitutional tort / Art. 21 overlay can sit in the last paragraph without stealing the Torts paper.</p>`,
+        analogy: {
+          title: "Leaky tank vs nuclear plant",
+          body: "Strict = a tank farm with a documented exception list (Act of God, third-party valve). Absolute = a nuclear plant whose SLA has the exceptions stripped and whose damages scale with the operator’s balance sheet."
+        },
+        diagram: {
+          type: "compare",
+          headers: ["", "Strict (Rylands)", "Absolute (M.C. Mehta)"],
+          rows: [
+            ["Trigger", "Escape of dangerous thing; non-natural use", "Hazardous/inherently dangerous enterprise"],
+            ["Fault", "Not required", "Not required"],
+            ["Defences", "Act of God, third party, vis major, consent, statute", "None of the Rylands defences"],
+            ["Indian industrial disasters", "Classic English import still cited", "Preferred framing for Oleum/Bhopal-class harm"]
+          ]
+        },
+        mnemonic: {
+          name: "STRICT HAS EXCUSES; ABSOLUTE DOES NOT",
+          hook: "Four Rylands ingredients. Five defences. Mehta: non-delegable + deep-pocket measure.",
+          recite: "Bangia ch. 16. Never write ‘strict = absolute.’"
+        },
+        cases: [
+          { name: "Rylands v Fletcher", citation: "(1868) LR 3 HL 330", point: "Strict liability for escape." },
+          { name: "M.C. Mehta v Union of India", citation: "(1987) 1 SCC 395", point: "Absolute liability; Oleum gas." },
+          { name: "Indian Council for Enviro-Legal Action v Union of India", citation: "(1996) 3 SCC 212", point: "Polluter pays; chemical waste." },
+          { name: "Cambridge Water v Eastern Counties Leather", citation: "[1994] 2 AC 264", point: "English foreseeability overlay — mention as contrast, not Indian holding." }
+        ],
+        pyqs: [
+          {
+            year: "Dec 2024",
+            section: "A",
+            marks: "4",
+            q: "Strict Liability.",
+            outline: ["Rylands ingredients; two defences; one-line Mehta contrast."]
+          },
+          {
+            year: "theme",
+            section: "C",
+            marks: "20",
+            q: "Distinguish strict liability and absolute liability with cases.",
+            outline: ["Rylands ingredients + defences; Mehta facts/ratio; table; when each applies in India."]
+          }
+        ],
+        check: [
+          "Four Rylands ingredients.",
+          "Five defences.",
+          "Mehta: non-delegable + no excuses + enterprise measure."
+        ]
+      },
+      {
         id: "t-negligence",
+        seq: 7,
+        readAs: "Bangia ch. 11–13 — negligence, medical, contributory",
         unit: 4,
         yield: "high",
         tags: ["negligence", "donoghue", "res ipsa", "nervous shock"],
@@ -217,6 +284,8 @@
       },
       {
         id: "t-nuisance",
+        seq: 6,
+        readAs: "Bangia ch. 9 — nuisance",
         unit: 4,
         yield: "standard",
         tags: ["nuisance", "public", "private"],
@@ -251,6 +320,8 @@
       },
       {
         id: "t-trespass",
+        seq: 8,
+        readAs: "Bangia ch. 7, 18–19 — trespass to person, land, goods",
         unit: 4,
         yield: "standard",
         tags: ["trespass", "person", "land", "goods"],
@@ -277,6 +348,8 @@
       },
       {
         id: "t-defamation",
+        seq: 5,
+        readAs: "Bangia ch. 8 — defamation",
         unit: 4,
         yield: "high",
         tags: ["defamation", "libel", "slander", "privilege"],
@@ -318,6 +391,8 @@
       },
       {
         id: "t-cpa",
+        seq: 9,
+        readAs: "Bangia Part III / ch. 26 — Consumer Protection Act 2019",
         unit: 5,
         yield: "high",
         tags: ["cpa 2019", "consumer", "commission", "shantha"],

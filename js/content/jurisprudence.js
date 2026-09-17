@@ -6,7 +6,10 @@
     code: "K-1001",
     title: "Jurisprudence-I (Legal Theory)",
     short: "Jurisprudence",
-    blurb: "Schools as competing operating systems for ‘what is law’. Student books may print K-101; official CCS code is K-1001.",
+    blurb: "Tracks Paranjape’s school chapters. Student books may print K-101; official CCS code is K-1001.",
+    shelf: {
+      primary: "Dr. N.V. Paranjape — <em>Studies in Jurisprudence &amp; Legal Theory</em> (Central Law Agency)"
+    },
     youtube: [
       { title: "Schools of Jurisprudence series", search: "Schools of Jurisprudence Austin Kelsen Hart StudyIQ" },
       { title: "Pound Social Engineering", search: "Jurisprudence Roscoe Pound social engineering Hindi" },
@@ -15,12 +18,14 @@
     topics: [
       {
         id: "j-intro",
+        seq: 1,
+        readAs: "Paranjape ch. 1 — meaning, nature &amp; scope",
         unit: 1,
         yield: "high",
         tags: ["definition", "salmond", "austin", "holland", "gray", "pound", "utility"],
         title: "Introduction — definition, nature, scope, importance",
         summary: "Jurisprudence is the grammar of law: not the statute book of one State, but the theories that explain what ‘law’ is, how it binds, and why courts should care.",
-        explainer: `<p>Start with the exam’s favourite fight: is Jurisprudence the law of <em>one</em> nation, or a science <em>about</em> law? Short CCS notes have asked that almost verbatim. If you say “it is Indian law,” you have confused jurisprudence with a municipal code. If you say “it is philosophy with no courtroom use,” you have written yourself out of the marks for <em>utility</em>.</p>
+        explainer: `<p>Paranjape opens with the province of jurisprudence before any school: meaning, nature, scope. CCS still loves the fight: is Jurisprudence the law of <em>one</em> nation, or a science <em>about</em> law? Short notes have asked that almost verbatim. If you say “it is Indian law,” you have confused jurisprudence with a municipal code. If you say “it is philosophy with no courtroom use,” you have written yourself out of the marks for <em>utility</em>.</p>
         <p><strong>Working definition (write this, then pick a favourite):</strong> Jurisprudence is the systematic study of the concept of law, its sources, its relationship with the State, morals and society, and the ideas that organise legal reasoning. Examiners still expect named definitions:</p>
         <ul>
           <li><strong>Austin:</strong> “the philosophy of positive law” — law as it <em>is</em>, laid down by a political superior.</li>
@@ -89,12 +94,15 @@
       },
       {
         id: "j-natural",
+        seq: 4,
+        readAs: "Paranjape ch. 4 ethical/philosophical + ch. 8 natural law",
         unit: 2,
         yield: "high",
         tags: ["natural law", "stammler", "kohler", "aquinas", "fuller", "revival"],
         title: "Natural Law — classical and revival (Stammler, Kohler)",
         summary: "Natural law says law is not only a command; it is answerable to reason, justice, or the moral architecture of human association. CCS wants classical roots plus the German revival names.",
-        explainer: `<p><strong>Classical natural law</strong> is the claim that there are principles of right reason, discoverable by reflection on human nature or divine order, that <em>measure</em> human laws. Greek strand: Aristotle’s distinction of natural and conventional justice. Roman: Cicero — true law is right reason in agreement with nature. Medieval: Aquinas — lex humana participates in lex aeterna; an unjust law is a corruption of law (exam phrase: <em>lex injusta non est lex</em>, handled carefully — not an invitation to private rebellion in every case). Early modern: Grotius secularises natural law (“even if God did not exist”); Locke ties it to rights the State does not create.</p>
+        explainer: `<p>Paranjape splits the “ought” tradition: a Philosophical/Ethical school chapter and a later dedicated Natural Law chapter. CCS paper unit 2 names <strong>classical natural law plus Stammler and Kohler</strong> — that is the examinable payload. We keep those names even though Paranjape places natural law after realism in the table of contents.</p>
+        <p><strong>Classical natural law</strong> is the claim that there are principles of right reason, discoverable by reflection on human nature or divine order, that <em>measure</em> human laws. Greek strand: Aristotle’s distinction of natural and conventional justice. Roman: Cicero — true law is right reason in agreement with nature. Medieval: Aquinas — lex humana participates in lex aeterna; an unjust law is a corruption of law (exam phrase: <em>lex injusta non est lex</em>, handled carefully — not an invitation to private rebellion in every case). Early modern: Grotius secularises natural law (“even if God did not exist”); Locke ties it to rights the State does not create.</p>
         <p><strong>Why it died in the 19th century (for the analytical exam contrast):</strong> science-envy and sovereignty theory. If law is the sovereign’s command, “higher law” looks like smuggling morals into validity. Austin’s province is a demolition job on natural-law vagueness.</p>
         <p><strong>Revival (20th century):</strong> World wars, genocidal ‘legal’ systems, and the sense that a purely formal validity test baptises atrocity. Radbruch’s formula (extreme injustice is not law) is the European moral of the story — useful as critique even if CCS names <strong>Stammler</strong> and <strong>Kohler</strong> specifically.</p>
         <p><strong>Rudolf Stammler</strong> — “natural law with a variable content.” There is no eternal code of detailed rules; there is a <em>method</em> of just law: a community of free-willing persons, where the law’s form aims at harmony of individual purposes. Hook: <em>the protocol is stable; the payload changes with society</em>. He tries to keep Kantian form (universalizable justness) without pretending 13th-century property rules are natural forever.</p>
@@ -137,12 +145,14 @@
       },
       {
         id: "j-analytical",
+        seq: 2,
+        readAs: "Paranjape ch. 2 — analytical school",
         unit: 3,
         yield: "high",
         tags: ["austin", "kelsen", "hart", "command", "grundnorm", "primary secondary"],
         title: "Analytical School — Austin, Kelsen, H.L.A. Hart",
         summary: "Three positivist kernels: law as command (Austin), law as a validity pyramid (Kelsen), law as a union of primary and secondary rules (Hart). This is the highest-frequency K-1001 cluster.",
-        explainer: `<p>Analytical (positivist) jurisprudence asks: what is law <em>as a social fact and a logical system</em>, not what law ought to be. CCS will ask you to <em>distinguish</em> the three, not mash them into “all Englishmen who hate natural law.”</p>
+        explainer: `<p>Paranjape’s second chapter is the analytical (positivist) school — the CCS high-frequency cluster. Analytical jurisprudence asks: what is law <em>as a social fact and a logical system</em>, not what law ought to be. CCS will ask you to <em>distinguish</em> Austin, Kelsen and Hart, not mash them into “all Englishmen who hate natural law.”</p>
         <h3>John Austin</h3>
         <p>Law properly so called = command of a <strong>sovereign</strong>, habitually obeyed, backed by <strong>sanction</strong>, to an independent political society. Sovereign is illimitable and legally uncommanded. International law and constitutional conventions become “positive morality.” <strong>Imperative theory</strong> is a beautiful compiler if your only type is <code>Command</code>. Failures: custom; judge-made law; duty-imposing rules without a barking sovereign (Hart); democratic constitutions that bind the legislature; international law’s stubborn existence; sanctions that are nullities rather than punishments (Kelsen’s later point).</p>
         <p>Bentham is the short-note cousin (Dec 2023/24). Bentham: utilitarian reformer, censors law; Austin: expositor, more dry. Do not swap them.</p>
@@ -222,6 +232,8 @@
       },
       {
         id: "j-historical",
+        seq: 3,
+        readAs: "Paranjape ch. 3 — historical school",
         unit: 4,
         yield: "high",
         tags: ["savigny", "maine", "volksgeist", "status contract"],
@@ -265,6 +277,8 @@
       },
       {
         id: "j-socio",
+        seq: 5,
+        readAs: "Paranjape ch. 5 — sociological school",
         unit: 5,
         yield: "high",
         tags: ["pound", "duguit", "social engineering", "solidarity", "jural postulates"],
@@ -325,6 +339,8 @@
       },
       {
         id: "j-realism",
+        seq: 6,
+        readAs: "Paranjape ch. 6 — realist theory",
         unit: 6,
         yield: "high",
         tags: ["realism", "holmes", "lllewellyn", "frank", "american"],
@@ -387,12 +403,15 @@
       },
       {
         id: "j-marx",
+        seq: 7,
+        readAs: "Paranjape ch. 7 Indian legal theory / economic approach (CCS unit)",
         unit: 7,
         yield: "standard",
         tags: ["marx", "economic", "base superstructure", "pashukanis"],
         title: "Economic / Marxist approach to law",
         summary: "Law is not a neutral operating system. It is superstructure that stabilises a mode of production — until contradiction forces a rewrite.",
-        explainer: `<p>Marx and Engels: the <strong>economic base</strong> (forces + relations of production) conditions the <strong>superstructure</strong> (State, law, ideology). Law presents class interest as universal right (“freedom of contract” in a factory society). The State is not Austin’s neutral sovereign; it is organised class violence with a legal face. Rights to property are historically specific, not natural (clash with Locke / classical NL).</p>
+        explainer: `<p>CCS lists a dedicated “economic / Marxist approach.” Paranjape’s nearby chapters are Indian legal theory and recent trends in Indian jurisprudence — use them for Indian illustrations, but still write Marx/Engels base–superstructure as the exam spine.</p>
+        <p>Marx and Engels: the <strong>economic base</strong> (forces + relations of production) conditions the <strong>superstructure</strong> (State, law, ideology). Law presents class interest as universal right (“freedom of contract” in a factory society). The State is not Austin’s neutral sovereign; it is organised class violence with a legal face. Rights to property are historically specific, not natural (clash with Locke / classical NL).</p>
         <p><strong>What to write as ‘features’:</strong> (1) historical materialism; (2) law as class instrument; (3) withering of law in a classless society (contested even on the Left); (4) critique of formal equality; (5) ideology — legal consciousness hides exploitation.</p>
         <p><strong>Pashukanis</strong> (optional depth): commodity-form theory of law — legal subject and contract mirror commodity exchange; criminal law as a distorted equivalent. Good for a distinction paragraph vs Pound (Pound reforms capitalism; Pashukanis thinks the legal form itself is capitalist).</p>
         <p><strong>Indian landing (careful, high-scoring):</strong> colonial codes protecting trade and land revenue; labour jurisprudence as counter-movement; Constitution’s simultaneous property fights (repealed Art. 31, 300A) and socialist Preamble word (42nd Amendment). Do not write a party pamphlet; write a <em>jurisprudential</em> critique of ‘equal bargaining’ in Contract-I and of ‘sovereign command’ in Crimes.</p>

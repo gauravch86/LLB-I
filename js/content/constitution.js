@@ -6,7 +6,10 @@
     code: "K-1002",
     title: "Constitutional Law of India-I",
     short: "Constitution",
-    blurb: "Nature of the Constitution + Fundamental Rights. Keep the Jain Book Agency bare act open beside every article.",
+    blurb: "Tracks Narender Kumar: salient features → Preamble → FRs chapter-wise. Keep the Jain Book Agency bare act open.",
+    shelf: {
+      primary: "Dr. Narender Kumar — <em>Introduction To The Constitution Law Of India</em> (Allahabad Law Agency, latest edition)"
+    },
     youtube: [
       { title: "FR complete playlist", search: "Fundamental Rights complete Unacademy Judiciary Article 12 to 32" },
       { title: "Article 21 Maneka", search: "Article 21 Maneka Gandhi StudyIQ" },
@@ -15,12 +18,14 @@
     topics: [
       {
         id: "c-nature",
+        seq: 1,
+        readAs: "Kumar ch. 3 — salient features / federal + parliamentary form",
         unit: 1,
         yield: "high",
         tags: ["federal", "quasi-federal", "parliamentary", "k.c. wheare"],
         title: "Nature of the Indian Constitution — federal structure and form of government",
         summary: "India is a Union of States with federal hardware and a unitary turbo. Government is parliamentary, Westminster-derived, with a republican President.",
-        explainer: `<p>Art. 1: “India, that is Bharat, shall be a Union of States.” The drafting choice of <em>Union</em> (not ‘federation’) is itself an exam sentence: the States are not a bargain that can secede; the Union is indestructible (compare US compact myths).</p>
+        explainer: `<p>Narender Kumar’s early chapters are history, then <strong>salient features</strong>, then the Union. CCS K-1002 asks two of those features with extra weight: federal structure and form of government. Art. 1: “India, that is Bharat, shall be a Union of States.” The drafting choice of <em>Union</em> (not ‘federation’) is itself an exam sentence: the States are not a bargain that can secede; the Union is indestructible (compare US compact myths).</p>
         <p><strong>Federal hardware (list 6):</strong> dual polity (Union + States); written Constitution; supremacy of the Constitution; rigid amendment (Art. 368 with basic structure overlay); division of powers (Sch. VII — Union/State/Concurrent); independent judiciary with power of judicial review; bicameralism at Centre (Rajya Sabha as House of States, imperfectly).</p>
         <p><strong>Unitary turbo (list 6):</strong> strong Centre; single Constitution; single citizenship; unified judiciary; All-India Services; residuary with Union (Art. 248 / List I-97); emergency provisions (Arts. 352, 356, 360) that can turn the system into a de facto unitary State; Parliament can legislate on State list in listed situations (Arts. 249, 250, 252, 253); Art. 3 — Parliament can reorganise States without their consent as a veto; appointment of Governors.</p>
         <p><strong>Labels:</strong> K.C. Wheare — “quasi-federal.” Granville Austin — “cooperative federalism.” Jennings — more unitary than federal. Indian SC in <em>State of W.B. v Union of India</em> and later <em>S.R. Bommai</em> (federalism as basic feature) — you must show the doctrine moved from “Centre is the boss” toward “federalism is a basic feature,” without denying the turbo.</p>
@@ -75,6 +80,8 @@
       },
       {
         id: "c-preamble",
+        seq: 2,
+        readAs: "Kumar ch. 4 — Preamble",
         unit: 2,
         yield: "high",
         tags: ["preamble", "kesavananda", "berubari", "basic structure"],
@@ -133,6 +140,8 @@
       },
       {
         id: "c-fr-general",
+        seq: 3,
+        readAs: "Kumar ch. 7 — Fundamental Rights (general)",
         unit: 3,
         yield: "high",
         tags: ["article 12", "article 13", "state", "eclipse", "severability", "waiver", "suspension"],
@@ -143,7 +152,8 @@
         <p><strong>Who can claim:</strong> citizens for some (Art. 19, 15, 16, 29–30 in specified ways); persons for others (Art. 14, 20, 21 — foreigners included, with caveats). Corporations: Art. 19 traditionally citizens-only, so companies cannot claim 19 as such (<em>State Trading Corp</em> line) but may claim 14/21. NGOs/PIL: standing liberalised under 32.</p>
         <p><strong>Art. 13:</strong> pre-constitutional laws inconsistent with Part III are void to the extent of inconsistency; post-constitutional laws too. State shall not make laws taking away FRs. “Law” includes ordinances, bye-laws, custom; constitutional amendments were held “law” in <em>Golaknath</em> then reversed as to Art. 13 in <em>Kesavananda</em> / 24th Amendment — know the story in 8 lines.</p>
         <p><strong>Doctrines:</strong> <em>eclipse</em> (pre-constitutional law sleeps, revives if FR shadow moves); <em>severability</em> (bad part cuts, rest lives); <em>waiver</em> generally not of FRs (<em>Basheshar Nath</em>); <em>pith and substance / colourable legislation</em> more Lists, but 13 questions sometimes invite them.</p>
-        <p><strong>Suspension:</strong> Art. 358 (Art. 19 automatically suspends during Proclamation of Emergency on war/external aggression — 44th Amendment took internal armed rebellion off this automatic hook). Art. 359: President may suspend right to move courts for listed FRs, but <strong>Arts. 20 and 21 cannot be suspended</strong> (44th Amendment) — this is a must-quote after the Emergency hangover. Art. 33–34: Parliament may restrict FRs of armed forces / martial-law situations.</p>`,
+        <p><strong>Suspension:</strong> Art. 358 (Art. 19 automatically suspends during Proclamation of Emergency on war/external aggression — 44th Amendment took internal armed rebellion off this automatic hook). Art. 359: President may suspend right to move courts for listed FRs, but <strong>Arts. 20 and 21 cannot be suspended</strong> (44th Amendment) — this is a must-quote after the Emergency hangover. Art. 33–34: Parliament may restrict FRs of armed forces / martial-law situations.</p>
+        <p><strong>Saving of certain laws (Kumar’s neighbouring chapter):</strong> Arts. 31A–31C and the Ninth Schedule story sit next to Part III in student texts. Know 31C’s original 39(b)(c) shield, the 42nd’s attempt to extend it to all DPSPs, and <em>Minerva Mills</em> striking that expansion — it is the same FR–DPSP fight you will write in the Directive Principles topic.</p>`,
         analogy: {
           title: "API gateway + authz",
           body: "Art. 12 is the identity provider: only ‘State’ is generally bound. Art. 13 is the policy engine that 404s inconsistent statutes. Art. 32 is the privileged admin port. Emergency 358/359 is a maintenance window — but 44th Amendment nailed 20 and 21 so they stay up even in incident response."
@@ -187,6 +197,8 @@
       },
       {
         id: "c-14-18",
+        seq: 4,
+        readAs: "Kumar ch. 8 — Right to Equality",
         unit: 3,
         yield: "high",
         tags: ["article 14", "15", "16", "17", "18", "reservation", "royappa"],
@@ -241,12 +253,15 @@
       },
       {
         id: "c-19a",
+        seq: 5,
+        readAs: "Kumar ch. 9 — Right to Freedom (Art. 19(1)(a) as CCS focus)",
         unit: 3,
         yield: "high",
         tags: ["19(1)(a)", "press", "19(2)", "speech"],
         title: "Freedom of speech and expression — Art. 19(1)(a)",
         summary: "Speech is the default; 19(2) is a closed firewall list. Press is inside 19(1)(a) — there is no separate press article.",
-        explainer: `<p>Art. 19(1)(a) is a <strong>citizen</strong> right. It includes: speech, publication, press, circulation (<em>Sakal Papers</em>, <em>Indian Express</em>), right to information as a listener/reader (later RTI culture / <em>S.P. Gupta</em> seeds), commercial speech in part (<em>Tata Press</em>), artistic expression, criticism of government. It does not include a right to be carried on someone else’s private platform as a constitutional given — keep social-media hypotheticals short unless asked.</p>
+        explainer: `<p>Narender Kumar treats Arts. <strong>19–22 as one “Right to Freedom” chapter</strong>. CCS K-1002 singles out <strong>19(1)(a)</strong> (and press) as a named long-question; 20 and 21 get their own topics next. Speech is the default; 19(2) is a closed firewall list. Press is inside 19(1)(a) — there is no separate press article.</p>
+        <p>Art. 19(1)(a) is a <strong>citizen</strong> right. It includes: speech, publication, press, circulation (<em>Sakal Papers</em>, <em>Indian Express</em>), right to information as a listener/reader (later RTI culture / <em>S.P. Gupta</em> seeds), commercial speech in part (<em>Tata Press</em>), artistic expression, criticism of government. It does not include a right to be carried on someone else’s private platform as a constitutional given — keep social-media hypotheticals short unless asked.</p>
         <p><strong>19(2) grounds (closed list):</strong> sovereignty &amp; integrity of India; security of the State; friendly relations with foreign States; public order; decency or morality; contempt of court; defamation; incitement to an offence. Reasonable restrictions, not a blank cheque. Test: proximity to the ground, reasonableness (substantive + procedural), least the old ‘tendency’ dragnet after <em>Ram Manohar Lohia</em> (public order ≠ law and order ≠ security — three concentric circles).</p>
         <p><strong>Press cases to name:</strong> <em>Romesh Thappar</em> (circulation, public order vs security); <em>Sakal Papers</em> (price-page order hits circulation); <em>Bennett Coleman</em> (newsprint control); <em>Indian Express v Union of India</em> (taxation that cripples press); <em>Shreya Singhal</em> (s.66A IT Act struck — vagueness, overbreadth; chilling effect). Pre-censorship of cinema lives under 19(2) morality/public order with a specialised statute — mention only if asked.</p>
         <p>Hate-speech / 19(2) vs 19(1)(a) is a live 10-marker: distinguish advocacy from incitement (<em>Shreya Singhal</em> three-step: discussion, advocacy, incitement).</p>`,
@@ -287,6 +302,8 @@
       },
       {
         id: "c-20",
+        seq: 6,
+        readAs: "Kumar ch. 9 — Right to Freedom (Art. 20)",
         unit: 3,
         yield: "high",
         tags: ["article 20", "ex post facto", "double jeopardy", "self incrimination"],
@@ -337,6 +354,8 @@
       },
       {
         id: "c-21",
+        seq: 7,
+        readAs: "Kumar ch. 9 — Right to Freedom (Art. 21)",
         unit: 3,
         yield: "high",
         tags: ["article 21", "maneka", "privacy", "environment", "gopalan"],
@@ -400,6 +419,8 @@
       },
       {
         id: "c-21a",
+        seq: 8,
+        readAs: "Kumar ch. 10 — Right to Education",
         unit: 3,
         yield: "standard",
         tags: ["21a", "rte", "86th amendment"],
@@ -436,6 +457,8 @@
       },
       {
         id: "c-23-24",
+        seq: 9,
+        readAs: "Kumar ch. 11 — Right against Exploitation",
         unit: 3,
         yield: "standard",
         tags: ["23", "24", "begar", "child labour", "trafficking"],
@@ -461,6 +484,8 @@
       },
       {
         id: "c-25-28",
+        seq: 10,
+        readAs: "Kumar ch. 12 — Freedom of Religion",
         unit: 3,
         yield: "high",
         tags: ["religion", "25", "26", "27", "28", "essential practices", "secularism"],
@@ -510,6 +535,8 @@
       },
       {
         id: "c-29-30",
+        seq: 11,
+        readAs: "Kumar ch. 13 — Cultural &amp; educational rights",
         unit: 3,
         yield: "high",
         tags: ["minorities", "29", "30", "tma pai"],
@@ -544,6 +571,8 @@
       },
       {
         id: "c-32",
+        seq: 12,
+        readAs: "Kumar ch. 15 — Constitutional remedies",
         unit: 3,
         yield: "high",
         tags: ["article 32", "writs", "pil", "hmpc q"],
@@ -585,6 +614,8 @@
       },
       {
         id: "c-dpsp",
+        seq: 13,
+        readAs: "Kumar ch. 16 — Directive Principles",
         unit: 4,
         yield: "high",
         tags: ["dpsp", "minerva mills", "champakam", "harmony"],
@@ -630,6 +661,8 @@
       },
       {
         id: "c-duties",
+        seq: 14,
+        readAs: "Kumar ch. 17 — Fundamental Duties",
         unit: 5,
         yield: "standard",
         tags: ["51a", "fundamental duties", "42nd"],

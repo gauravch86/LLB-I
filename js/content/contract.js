@@ -6,7 +6,10 @@
     code: "K-1005",
     title: "Contract-I (General Principles)",
     short: "Contract-I",
-    blurb: "Indian Contract Act 1872, Ss. 2–75. Formation state machine, then void/voidable, quasi, frustration, damages.",
+    blurb: "Tracks Bangia Contract-I: formation → consideration → capacity → consent → object → void → contingent → discharge → quasi → damages.",
+    shelf: {
+      primary: "Dr. R.K. Bangia — <em>Law of Contract</em> (Contract-I; Indian Contract Act Ss. 1–75)"
+    },
     youtube: [
       { title: "ICA complete Law Wallah", search: "Indian Contract Act complete Law Wallah" },
       { title: "Frustration s.56", search: "Doctrine of frustration Section 56" },
@@ -15,12 +18,15 @@
     topics: [
       {
         id: "k-scope",
+        seq: 1,
+        readAs: "Bangia ch. 1 — formation of contract (purpose / s.10)",
         unit: 1,
         yield: "standard",
         tags: ["s.2", "s.10", "evolution"],
         title: "Purpose, evolution and scope of the law of contracts",
         summary: "Contract law is the private API of a market society: which promises the State will enforce. India codified English principles in 1872 and then overwrote them with consumer, labour, and constitutional equality.",
-        explainer: `<p><strong>Purpose:</strong> to give legally binding force to agreements that the community thinks deserve it — facilitating exchange, allocating risk, protecting reliance and expectation. Not every promise is a contract (social engagements, incomplete bargains, illegal bargains).</p>
+        explainer: `<p>Bangia’s Contract-I is built for the usual LL.B. split: Ss. 1–75 plus Specific Relief as a second part (CCS K-1005 does not require SRA essays — mention specific performance only as a remedies trailer).</p>
+        <p><strong>Purpose:</strong> to give legally binding force to agreements that the community thinks deserve it — facilitating exchange, allocating risk, protecting reliance and expectation. Not every promise is a contract (social engagements, incomplete bargains, illegal bargains).</p>
         <p><strong>Evolution:</strong> from status to contract (Maine — see Jurisprudence) in commercial England; writs of assumpsit; consideration as the English badge of enforceability; 19th-century will theory (meeting of minds). India: <strong>Indian Contract Act, 1872</strong> — a code that both copies and departs from English law (e.g. s.25 consideration exceptions; s.2(d) past consideration; s.63, s.74 liquidated damages uniqueness). Later: Sale of Goods 1930, Partnership 1932 split out; Specific Relief 1963; CPA; labour codes. Constitutional Art. 14/21 sometimes police unconscionable State contracts.</p>
         <p><strong>Scope of K-1005:</strong> general principles, not indemnity/guarantee/bailment/agency (often Sem-2). Core: ss.1–75. s.1 saves usages and special statutes. s.2 dictionary: proposal, promise, agreement, contract, consideration, void/voidable. s.10: agreements are contracts if made by free consent of competent parties for lawful consideration and lawful object, not hereby expressly declared void.</p>
         <p>Engineer hook: s.10 is the constructor signature of a valid Contract object.</p>`,
@@ -41,6 +47,8 @@
       },
       {
         id: "k-offer",
+        seq: 2,
+        readAs: "Bangia ch. 1 — proposal, acceptance, revocation",
         unit: 2,
         yield: "high",
         tags: ["proposal", "acceptance", "revocation", "s.3-9", "invitation to treat"],
@@ -72,6 +80,8 @@
       },
       {
         id: "k-consideration",
+        seq: 3,
+        readAs: "Bangia ch. 2 — consideration (and privity)",
         unit: 3,
         yield: "high",
         tags: ["consideration", "privity", "s.2d", "s.25", "chinnaya"],
@@ -110,6 +120,8 @@
       },
       {
         id: "k-object",
+        seq: 7,
+        readAs: "Bangia ch. 5 — legality of object and consideration",
         unit: 4,
         yield: "high",
         tags: ["s.23", "s.24", "public policy", "unlawful"],
@@ -127,7 +139,7 @@
         mnemonic: { name: "F-D-F-I-I-P", hook: "Forbidden, Defeats, Fraud, Injury, Immoral, Policy.", recite: "Gherulal: wager ≠ immoral. Don’t mint new public-policy categories." },
         cases: [
           { name: "Gherulal Parekh v Mahadeodas", citation: "AIR 1959 SC 781", point: "Wager void not immoral; public policy caution." },
-          { name: "Nash v Inman / immoral contracts", citation: "English illustrations", point: "Use Indian public-policy cases from Avtar Singh where possible." }
+          { name: "Nash v Inman / immoral contracts", citation: "English illustrations", point: "Use Indian public-policy cases from Bangia / the bare act heads; do not paste textbook paragraphs." }
         ],
         pyqs: [
           { year: "2022", section: "C", marks: "20", q: "Public policy.", outline: ["s.23 last clause; recognised heads; Gherulal restraint on expansion; illustrations."] }
@@ -136,6 +148,8 @@
       },
       {
         id: "k-capacity",
+        seq: 4,
+        readAs: "Bangia ch. 3 — capacity to contract",
         unit: 5,
         yield: "high",
         tags: ["minor", "mohori bibee", "s.11", "restitution"],
@@ -163,6 +177,8 @@
       },
       {
         id: "k-consent",
+        seq: 5,
+        readAs: "Bangia ch. 4 — free consent",
         unit: 6,
         yield: "high",
         tags: ["coercion", "undue influence", "fraud", "misrepresentation", "mistake", "s.13-22"],
@@ -204,6 +220,8 @@
       },
       {
         id: "k-standard",
+        seq: 6,
+        readAs: "Bangia — exemption / standard-form clauses (treated with formation &amp; consent)",
         unit: 7,
         yield: "standard",
         tags: ["standard form", "exclusion clauses", "uber"],
@@ -231,6 +249,8 @@
       },
       {
         id: "k-void",
+        seq: 8,
+        readAs: "Bangia ch. 6 — void agreements",
         unit: 8,
         yield: "high",
         tags: ["void", "voidable", "s.26-30", "wager", "restraint"],
@@ -276,6 +296,8 @@
       },
       {
         id: "k-contingent",
+        seq: 9,
+        readAs: "Bangia ch. 7 — contingent contracts",
         unit: 9,
         yield: "standard",
         tags: ["s.31-36", "contingent"],
@@ -301,6 +323,8 @@
       },
       {
         id: "k-quasi",
+        seq: 11,
+        readAs: "Bangia ch. 11 — quasi-contracts (ss.68–72)",
         unit: 10,
         yield: "high",
         tags: ["s.68-72", "quasi", "unjust enrichment"],
@@ -332,6 +356,8 @@
       },
       {
         id: "k-discharge",
+        seq: 10,
+        readAs: "Bangia ch. 10 — discharge (incl. s.56 frustration)",
         unit: 11,
         yield: "high",
         tags: ["discharge", "frustration", "s.56", "novation", "s.62"],
@@ -362,6 +388,8 @@
       },
       {
         id: "k-remedies",
+        seq: 12,
+        readAs: "Bangia ch. 12 — remedies for breach (ss.73–75)",
         unit: 12,
         yield: "high",
         tags: ["s.73", "s.74", "damages", "hadley", "remoteness"],

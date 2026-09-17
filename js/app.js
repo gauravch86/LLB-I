@@ -28,10 +28,13 @@
   function saveProgress(p) {
     localStorage.setItem(STORAGE, JSON.stringify(p));
   }
+  function sortedTopics(paper) {
+    return (paper.topics || []).slice().sort((a, b) => (a.seq || 99) - (b.seq || 99));
+  }
   function allTopics() {
     const list = [];
     Object.values(papers).forEach((paper) => {
-      (paper.topics || []).forEach((t) => list.push({ paper, topic: t }));
+      sortedTopics(paper).forEach((t) => list.push({ paper, topic: t }));
     });
     return list;
   }
@@ -129,7 +132,8 @@
       filterRow.appendChild(b);
     });
     const prog = loadProgress();
-    topicNav.innerHTML = paper.topics
+    const topics = sortedTopics(paper);
+    topicNav.innerHTML = topics
       .filter((t) => {
         if (filter === "high") return t.yield === "high";
         if (filter === "sealed") return !!prog[t.id];
@@ -137,10 +141,10 @@
         return true;
       })
       .map((t) => {
-        const active = t.id === id || (!id && t.id === paper.topics[0].id);
+        const active = t.id === id || (!id && t.id === topics[0].id);
         return `<button class="topic-link ${active ? "active" : ""} ${prog[t.id] ? "sealed" : ""} ${t.yield === "high" ? "high" : ""}" data-nav="${page}" data-topic="${t.id}">
           <span class="dot"></span>
-          <span>${t.title}${t.yield === "high" ? '<div class="yield">high-yield</div>' : ""}</span>
+          <span>${t.title}${t.readAs ? `<div class="yield">${t.readAs}</div>` : t.yield === "high" ? '<div class="yield">high-yield</div>' : ""}</span>
         </button>`;
       })
       .join("");
@@ -172,15 +176,19 @@
       )
       .join("");
     const checks = (topic.check || []).map((c) => `<li>${c}</li>`).join("");
+    const shelf = paper.shelf
+      ? `<aside class="note shelf-banner"><h3>Primary textbook</h3><p>${paper.shelf.primary}${topic.readAs ? ` · <em>${topic.readAs}</em>` : ""}. Site prose is original — use the book for full case extracts, then Unique only as a question drill.</p></aside>`
+      : "";
     return `<article class="topic">
       <div class="topic-head">
         <div>
-          <p class="kicker">${paper.code} · Unit ${topic.unit || "—"} ${topic.yield === "high" ? '<span class="badge">High-yield PYQ</span>' : ""}</p>
+          <p class="kicker">${paper.code} · ${topic.readAs || "Unit " + (topic.unit || "—")} ${topic.yield === "high" ? '<span class="badge">High-yield PYQ</span>' : ""}</p>
           <h1>${topic.title}</h1>
           <p class="lede">${topic.summary || ""}</p>
         </div>
         <button class="seal-btn ${sealed ? "sealed" : ""}" data-seal="${topic.id}">${sealed ? "Sealed ✓" : "Seal this topic"}</button>
       </div>
+      ${shelf}
       <h2 class="section-title">Concept</h2>
       <div class="explainer">${topic.explainer}</div>
       ${
@@ -198,7 +206,7 @@
       <h2 class="section-title">Landmark cases / statutes</h2>
       <div class="cases">${cases}</div>
       <h2 class="section-title">CCS-style questions (public themes)</h2>
-      <p class="note">Worded from public PYQ themes (≈2018–2025 blogs/indexes). Unique/Nitin prose is not reproduced. Write your own English; confirm the year’s paper with college.</p>
+      <p class="note">Worded from public PYQ themes (≈2018–2025 blogs/indexes). Unique/Nitin and the five primary textbooks are not reproduced. Write your own English; confirm the year’s paper with college.</p>
       ${pyqs}
       <h2 class="section-title">Seal checklist</h2>
       <ul class="check-list">${checks}</ul>
@@ -214,8 +222,8 @@
     const cards = Object.values(papers)
       .map((p) => {
         const prog = loadProgress();
-        const tot = p.topics.length;
-        const done = p.topics.filter((x) => prog[x.id]).length;
+        const tot = sortedTopics(p).length;
+        const done = sortedTopics(p).filter((x) => prog[x.id]).length;
         const pct = tot ? Math.round((done / tot) * 100) : 0;
         return `<div class="card" data-nav="${p.id}">
           <div class="code">${p.code}</div>
@@ -248,10 +256,22 @@
         <li>Recite the mnemonic in 60 seconds; write a 5-line mini-answer.</li>
         <li>Attempt the CCS-style outline under time (20-marker ≈ 25–30 min).</li>
         <li>Hit <strong>Seal this topic</strong> only when you can do that without scrolling.</li>
-        <li>Use Unique/Nitin 30 Q&amp;A as a <em>private question bank after</em> this site + bare act — never as first principles.</li>
+        <li>Read the matching chapter in the <strong>primary textbook</strong> (Paranjape / Narender Kumar / Bangia) for case extracts — this site does not copy those books.</li>
+        <li>Use Unique/Nitin 30 Q&amp;A as a <em>private question bank after</em> the textbook + this site + bare act.</li>
       </ol>
+    </section>
+    <section class="panel">
+      <h2 class="display">Primary shelf (buy / use)</h2>
+      <ol>
+        <li>K-1001 — Dr. N.V. Paranjape, <em>Studies in Jurisprudence &amp; Legal Theory</em> (Central Law Agency)</li>
+        <li>K-1002 — Dr. Narender Kumar, <em>Introduction To The Constitution Law Of India</em> (Allahabad Law Agency, latest)</li>
+        <li>K-1003 — Dr. R.K. Bangia, <em>Law of Torts</em> (Allahabad Law Agency; CPA 2019 ed.)</li>
+        <li>K-1004 — Dr. N.V. Paranjape, <em>The Bharatiya Nyaya Sanhita, 2023</em></li>
+        <li>K-1005 — Dr. R.K. Bangia, <em>Law of Contract</em> (Contract-I / Ss. 1–75)</li>
+      </ol>
+      <p>Jain Book Agency Constitution bare act stays on the desk for K-1002. Unique 30 Q&amp;A is drill-only.</p>
       <aside class="note"><h3>Syllabus vs exam titles</h3>
-        <p>Official CCS PDF (Aug 2025 CDN) still lists K-1001–K-1005, with Paper IV titled IPC. Public Dec 2024/2025 papers title Crimes as Bharatiya Nyaya Sanhita 2023. This site teaches <strong>BNS first</strong> with IPC mapping. Infipark “revision” pages that swap Contract for Legal Method do not displace the official K-1005 paper unless HLM issues a circular.</p>
+        <p>Official CCS PDF (Aug 2025 CDN) still lists K-1001–K-1005, with Paper IV titled IPC. Public Dec 2024/2025 papers title Crimes as Bharatiya Nyaya Sanhita 2023. This site follows <strong>Paranjape BNS</strong> first with IPC mapping. Infipark “revision” pages that swap Contract for Legal Method do not displace the official K-1005 paper unless HLM issues a circular.</p>
       </aside>
     </section>
     <section class="panel">
@@ -267,7 +287,8 @@
     if (page === "resources") return extra.resources(id);
     const paper = papers[page];
     if (!paper) return `<section class="panel"><p>Unknown page.</p></section>`;
-    const topic = paper.topics.find((t) => t.id === id) || paper.topics[0];
+    const topics = sortedTopics(paper);
+    const topic = topics.find((t) => t.id === id) || topics[0];
     return topicHtml(paper, topic);
   }
 

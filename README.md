@@ -6,25 +6,26 @@ Live on GitHub Pages once enabled (see below). Open `index.html` locally if you 
 
 ## Papers
 
-| Code | Paper | What this site emphasises |
-|------|--------|---------------------------|
-| **K-1001** | Jurisprudence-I (Legal Theory) | Schools as competing OS kernels. Student books may print **K-101**; the official CCS code is K-1001. |
-| **K-1002** | Constitutional Law-I (Nature + FRs) | Arts. 12–32, Preamble, DPSPs, duties. Keep the Jain Book Agency bare Constitution open. |
-| **K-1003** | Law of Torts + Consumer Protection | Maxims, State liability, four nominate torts, **CPA 2019 Commissions** (not 1986 Forums). |
-| **K-1004** | Law of Crimes-I | **Bharatiya Nyaya Sanhita, 2023 first**, with **IPC mapping**. Official syllabus PDF still says IPC; public Dec 2024/2025 papers title BNS. |
-| **K-1005** | Contract-I (General Principles) | Indian Contract Act 1872 Ss. 2–75: formation → void/voidable → quasi → frustration → damages. |
+| Code | Paper | Primary textbook this site tracks |
+|------|--------|-----------------------------------|
+| **K-1001** | Jurisprudence-I (Legal Theory) | **Dr. N.V. Paranjape** — *Studies in Jurisprudence & Legal Theory* (Central Law Agency). Student books may print **K-101**; official CCS code is K-1001. |
+| **K-1002** | Constitutional Law-I (Nature + FRs) | **Dr. Narender Kumar** — *Introduction To The Constitution Law Of India* (Allahabad Law Agency, latest). Keep the Jain Book Agency bare Constitution open. |
+| **K-1003** | Law of Torts + Consumer Protection | **Dr. R.K. Bangia** — *Law of Torts* (Allahabad Law Agency; CPA 2019 edition). |
+| **K-1004** | Law of Crimes-I | **Dr. N.V. Paranjape** — *The Bharatiya Nyaya Sanhita, 2023*. **BNS first**, IPC mapping for older PYQs. Official syllabus PDF still says IPC; public Dec 2024/2025 papers title BNS. |
+| **K-1005** | Contract-I (General Principles) | **Dr. R.K. Bangia** — *Law of Contract* (Contract-I; ICA Ss. 1–75). |
 
-Also included: **Overview** (progress + PYQ heatmap), **Exam strategy**, and **Resources** (publishers, YouTube search titles, BNS↔IPC map).
+Also included: **Overview** (progress + PYQ heatmap), **Exam strategy**, and **Resources** (primary shelf → Unique drill → secondary refs, YouTube, BNS↔IPC map).
 
 ## How to study (topic → PYQ → seal)
 
-1. Pick a subject tab, then a syllabus topic in the sidebar.
+1. Pick a subject tab, then a syllabus topic in the sidebar (order follows the primary textbook, with CCS unit labels).
 2. Read **Concept** + the engineer analogy; redraw the **diagram** from memory.
-3. Recite the **mnemonic** in 60 seconds; write a 5-line mini-answer.
-4. Attempt the **CCS-style question** under time (20-marker ≈ 25–30 minutes). Outlines follow public PYQ *themes* (≈2018–2025), not Unique/Nitin prose.
-5. Tick **Seal this topic** only when you can do that without scrolling. Progress is stored in `localStorage` on this browser.
+3. Open the matching chapter in the **physical primary book** for full case extracts — this site does not copy those books.
+4. Recite the **mnemonic** in 60 seconds; write a 5-line mini-answer.
+5. Attempt the **CCS-style question** under time (20-marker ≈ 25–30 minutes). Outlines follow public PYQ *themes* (≈2018–2025), not Unique/Nitin or textbook prose.
+6. Tick **Seal this topic** only when you can do that without scrolling. Progress is stored in `localStorage` on this browser.
 
-Unique Law Series / Nitin Prakashan “30 Questions & Answers” is a **private question bank for last-week shape**, not a first-principles source.
+Unique Law Series / Nitin Prakashan “30 Questions & Answers” is a **private question bank for last-week shape**, used **after** Paranjape / Kumar / Bangia.
 
 ## Run locally
 
@@ -62,7 +63,7 @@ All teaching prose here is **original**. It cites:
 - Landmark case names and holdings
 - Publicly blogged exam *themes* (e.g. ccsullb.blogspot.com, ccsustudy.com)
 
-It does **not** copy Unique Law Series, Nitin Prakashan, or other copyrighted Q&A / textbook language.
+It does **not** copy Unique Law Series, Nitin Prakashan, Paranjape, Narender Kumar, Bangia, or other copyrighted textbook / Q&A language.
 
 ## Repo layout
 
@@ -80,6 +81,14 @@ js/content/contract.js
 assets/favicon.svg
 ```
 
-## Shelf (beyond Unique)
+## Primary textbooks (the shelf this site tracks)
 
-Minimum: Constitution bare (have) + V.N. Shukla or M.P. Jain; Avtar Singh + Contract Act bare; Bangia Torts + CPA 2019; BNS bare + one 2024+ BNS↔IPC commentary (keep Ratanlal IPC for cases); V.D. Mahajan or Dias for Jurisprudence. Full tables live on the **Resources** tab.
+Buy and use these five. The sidebar order and case emphasis follow how they usually organise CCS Sem-1 — the website’s sentences are original.
+
+1. **Jurisprudence (K-1001):** Dr. N.V. Paranjape — *Studies in Jurisprudence & Legal Theory* (Central Law Agency)
+2. **Constitution (K-1002):** Dr. Narender Kumar — *Introduction To The Constitution Law Of India* (Allahabad Law Agency, latest edition)
+3. **Torts (K-1003):** Dr. R.K. Bangia — *Law of Torts* (Allahabad Law Agency; CPA 2019 edition)
+4. **Crimes (K-1004):** Dr. N.V. Paranjape — *The Bharatiya Nyaya Sanhita, 2023*
+5. **Contract (K-1005):** Dr. R.K. Bangia — *Law of Contract* (Contract-I)
+
+Also: Jain Book Agency Constitution bare act; BNS 2023 bare; Contract Act 1872 bare. Unique 30 Q&A = drill only. Secondary names (Mahajan, Shukla, Avtar Singh, Ratanlal IPC, etc.) live on the **Resources** tab.
