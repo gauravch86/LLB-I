@@ -6,12 +6,12 @@
     "juris-defs": {
       id: "juris-defs",
       featured: true,
-      title: "Evolution — what ‘jurisprudence’ was for",
-      lede: "Same word, seven jobs. CCS will ask you to trace the definition, not to recite a dictionary.",
-      hook: "Mnemonic chain: ABAH-GSP — Aristotle Oughts, Bentham Burns rights-talk, Austin Commands, Holland Formalizes, Gray Judges, Salmond First-principles, Pound Engineers.",
-      note: "Salmond’s first edition (1902) slightly predates Gray’s 1909 book. Badges are publication years. The gold sentence is the CCS story of what the word is for — Gray’s court-focus is taught as the realist tilt beside Salmond’s definitional school.",
+      title: "Evolution — Sem-1 cast (what ‘jurisprudence’ was for)",
+      lede: "One scroll, the whole K-1001 roll-call. School chips mark the family; ABAH-GSP below is the definition-jobs inset, not the whole syllabus.",
+      hook: "Primary rail is chronological. Definition jobs stay on the gold strip. Analytical kernel A→K→H; sociological kernel I→D→P.",
+      note: "Salmond 1902 slightly predates Gray 1909 — badges are publication years; ABAH-GSP is the CCS story of what the word is for. Realists sit after Pound as a school even though Holmes’s 1897 seed is earlier. Marx is dated to the 1859 base/superstructure text, not delayed until Pound.",
       spine: {
-        lead: "From ",
+        lead: "Definition jobs — from ",
         parts: [
           { label: "ought", note: "philosophy" },
           { label: "is/command", note: "Austin" },
@@ -21,55 +21,203 @@
           { label: "social ends", note: "Pound" }
         ]
       },
+      insets: [
+        {
+          name: "ABAH-GSP · definition inset",
+          hook: "Aristotle Oughts · Bentham Burns rights-talk · Austin Commands · Holland Formalizes · Gray Judges · Salmond First-principles · Pound Engineers.",
+          recite: "This strip is the 20-marker definition spine. The rail below is the full Sem-1 cast — including Ulpian, Aquinas, Savigny, Maine, Ihering, Stammler, Kohler, Kelsen, Duguit, Allen, Realists, Marx, Hart."
+        },
+        {
+          name: "A→K→H · analytical kernel",
+          hook: "Austin command → Kelsen Grundnorm → Hart primary/secondary rules.",
+          recite: "Three positivist kernels, not one Englishman. Command dies; pyramid; then officials’ practice."
+        },
+        {
+          name: "I→D→P · sociological kernel",
+          hook: "Ihering purpose/struggle → Duguit solidarity → Pound social engineering.",
+          recite: "Law as task, not as a barking sovereign. Marx sits beside this family as the class-instrument contrast, not as Pound’s cousin."
+        }
+      ],
       beats: [
         {
           year: "c. 4th c. BCE",
-          name: "Aristotle / classical natural-law frame",
+          name: "Aristotle",
+          school: "nl",
+          schoolLabel: "Natural",
           work: "Nicomachean Ethics · Politics (widely taught date)",
-          doctrine: "Jurisprudence starts as philosophy of law and justice. Law is measured by an ought — right reason, the just constitution, natural vs merely conventional rules.",
-          shift: "Opens the file: ‘law’ is not only what a ruler barks. Validity has a moral checksum."
+          doctrine: "Jurisprudence starts as philosophy of law and justice. Natural vs merely conventional rules; the just constitution measures human enactments.",
+          shift: "Opens the file: ‘law’ is not only what a ruler barks. Validity has a moral checksum — the ought."
+        },
+        {
+          year: "c. 200 CE",
+          name: "Ulpian",
+          school: "roman",
+          schoolLabel: "Roman seed",
+          work: "Digest 1.1.10 — iustitia / suum cuique (taught from Justinian’s compilation)",
+          doctrine: "Justice is the constant will to give each person their due (suum cuique tribuere). Precepts: live honourably, harm no one, render each their own. Roman ius as a justice-science, not a command list.",
+          shift: "Plants the Roman seed beside Greek philosophy: jurisprudence talks justice and ius, not only the prince’s will. Aquinas will baptise this later."
+        },
+        {
+          year: "c. 1265–74",
+          name: "Thomas Aquinas",
+          school: "nl",
+          schoolLabel: "Natural",
+          work: "Summa Theologiae — eternal / natural / human law",
+          doctrine: "Human law participates in eternal law via natural law. An unjust enactment is a corruption of law (exam phrase: lex injusta non est lex — handle it as a measure, not a riot permit).",
+          shift: "Gives classical NL its medieval OS. Aristotle’s ought gets a theology and a hierarchy of laws."
         },
         {
           year: "1789 / c. 1791",
           name: "Jeremy Bentham",
+          school: "analytical",
+          schoolLabel: "Analytical",
           work: "IPML 1789; Anarchical Fallacies (written c. 1791)",
           doctrine: "Utility is the test. Natural-rights talk is mysticism — ‘nonsense upon stilts.’ Codify; censor bad law; count pain and pleasure.",
           shift: "Torches the classical ought-as-rights fog. Keeps an ought (greatest happiness) but makes it a reform calculator — groundwork Austin will dry into positivism."
         },
         {
+          year: "1814",
+          name: "Friedrich Carl von Savigny",
+          school: "historical",
+          schoolLabel: "Historical",
+          work: "Vom Beruf unserer Zeit (against a rushed German civil code)",
+          doctrine: "Law grows like language. Volksgeist lives first in custom, then in juristic working-out. You cannot committee-ship a people’s spirit on a statute timetable.",
+          shift: "Replaces both eternal NL codes and midnight legislation-worship with organic growth. The Historical school’s opening shot."
+        },
+        {
           year: "1832",
           name: "John Austin",
+          school: "analytical",
+          schoolLabel: "Analytical",
           work: "The Province of Jurisprudence Determined",
           doctrine: "Jurisprudence = philosophy of positive law. Law properly so called = command of a political superior + sanction. Splits is from ought.",
-          shift: "Kicks morals out of the validity test. Bentham’s expositor-mode wins; censorial utility is no longer what makes a rule ‘law.’"
+          shift: "Kicks morals out of the validity test. Bentham’s expositor-mode wins; NL and Volksgeist are not what makes a rule ‘law.’ Start of A→K→H."
+        },
+        {
+          year: "1859",
+          name: "Karl Marx",
+          school: "marx",
+          schoolLabel: "Economic",
+          work: "Preface to A Contribution to the Critique of Political Economy (1859); Capital 1867",
+          doctrine: "Law is superstructure. It presents class interest as universal right. The State is not Austin’s neutral sovereign; it is organised class power with a legal face.",
+          shift: "Short beat, high contrast: Austin’s command and (later) Pound’s engineering both look naive if the machine itself is class. Pound reforms inside the market-State; Marx wants a different machine."
+        },
+        {
+          year: "1861",
+          name: "Sir Henry Maine",
+          school: "historical",
+          schoolLabel: "Historical",
+          work: "Ancient Law",
+          doctrine: "Progressive societies move from status to contract: birth-caste position → individual agreement. Comparative-historical method; village communities.",
+          shift: "Gives Savigny’s spirit a vector. (Write the critique: labour/consumer statutes are status returning as protection.)"
+        },
+        {
+          year: "1877",
+          name: "Rudolf von Ihering",
+          school: "socio",
+          schoolLabel: "Sociological",
+          work: "Der Zweck im Recht (1877–83); Der Kampf ums Recht (1872)",
+          doctrine: "Law is purpose plus struggle, not a quiet garden of rights. Interests fight; the legal order is an instrument for ends.",
+          shift: "Breaks law-as-logical-crystal. Starts I→D→P: purpose (Zweck) enters what law is doing."
         },
         {
           year: "1880",
           name: "Thomas Erskine Holland",
+          school: "analytical",
+          schoolLabel: "Analytical",
           work: "The Elements of Jurisprudence (1st ed.)",
-          doctrine: "Jurisprudence is the formal science of positive law — the structure of legal relations (right, duty, person), not the contents of one code.",
-          shift: "Austin’s province was still a bit of political theory. Holland says: stop narrating England; diagram the forms. ‘Eye of law’ sees jural shape, not moral desert."
+          doctrine: "Jurisprudence is the formal science of positive law — the structure of legal relations (right, duty, person), not the contents of one code. ‘Eye of law.’",
+          shift: "Austin’s province was still a bit of political theory. Holland says: stop narrating England; diagram the forms."
         },
         {
           year: "1902",
           name: "John Salmond",
+          school: "analytical",
+          schoolLabel: "Analytical",
           work: "Jurisprudence (1st ed.)",
           doctrine: "Jurisprudence is the science of the first principles of the civil law. Also: principles the State recognises in administering justice.",
-          shift: "Sharper definitional-school framing than Austin’s ‘philosophy.’ Classroom-ready: first principles, not a sovereign’s biography. (Gray’s court-focus is the neighbouring tilt.)"
+          shift: "Sharper definitional-school framing than Austin’s ‘philosophy.’ Classroom-ready first principles, not a sovereign’s biography."
+        },
+        {
+          year: "1902",
+          name: "Rudolf Stammler",
+          school: "nl",
+          schoolLabel: "Natural revival",
+          work: "Die Lehre von dem richtigen Recht (1902); ‘natural law with a variable content’",
+          doctrine: "There is no eternal code of detailed rules. There is a method of just law — stable form, changing payload as society changes.",
+          shift: "Reboots the ought Austin killed, without pretending 13th-century property rules are natural forever. CCS named revival payload."
         },
         {
           year: "1909",
           name: "John Chipman Gray",
+          school: "analytical",
+          schoolLabel: "Analytical → courts",
           work: "The Nature and Sources of the Law",
           doctrine: "Law is the rules courts lay down for rights and duties. Statutes are sources of law; they are not the law until a court speaks.",
           shift: "Moves the camera from sovereign/form to the bench. Realist tilt: paper rules are hypotheses until judicial organs run them."
         },
         {
+          year: "1909",
+          name: "Josef Kohler",
+          school: "nl",
+          schoolLabel: "Natural revival",
+          work: "Lehrbuch der Rechtsphilosophie (1909)",
+          doctrine: "Law is cultural evolution. Jural postulates of a civilisation grow as culture grows — neo-Hegelian, not Volksgeist-romantic freeze.",
+          shift: "Pairs with Stammler as the CCS revival duo. Historicises like Savigny, but the vector is culture-forward, not folk-past."
+        },
+        {
+          year: "c. 1908–19",
+          name: "Léon Duguit",
+          school: "socio",
+          schoolLabel: "Sociological",
+          work: "Le droit social (1908); Law in the Modern State (1919)",
+          doctrine: "No metaphysical sovereign, no mystical subjective right. Law = obligatory rules of social solidarity (interdependence). Property is a social function.",
+          shift: "Middle of I→D→P. Deletes Austin’s legally unlimited root user. Even the State is under the SLA of solidarity."
+        },
+        {
           year: "c. 1922",
           name: "Roscoe Pound",
+          school: "socio",
+          schoolLabel: "Sociological",
           work: "Introduction to the Philosophy of Law (1922); social-engineering lectures c. 1921–23",
-          doctrine: "Jurisprudence must weigh interests and social ends. Law is social engineering — maximum wants, minimum friction. Sociology enters what law does.",
-          shift: "Definition stops being a noun (‘a body of rules’) and becomes a verb (a task). Austin’s command and Holland’s form are too thin for industrial society."
+          doctrine: "Law is social engineering — maximum wants, minimum friction. Inventory individual / public / social interests. Sociology enters what law does.",
+          shift: "Closes I→D→P. Definition becomes a verb (a task). Contrast Marx: Pound patches the ToS; Marx asks who owns the racks."
+        },
+        {
+          year: "1927",
+          name: "C.K. Allen",
+          school: "analytical",
+          schoolLabel: "Analytical · sources",
+          work: "Law in the Making (1st ed. 1927)",
+          doctrine: "Classroom map of how law is made: custom, precedent, legislation, equity — sources as a working system, not Austin’s single command-pipe. Analytical method applied to law-making, not only to ‘what is law?’",
+          shift: "Sits with Holland–Salmond–Gray in the Indian analytical classroom. When the question is sources, Allen is the named toolkit; Austin’s sovereign is too thin for custom and case-law."
+        },
+        {
+          year: "c. 1897–1940",
+          name: "American Realists (Holmes / Llewellyn / Frank)",
+          school: "realist",
+          schoolLabel: "Realist",
+          work: "Holmes, Path of the Law (1897); Llewellyn rule-scepticism; Frank fact-scepticism (1930s)",
+          doctrine: "Law is prediction of what courts will do (Holmes). Paper rules under-determine outcomes (Llewellyn). The wild card is often fact-finding, not doctrine (Frank). Law-in-action, not law-in-books.",
+          shift: "After Gray’s court-camera and Pound’s tidy engineering: Realists distrust both the paper rule and the interest-balance spreadsheet. Analytical spine (no NL) + sociological method (watch officials), minus Pound’s pretty scheduler."
+        },
+        {
+          year: "1934",
+          name: "Hans Kelsen",
+          school: "analytical",
+          schoolLabel: "Analytical",
+          work: "Reine Rechtslehre (1934; 2nd ed. 1960). English: General Theory of Law and State (1945)",
+          doctrine: "Pure theory: strip sociology and morals. Each norm is authorised by a higher norm, terminating in a presupposed Grundnorm — the base ‘ought’ you clone the system with, not a moral proof. Validity ≠ justice.",
+          shift: "Middle of A→K→H. Replaces Austin’s person-sovereign with a validity pyramid. The State is the legal order personified."
+        },
+        {
+          year: "1961",
+          name: "H.L.A. Hart",
+          school: "analytical",
+          schoolLabel: "Analytical",
+          work: "The Concept of Law",
+          doctrine: "Law is the union of primary (duty) and secondary rules — recognition, change, adjudication. Obligation ≠ being obliged. Officials’ practice, not a gunman and not a floating Grundnorm.",
+          shift: "Closes A→K→H. Kills the gunman theory; explains power-conferring rules Austin could only squint at. Soft landing for Indian constitutional pedigree."
         }
       ],
       table: {

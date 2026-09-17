@@ -22,7 +22,7 @@
         readAs: "Paranjape ch. 1 — meaning, nature &amp; scope",
         unit: 1,
         yield: "high",
-        tags: ["definition", "salmond", "austin", "holland", "gray", "pound", "utility"],
+        tags: ["definition", "salmond", "austin", "holland", "gray", "pound", "utility", "ulpian", "kelsen", "hart"],
         title: "Introduction — definition, nature, scope, importance",
         summary: "Jurisprudence is the grammar of law: not the statute book of one State, but the theories that explain what ‘law’ is, how it binds, and why courts should care.",
         explainer: `<p>Paranjape opens with the province of jurisprudence before any school: meaning, nature, scope. CCS still loves the fight: is Jurisprudence the law of <em>one</em> nation, or a science <em>about</em> law? Short notes have asked that almost verbatim. If you say “it is Indian law,” you have confused jurisprudence with a municipal code. If you say “it is philosophy with no courtroom use,” you have written yourself out of the marks for <em>utility</em>.</p>
@@ -38,7 +38,7 @@
         <p><strong>Scope:</strong> (1) legal theory / schools; (2) legal concepts (person, right, liability — more Sem-2 in some schemes, but definitions still leak into Sem-1 answers); (3) sources of law; (4) law and allied disciplines (morals, economics, sociology). CCS Sem-1 K-1001 is school-heavy: Natural, Analytical, Historical, Sociological, Realist, Marxist.</p>
         <p><strong>Importance for an engineer-lawyer:</strong> statutes are APIs; jurisprudence is architecture. Without it you can recite S.10 of the Contract Act and still fail a “nature of law” essay. With it you can attack Austin in a Crimes mens rea question, or Pound in a Constitution social-justice question. Stone’s line that jurisprudence is “lawyers’ extroversion” is a regular short note: law looking outward at philosophy, sociology, economics.</p>
         <p><strong>Law and morals:</strong> keep a 10-mark pocket. Overlap (murder is illegal and immoral), divergence (parking tickets; some religious duties not legally enforced), and the positivist claim that validity ≠ merit. Hart vs Fuller is extra credit; CCS usually wants Austin/Kelsen “separation” plus a sociological critique.</p>
-        <p><strong>Definition evolution (do not skip):</strong> CCS still sets “trace the evolution of the definition of jurisprudence.” The vertical timeline on this card is the visual; the full teaching spine — one-liner, ABAH-GSP mnemonic, thinker table, PYQ outline — lives on the dedicated card <button type="button" class="text-link" data-nav="k1001" data-topic="j-def-evolution">Definitions — evolution of jurisprudence</button>.</p>`,
+        <p><strong>Definition evolution (do not skip):</strong> CCS still sets “trace the evolution of the definition of jurisprudence.” The rail on this card is the <strong>full Sem-1 cast</strong> (Ulpian to Hart, school chips on). ABAH-GSP is the gold definition inset, not the only story. Full table + PYQ outline: <button type="button" class="text-link" data-nav="k1001" data-topic="j-def-evolution">Definitions — evolution of jurisprudence</button>.</p>`,
         analogy: {
           title: "Compiler vs runtime",
           body: "Bare acts are runtime libraries. Jurisprudence is the language spec: types (right/duty), package managers (schools), and why two compilers (Austin vs Hart) reject each other’s programs. You do not ship production code from the spec alone — but you cannot debug a 20-marker without it."
@@ -91,7 +91,8 @@
           "Can write 5 named definitions without notes.",
           "Can answer the ‘one nation?’ short note in 8 lines.",
           "Can list three utilities with an Indian illustration.",
-          "Can recite the ought → command → form → courts → first principles → social ends spine."
+          "Can recite the ought → command → form → courts → first principles → social ends spine.",
+          "Can name Ulpian, Aquinas, Kelsen (Grundnorm), Hart, Allen, Realists, and Marx as rail extras."
         ]
       },
       {
@@ -100,30 +101,31 @@
         readAs: "Paranjape ch. 1 — definitions as a story, not a list",
         unit: 1,
         yield: "high",
-        tags: ["definition", "evolution", "austin", "holland", "gray", "salmond", "pound", "bentham", "timeline"],
+        tags: ["definition", "evolution", "austin", "holland", "gray", "salmond", "pound", "bentham", "ulpian", "allen", "kelsen", "hart", "marx", "realism", "timeline"],
         title: "Definitions — evolution of jurisprudence",
-        summary: "The 20-marker is a changelog, not a quotation dump. From ought (philosophy) to is/command (Austin) to form, courts, first principles, social ends.",
-        explainer: `<p>CCS will say some flavour of <em>trace the evolution of the definition of jurisprudence</em>. The fail mode is five unnamed sentences. The pass mode is a <strong>dated arc</strong>: each thinker inherits a problem and ships a new job for the word.</p>
-        <p><strong>Write this spine once, then expand:</strong> classical jurisprudence is philosophy of law/justice — law as <em>ought</em>. Bentham keeps an ought (utility) but torches natural-rights mysticism. Austin (1832) makes jurisprudence the philosophy of <em>positive</em> law and splits is/ought. Holland (1880) turns it into a <em>formal science</em> of legal relations. Gray (1909) points the camera at <em>courts</em>. Salmond (1902) gives the classroom definition — science of <em>first principles</em> of civil law. Pound (c. 1922) adds the verb: law as social engineering of <em>social ends</em>.</p>
-        <p><strong>Date hygiene:</strong> Salmond’s first edition slightly predates Gray’s book. In the hall, keep the conceptual one-liner the examiner expects (Gray’s court-focus as the realist tilt beside Salmond’s definitional school) and do not invent a fake 19th-century Gray. Bentham’s anti-rights blast is <em>Anarchical Fallacies</em> (written c. 1791; often taught with IPML 1789). Holland 1880 and Austin 1832 are not contested.</p>
-        <p><strong>Compare questions:</strong> Austin vs Salmond = command-philosophy vs first-principles science (Salmond is courtroom-facing; Austin is sovereign-facing). Pound vs both = function/task vs structure/command. Do not mash Holland into Austin; Holland is form, not a barking person.</p>
-        <p>The timeline, gold sentence, and four-column table below are the artefact to redraw from memory. Then open Paranjape chapter 1 for the longer extracts — this card does not copy that book.</p>`,
+        summary: "The 20-marker is a changelog. Gold inset = ABAH-GSP definition jobs. Primary rail = the whole Sem-1 cast, school-chipped, chronological.",
+        explainer: `<p>CCS will say some flavour of <em>trace the evolution of the definition of jurisprudence</em>. The fail mode is five unnamed sentences. The pass mode is a <strong>dated arc with school chips</strong>: each thinker inherits a problem and ships a new job for the word.</p>
+        <p><strong>Two artefacts, do not confuse them:</strong> (1) the gold <strong>ABAH-GSP inset</strong> — ought → command → form → courts → first principles → social ends — that is the definition-jobs 20-marker. (2) the <strong>primary rail</strong> — the whole Sem-1 cast in one scroll, including names CCS can ask as shorts (Ulpian, C.K. Allen, Realists, Marx) and the school kernels <strong>A→K→H</strong> (Austin → Kelsen <em>Grundnorm</em> → Hart) and <strong>I→D→P</strong> (Ihering → Duguit → Pound).</p>
+        <p><strong>Write the definition spine once, then expand from the rail:</strong> classical jurisprudence is philosophy of law/justice — law as <em>ought</em> (Aristotle, Ulpian’s <em>suum cuique</em>, Aquinas). Bentham keeps an ought (utility) but torches natural-rights mysticism. Austin (1832) makes jurisprudence the philosophy of <em>positive</em> law and splits is/ought. Historical school (Savigny/Maine) and Marx cut in from the side. Holland (1880) turns it into a <em>formal science</em>. Salmond (1902) gives first principles of civil law. Stammler/Kohler revive NL. Gray (1909) points the camera at <em>courts</em>. Duguit/Pound add social task. Allen maps sources. Realists predict courts. Kelsen’s <em>Grundnorm</em> and Hart’s secondary rules close the analytical kernel.</p>
+        <p><strong>Date hygiene:</strong> Salmond’s first edition slightly predates Gray’s book. Realists sit after Pound as a school even though Holmes (1897) is earlier. Marx is 1859 base/superstructure, not a 1920s afterthought. Bentham’s anti-rights blast is <em>Anarchical Fallacies</em> (written c. 1791; often taught with IPML 1789). Holland 1880 and Austin 1832 are not contested.</p>
+        <p><strong>Compare questions:</strong> Austin vs Salmond = command-philosophy vs first-principles science. A→K→H = command vs pyramid vs ruleset (say <em>Grundnorm</em>). I→D→P = purpose vs solidarity vs engineering. Pound vs Marx = patch the machine vs name the class. Do not mash Holland into Austin; Holland is form, not a barking person.</p>
+        <p>Redraw the rail from memory. Then open Paranjape chapter 1 for the longer extracts — this card does not copy that book.</p>`,
         analogy: {
-          title: "Same identifier, seven APIs",
-          body: "‘Jurisprudence’ is a package name that kept getting a new public API. Classical: a moral spec. Bentham: a reform linter. Austin: a type-checker that only accepts Command. Holland: a schema of relations. Gray: production traces from the bench. Salmond: stdlib of first principles. Pound: an OS scheduler for competing interests. Your 20-marker is git log of that identifier."
+          title: "Same identifier, many APIs — plus the rest of the monorepo",
+          body: "ABAH-GSP is the public API changelog of the word ‘jurisprudence.’ The rail is the whole monorepo: Roman justice (Ulpian), medieval NL (Aquinas), historical growth (Savigny/Maine), class critique (Marx), sources toolkit (Allen), Realist production traces, Kelsen’s Grundnorm root commit, Hart’s CONTRIBUTING.md. Your 20-marker is git log of the identifier; shorts can ping any named package."
         },
         diagram: {
           type: "flow",
-          title: "Exam one-liner (conceptual order)",
+          title: "Definition inset (not the whole rail)",
           steps: ["ought (philosophy)", "is/command (Austin)", "form (Holland)", "courts (Gray)", "first principles (Salmond)", "social ends (Pound)"]
         },
         mnemonic: {
-          name: "ABAH-GSP",
-          hook: "Aristotle Oughts · Bentham Burns rights-talk · Austin Commands · Holland Formalizes · Gray Judges · Salmond First-principles · Pound Engineers.",
-          recite: "From ought (philosophy) → is/command (Austin) → form (Holland) → courts (Gray) → first principles (Salmond) → social ends (Pound)."
+          name: "ABAH-GSP + A→K→H + I→D→P",
+          hook: "Definition inset: Aristotle Oughts · Bentham Burns · Austin Commands · Holland Formalizes · Gray Judges · Salmond First-principles · Pound Engineers. Analytical: Austin → Kelsen Grundnorm → Hart. Sociological: Ihering → Duguit → Pound.",
+          recite: "Rail extras you must still name: Ulpian suum cuique; Aquinas; Savigny/Maine; Marx superstructure; Stammler/Kohler; C.K. Allen sources; Holmes/Llewellyn/Frank."
         },
         cases: [
-          { name: "Thinkers are the authorities", citation: "dated works, not SCC cites", point: "Austin 1832; Holland 1880; Salmond 1902; Gray 1909; Pound c. 1922. Kesavananda is a one-line Indian landing for utility, not a definition source." },
+          { name: "Thinkers are the authorities", citation: "dated works, not SCC cites", point: "Ulpian Digest; Aquinas Summa; Austin 1832; Savigny 1814; Maine 1861; Holland 1880; Salmond 1902; Gray 1909; Kelsen 1934 (Grundnorm); Hart 1961; Pound c. 1922. Kesavananda is a one-line Indian landing for utility, not a definition source." },
           { name: "Kesavananda Bharati (bridge only)", citation: "(1973) 4 SCC 225", point: "If asked ‘why bother defining jurisprudence,’ one Indian landing: limits of constituent power is legal theory leaking into doctrine." }
         ],
         pyqs: [
@@ -133,11 +135,11 @@
             marks: "20",
             q: "Trace the evolution of the definition of jurisprudence. Which definition is most appropriate?",
             outline: [
-              "Open with the gold sentence (ought → command → form → courts → first principles → social ends).",
-              "Seven dated beats: classical NL; Bentham utility + anti-rights; Austin 1832; Holland 1880; Salmond 1902; Gray 1909; Pound c. 1922.",
-              "One criticism each (Austin too narrow; Holland empty of contents; Gray court-or-nothing; Pound who weighs interests?).",
-              "Pick a hybrid close: Salmond’s first principles oriented to Pound’s social task — useful in an Indian courtroom paper.",
-              "If the paper also asks Austin vs Salmond, table: command/sovereign vs first principles/civil law."
+              "Open with the gold inset (ought → command → form → courts → first principles → social ends).",
+              "Walk the rail, not only ABAH-GSP: Ulpian justice; Aquinas; Bentham; Austin; Holland/Salmond/Gray; Pound. Name school chips.",
+              "Kernel asides: A→K→H (say Grundnorm); I→D→P; Marx vs Pound in four lines if time.",
+              "One criticism each on the definition jobs (Austin too narrow; Holland empty of contents; Gray court-or-nothing; Pound who weighs interests?).",
+              "Pick a hybrid close: Salmond’s first principles oriented to Pound’s social task — useful in an Indian courtroom paper."
             ]
           },
           {
@@ -146,29 +148,29 @@
             marks: "20",
             q: "How would you define Jurisprudence? Which definition according to you would be the most appropriate one?",
             outline: [
-              "This is the same spine as the intro 20-marker — but lead with evolution, not a beauty contest of quotations.",
-              "Parade Austin / Holland / Salmond / Gray / Pound with the shift each made.",
-              "Defend Salmond + Pound hybrid; one line on Bentham as the missing reformer in a ‘definition only’ answer."
+              "Lead with evolution, not a beauty contest of quotations.",
+              "Parade Austin / Holland / Salmond / Gray / Pound with the shift each made; one line on Bentham and on Kelsen/Hart if the question stretches to schools.",
+              "Defend Salmond + Pound hybrid."
             ]
           },
           {
             year: "stock distinguish",
             section: "B",
             marks: "10",
-            q: "Austin and Salmond on jurisprudence / Pound’s definition.",
+            q: "Austin and Salmond on jurisprudence / Pound’s definition / Austin vs Kelsen vs Hart.",
             outline: [
               "Austin: philosophy of positive law; is/ought split; command + sanction.",
               "Salmond: first principles of civil law; administration of justice.",
-              "Pound: social engineering — what law does, not only what it is.",
-              "Close: all three are positivist-adjacent vs NL; Pound lets sociology into the definition."
+              "A→K→H: command → Grundnorm pyramid → primary/secondary rules.",
+              "Pound: social engineering — what law does; contrast Marx superstructure in one line."
             ]
           }
         ],
         check: [
-          "Recite the gold sentence without looking.",
-          "Name seven beats with years (c. is allowed).",
-          "Austin vs Salmond in four lines; Pound’s extra verb in one line.",
-          "ABAH-GSP out loud in 20 seconds."
+          "Recite ABAH-GSP without looking — and name Ulpian, Aquinas, Allen, Realists, Marx as rail extras.",
+          "A→K→H with Grundnorm in the Kelsen sentence.",
+          "I→D→P in one breath; Pound vs Marx in four lines.",
+          "Austin vs Salmond in four lines."
         ]
       },
       {

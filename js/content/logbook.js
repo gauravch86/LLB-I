@@ -3,6 +3,8 @@
   g.LLB = g.LLB || {};
   /* Newest first. paper: K-1001…K-1005 or "site". topicId must match a real card id (empty for site-only). */
   g.LLB.logbook = [
+    { date: "2026-09-17", type: "updated", paper: "K-1001", topicId: "j-def-evolution", title: "Definitions — evolution of jurisprudence", note: "Holistic Sem-1 rail (20 named beats: Ulpian, Aquinas, Bentham, Austin, Savigny, Maine, Marx, Ihering, Holland, Salmond, Stammler, Gray, Kohler, Duguit, Pound, C.K. Allen, Realists, Kelsen Grundnorm, Hart). ABAH-GSP kept as gold inset; A→K→H and I→D→P mnemonic chips." },
+    { date: "2026-09-17", type: "updated", paper: "K-1001", topicId: "j-intro", title: "Introduction — definition, nature, scope, importance", note: "Intro now mounts the same holistic rail (compact = no 7-row table). Pointer to the dedicated card for table + PYQ." },
     { date: "2026-09-17", type: "added", paper: "K-1001", topicId: "j-def-evolution", title: "Definitions — evolution of jurisprudence", note: "Dedicated card: vertical timeline, gold spine (ought → command → form → courts → first principles → social ends), ABAH-GSP mnemonic, thinker table, PYQ outline." },
     { date: "2026-09-17", type: "updated", paper: "K-1001", topicId: "j-intro", title: "Introduction — definition, nature, scope, importance", note: "Compact definitions-evolution timeline on the intro card; pointer to the dedicated teaching spine." },
     { date: "2026-09-17", type: "updated", paper: "K-1001", topicId: "j-natural", title: "Natural Law — classical and revival (Stammler, Kohler)", note: "Timeline: classical NL → early-modern rights → Austin eclipse → Stammler/Kohler revival." },

@@ -688,10 +688,60 @@ button.log-title:hover { color: var(--gold-2); }
   border-radius: 12px;
   padding: 10px 12px;
 }
+.tl-insets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 0 0 16px;
+}
+.tl-inset {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.tl-k {
+  margin: 0 0 2px;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
 .tl-card h3 {
   margin: 0 0 2px;
   font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
 }
+.tl-school {
+  display: inline-block;
+  font-family: var(--font);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  color: var(--muted);
+}
+.tl-school-nl, .tl-school-roman { color: var(--gold); border-color: var(--gold); }
+.tl-school-analytical { color: var(--blue); border-color: var(--blue); }
+.tl-school-historical { color: var(--teal); border-color: var(--teal); }
+.tl-school-socio { color: var(--gold-2); border-color: var(--gold); }
+.tl-school-realist, .tl-school-marx { color: var(--crimson); border-color: var(--crimson); }
+.tl-work span, .tl-doctrine span, .tl-shift span {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.tl-work span { color: var(--gold-2); }
+.tl-doctrine span { color: var(--blue); }
+.tl-shift span { color: var(--teal); }
 .tl-work {
   margin: 0 0 6px;
   font-family: var(--mono);
@@ -706,15 +756,6 @@ button.log-title:hover { color: var(--gold-2); }
   margin: 0;
   color: var(--muted);
   font-size: 0.88rem;
-}
-.tl-shift span {
-  display: block;
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--teal);
-  margin-bottom: 2px;
 }
 .tl-table { margin-top: 12px; }
 

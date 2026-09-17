@@ -21,20 +21,34 @@
   function beatsHtml(beats) {
     return `<ol class="timeline">
       ${(beats || [])
-        .map((b, i) => {
-          const prev = i === 0 ? "Opens the story" : "Challenges / replaces the previous beat";
+        .map((b) => {
+          const school = b.school
+            ? `<span class="tl-school tl-school-${esc(b.school)}">${esc(b.schoolLabel || b.school)}</span>`
+            : "";
           return `<li>
             <div class="tl-badge"><span class="tl-year">${esc(b.year)}</span></div>
             <div class="tl-card">
-              <h3>${esc(b.name)}</h3>
-              ${b.work ? `<p class="tl-work">${esc(b.work)}</p>` : ""}
-              <p class="tl-doctrine">${esc(b.doctrine)}</p>
-              <p class="tl-shift"><span>${prev}</span> ${esc(b.shift)}</p>
+              <p class="tl-k">Who</p>
+              <h3>${esc(b.name)}${school}</h3>
+              ${b.work ? `<p class="tl-work"><span>Landmark</span> ${esc(b.work)}</p>` : ""}
+              <p class="tl-doctrine"><span>Said</span> ${esc(b.doctrine)}</p>
+              <p class="tl-shift"><span>Challenged</span> ${esc(b.shift)}</p>
             </div>
           </li>`;
         })
         .join("")}
     </ol>`;
+  }
+
+  function insetsHtml(insets) {
+    if (!insets || !insets.length) return "";
+    return `<div class="tl-insets">${insets
+      .map(
+        (c) => `<aside class="mnemonic tl-inset"><h3>${esc(c.name)}</h3>
+        <p><strong>${esc(c.hook)}</strong></p>
+        ${c.recite ? `<p>${esc(c.recite)}</p>` : ""}</aside>`
+      )
+      .join("")}</div>`;
   }
 
   function tableHtml(table) {
@@ -60,7 +74,8 @@
       <h2 class="section-title">${esc(timeline.title || "Evolution timeline")}</h2>
       ${timeline.lede ? `<p class="lede">${esc(timeline.lede)}</p>` : ""}
       ${hook}
-      ${full ? spineHtml(timeline.spine) : ""}
+      ${spineHtml(timeline.spine)}
+      ${insetsHtml(timeline.insets)}
       ${beatsHtml(timeline.beats)}
       ${full ? tableHtml(timeline.table) : ""}
       ${note}
@@ -88,7 +103,9 @@
   function searchBlob(topicId) {
     return forTopic(topicId)
       .map(({ timeline }) => {
-        const beats = (timeline.beats || []).map((b) => [b.year, b.name, b.work, b.doctrine].join(" ")).join(" ");
+        const beats = (timeline.beats || [])
+          .map((b) => [b.year, b.name, b.schoolLabel, b.work, b.doctrine].join(" "))
+          .join(" ");
         return [timeline.title, timeline.hook, beats].join(" ");
       })
       .join(" ");
