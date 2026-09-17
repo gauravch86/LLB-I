@@ -78,7 +78,7 @@
         <p class="kicker">Dec 2026 · 5 × 100</p>
         <h1>Exam strategy for an engineer who thinks in systems</h1>
         <p class="lede">CCS long answers reward named sections, named cases, and a visible structure — not originality of philosophy. Treat each 20-marker as a spec document: definition, essentials, authorities, distinction, criticism, conclusion.</p>
-        <h2 class="section-title">Weekly OS (repeat until December)</h2>
+        <h2 class="section-title" id="sec-method">Weekly OS (repeat until December)</h2>
         ${window.LLBDiagrams.render({ type: "flow", steps: ["Juris schools", "FR 12–32", "Torts + CPA", "BNS core", "Contract 2–75", "Timed PYQ"] })}
         <table class="compare">
           <thead><tr><th>Week slice</th><th>Hours</th><th>Output artefact</th></tr></thead>
@@ -91,7 +91,7 @@
             <tr><td>PYQ writing</td><td>6</td><td>One timed 20-marker per paper</td></tr>
           </tbody>
         </table>
-        <h2 class="section-title">Answer formula (print this)</h2>
+        <h2 class="section-title" id="sec-answers">Answer formula (print this)</h2>
         <ol>
           <li><strong>Hook (2 lines):</strong> define the concept + name the statute/article/school.</li>
           <li><strong>Essentials:</strong> numbered ingredients. Examiners tick lists.</li>
@@ -103,7 +103,7 @@
         <aside class="analogy"><h3>Latency budget in the hall</h3>
           <p>20-marker ≈ 25–30 minutes. 10-marker ≈ 12–14. Short notes ≈ 4–5. If you cannot name two cases in the first 8 minutes of an Art. 21 or Pound essay, you are in the wrong question — switch.</p>
         </aside>
-        <h2 class="section-title">Paper-wise spine (write these cold)</h2>
+        <h2 class="section-title" id="sec-heatmap">Paper-wise spine (write these cold)</h2>
         <ul>
           <li><strong>K-1001:</strong> Pound social engineering; Kelsen Grundnorm; Austin command + Hart critique; definition/nature/utility.</li>
           <li><strong>K-1002:</strong> Quasi-federal; Art. 21 expansion; Art. 14 + reservation; FR–DPSP; Art. 32/PIL; 19(1)(a) press.</li>
@@ -123,7 +123,7 @@
         <h1>Primary textbooks, exam drill, secondary refs</h1>
         <p class="lede">The five books below are the <strong>authoritative physical shelf</strong> this site tracks for structure, landmark cases, and depth. Read the matching chapter there; this website is original teaching prose (syllabus + bare acts + public case law + PYQ themes). It does not reproduce those textbooks or Unique/Nitin Q&amp;A.</p>
 
-        <h2 class="section-title">1. Primary textbooks (buy / use)</h2>
+        <h2 class="section-title" id="sec-publishers">1. Primary textbooks (buy / use)</h2>
         <table class="compare">
           <thead><tr><th>Paper</th><th>Book</th><th>How this site tracks it</th></tr></thead>
           <tbody>
@@ -169,7 +169,7 @@
           <div class="pub-card"><strong>CPA 2019</strong><p>Commissions, not 1986 Forums. Know 2021 pecuniary revision. Bangia Torts later editions include this Act.</p></div>
         </div>
 
-        <h2 class="section-title">YouTube (search titles — playlists move)</h2>
+        <h2 class="section-title" id="sec-youtube">YouTube (search titles — playlists move)</h2>
         <div class="yt-row">
           <div class="yt-card"><strong>StudyIQ Judiciary</strong><p>@studyiqjudiciary — Consti + BNS marathons.</p></div>
           <div class="yt-card"><strong>StudyIQ After LL.B</strong><p>@StudyIQAfterLLB — BNS one-shots, juris shorts.</p></div>
@@ -179,7 +179,7 @@
           <div class="yt-card"><strong>Law Prep / Judiciary Gold / Adda247 JS</strong><p>PYQ/MCQ drill and capsules.</p></div>
         </div>
         <p>Hygiene: prefer 2024+ uploads for BNS and CPA 2019; confirm every section in Paranjape BNS / Bangia / Kumar, then the bare act.</p>
-        <h2 class="section-title">BNS ↔ IPC map (syllabus offences — for older PYQs)</h2>
+        <h2 class="section-title" id="sec-bnsmap">BNS ↔ IPC map (syllabus offences — for older PYQs)</h2>
         <p>Paranjape writes in BNS numbers. When you drill 2022–23 CCS papers, convert IPC cites with this table. Filter is live.</p>
         ${bnsTable()}
         <h2 class="section-title">Public PYQ hubs</h2>
@@ -188,7 +188,7 @@
           <li><a href="https://www.ccsustudy.com/ccsu-llb-papers.html" target="_blank" rel="noopener">ccsustudy.com</a> — Dec 2024/2025 BNS filenames</li>
           <li>Official syllabus PDF: <a href="https://cdn.ccsuniversity.ac.in/public/pdf/2025/08/2%20llb%20syllabus.pdf" target="_blank" rel="noopener">CCS CDN Aug 2025</a></li>
         </ul>
-        <aside class="note"><h3>Copyright stance</h3>
+        <aside class="note" id="sec-copyright"><h3>Copyright stance</h3>
           <p>Original teaching material only. Cites publicly available statutes, the CCS syllabus outline, landmark case names/holdings, and publicly blogged exam <em>themes</em>. Does not copy Unique Law Series, Nitin Prakashan, Paranjape, Narender Kumar, or Bangia prose, tables, or chapter text.</p>
         </aside>
       </article>`;
