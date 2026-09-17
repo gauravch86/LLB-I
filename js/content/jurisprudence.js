@@ -22,7 +22,7 @@
         readAs: "Paranjape ch. 1 — meaning, nature &amp; scope",
         unit: 1,
         yield: "high",
-        tags: ["definition", "salmond", "austin", "holland", "gray", "pound", "utility"],
+        tags: ["definition", "salmond", "austin", "holland", "gray", "pound", "utility", "ulpian", "kelsen", "hart"],
         title: "Introduction — definition, nature, scope, importance",
         summary: "Jurisprudence is the grammar of law: not the statute book of one State, but the theories that explain what ‘law’ is, how it binds, and why courts should care.",
         explainer: `<p>Paranjape opens with the province of jurisprudence before any school: meaning, nature, scope. CCS still loves the fight: is Jurisprudence the law of <em>one</em> nation, or a science <em>about</em> law? Short notes have asked that almost verbatim. If you say “it is Indian law,” you have confused jurisprudence with a municipal code. If you say “it is philosophy with no courtroom use,” you have written yourself out of the marks for <em>utility</em>.</p>
@@ -37,7 +37,8 @@
         <p><strong>Nature:</strong> it is abstract (concepts: right, duty, personality, possession), normative in part (ought-questions leak in), and comparative (English command theory vs German Volksgeist vs American realism). It is not a “subject” in the same way Contract is a subject; it is the meta-layer.</p>
         <p><strong>Scope:</strong> (1) legal theory / schools; (2) legal concepts (person, right, liability — more Sem-2 in some schemes, but definitions still leak into Sem-1 answers); (3) sources of law; (4) law and allied disciplines (morals, economics, sociology). CCS Sem-1 K-1001 is school-heavy: Natural, Analytical, Historical, Sociological, Realist, Marxist.</p>
         <p><strong>Importance for an engineer-lawyer:</strong> statutes are APIs; jurisprudence is architecture. Without it you can recite S.10 of the Contract Act and still fail a “nature of law” essay. With it you can attack Austin in a Crimes mens rea question, or Pound in a Constitution social-justice question. Stone’s line that jurisprudence is “lawyers’ extroversion” is a regular short note: law looking outward at philosophy, sociology, economics.</p>
-        <p><strong>Law and morals:</strong> keep a 10-mark pocket. Overlap (murder is illegal and immoral), divergence (parking tickets; some religious duties not legally enforced), and the positivist claim that validity ≠ merit. Hart vs Fuller is extra credit; CCS usually wants Austin/Kelsen “separation” plus a sociological critique.</p>`,
+        <p><strong>Law and morals:</strong> keep a 10-mark pocket. Overlap (murder is illegal and immoral), divergence (parking tickets; some religious duties not legally enforced), and the positivist claim that validity ≠ merit. Hart vs Fuller is extra credit; CCS usually wants Austin/Kelsen “separation” plus a sociological critique.</p>
+        <p><strong>Definition evolution (do not skip):</strong> CCS still sets “trace the evolution of the definition of jurisprudence.” The <strong>left-rail diagram</strong> on this card is school-sectioned (Natural → Analytical → Historical → Sociological → Realist/critical) with one chip per thinker. Gold <strong>B-A-H-G-S-P</strong> strip = definition jobs only; <strong>A→K→H</strong> and <strong>I→D→P</strong> sit on their school bands, not as floating legends. Dedicated card + PYQ: <button type="button" class="text-link" data-nav="k1001" data-topic="j-def-evolution">Definitions — evolution of jurisprudence</button>.</p>`,
         analogy: {
           title: "Compiler vs runtime",
           body: "Bare acts are runtime libraries. Jurisprudence is the language spec: types (right/duty), package managers (schools), and why two compilers (Austin vs Hart) reject each other’s programs. You do not ship production code from the spec alone — but you cannot debug a 20-marker without it."
@@ -89,7 +90,87 @@
         check: [
           "Can write 5 named definitions without notes.",
           "Can answer the ‘one nation?’ short note in 8 lines.",
-          "Can list three utilities with an Indian illustration."
+          "Can list three utilities with an Indian illustration.",
+          "Can recite the ought → command → form → courts → first principles → social ends spine.",
+          "Can name Ulpian, Aquinas, Kelsen (Grundnorm), Hart, Allen, Realists, and Marx — and the one school chip each wears."
+        ]
+      },
+      {
+        id: "j-def-evolution",
+        seq: 1.15,
+        readAs: "Paranjape ch. 1 — definitions as a story, not a list",
+        unit: 1,
+        yield: "high",
+        tags: ["definition", "evolution", "austin", "holland", "gray", "salmond", "pound", "bentham", "ulpian", "allen", "kelsen", "hart", "marx", "realism", "timeline"],
+        title: "Definitions — evolution of jurisprudence",
+        summary: "The 20-marker is a changelog. Primary rail = school colour bands (one chip each). Gold B-A-H-G-S-P strip = definition jobs. A→K→H and I→D→P are band captions, not floating legends.",
+        explainer: `<p>CCS will say some flavour of <em>trace the evolution of the definition of jurisprudence</em>. The fail mode is five unnamed sentences. The pass mode is a <strong>dated arc with one school chip per thinker</strong>: each inherits a problem and ships a new job for the word.</p>
+        <p><strong>Three mnemonic callouts, scoped — do not mix them:</strong> (1) gold <strong>B-A-H-G-S-P</strong> strip — Bentham · Austin · Holland · Gray · Salmond · Pound — the definition-jobs 20-marker (ought → command → form → courts → first principles → social ends). (2) <strong>A→K→H</strong> lives only on the analytical band (Austin command → Kelsen <em>Grundnorm</em> → Hart). (3) <strong>I→D→P</strong> lives only on the sociological band (Ihering → Duguit → Pound). No other acronyms. Dual-tradition names get one CCS home chip; the other tradition is a word in Said / Challenged (Kohler = Natural, culture in Challenged; Gray = Analytical, realist in Challenged; Marx = Realist/critical, Pound in Challenged).</p>
+        <p><strong>Write the definition spine once, then walk the five bands:</strong> Natural — Aristotle, Ulpian’s <em>suum cuique</em>, Aquinas, Stammler, Kohler. Analytical — Bentham, Austin (1832), Holland, Salmond, Gray, C.K. Allen, Kelsen’s <em>Grundnorm</em>, Hart. Historical — Savigny, Maine. Sociological — Ihering, Duguit, Pound. Realist / critical — Marx, American Realists.</p>
+        <p><strong>Date hygiene:</strong> Salmond’s first edition slightly predates Gray’s book. Realists sit in their band even though Holmes (1897) is earlier. Marx is 1859 base/superstructure, not a 1920s afterthought. Bentham’s anti-rights blast is <em>Anarchical Fallacies</em> (written c. 1791; often taught with IPML 1789). Holland 1880 and Austin 1832 are not contested.</p>
+        <p><strong>Compare questions:</strong> Austin vs Salmond = command-philosophy vs first-principles science. A→K→H = command vs pyramid vs ruleset (say <em>Grundnorm</em>). I→D→P = purpose vs solidarity vs engineering. Pound vs Marx = patch the machine vs name the class. Do not mash Holland into Austin; Holland is form, not a barking person.</p>
+        <p>Redraw the left-rail from memory (year · who · landmark · said · pushed back). Then open Paranjape chapter 1 for the longer extracts — this card does not copy that book.</p>`,
+        analogy: {
+          title: "Same identifier, many APIs — plus the rest of the monorepo",
+          body: "B-A-H-G-S-P is the public API changelog of the word ‘jurisprudence.’ The school bands are the rest of the monorepo: Natural (Ulpian, Aquinas, Stammler, Kohler), Historical (Savigny/Maine), Sociological (Ihering, Duguit, Pound), Realist/critical (Marx, Holmes/Llewellyn/Frank), plus Allen’s sources toolkit and Kelsen’s Grundnorm root commit on the analytical band. Your 20-marker is git log of the identifier; shorts can ping any named package."
+        },
+        diagram: {
+          type: "flow",
+          title: "Definition inset (not the whole rail)",
+          steps: ["ought (philosophy)", "is/command (Austin)", "form (Holland)", "courts (Gray)", "first principles (Salmond)", "social ends (Pound)"]
+        },
+        mnemonic: {
+          name: "B-A-H-G-S-P",
+          hook: "Bentham · Austin · Holland · Gray · Salmond · Pound — gold strip only. Band legends: A→K→H (analytical) and I→D→P (sociological).",
+          recite: "Natural: Aristotle, Ulpian, Aquinas, Stammler, Kohler. Analytical: Bentham, Austin, Holland, Salmond, Gray, Allen, Kelsen, Hart. Historical: Savigny, Maine. Sociological: Ihering, Duguit, Pound. Realist/critical: Marx, American Realists."
+        },
+        cases: [
+          { name: "Thinkers are the authorities", citation: "dated works, not SCC cites", point: "Ulpian Digest; Aquinas Summa; Austin 1832; Savigny 1814; Maine 1861; Holland 1880; Salmond 1902; Gray 1909; Kelsen 1934 (Grundnorm); Hart 1961; Pound c. 1922. Kesavananda is a one-line Indian landing for utility, not a definition source." },
+          { name: "Kesavananda Bharati (bridge only)", citation: "(1973) 4 SCC 225", point: "If asked ‘why bother defining jurisprudence,’ one Indian landing: limits of constituent power is legal theory leaking into doctrine." }
+        ],
+        pyqs: [
+          {
+            year: "theme 2018–25",
+            section: "C",
+            marks: "20",
+            q: "Trace the evolution of the definition of jurisprudence. Which definition is most appropriate?",
+            outline: [
+              "Open with the gold B-A-H-G-S-P inset (ought → command → form → courts → first principles → social ends).",
+              "Walk the five school bands (one chip each): Natural (Ulpian, Aquinas, Stammler, Kohler); Analytical; Historical; Sociological; Realist/critical.",
+              "Kernel asides stay on their bands: A→K→H (say Grundnorm); I→D→P; Marx vs Pound in four lines if time.",
+              "One criticism each on the definition jobs (Austin too narrow; Holland empty of contents; Gray court-or-nothing; Pound who weighs interests?).",
+              "Pick a hybrid close: Salmond’s first principles oriented to Pound’s social task — useful in an Indian courtroom paper."
+            ]
+          },
+          {
+            year: "Dec 2024 cousin",
+            section: "C",
+            marks: "20",
+            q: "How would you define Jurisprudence? Which definition according to you would be the most appropriate one?",
+            outline: [
+              "Lead with evolution, not a beauty contest of quotations.",
+              "Parade Austin / Holland / Salmond / Gray / Pound with the shift each made; one line on Bentham and on Kelsen/Hart if the question stretches to schools.",
+              "Defend Salmond + Pound hybrid."
+            ]
+          },
+          {
+            year: "stock distinguish",
+            section: "B",
+            marks: "10",
+            q: "Austin and Salmond on jurisprudence / Pound’s definition / Austin vs Kelsen vs Hart.",
+            outline: [
+              "Austin: philosophy of positive law; is/ought split; command + sanction.",
+              "Salmond: first principles of civil law; administration of justice.",
+              "A→K→H: command → Grundnorm pyramid → primary/secondary rules.",
+              "Pound: social engineering — what law does; contrast Marx superstructure in one line."
+            ]
+          }
+        ],
+        check: [
+          "Recite B-A-H-G-S-P without looking — and name each thinker’s one school chip.",
+          "A→K→H with Grundnorm in the Kelsen sentence.",
+          "I→D→P in one breath; Pound vs Marx in four lines.",
+          "Austin vs Salmond in four lines."
         ]
       },
       {

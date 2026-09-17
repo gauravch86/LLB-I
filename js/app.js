@@ -307,6 +307,7 @@
           ? `<aside class="analogy"><h3>${topic.analogy.title || "Engineer analogy"}</h3><p>${topic.analogy.body}</p></aside>`
           : ""
       }
+      ${window.LLBTimeline ? window.LLBTimeline.renderForTopic(topic.id) : ""}
       <h2 class="section-title">Diagram</h2>
       ${window.LLBDiagrams.render(topic.diagram)}
       ${
@@ -405,11 +406,11 @@
       <table class="compare">
         <thead><tr><th>Paper</th><th>Official unit</th><th>On this site</th></tr></thead>
         <tbody>
-          <tr><td>K-1001</td><td>Intro; Natural (Stammler/Kohler); Analytical (Austin/Kelsen/Hart); Historical (Savigny/Maine); Sociological (Pound/Duguit); American Realism; Marxist economic</td><td>16 sidebar topics — school units plus Historical jurisprudence vs legal history; law &amp; morals; Austin–Kelsen–Hart drill; Bentham/Manu/Salmond/Stone shorts; Pound’s interests</td></tr>
-          <tr><td>K-1002</td><td>Nature (federal + form of govt); Preamble; FR general; 14–18; 19(1)(a); 20; 21; 21A; 23–24; 25–28; 29–30; 32; DPSP; Duties</td><td>24 sidebar topics — official units plus Art. 12; eclipse/severability/waiver; Emergency 358/359; 14 classification; 15–16/EWS; 19 suite traps; privacy; HMPCQ writs; FR–DPSP ladder; Art. 300A bridge. 21A / 23–24 / Duties expanded. CCS lists only <em>19(1)(a)</em></td></tr>
-          <tr><td>K-1003</td><td>Intro (incl. damnum/injuria, mental element, parties, strict/absolute); justifications; vicarious/State/joint; negligence, nuisance, trespass, defamation; CPA consumer / service / enforcement</td><td>22 topics. Pigeon-hole; who may sue; Rylands/Mehta/Kasturilal; Wagon Mound; res ipsa; medical negligence; contributory vs composite; nervous shock; nuisance/trespass deepened; service vs for service; CPA 2019 hierarchy</td></tr>
-          <tr><td>K-1004</td><td>General principles; inchoate; general exceptions; body; property; State/public tranquility; marriage (bigamy/adultery)</td><td>27 topics. Dedicated BNS cards include stages essay; definitions shorts; legal vs medical insanity; WR/WC &amp; riot/affray; dowry death 80 vs 304B; stalking 78; child cluster; snatching 304. Official PDF still says IPC; site teaches <strong>BNS first</strong></td></tr>
-          <tr><td>K-1005</td><td>Purpose/scope; proposal; consideration/privity; lawful object; capacity/restitution; consent; standard form; void/voidable; contingent; quasi; discharge/frustration; compensation</td><td>26 topics — CCS units plus offer vs ITT; English vs Indian consideration; CUFM; ss.26–28; wager vs contingent; contingent 32–36 tree; standard-form notice; novation s.62; discharge checklist; quantum meruit; Hadley/s.73</td></tr>
+          <tr><td>K-1001</td><td>Intro; Natural (Stammler/Kohler); Analytical (Austin/Kelsen/Hart); Historical (Savigny/Maine); Sociological (Pound/Duguit); American Realism; Marxist economic</td><td>17 sidebar topics — school units plus definition-evolution card; Historical jurisprudence vs legal history; law &amp; morals; Austin–Kelsen–Hart drill; Bentham/Manu/Salmond/Stone shorts; Pound’s interests. Vertical <strong>evolution timelines</strong> on intro, schools, and the dedicated definitions card</td></tr>
+          <tr><td>K-1002</td><td>Nature (federal + form of govt); Preamble; FR general; 14–18; 19(1)(a); 20; 21; 21A; 23–24; 25–28; 29–30; 32; DPSP; Duties</td><td>24 sidebar topics — official units plus Art. 12; eclipse/severability/waiver; Emergency 358/359; 14 classification; 15–16/EWS; 19 suite traps; privacy; HMPCQ writs; FR–DPSP ladder; Art. 300A bridge. 21A / 23–24 / Duties expanded. CCS lists only <em>19(1)(a)</em>. Timelines on Art. 21, basic structure, reservation, press</td></tr>
+          <tr><td>K-1003</td><td>Intro (incl. damnum/injuria, mental element, parties, strict/absolute); justifications; vicarious/State/joint; negligence, nuisance, trespass, defamation; CPA consumer / service / enforcement</td><td>22 topics. Pigeon-hole; who may sue; Rylands/Mehta/Kasturilal; Wagon Mound; res ipsa; medical negligence; contributory vs composite; nervous shock; nuisance/trespass deepened; service vs for service; CPA 2019 hierarchy. Timelines: strict→absolute; Kasturilal→constitutional torts; Donoghue reception</td></tr>
+          <tr><td>K-1004</td><td>General principles; inchoate; general exceptions; body; property; State/public tranquility; marriage (bigamy/adultery)</td><td>27 topics. Dedicated BNS cards include stages essay; definitions shorts; legal vs medical insanity; WR/WC &amp; riot/affray; dowry death 80 vs 304B; stalking 78; child cluster; snatching 304. Official PDF still says IPC; site teaches <strong>BNS first</strong>. Timelines: IPC→BNS code shifts; CH/murder numbering map</td></tr>
+          <tr><td>K-1005</td><td>Purpose/scope; proposal; consideration/privity; lawful object; capacity/restitution; consent; standard form; void/voidable; contingent; quasi; discharge/frustration; compensation</td><td>26 topics — CCS units plus offer vs ITT; English vs Indian consideration; CUFM; ss.26–28; wager vs contingent; contingent 32–36 tree; standard-form notice; novation s.62; discharge checklist; quantum meruit; Hadley/s.73. Timelines: consideration fork; Taylor→Satyabrata; standard-form/CPA unfair terms</td></tr>
         </tbody>
       </table>
       <p><strong>Not Sem-1 (do not study these here):</strong> Jurisprudence-II concepts (person, possession, ownership — K-2001); Union Parliament/Executive (K-2002); Family Law; Contract-II. Infipark pages that swap K-1005 for Legal Method are not the official CCS PDF.</p>
@@ -535,7 +536,8 @@
           t.explainer,
           t.mnemonic && t.mnemonic.hook,
           (t.cases || []).map((c) => c.name).join(" "),
-          (t.tags || []).join(" ")
+          (t.tags || []).join(" "),
+          window.LLBTimeline ? window.LLBTimeline.searchBlob(t.id) : ""
         ]
           .join(" ")
           .toLowerCase();
