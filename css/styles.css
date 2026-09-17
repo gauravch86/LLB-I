@@ -244,7 +244,14 @@ body {
 .topic-link.sealed .dot { background: var(--teal); }
 .topic-link.high .yield { color: var(--gold); font-size: 0.68rem; }
 
-.main { padding: 22px 28px 80px; min-width: 0; }
+.main {
+  padding: 22px 28px calc(100vh - var(--top) - var(--nav)) 28px;
+  min-width: 0;
+}
+
+#main > [id^="topic-"]:last-child {
+  min-height: calc(100vh - var(--top) - var(--nav) - 32px);
+}
 
 .hero, .topic, .panel {
   background: linear-gradient(180deg, color-mix(in srgb, var(--elev) 92%, white 0%), var(--elev));
@@ -534,7 +541,7 @@ h2.display, .topic h1, .hero h2 {
   }
   .sidebar.open { transform: none; }
   .fab-topics { display: inline-flex; }
-  .main { padding: 16px 14px 100px; }
+  .main { padding: 16px 14px calc(100vh - var(--top) - var(--nav)) 14px; }
   .case { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; }
   .brand h1 { font-size: 1rem; }
