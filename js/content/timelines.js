@@ -381,6 +381,35 @@
       ]
     },
 
+    "kelsen-pure": {
+      id: "kelsen-pure",
+      title: "Evolution — Pure Theory (purity → pyramid → Indian reconstruction)",
+      hook: "Strip morals → stack norms → presuppose a base. 26 Jan 1950 is an illustration of Grundnorm change, not Kelsen’s biography.",
+      beats: [
+        {
+          year: "1934",
+          name: "Reine Rechtslehre",
+          work: "Pure Theory of Law (1st ed.; 2nd ed. 1960)",
+          doctrine: "Strip sociology, psychology, morals. Law is a hierarchy of norms, each authorised by a higher norm. Validity is membership, not justice.",
+          shift: "Replaces Austin’s person-sovereign with an ought-science. ‘Pure’ is method, not moral cleanliness."
+        },
+        {
+          year: "1945",
+          name: "General Theory of Law and State",
+          work: "English landing of the Pure Theory",
+          doctrine: "Grundnorm as presupposition: the historically first constitution ought to be obeyed. State = legal order personified. Efficacy of the order as a whole vs validity of a norm.",
+          shift: "Gives CCS the vocabulary of validity chains, revolution as new presupposition, and sanction as directed coercive ought — not Austin’s evil."
+        },
+        {
+          year: "26 Jan 1950",
+          name: "Indian reconstruction (not Kelsen’s date)",
+          work: "Constitution of India comes into force; Art. 372 reception",
+          doctrine: "Classroom illustration: jurists presuppose a new base — ‘the Constitution of India ought to be obeyed.’ Old laws are re-validated, not magically the Raj’s chain.",
+          shift: "Use as Grundnorm-change, not as ‘Grundnorm = Constitution’ and not as ‘Veda = Grundnorm.’ Kesavananda then tests whether even Art. 368 is unconditioned."
+        }
+      ]
+    },
+
     "hist-savigny-maine": {
       id: "hist-savigny-maine",
       title: "Evolution — historical school",
@@ -766,6 +795,7 @@
     "j-def-evolution": [{ id: "juris-defs", mode: "full" }],
     "j-natural": ["nl-revival"],
     "j-analytical": ["analytical-akh"],
+    "j-kelsen-pure": ["kelsen-pure"],
     "j-historical": ["hist-savigny-maine"],
     "j-socio": ["socio-pound"],
     "c-21": ["art21"],

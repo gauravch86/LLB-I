@@ -323,7 +323,7 @@
       }
       ${window.LLBTimeline ? window.LLBTimeline.renderForTopic(topic.id) : ""}
       <h2 class="section-title">Diagram</h2>
-      ${window.LLBDiagrams.render(topic.diagram)}
+      ${(topic.diagrams || (topic.diagram ? [topic.diagram] : [])).map((d) => window.LLBDiagrams.render(d)).join("")}
       ${
         topic.mnemonic
           ? `<aside class="mnemonic"><h3>Memory hook · ${topic.mnemonic.name}</h3><p><strong>${topic.mnemonic.hook}</strong></p><p>${topic.mnemonic.recite || ""}</p></aside>`
@@ -421,7 +421,7 @@
       <table class="compare">
         <thead><tr><th>Paper</th><th>Official unit</th><th>On this site</th></tr></thead>
         <tbody>
-          <tr><td>K-1001</td><td>Intro; Natural (Stammler/Kohler); Analytical (Austin/Kelsen/Hart); Historical (Savigny/Maine); Sociological (Pound/Duguit); American Realism; Marxist economic</td><td>17 sidebar topics with a <strong>one-home</strong> rule: intro = nature/utility; evolution card = Rail | Matrix changelog (not duplicated on intro); Sec A drill = unique shorts + pointers; school cards = doctrine; drills = one angle. Full <strong>worked answers</strong> on every high-yield card. Vertical evolution timelines on schools and the dedicated definitions card — not on intro</td></tr>
+          <tr><td>K-1001</td><td>Intro; Natural (Stammler/Kohler); Analytical (Austin/Kelsen/Hart); Historical (Savigny/Maine); Sociological (Pound/Duguit); American Realism; Marxist economic</td><td>19 sidebar topics with a <strong>one-home</strong> rule: intro = nature/utility; evolution card = Rail | Matrix changelog; Sec A drill = unique shorts + pointers; school cards = doctrine; drills = one angle (Austin command, <strong>Kelsen Pure Theory unpack</strong>, Hart RCA, Indian thought ↔ Western schools). Full <strong>worked answers</strong> on every high-yield card. Vertical evolution timelines on schools, the Kelsen unpack, and the dedicated definitions card — not on intro</td></tr>
           <tr><td>K-1002</td><td>Nature (federal + form of govt); Preamble; FR general; 14–18; 19(1)(a); 20; 21; 21A; 23–24; 25–28; 29–30; 32; DPSP; Duties</td><td>24 sidebar topics — official units plus Art. 12; eclipse/severability/waiver; Emergency 358/359; 14 classification; 15–16/EWS; 19 suite traps; privacy; HMPCQ writs; FR–DPSP ladder; Art. 300A bridge. 21A / 23–24 / Duties expanded. CCS lists only <em>19(1)(a)</em>. Timelines on Art. 21, basic structure, reservation, press</td></tr>
           <tr><td>K-1003</td><td>Intro (incl. damnum/injuria, mental element, parties, strict/absolute); justifications; vicarious/State/joint; negligence, nuisance, trespass, defamation; CPA consumer / service / enforcement</td><td>22 topics. Pigeon-hole; who may sue; Rylands/Mehta/Kasturilal; Wagon Mound; res ipsa; medical negligence; contributory vs composite; nervous shock; nuisance/trespass deepened; service vs for service; CPA 2019 hierarchy. Timelines: strict→absolute; Kasturilal→constitutional torts; Donoghue reception</td></tr>
           <tr><td>K-1004</td><td>General principles; inchoate; general exceptions; body; property; State/public tranquility; marriage (bigamy/adultery)</td><td>27 topics. Dedicated BNS cards include stages essay; definitions shorts; legal vs medical insanity; WR/WC &amp; riot/affray; dowry death 80 vs 304B; stalking 78; child cluster; snatching 304. Official PDF still says IPC; site teaches <strong>BNS first</strong>. Timelines: IPC→BNS code shifts; CH/murder numbering map</td></tr>
