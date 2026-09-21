@@ -491,6 +491,18 @@ button.log-title:hover { color: var(--gold-2); }
 .pyq .meta { color: var(--gold); font-family: var(--mono); font-size: 0.75rem; margin-bottom: 4px; }
 .pyq h4 { margin: 0 0 8px; font-size: 1rem; }
 
+.worked {
+  border: 1px solid color-mix(in srgb, var(--teal) 45%, var(--line));
+  border-radius: 14px;
+  padding: 16px 16px 8px;
+  margin-bottom: 14px;
+  background: color-mix(in srgb, var(--teal) 8%, var(--elev-2));
+}
+.worked .meta { color: var(--teal); font-family: var(--mono); font-size: 0.75rem; margin-bottom: 4px; }
+.worked h3 { margin: 0 0 10px; font-size: 1.05rem; font-family: var(--display); }
+.worked-body p { margin: 0 0 12px; }
+.worked-body p:last-child { margin-bottom: 8px; }
+
 .check-list { display: grid; gap: 6px; padding-left: 0; list-style: none; }
 .check-list li::before { content: "▸ "; color: var(--gold); }
 

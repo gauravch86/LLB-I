@@ -48,7 +48,7 @@
       {
         id: "k-offer",
         seq: 2,
-        readAs: "Bangia ch. 1 — proposal, acceptance, revocation",
+        readAs: "Formation home (ITT and ss.4–6 are drills)",
         unit: 2,
         yield: "high",
         tags: ["proposal", "acceptance", "revocation", "s.3-9", "invitation to treat"],
@@ -81,7 +81,7 @@
       {
         id: "k-consideration",
         seq: 3,
-        readAs: "Bangia ch. 2 — consideration (and privity)",
+        readAs: "Consideration survey (English/Indian, past, privity are drills)",
         unit: 3,
         yield: "high",
         tags: ["consideration", "privity", "s.2d", "s.25", "chinnaya"],
@@ -364,7 +364,7 @@
       {
         id: "k-discharge",
         seq: 10,
-        readAs: "Bangia ch. 10 — discharge (incl. s.56 frustration)",
+        readAs: "Discharge home (s.56 limits, checklist, novation are drills)",
         unit: 11,
         yield: "high",
         tags: ["discharge", "frustration", "s.56", "novation", "s.62"],
@@ -433,7 +433,7 @@
       {
         id: "k-offer-vs-itt",
         seq: 2.2,
-        readAs: "Bangia — offer vs invitation to treat",
+        readAs: "Drill — proposal vs ITT (from formation home)",
         unit: 2,
         yield: "high",
         tags: ["offer", "invitation to treat", "s.2(a)", "harvey", "pharmaceutical"],
@@ -476,7 +476,7 @@
       {
         id: "k-comm-revocation",
         seq: 2.4,
-        readAs: "Bangia — communication and revocation (ss.4–6)",
+        readAs: "Drill — communication &amp; revocation ss.4–6",
         unit: 2,
         yield: "high",
         tags: ["s.4", "s.5", "s.6", "postal rule", "revocation"],
@@ -518,7 +518,7 @@
       {
         id: "k-past-consideration",
         seq: 3.2,
-        readAs: "Bangia — consideration kinds; past / executory; s.25",
+        readAs: "Drill — past / executory / s.25 (from consideration survey)",
         unit: 3,
         yield: "high",
         tags: ["consideration", "past", "executory", "s.25", "s.2(d)"],
@@ -564,7 +564,7 @@
       {
         id: "k-privity-exceptions",
         seq: 3.4,
-        readAs: "Bangia — privity of contract (Indian exceptions)",
+        readAs: "Drill — privity exceptions (from consideration survey)",
         unit: 3,
         yield: "high",
         tags: ["privity", "dunlop", "trust", "family", "beneficiary"],
@@ -784,7 +784,7 @@
       {
         id: "k-frustration-limits",
         seq: 10.2,
-        readAs: "Bangia — frustration limits (s.56)",
+        readAs: "Drill — what s.56 will not kill (from discharge home)",
         unit: 11,
         yield: "high",
         tags: ["frustration", "s.56", "satyabrata", "force majeure"],
@@ -858,7 +858,7 @@
       {
         id: "k-eng-vs-indian",
         seq: 3.3,
-        readAs: "Bangia — English vs Indian consideration (Dec 2024 20-marker)",
+        readAs: "Drill — English vs Indian consideration (Dec 2024 20-marker home)",
         unit: 3,
         yield: "high",
         tags: ["consideration", "english", "indian", "s.2(d)", "privity", "past"],
@@ -867,7 +867,7 @@
         explainer: `<p><strong>English spine (recite first):</strong> (1) consideration must move <em>from the promisee</em> — a stranger who paid cannot sue (<em>Tweddle v Atkinson</em>); (2) past consideration is generally <em>not</em> good (<em>Eastwood v Kenyon</em>, <em>Roscorla v Thomas</em>) unless the act was done at the promisor’s request and a promise was understood to follow; (3) consideration need not be adequate but must be sufficient in law (a peppercorn will do; natural love and affection will not; performance of an existing public duty classically will not); (4) consideration must be real, not illusory; (5) privity: only parties can sue (<em>Dunlop v Selfridge</em>).</p>
         <p><strong>Indian s.2(d):</strong> when, at the desire of the promisor, the promisee <em>or any other person</em> has done or abstained, or does or abstains, or promises to do or to abstain, such act/abstinence/promise is called consideration. Two widenings jump off the page: (a) <strong>‘any other person’</strong> — consideration need not move from the promisee (the Chinnaya v Ramayya flavour: a stranger to the consideration can still be the promisee who sues, if they are a party); (b) the three tenses — <strong>has done</strong> (past), does (present), promises (future) — so <strong>past consideration is good</strong> if it was at the promisor’s desire.</p>
         <p><strong>What India did <em>not</em> abolish:</strong> <em>privity of contract</em> (who is a party) is still English-flavoured — <em>M.C. Chacko</em> / <em>Jamna Das</em>: a beneficiary who is not a party still cannot sue unless a trust/family/acknowledgement exception applies. Students mash ‘any other person’ into ‘strangers can always sue.’ That is the 20-marker trap. s.25 then lists three no-consideration doors (love &amp; affection written+registered+near relation; compensation for a past voluntary act; written promise to pay a time-barred debt) which English law would usually refuse.</p>
-        <p><strong>Table to dump:</strong> who may furnish consideration; past; love &amp; affection; time-barred debt; privity of parties. Close: India widened the <em>consideration</em> pipe and kept the <em>parties</em> pipe narrow, then cut three statutory windows in s.25.</p>`,
+        <p><strong>Table to dump:</strong> who may furnish consideration; past; love &amp; affection; time-barred debt; privity of parties. Close: India widened the <em>consideration</em> pipe and kept the <em>parties</em> pipe narrow, then cut three statutory windows in s.25. The Dec 2024 20-marker is written in full in <strong>Worked answers</strong> below. Past-tense and s.25 doors unpacked: <button type="button" class="text-link" data-nav="k1005" data-topic="k-past-consideration">past consideration</button>; who may sue: <button type="button" class="text-link" data-nav="k1005" data-topic="k-privity-exceptions">privity exceptions</button>.</p>`,
         analogy: {
           title: "Who can push the payment commit, vs who is on the ACL",
           body: "English law: only the promisee can push the consideration commit, and last month’s unpaid work is a rejected commit. s.2(d) lets any other person push the commit at the promisor’s desire, including a past tense. Privity is still the ACL on who may invoke the contract object — a third-party payer does not get sudo unless an exception adds them."
@@ -901,7 +901,7 @@
       {
         id: "k-novation",
         seq: 10.4,
-        readAs: "Bangia — s.62 novation, rescission, alteration",
+        readAs: "Drill — s.62 novation (from discharge home)",
         unit: 11,
         yield: "high",
         tags: ["novation", "s.62", "rescission", "alteration"],
@@ -945,7 +945,7 @@
       {
         id: "k-discharge-checklist",
         seq: 10.6,
-        readAs: "Bangia — modes of discharge (printable checklist)",
+        readAs: "Drill — P-A-I-B-L discharge checklist",
         unit: 11,
         yield: "high",
         tags: ["discharge", "modes", "checklist", "s.56", "s.62"],

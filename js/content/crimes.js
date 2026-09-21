@@ -19,13 +19,15 @@
       {
         id: "cr-general",
         seq: 1,
-        readAs: "Paranjape BNS — preliminary, punishments, s.3(5) / unlawful assembly",
+        readAs: "Survey — general principles (mens rea, stages, 3(5)/190 live on drills)",
         unit: 1,
         yield: "high",
         tags: ["mens rea", "actus reus", "stages", "strict liability", "34", "149", "3(5)", "190"],
         title: "General principles — crime, elements, stages, strict & constructive liability, common intention & common object",
         summary: "Crime = public wrong with a statutory label. Default stack: actus reus + mens rea. Stages: intention → preparation → attempt → completion. Constructive liability: BNS 3(5) vs 190.",
-        explainer: `<p>Paranjape’s BNS book follows the Sanhita: preliminary (ss.1–3, including common intention in <strong>s.3(5)</strong>), then punishments, then general exceptions. CCS still asks “crime, elements, stages, constructive liability” as one unit — write BNS numbers first, IPC in parentheses for 2022–23 papers and older SC citations.</p>
+        explainer: `<aside class="note"><h3>One-home — survey; drills unpack the 20-markers</h3>
+        <p>Mens rea: <button type="button" class="text-link" data-nav="k1004" data-topic="cr-mens-rea">actus reus / mens rea</button>. Stages essay: <button type="button" class="text-link" data-nav="k1004" data-topic="cr-stages">I-P-A-C</button>. Unlawful assembly / common object: <button type="button" class="text-link" data-nav="k1004" data-topic="cr-unlawful-assembly">189/190</button>. This card is the stack; do not rewrite those essays here.</p></aside>
+        <p>Paranjape’s BNS book follows the Sanhita: preliminary (ss.1–3, including common intention in <strong>s.3(5)</strong>), then punishments, then general exceptions. CCS still asks “crime, elements, stages, constructive liability” as one unit — write BNS numbers first, IPC in parentheses for 2022–23 papers and older SC citations.</p>
         <p><strong>Concept of crime:</strong> a public wrong, prohibited by the Sanhita (or special statute), prosecuted in the name of the State, punishable with the BNS punishments (s.4: death, life, imprisonment, forfeiture, fine, community service — community service is a BNS novelty worth a short note). Blackstone/Kenny/Austin one-liners still decorate Section A. Moral turpitude is neither necessary nor sufficient (strict liability regulatory offences; adultery’s moral story vs its legal death).</p>
         <p><strong>Elements:</strong> (1) human being (in general); (2) <em>actus reus</em> — a willed act or legally relevant omission where duty exists; (3) <em>mens rea</em> — intention, knowledge, rashness, negligence as the section requires (<em>actus non facit reum nisi mens sit rea</em> — Dec 2024 BNS short note); (4) injury / forbidden result where result-crimes need it; (5) causation; (6) absence of a general exception (ss.14–44 BNS).</p>
         <p><strong>Stages (Dec 2023/24 20-markers):</strong> <em>intention</em> is not punishable; <em>preparation</em> generally not (exceptions: preparation to wage war, dacoity prep BNS 310(4), etc.); <em>attempt</em> is punishable (specific: BNS 109 attempt to murder; general: BNS 62 ≈ IPC 511) — proximity / last-act / equivocality tests from case law (<em>Abhayanand Mishra</em>, <em>State of Maharashtra v Mohd. Yakub</em>); <em>completion</em> is the offence itself. Impossible attempts: still often attempt if the actor’s plan would be a crime.</p>
@@ -82,7 +84,7 @@
       {
         id: "cr-inchoate",
         seq: 3,
-        readAs: "Paranjape BNS ch. on abetment, conspiracy, attempt (ss.45–62)",
+        readAs: "Inchoate home (attempt vs preparation is a drill)",
         unit: 2,
         yield: "high",
         tags: ["abetment", "conspiracy", "attempt", "45", "61", "62"],
@@ -166,7 +168,7 @@
       {
         id: "cr-homicide",
         seq: 4,
-        readAs: "Paranjape BNS — offences affecting life (ss.100–106)",
+        readAs: "Unit 4 — CH / murder home (exceptions are a drill card)",
         unit: 4,
         yield: "high",
         tags: ["100", "101", "103", "105", "106", "murder", "culpable homicide"],
@@ -177,7 +179,7 @@
         <p><strong>Punishment for murder — BNS 103 (IPC 302):</strong> death or life + fine. <strong>s.103(2)</strong> addresses murder by a group of five or more on specified identity grounds (the ‘lynching’ clause in public commentary) — verify the exact text; it is a BNS-era hook older Unique IPC books lack.</p>
         <p><strong>The Govinda / Inder Singh style distinction:</strong> probability vs sufficiency; knowledge vs intention; ‘likely’ (CH) vs ‘sufficient in ordinary course’ (murder clause 3). <em>Reg. v Govinda</em> (1876 Bom) is the teaching case; SC restatements in <em>Virsa Singh</em> (clause 3: intended injury, objectively sufficient), <em>State of A.P. v R. Punnayya</em>, <em>Anda v State of Rajasthan</em>.</p>
         <p><strong>Causing death by negligence — BNS 106 (IPC 304A):</strong> rash or negligent act not amounting to CH. Hit-and-run / escape clauses in 106(2) (enhanced, and a later political/legal controversy about notification — for exams, know that 106 is not 101, and that escaping after rash driving is an aggravator in the BNS text). <em>Jacob Mathew</em> (criminal medical negligence — gross, not mere error).</p>
-        <p>Structure every 20-marker as: definitions → four murder clauses → five exceptions → table → two cases → 106 as a leftover bucket.</p>`,
+        <p>Structure every 20-marker as: definitions → four murder clauses → five exceptions → table → two cases → 106 as a leftover bucket. The full model answer is in <strong>Worked answers</strong> below. Murder exceptions unpacked: <button type="button" class="text-link" data-nav="k1004" data-topic="cr-murder-exceptions">the five exceptions card</button>.</p>`,
         analogy: {
           title: "Circle vs bullseye",
           body: "Culpable homicide is the homicide circle. Murder is the centre bullseye with aggravated mens rea. Exceptions are gravity assists that throw you back to the ring (s.105). 106 is a different product: no CH mens rea, only rashness/negligence."
@@ -255,7 +257,7 @@
       {
         id: "cr-property",
         seq: 7,
-        readAs: "Paranjape BNS — offences against property (ss.303–318)",
+        readAs: "Property survey (theft ladder / cheating / snatching are drills)",
         unit: 4,
         yield: "high",
         tags: ["theft", "extortion", "robbery", "dacoity", "cheating", "303", "308", "309", "310", "318"],
@@ -295,7 +297,7 @@
       {
         id: "cr-state",
         seq: 6,
-        readAs: "Paranjape BNS — offences against the State &amp; public tranquility (ss.152, 189–194)",
+        readAs: "State/tranquility survey (152 and 189/190 are drills)",
         unit: 4,
         yield: "high",
         tags: ["152", "sedition", "unlawful assembly", "rioting", "affray", "189", "191", "194"],
@@ -375,7 +377,7 @@
       {
         id: "cr-mens-rea",
         seq: 1.2,
-        readAs: "Paranjape BNS — elements of crime (actus reus / mens rea)",
+        readAs: "Drill — mens rea / actus reus (from general principles)",
         unit: 1,
         yield: "high",
         tags: ["mens rea", "actus reus", "actus non facit", "strict liability"],
@@ -549,7 +551,7 @@
       {
         id: "cr-murder-exceptions",
         seq: 4.2,
-        readAs: "Paranjape BNS — murder exceptions (grave provocation etc.)",
+        readAs: "Drill — five murder exceptions (from CH/murder home)",
         unit: 4,
         yield: "high",
         tags: ["murder", "exceptions", "provocation", "bns 101", "ipc 300"],
@@ -630,7 +632,7 @@
       {
         id: "cr-theft-ladder",
         seq: 7.2,
-        readAs: "Paranjape BNS — theft, extortion, robbery, dacoity",
+        readAs: "Drill — theft ladder (from property survey)",
         unit: 4,
         yield: "high",
         tags: ["theft", "extortion", "robbery", "dacoity", "bns 303"],
@@ -701,7 +703,7 @@
       {
         id: "cr-unlawful-assembly",
         seq: 6.2,
-        readAs: "Paranjape BNS — unlawful assembly & common object (ss.189–190)",
+        readAs: "Drill — 189/190 vs 3(5) (from state survey)",
         unit: 4,
         yield: "high",
         tags: ["unlawful assembly", "common object", "bns 189", "bns 190"],
@@ -746,7 +748,7 @@
       {
         id: "cr-bns152",
         seq: 6.4,
-        readAs: "Paranjape BNS — s.152 (ex-sedition)",
+        readAs: "Drill — BNS 152 (do not paste a 124A essay)",
         unit: 4,
         yield: "high",
         tags: ["sedition", "bns 152", "ipc 124a", "kedarnath"],
@@ -792,7 +794,7 @@
       {
         id: "cr-attempt-prep",
         seq: 3.2,
-        readAs: "Paranjape BNS — attempt vs preparation (s.62 + specific attempts)",
+        readAs: "Drill — attempt vs preparation (from inchoate home)",
         unit: 2,
         yield: "high",
         tags: ["attempt", "preparation", "bns 62", "ipc 511"],
@@ -828,7 +830,7 @@
       {
         id: "cr-stages",
         seq: 1.4,
-        readAs: "Paranjape BNS — stages of crime (essay spine)",
+        readAs: "Drill — I-P-A-C stages essay (from general principles)",
         unit: 2,
         yield: "high",
         tags: ["stages of crime", "intention", "preparation", "attempt", "commission"],

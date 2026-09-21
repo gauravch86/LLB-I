@@ -14,16 +14,15 @@ Interactive, original study site for **CCS University Meerut** LL.B. 3-year **Se
 | **K-1004** | Law of Crimes-I | **Dr. N.V. Paranjape** — *The Bharatiya Nyaya Sanhita, 2023*. **BNS first**, IPC mapping for older PYQs. Official syllabus PDF still says IPC; public Dec 2024/2025 papers title BNS. |
 | **K-1005** | Contract-I (General Principles) | **Dr. R.K. Bangia** — *Law of Contract* (Contract-I; ICA Ss. 1–75). |
 
-Also included: **Overview** (progress + PYQ heatmap), **Logbook** (what’s new — click a title to jump to the card), **Exam strategy**, and **Resources** (primary shelf → Unique drill → secondary refs, YouTube, BNS↔IPC map).
+Also included: **Overview** (progress + PYQ heatmap), **Logbook** (what’s new — click a title to jump to the card), **Exam strategy**, and **Resources** (primary shelf → Unique drill → secondary refs, YouTube, BNS↔IPC map). High-yield cards carry **worked answers** — full hall-tempo prose, not homework prompts.
 
 ## How to study (topic → PYQ → seal)
 
 1. Pick a subject tab, then a syllabus topic in the sidebar (order follows the primary textbook, with CCS unit labels).
-2. Read **Concept** + the engineer analogy; redraw the **diagram** from memory.
-3. Open the matching chapter in the **physical primary book** for full case extracts — this site does not copy those books.
-4. Recite the **mnemonic** in 60 seconds; write a 5-line mini-answer.
-5. Attempt the **CCS-style question** under time (20-marker ≈ 25–30 minutes). Outlines follow public PYQ *themes* (≈2018–2025), not Unique/Nitin or textbook prose.
-6. Tick **Seal this topic** only when you can do that without scrolling. Progress is stored in `localStorage` on this browser.
+2. Read **Concept** (gold sentence, doctrine, names/years, table, worked mini-example) and the **Worked answers** block — full hall-tempo prose you can adapt. Redraw the **diagram** from memory.
+3. Recite the **mnemonic** in 60 seconds. The physical primary book is **optional extract lookup**, not the first read — this site is the study source (original teaching prose; no Unique/Nitin/textbook paste).
+4. Attempt the **CCS-style question** under time (20-marker ≈ 25–30 minutes) using the worked answer as a stem, not a script. Themes follow public PYQs (≈2020–2025), not Unique/Nitin.
+5. Tick **Seal this topic** only when you can write that answer without scrolling. Progress is stored in `localStorage` on this browser.
 
 Unique Law Series / Nitin Prakashan “30 Questions & Answers” is a **private question bank for last-week shape**, used **after** Paranjape / Kumar / Bangia.
 
@@ -102,6 +101,7 @@ js/content/crimes.js
 js/content/contract.js
 js/content/timelines.js     # evolution timeline data (year → thinker/case → shift)
 js/content/logbook.js
+js/content/worked-answers.js # full hall-tempo model answers by topic id
 js/timeline.js              # vertical timeline renderer
 assets/favicon.svg
 ```
