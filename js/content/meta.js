@@ -111,7 +111,7 @@
         <p class="kicker">Dec 2026 · recall spine</p>
         <h1>Paper-wise spine (write these cold)</h1>
         <ul>
-          <li><strong>K-1001:</strong> Pound social engineering; Kelsen Grundnorm; Austin command + Hart critique; definition/nature/utility.</li>
+          <li><strong>K-1001:</strong> Pound social engineering; Kelsen Grundnorm (unpack card); Austin command + Hart critique; Indian thought ↔ Western schools (Veda ≠ Grundnorm); definition/nature/utility.</li>
           <li><strong>K-1002:</strong> Quasi-federal; Art. 21 expansion; Art. 14 + reservation; FR–DPSP; Art. 32/PIL; 19(1)(a) press.</li>
           <li><strong>K-1003:</strong> Damnum/injuria; strict vs absolute; State liability; defamation; CPA 2019 commissions.</li>
           <li><strong>K-1004:</strong> CH vs murder in BNS numbers; 3(5) vs 190; private defence to death; theft ladder; stages of crime.</li>

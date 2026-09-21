@@ -64,6 +64,87 @@
     return `<svg viewBox="0 0 400 ${h}" width="100%" role="img">${rects}</svg>`;
   }
 
+  function layerText(layer) {
+    if (typeof layer === "string") return { kicker: "", title: layer, sub: "" };
+    return {
+      kicker: layer.kicker || "",
+      title: layer.title || layer.label || "",
+      sub: layer.sub || layer.note || ""
+    };
+  }
+
+  function pyramid(d) {
+    const layers = d.layers || [];
+    const n = layers.length || 1;
+    const W = 460;
+    const topW = 248;
+    const botW = 440;
+    const layerH = 58;
+    const gap = 5;
+    const padY = 14;
+    const svgH = padY * 2 + n * layerH + (n - 1) * gap;
+    const fills = ["#1e3d48", "#1a4550", "#164a58", "#125560", "#0e5c68"];
+    const strokes = ["#d4af37", "#c9a84a", "#d4af37", "#c9a84a", "#d4af37"];
+    const traps = layers
+      .map((raw, i) => {
+        const L = layerText(raw);
+        const y = padY + i * (layerH + gap);
+        const tw = topW + ((botW - topW) * i) / n;
+        const bw = topW + ((botW - topW) * (i + 1)) / n;
+        const tx = (W - tw) / 2;
+        const bx = (W - bw) / 2;
+        const pts = `${tx.toFixed(1)},${y} ${(tx + tw).toFixed(1)},${y} ${(bx + bw).toFixed(1)},${y + layerH} ${bx.toFixed(1)},${y + layerH}`;
+        const cx = W / 2;
+        const head = [L.kicker, L.title].filter(Boolean).join(" — ");
+        const mid = L.sub ? y + 24 : y + layerH / 2 + 5;
+        const title = `<text x="${cx}" y="${mid}" text-anchor="middle" fill="#f4ead6" font-size="13" font-weight="650" font-family="Fraunces, Georgia, serif">${esc(head)}</text>`;
+        const sub = L.sub
+          ? `<text x="${cx}" y="${y + 42}" text-anchor="middle" fill="#b8ae97" font-size="10" font-family="Figtree, sans-serif">${esc(L.sub)}</text>`
+          : "";
+        return `<polygon points="${pts}" fill="${fills[i % fills.length]}" fill-opacity="0.92" stroke="${strokes[i % strokes.length]}" stroke-width="1.2"/>${title}${sub}`;
+      })
+      .join("");
+    const label = layers
+      .map((raw) => {
+        const L = layerText(raw);
+        return [L.kicker, L.title, L.sub].filter(Boolean).join(" ");
+      })
+      .join("; ");
+    const svg = `<svg class="pyramid-svg" viewBox="0 0 ${W} ${svgH}" width="100%" role="img" aria-label="${esc(d.title || "Hierarchy of norms")}: ${esc(label)}">${traps}</svg>`;
+    const side = (spec, cls) => {
+      if (!spec) return `<div class="stufenbau-side ${cls}"></div>`;
+      return `<div class="stufenbau-side ${cls}"><p class="stufenbau-kicker">${esc(spec.title || "")}</p><p>${esc(spec.body || "")}</p></div>`;
+    };
+    const foot = d.foot ? `<p class="pyramid-foot">${esc(d.foot)}</p>` : "";
+    return `<div class="stufenbau">${side(d.left, "left")}<div class="pyramid-stack">${svg}</div>${side(d.right, "right")}</div>${foot}`;
+  }
+
+  function cast(d) {
+    const headers = d.headers || [];
+    const subheads = d.subheads || [];
+    const tones = d.tones || ["austin", "salmond", "allen", "kelsen", "hart"];
+    const th = headers
+      .map((h, i) => {
+        if (i === 0) return `<th class="cast-aspect">${esc(h)}</th>`;
+        const tone = tones[i - 1] || "";
+        const sub = subheads[i - 1] ? `<div class="cast-sub">${esc(subheads[i - 1])}</div>` : "";
+        return `<th class="cast-h ${tone}">${esc(h)}${sub}</th>`;
+      })
+      .join("");
+    const body = (d.rows || [])
+      .map((row) => {
+        const cells = (row || [])
+          .map((c, i) => {
+            const cls = i === 0 ? ' class="cast-aspect"' : "";
+            return `<td${cls}>${c}</td>`;
+          })
+          .join("");
+        return `<tr>${cells}</tr>`;
+      })
+      .join("");
+    return `<div class="map-wrap"><table class="compare cast-compare"><thead><tr>${th}</tr></thead><tbody>${body}</tbody></table></div>`;
+  }
+
   function render(diagram) {
     if (!diagram) return "";
     if (typeof diagram === "string") return `<div class="diagram">${diagram}</div>`;
@@ -81,6 +162,10 @@
           return decision(diagram.q, diagram.yes, diagram.no);
         case "stack":
           return svgStack(diagram.layers);
+        case "pyramid":
+          return pyramid(diagram);
+        case "cast":
+          return cast(diagram);
         case "html":
           return diagram.html;
         default:
@@ -91,5 +176,5 @@
     return `<div class="diagram">${cap}${inner}</div>`;
   }
 
-  global.LLBDiagrams = { render, flow, vflow, compare, tree, esc };
+  global.LLBDiagrams = { render, flow, vflow, compare, tree, pyramid, cast, esc };
 })(window);

@@ -199,7 +199,7 @@
         title: "Natural Law — classical and revival (Stammler, Kohler)",
         summary: "Natural law says law is not only a command; it is answerable to reason, justice, or the moral architecture of human association. CCS wants classical roots plus the German revival names.",
         explainer: `<aside class="note"><h3>One-home — classical NL + Stammler/Kohler live here</h3>
-        <p>Is/ought table: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical-vs-natural">Analytical vs Natural</button>. Morals pocket: <button type="button" class="text-link" data-nav="k1001" data-topic="j-law-morals">Law and morals</button>. Ulpian/Aquinas dated beats: <button type="button" class="text-link" data-nav="k1001" data-topic="j-def-evolution">evolution rail</button> — not a second NL essay.</p></aside>
+        <p>Is/ought table: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical-vs-natural">Analytical vs Natural</button>. Morals pocket: <button type="button" class="text-link" data-nav="k1001" data-topic="j-law-morals">Law and morals</button>. Indian dharma/śruti as checksum (analogy, not Aquinas clone): <button type="button" class="text-link" data-nav="k1001" data-topic="j-indian-parallels">Indian legal thought</button>. Ulpian/Aquinas dated beats: <button type="button" class="text-link" data-nav="k1001" data-topic="j-def-evolution">evolution rail</button> — not a second NL essay.</p></aside>
         <p>CCS paper unit 2 names <strong>classical natural law plus Stammler and Kohler</strong> — that is the examinable payload. We keep those names even though some textbooks place natural law after realism in the table of contents.</p>
         <p><strong>Classical natural law</strong> is the claim that there are principles of right reason, discoverable by reflection on human nature or divine order, that <em>measure</em> human laws. Greek strand: Aristotle’s distinction of natural and conventional justice. Roman: Cicero — true law is right reason in agreement with nature. Medieval: Aquinas — lex humana participates in lex aeterna; an unjust law is a corruption of law (exam phrase: <em>lex injusta non est lex</em>, handled carefully — not an invitation to private rebellion in every case). Early modern: Grotius secularises natural law (“even if God did not exist”); Locke ties it to rights the State does not create.</p>
         <p><strong>Why it died in the 19th century (for the analytical exam contrast):</strong> science-envy and sovereignty theory. If law is the sovereign’s command, “higher law” looks like smuggling morals into validity. Austin’s province is a demolition job on natural-law vagueness.</p>
@@ -252,15 +252,13 @@
         tags: ["austin", "kelsen", "hart", "command", "grundnorm", "primary secondary"],
         title: "Analytical School — Austin, Kelsen, H.L.A. Hart",
         summary: "Three positivist kernels: law as command (Austin), law as a validity pyramid (Kelsen), law as a union of primary and secondary rules (Hart). This is the highest-frequency K-1001 cluster.",
-        explainer: `<aside class="note"><h3>One-home — this is the Analytical school essay</h3>
-        <p>Austin, Kelsen and Hart live here as a <em>school</em>. Command machinery unpacked: <button type="button" class="text-link" data-nav="k1001" data-topic="j-austin-cmd">Austin — command, sovereign, sanction</button>. Hart’s RCA / recognition unpacked: <button type="button" class="text-link" data-nav="k1001" data-topic="j-hart-rules">Hart — primary/secondary rules</button>. Distinguish 10-marker table: <button type="button" class="text-link" data-nav="k1001" data-topic="j-akh">Austin vs Kelsen vs Hart drill</button>. Bentham 4-marker: recitation on <button type="button" class="text-link" data-nav="k1001" data-topic="j-shorts">Sec A drill</button>. Dated definition jobs: <button type="button" class="text-link" data-nav="k1001" data-topic="j-def-evolution">evolution rail</button>.</p></aside>
+        explainer: `<aside class="note"><h3>One-home — this is the Analytical school survey</h3>
+        <p>Austin, Kelsen and Hart live here as a <em>school</em> — kernels only. Command machinery unpacked: <button type="button" class="text-link" data-nav="k1001" data-topic="j-austin-cmd">Austin — command, sovereign, sanction</button>. Pure Theory 20-marker unpacked: <button type="button" class="text-link" data-nav="k1001" data-topic="j-kelsen-pure">Kelsen — hierarchy, Grundnorm, dry bones</button>. Hart’s RCA / recognition unpacked: <button type="button" class="text-link" data-nav="k1001" data-topic="j-hart-rules">Hart — primary/secondary rules</button>. Distinguish 10-marker table: <button type="button" class="text-link" data-nav="k1001" data-topic="j-akh">Austin vs Kelsen vs Hart drill</button>. Indian counter-examples (analogy, not identity): <button type="button" class="text-link" data-nav="k1001" data-topic="j-indian-parallels">Indian legal thought ↔ Western schools</button>. Bentham 4-marker: recitation on <button type="button" class="text-link" data-nav="k1001" data-topic="j-shorts">Sec A drill</button>. Dated definition jobs: <button type="button" class="text-link" data-nav="k1001" data-topic="j-def-evolution">evolution rail</button>.</p></aside>
         <p>Analytical jurisprudence asks: what is law <em>as a social fact and a logical system</em>, not what law ought to be. CCS will ask you to <em>distinguish</em> Austin, Kelsen and Hart, not mash them into “all Englishmen who hate natural law.”</p>
         <h3>John Austin (command — the school-level kernel)</h3>
         <p>Law properly so called = command of a <strong>sovereign</strong>, habitually obeyed, backed by <strong>sanction</strong>, in an independent political society. Sovereign is determinate and legally illimitable. International law and constitutional conventions become “positive morality.” <strong>Imperative theory</strong> is a beautiful compiler if your only type is <code>Command</code>. Failures (list four): custom; judge-made law; duty-imposing rules without a barking sovereign; democratic constitutions that bind the legislature. Bentham is the reform-engine cousin (censor + utility); Austin is the drier expositor. Do not swap them. The 20-marker that unpacks command/sanction/habit lives on the drill card — here you need the kernel plus why the school starts with him.</p>
-        <h3>Hans Kelsen — Pure Theory (this card is Kelsen’s home; no separate unpack)</h3>
-        <p>Strip law of sociology, psychology, morals. Law is a hierarchy of <strong>norms</strong>, each authorised by a higher norm, terminating in the <strong>Grundnorm</strong> — a presupposed base (“the historically first constitution ought to be obeyed”) that is not ‘proved’ inside the system. A norm’s validity is membership in this chain, not its justice. Sanction is a directed coercive act, not Austin’s “evil.” The State is the legal order personified — no dualism of a person-sovereign standing behind the law.</p>
-        <p><strong>Worked mini-example:</strong> 26 January 1950 can be written as a Grundnorm shift from colonial legality to “the Constitution of India ought to be obeyed.” The basic-structure fight is then a fight about whether even the ‘highest’ amending norm is unconditioned. Kelsen would be uneasy with a judicial super-norm; that unease is the interesting sentence, not “Grundnorm = Constitution” as an identity.</p>
-        <p><strong>Critiques:</strong> Grundnorm is a fiction; ‘purity’ is impossible; revolutions are explained only by a new presupposition; empty of justice. Still useful: it kills the picture of law as a man’s bark, and it gives you a vocabulary for validity chains (Art. 13, delegated legislation, bye-laws).</p>
+        <h3>Hans Kelsen — Pure Theory (kernel only — the 20-marker lives on the unpack card)</h3>
+        <p>Strip law of sociology, psychology, morals. Law is a hierarchy of <strong>norms</strong>, each authorised by a higher norm, terminating in the <strong>Grundnorm</strong> — a presupposed base (“the historically first constitution ought to be obeyed”) that is not proved inside the system. Validity is membership in this chain, not justice. The State is the legal order personified. <strong>Do not write the full Stufenbau / dry-bones / 26 January 1950 essay here.</strong> That hall-tempo unpack — purity, ought-science, pyramid, validity vs efficacy, sanction as coercive ought, revolution, critiques, and the Austin/Salmond/Allen/Hart cast table — is <button type="button" class="text-link" data-nav="k1001" data-topic="j-kelsen-pure">Kelsen’s dedicated card</button>.</p>
         <h3>H.L.A. Hart (school-level kernel — RCA unpack is the drill card)</h3>
         <p>From <em>The Concept of Law</em> (1961): law is the union of <strong>primary rules</strong> (duties: do not steal) and <strong>secondary rules</strong> that fix the system’s operations — <strong>Recognition</strong> (pedigree test), <strong>Change</strong> (legislate/repeal), <strong>Adjudication</strong> (who decides). The rule of recognition is a social practice of officials, not a Kelsenian presupposition and not Austin’s gunman. Being obliged (threat) ≠ having an obligation (rule). Open texture → judicial discretion in the penumbra.</p>
         <p><strong>Hart vs Austin:</strong> habits are not rules; successors of the sovereign; self-binding; power-conferring rules (wills, contracts, legislation) are not commands. <strong>Hart vs Kelsen:</strong> sociology of officials vs pure ought-pyramid; English ordinary-language vs continental norm-logic.</p>
@@ -296,7 +294,7 @@
             section: "C",
             marks: "20",
             q: "Describe Hans Kelsen’s pure theory of law.",
-            outline: ["Purity programme; norm vs fact; hierarchy; Grundnorm; sanction as coercive ought; State = order; critiques; one Indian illustration."]
+            outline: ["Pointer: write this from the Kelsen unpack card, not from this survey. Purity; pyramid; Grundnorm; 26 Jan 1950; dry bones."]
           },
           {
             year: "Dec 2023",
@@ -310,19 +308,19 @@
             section: "B",
             marks: "10",
             q: "Difference between Austin and Kelsen.",
-            outline: ["Command vs norm; person-sovereign vs impersonal order; sanction as evil vs legal consequence; morality: both separate but Kelsen more radical; Grundnorm vs habitual obedience."]
+            outline: ["Pointer: AKH drill table + Kelsen unpack. Command vs norm; person-sovereign vs impersonal order; evil vs coercive ought; Grundnorm vs habit."]
           },
           {
             year: "Dec 2024",
             section: "C",
             marks: "20",
             q: "Salient features of the analytical school. Distinguish analytical and historical school.",
-            outline: ["Features: positivism, logic, present law, sovereign/State. Historical: evolution, Volksgeist, against legislation-as-command. Table + Maine/Savigny vs Austin."]
+            outline: ["Features: positivism, logic, present law, sovereign/State. Historical: evolution, Volksgeist, against legislation-as-command. Table + Maine/Savigny vs Austin. Point to Kelsen unpack for pyramid depth."]
           }
         ],
         check: [
           "Draw the three-column table from memory.",
-          "Define Grundnorm without saying ‘Constitution of India’ as if they were identical.",
+          "Name the three unpack homes: Austin command, Kelsen pyramid, Hart RCA.",
           "List Hart’s three secondary rules."
         ]
       },
@@ -645,7 +643,7 @@
         title: "Austin’s command theory — sovereign, sanction, habit of obedience",
         summary: "Austin’s kernel: law is the command of a sovereign backed by a sanction, in an independent political society marked by habitual obedience. CCS still sets 20-markers on this sentence.",
         explainer: `<aside class="note"><h3>One-home — deepen command; do not restart the school</h3>
-        <p>Parent: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical">Analytical School</button>. Table: <button type="button" class="text-link" data-nav="k1001" data-topic="j-akh">AKH drill</button>. This card is the 20-marker unpack of <em>command · sovereign · sanction · habit</em> — not Kelsen, not Hart, not the definition rail.</p></aside>
+        <p>Parent: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical">Analytical School</button>. Pure Theory unpack: <button type="button" class="text-link" data-nav="k1001" data-topic="j-kelsen-pure">Kelsen</button>. Table: <button type="button" class="text-link" data-nav="k1001" data-topic="j-akh">AKH drill</button>. This card is the 20-marker unpack of <em>command · sovereign · sanction · habit</em> — not Kelsen, not Hart, not the definition rail.</p></aside>
         <p><strong>Gold sentence:</strong> For Austin, a law properly so called is a general command of a sovereign, backed by a sanction, in an independent political society marked by habitual obedience of the bulk.</p>
         <p>A <strong>command</strong> is a wish of a rational being, signified to another, with an evil to be incurred if it is not complied with. That evil is the <strong>sanction</strong>. Not every request is law (a friend’s advice has no sovereign evil). Not every evil is a legal sanction (social boycott is not Austin’s State sanction). <strong>General</strong> commands (to a class, standing) are laws; <strong>particular</strong> commands (hang this person) are occasional — executive or judicial, not “laws” in the Austinian sense.</p>
         <p><strong>Sovereign:</strong> a person or determinate body, not in a habit of obedience to a like superior, who receives habitual obedience from the bulk of a given society. Marks to list: determinate (you can point at them); legally illimitable (political/moral limits do not count as <em>legal</em> limits); habit of obedience from the bulk (“bulk” lets him ignore rebels and infants). Independent political society = that relationship. Continuity problem: when Rex I dies, why is Rex II already sovereign? Habit has not yet formed — Hart will later call this a defect of the habit picture.</p>
@@ -686,6 +684,130 @@
         ]
       },
       {
+        id: "j-kelsen-pure",
+        seq: 2.3,
+        readAs: "Drill — Kelsen Pure Theory unpack (from Analytical home)",
+        unit: 3,
+        yield: "high",
+        tags: ["kelsen", "pure theory", "grundnorm", "stufenbau", "validity", "efficacy", "hierarchy of norms", "dry bones"],
+        title: "Kelsen — Pure Theory: hierarchy, Grundnorm, dry bones",
+        summary: "Deep Pure Theory essay. Analytical parent keeps the school overview. CCS still farms full 20-markers on Kelsen; this card is the hall-tempo unpack — purity, Stufenbau, Grundnorm, validity/efficacy, 26 January 1950, and the dry-bones critique.",
+        explainer: `<aside class="note"><h3>One-home — deepen the pyramid; do not restart the school</h3>
+        <p>Parent survey: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical">Analytical School</button>. Command unpack: <button type="button" class="text-link" data-nav="k1001" data-topic="j-austin-cmd">Austin</button>. RCA unpack: <button type="button" class="text-link" data-nav="k1001" data-topic="j-hart-rules">Hart</button>. Three-column drill: <button type="button" class="text-link" data-nav="k1001" data-topic="j-akh">AKH table</button>. Indian counter-examples (analogy, not identity — including the Veda/Grundnorm trap): <button type="button" class="text-link" data-nav="k1001" data-topic="j-indian-parallels">Indian legal thought ↔ Western schools</button>. This card is the 20-marker unpack of <em>purity · norm · Stufenbau · Grundnorm · validity/efficacy</em>.</p></aside>
+        <p><strong>Gold sentence:</strong> For Kelsen, law is a system of oughts — a <em>Stufenbau</em> of norms — whose validity is membership in a chain that terminates in a presupposed Grundnorm, not a bark, a moral sermon, or a social fact.</p>
+        <h3>Purity programme</h3>
+        <p>Hans Kelsen (1881–1973; Vienna School; <em>Reine Rechtslehre</em> 1934, 2nd ed. 1960; English landing <em>General Theory of Law and State</em>, 1945) wants a <strong>science of law</strong>, not a sermon and not a sociology seminar. “Pure” does <em>not</em> mean morally clean. It means methodologically stripped: expel ethics (what law ought to be), sociology (who obeys and why), psychology (the legislator’s motive), politics (who won). Those are neighbouring sciences. Jurisprudence describes the legal <em>ought</em> as a logical system. CCS loves this sentence because it marks Kelsen off from Austin (who still smuggles a person and a habit) and from Natural Law (which smuggles justice into validity).</p>
+        <h3>Norm vs fact — an ought-science</h3>
+        <p>A <strong>fact</strong> (<em>Sein</em>) is that people paid tax last Tuesday. A <strong>norm</strong> (<em>Sollen</em>) is “people ought to pay tax.” You cannot derive the second from the first without an ought-premise — Hume’s fork, used as a legal method. The legal scientist describes norms as ought-statements: if condition X, then organ Y ought to apply consequence Z. Confusing “the statute exists on paper” with “the statute is a valid norm” is the fail mode. Confusing “the crowd usually obeys” with “the rule is valid” is Austin’s habit picture, which Kelsen refuses. The science of law is an <em>ought-science</em>. Facts of obedience belong to efficacy, treated below — they condition whether we still call the system a legal order, they do not <em>be</em> validity.</p>
+        <h3>Stufenbau — hierarchy of norms</h3>
+        <p>A legal order is not a heap of commands. It is a <strong>dynamic hierarchy</strong> (<em>Stufenbau der Rechtsordnung</em>). Each lower norm is valid only if created as a higher norm authorised. Classroom ladder, top to bottom (redraw the diagram): (1) <strong>Grundnorm</strong> — presupposed, not enacted; (2) <strong>Constitution</strong> — the historically first positive constitution, and its amendments so far as they are authorised; (3) <strong>statutes / Acts</strong> of the legislature; (4) <strong>delegated legislation</strong> — rules, regulations, bye-laws; (5) <strong>individual norms</strong> — administrative orders, judicial decisions, contracts as law-creating acts between parties. A notification is not “law” because it is wise; it is law if the parent Act authorised that organ to issue it, and the Act is law if the Constitution authorised Parliament, and so on. Indian cash-value: Article 13 (laws inconsistent with Part III), the parent-Act test for delegated legislation, and the reason a municipal bye-law can be struck as ultra vires — those are Kelsenian membership tests, not Pound’s interest-balancing.</p>
+        <h3>Grundnorm — presupposed, not proved</h3>
+        <p>The chain cannot climb forever. At the top Kelsen places a <strong>Grundnorm</strong> (basic norm): not a document, not a statute, not “the Constitution of India” as an identity. It is a <em>transcendental-logical presupposition</em> — the jurist’s starting ought: “the historically first constitution ought to be obeyed.” It is not proved inside the system (nothing higher authorises it). Without it, “valid” has no meaning; with it, every lower rung can be tested. Do not write “Grundnorm = Constitution.” The Constitution is a <em>positive</em> norm. The Grundnorm is the presupposition that that constitution (or its successor after a successful revolution) ought to be the base of the chain. Hart will later replace this presupposed ought with a practised social rule of recognition — keep that contrast for the last paragraph, do not mash them.</p>
+        <h3>Validity vs efficacy; sanction as directed coercive ought</h3>
+        <p><strong>Validity</strong> is membership in the chain — not justice, not popularity, not “it works.” A wicked but authorised statute is still valid. <strong>Efficacy</strong> is actual obedience of the order <em>as a whole</em>. Kelsen is not a fool about paper law: a system that is by and large not obeyed is not treated as a legal order for the science. One unused bye-law can still be valid; a constitution nobody applies is not a working base. Sanction, for Kelsen, is not Austin’s “evil” attached to a person’s wish. It is a <strong>directed coercive ought</strong> stipulated by a norm: if a delict occurs, an organ ought to apply a coercive act (fine, imprisonment, execution of a decree). Sanction belongs to the coercive structure of the order and to efficacy; it is not the essence of every legal rule the way Austin made the bark essential. A power-conferring rule can sit in the pyramid without a gunman at the signing of a will.</p>
+        <h3>State = the legal order personified</h3>
+        <p>Kelsen kills dualism. There is no man or metaphysical “State” standing behind the law, barking. The State <em>is</em> the legal order seen as a person — a way of talking about the same pyramid. Austin needed a determinate superior who is legally illimitable. Kelsen needs no such person. That is why a limited constitution is not a scandal for him the way it is for Austin: limits are just higher norms in the chain. The interesting Indian fight is not “is there a sovereign?” but “what sits at the top of the chain, and can even that top be legally conditioned?”</p>
+        <h3>Revolution, Grundnorm change, and 26 January 1950 — written carefully</h3>
+        <p>When a revolution succeeds — the old order loses efficacy, the new one is by and large obeyed — jurists <em>presuppose a new Grundnorm</em>. The theory does not prove the new constitution is just. It registers a new starting ought. That is both honest and thin: politics makes the break; Kelsen only redescribes the jurist’s premise.</p>
+        <p><strong>Indian illustration (reconstruction, not a claim that Kelsen drafted Article 394):</strong> colonial legality was a validity chain under the Crown and the Government of India Act, 1935. On 26 January 1950 the Constitution of India came into force. For a Kelsenian reconstruction, officials and jurists presuppose a new base: “the Constitution of India ought to be obeyed.” Article 372’s continuance of existing laws is not magic identity with the old chain; it is the <em>new</em> Grundnorm authorising reception of old norms (they are re-validated). Delegated legislation and bye-laws then hang on lower rungs because Articles 13, 245–246 and the parent Act say so — membership, not justice. <em>Golaknath</em> (1967) and <em>Kesavananda Bharati</em> (1973) are a fight about whether even the highest amending norm (Article 368) is unconditioned. A sloppy answer says “the Court created a new Grundnorm.” A first-class answer says: Kelsen would be <em>uneasy</em> with a judicial super-norm sitting as a moral checksum above the constitution. Basic structure is better written as a practised limit on the amending organ (Hart’s neighbourhood) or as a higher-law analogue (Natural Law pressure) — not as Kelsen’s presupposition itself. Do not identify Grundnorm with the Preamble, with “We the People,” or with Vedic śruti. Those are other cards’ jobs: Hart, Natural Law, and <button type="button" class="text-link" data-nav="k1001" data-topic="j-indian-parallels">Indian parallels</button>.</p>
+        <h3>Critiques (write five, not a rant)</h3>
+        <ul>
+          <li><strong>Fiction / hypothesis.</strong> The Grundnorm is presupposed, not found. If the science needs an unprovable ought, “purity” already leaks.</li>
+          <li><strong>Purity is impossible.</strong> Choosing which constitution is “historically first,” and when a revolution has “succeeded,” is a political-social judgment. Sociology re-enters at the base.</li>
+          <li><strong>Dry bones.</strong> The stock CCS phrase (Friedmann / Laski flavour): a theory of law emptied of life, purpose, and justice — a skeleton of validity-relations. Powerful as a map of membership; starved as a theory of why law is worth having.</li>
+          <li><strong>Empty of justice.</strong> A genocidal statute, impeccably authorised, is still “valid.” Natural lawyers (and Radbruch after 1945) call that a baptism of atrocity. Kelsen’s reply: keep validity clean so criticism stays possible — you can say “this is law and it is wicked.” CCS still wants the unease written out.</li>
+          <li><strong>Revolution explained only by a new presupposition.</strong> The political event is not theorised; it is restated as “the jurist now presupposes otherwise.” Hart’s practised rule of recognition at least points at officials’ actual behaviour.</li>
+        </ul>
+        <p><strong>Residual use, then sit down:</strong> Kelsen kills the picture of law as a man’s bark; he gives the vocabulary for Article 13, ultra vires, and delegated-legislation chains. He is not a theory of dharma, and he is not Hart. The five-thinker cast table (Austin · Salmond · Allen · Kelsen · Hart) is the diagram below — dump it in a distinguish 10-marker, then come back to the pyramid for the 20.</p>`,
+        analogy: {
+          title: "Git ancestry without a preacher in HEAD",
+          body: "Each commit is valid only if a parent commit authorised it. The orphan root you cloned with — ‘this first commit ought to be treated as the start of history’ — is the Grundnorm. Efficacy is whether the cluster actually checks out that repo. Austin only modelled kill -9. Natural law wants a linter in HEAD. Kelsen refuses the linter and still needs an unprovable root."
+        },
+        diagrams: [
+          {
+            type: "pyramid",
+            title: "Stufenbau — hierarchy of norms",
+            layers: [
+              { kicker: "(1)", title: "Grundnorm", sub: "presupposed: first Constitution ought to be obeyed" },
+              { kicker: "(2)", title: "Constitution" },
+              { kicker: "(3)", title: "Statutes / Acts" },
+              { kicker: "(4)", title: "Delegated legislation / rules" },
+              { kicker: "(5)", title: "Administrative · judicial · individual norms" }
+            ],
+            left: { title: "Validity =", body: "membership in the chain (not justice)." },
+            right: { title: "Efficacy =", body: "actual obedience of the order as a whole." },
+            foot: "Sanction = directed coercive ought, not Austin’s evil."
+          },
+          {
+            type: "cast",
+            title: "Analytical cast — Austin · Salmond · Allen · Kelsen · Hart",
+            headers: ["Aspect", "Austin", "Salmond", "C.K. Allen", "Kelsen", "Hart"],
+            subheads: ["Command school", "Definitional school", "Sources & making", "Pure Theory", "Rules & recognition"],
+            rows: [
+              ["What is law?", "General command of a determinate sovereign, backed by sanction.", "First principles of civil law — a body of principles that map rights and duties in the administration of justice.", "Law in the Making: sources and processes (legislation, precedent, custom) that actually shape the legal order.", "A pure system of norms; each authorised by a higher norm, culminating in a presupposed Grundnorm.", "Union of primary duty-rules and secondary power-rules; the key is the rule of recognition officials practise."],
+              ["Validity test", "It is the sovereign’s command. No other test.", "Conformity to those first principles (and, in classroom use, to the justice the civil law is for).", "Depends on source: recognised by the legal system’s own source-rules.", "Authorised by a higher norm; ultimately by the Grundnorm. Justice is not the test.", "It satisfies the rule of recognition accepted in the system (pedigree)."],
+              ["Sanction", "Essential and central. Law without the bark is not law properly so called.", "Important, but not the essence; remedy and enforcement support rights.", "Secondary — one tool among others for making sources effective.", "Not the essence of the concept of law. A directed coercive ought; belongs with efficacy, not with validity as such.", "Not the defining feature. Obligation rests on acceptance of rules; power-conferring rules have no bark."],
+              ["State", "A determinate superior in an independent political society; legally illimitable; the State is that relationship.", "The State exists to secure rights and justice through law — courtroom-facing, not a barking person.", "The State is one source among many; law also grows from social life and professional practice.", "The State is the legal order personified. No dualism of a man standing behind the law.", "No gunman-sovereign. Officials and citizens accept and use the system’s rules; the centre can be legally limited."],
+              ["CCS weakness", "Too narrow: custom, judge-made law, constitutions that bind the legislature, international law.", "Too vague to pin ‘first principles’; justice leaks back in.", "Can read descriptive (how law is made) rather than a crisp validity test.", "Grundnorm is hypothetical; purity is impossible at the base; empty of justice; revolutions only redescribed.", "Official practice can look circular; the recognition rule can be disputed in a plural system (India after Kesavananda)."]
+            ]
+          }
+        ],
+        mnemonic: {
+          name: "P-N-S-G-V",
+          hook: "Purity · Norm (ought) · Stufenbau · Grundnorm · Validity≠efficacy. Sanction is a directed ought, not Austin’s evil.",
+          recite: "Kelsen: strip morals and sociology. Law is a hierarchy of norms to a presupposed Grundnorm. Valid = member of the chain. 26 Jan 1950 is a new presupposition, not ‘Grundnorm = Constitution.’ Dry bones: map of membership, empty of justice."
+        },
+        cases: [
+          { name: "Kelsen, Reine Rechtslehre / General Theory of Law and State", citation: "1934 / 1945 / 1960", point: "Primary texts — not a case. Quote purity, hierarchy, Grundnorm, validity/efficacy." },
+          { name: "26 January 1950 (illustration)", citation: "Constitution comes into force; Art. 372 reception", point: "Kelsenian reconstruction of a Grundnorm shift from colonial legality. Not an identity of Grundnorm with the Constitution." },
+          { name: "Kesavananda Bharati v State of Kerala", citation: "(1973) 4 SCC 225", point: "Fight over whether even Art. 368 is unconditioned. Write Kelsen’s unease at a judicial super-norm; do not call basic structure ‘the Grundnorm.’" }
+        ],
+        pyqs: [
+          {
+            year: "2018-style",
+            section: "C",
+            marks: "20",
+            q: "Explain fully Kelsen’s Pure Theory of Law. Is it a theory of dry bones?",
+            outline: ["Purity; ought-science; Stufenbau; Grundnorm; validity/efficacy; State as order; 26 Jan 1950; five critiques with dry bones as the title-hook; residual use."]
+          },
+          {
+            year: "Dec 2023 / 2024",
+            section: "C",
+            marks: "20",
+            q: "Describe Hans Kelsen’s pure theory of law.",
+            outline: ["Same spine without letting ‘dry bones’ eat the doctrine. Close with the critique paragraph."]
+          },
+          {
+            year: "Dec 2023",
+            section: "B",
+            marks: "10",
+            q: "Difference between Austin and Kelsen.",
+            outline: ["Command vs norm; person vs pyramid; evil vs coercive ought; habit vs presupposition; State dualism vs personified order; one Indian line each."]
+          },
+          {
+            year: "2021-style",
+            section: "B",
+            marks: "10",
+            q: "Hierarchy of norms (Kelsen).",
+            outline: ["Stufenbau rungs; each authorised by a higher; Grundnorm as presupposition; Indian delegated-legislation / Art. 13 landing."]
+          },
+          {
+            year: "theme",
+            section: "A",
+            marks: "4",
+            q: "Define Grundnorm.",
+            outline: ["Presupposed base; historically first constitution ought to be obeyed; not identical with the Constitution of India."]
+          }
+        ],
+        check: [
+          "Redraw the five-rung pyramid with validity on one side and efficacy on the other.",
+          "Define Grundnorm without saying it is the Constitution of India.",
+          "Write 26 January 1950 as a new presupposition plus Art. 372 reception — not as ‘Kelsen drafted the Constitution.’",
+          "Five critiques including dry bones, in four lines each.",
+          "Dump the five-thinker cast (Austin / Salmond / Allen / Kelsen / Hart) from memory."
+        ]
+      },
+      {
         id: "j-hart-rules",
         seq: 2.4,
         readAs: "Drill — Hart RCA / recognition (from Analytical home)",
@@ -695,7 +817,7 @@
         title: "Hart — primary/secondary rules and the rule of recognition",
         summary: "Hart upgrades Austin: a legal system is the union of primary duty-rules and secondary power-rules, closed by a rule of recognition officials actually use.",
         explainer: `<aside class="note"><h3>One-home — deepen RCA; do not restart Austin/Kelsen</h3>
-        <p>Parent: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical">Analytical School</button>. Table: <button type="button" class="text-link" data-nav="k1001" data-topic="j-akh">AKH drill</button>. This card is Hart’s <em>union of rules</em> and the rule of recognition — not the whole positivist school.</p></aside>
+        <p>Parent: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical">Analytical School</button>. Pyramid unpack: <button type="button" class="text-link" data-nav="k1001" data-topic="j-kelsen-pure">Kelsen</button>. Table: <button type="button" class="text-link" data-nav="k1001" data-topic="j-akh">AKH drill</button>. This card is Hart’s <em>union of rules</em> and the rule of recognition — not the whole positivist school.</p></aside>
         <p><strong>Gold sentence:</strong> A legal system exists when primary duty-rules are joined to secondary power-rules, and officials actually practise a rule of recognition as the test of validity.</p>
         <p><strong>The pre-legal world (why secondary rules exist):</strong> a society with only primary rules suffers three defects — <em>uncertainty</em> (what is the rule?), <em>staticity</em> (how do we change it except by slow custom?), <em>inefficiency</em> (who decides disputes, and whose decision binds?). Secondary rules are the patch set: rules about rules.</p>
         <ul>
@@ -750,7 +872,7 @@
         title: "Analytical School vs Natural Law",
         summary: "Analytical positivism separates validity from merit (is). Natural law measures human law by reason or justice (ought). CCS sets this as a distinguish question beside Austin/Kelsen.",
         explainer: `<aside class="note"><h3>One-home — is/ought table, not two school re-essays</h3>
-        <p>Analytical doctrine: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical">Analytical</button>. Natural doctrine: <button type="button" class="text-link" data-nav="k1001" data-topic="j-natural">Natural Law</button>. Morals pocket: <button type="button" class="text-link" data-nav="k1001" data-topic="j-law-morals">Law and morals</button>.</p></aside>
+        <p>Analytical doctrine: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical">Analytical</button>. Natural doctrine: <button type="button" class="text-link" data-nav="k1001" data-topic="j-natural">Natural Law</button>. Dharma/śruti as Indian checksum (not Grundnorm): <button type="button" class="text-link" data-nav="k1001" data-topic="j-indian-parallels">Indian parallels</button>. Morals pocket: <button type="button" class="text-link" data-nav="k1001" data-topic="j-law-morals">Law and morals</button>.</p></aside>
         <p><strong>Gold sentence:</strong> Analytical positivism separates validity from merit (is). Natural law measures human law by reason or justice (ought). CCS sets this as a distinguish question beside Austin/Kelsen.</p>
         <p><strong>Analytical:</strong> law is a social fact of a particular kind (command, norm, rule). Validity is pedigree, not goodness. Austin, Kelsen, (soft) Hart. You can say “this is law but it is wicked.”</p>
         <p><strong>Natural law:</strong> law participates in reason/justice. An unjust edict is defective as law (Aquinas; Fuller; Radbruch in the extreme). Stammler: just-law method with variable content. Validity and merit leak into each other.</p>
@@ -973,7 +1095,7 @@
         <p>If the 4-marker is a thinker who already has a doctrine home, <strong>recite the punchline and pointer</strong> — do not restart the 20-marker. Homes: Bentham/Austin → <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical">Analytical</button> + <button type="button" class="text-link" data-nav="k1001" data-topic="j-austin-cmd">command unpack</button>; Salmond/Holland/Gray/Pound working defs → <button type="button" class="text-link" data-nav="k1001" data-topic="j-intro">Introduction</button>; dated arc → <button type="button" class="text-link" data-nav="k1001" data-topic="j-def-evolution">evolution rail</button>. What this card actually teaches: <strong>Manu, Stone, ‘eye of law’</strong> — plus a hall-tempo checklist.</p></aside>
         <p><strong>Hall method (4 marks ≈ 8–10 lines):</strong> name · one definition/phrase · one contrast · one use. Clock: 4–5 minutes. If you start “Austin’s command theory in full…” on a Bentham short, you have misread the paper.</p>
         <h3>Unique shorts (this card is the home)</h3>
-        <p><strong>Manu.</strong> The Indian opening Sec A still loves. <em>Manusmriti</em> is a Dharmaśāstra source: law mixed with dharma, a duty-order of a civilisation, the king as enforcer of an already-there dharma — not Austin’s legally illimitable political superior who <em>makes</em> law by barking. Write this as a <em>pre-analytical picture</em>: validity is not only a political superior’s command. Do not write a caste pamphlet and do not attempt a modern Hindu-code essay. <strong>Worked mini-answer:</strong> “Manu’s jurisprudence is duty-centred (dharma) rather than command-centred. The ruler is under the dharma, not above it. Colonial codes later overwrote much of this as municipal law (IPC 1860 / Contract Act 1872) — that is the Historical-school critique of midnight legislation, not a Manu biography.” Pair, if time, with the Marxist one-liner that varṇa-duty can be read as a production-order with a sacred UI.</p>
+        <p><strong>Manu.</strong> The Indian opening Sec A still loves. <em>Manusmriti</em> is a Dharmaśāstra source: law mixed with dharma, a duty-order of a civilisation, the king as enforcer of an already-there dharma — not Austin’s legally illimitable political superior who <em>makes</em> law by barking. Write this as a <em>pre-analytical picture</em>: validity is not only a political superior’s command. Do not write a caste pamphlet and do not attempt a modern Hindu-code essay. Side-by-side with Western schools (and the Veda ≠ Grundnorm trap): <button type="button" class="text-link" data-nav="k1001" data-topic="j-indian-parallels">Indian parallels</button>. <strong>Worked mini-answer:</strong> “Manu’s jurisprudence is duty-centred (dharma) rather than command-centred. The ruler is under the dharma, not above it. Colonial codes later overwrote much of this as municipal law (IPC 1860 / Contract Act 1872) — that is the Historical-school critique of midnight legislation, not a Manu biography.” Pair, if time, with the Marxist one-liner that varṇa-duty can be read as a production-order with a sacred UI.</p>
         <p><strong>Julius Stone — “lawyers’ extroversion”.</strong> Jurisprudence is the lawyer looking <em>outward</em> from doctrine toward philosophy, sociology, economics, history. It is not introverted case-cramming. Dec papers ask the phrase almost as a fill-in. Utility landing: K-1001 exists so you can criticise a statute, not only recite it. Contrast in one line: Gray/Holmes “law is what courts do” is still inward to official behaviour; Stone is the lawyer leaving the library. <strong>Worked mini-answer:</strong> “Stone: jurisprudence is lawyers’ extroversion — law looking out. A Pound essay that never mentions overlapping claims, or an Austin essay that never mentions Art. 13, has failed Stone’s test.”</p>
         <p><strong>“Eye of law” / Holland.</strong> Holland’s “formal science of positive law” treats jurisprudence as watching the <em>form</em> of jural relations (right, duty, person, ownership) with a scientific eye, not the contents of one code. If the short note is “eye of law,” answer: the legal eye sees jural relations, not moral deserts. Then one limit: Realists say the eye that never watches what courts <em>do</em> is blind; Pound says an eye that never watches social ends is idle. Do not dump the whole B-A-H-G-S-P rail.</p>
         <h3>Pointer checklist (homes elsewhere — recitation only)</h3>
@@ -986,7 +1108,7 @@
             <tr><td><strong>Holland</strong></td><td>Formal science; form not contents. ‘Eye of law’ = this card.</td><td>Austin mashed into Holland.</td></tr>
             <tr><td><strong>Gray / Holmes</strong></td><td>Law as courts’ doing / prediction. Realist flavour.</td><td>Full American Realism 20-marker.</td></tr>
             <tr><td><strong>Pound / Duguit</strong></td><td>Social engineering / solidarity. One interest example.</td><td>Full IPS inventory (home: Pound interests).</td></tr>
-            <tr><td><strong>Grundnorm / RCA</strong></td><td>Kelsen pyramid / Hart Recognition-Change-Adjudication.</td><td>Whole Analytical school.</td></tr>
+            <tr><td><strong>Grundnorm / RCA</strong></td><td>Kelsen pyramid (home: <button type="button" class="text-link" data-nav="k1001" data-topic="j-kelsen-pure">Pure Theory unpack</button>) / Hart Recognition-Change-Adjudication.</td><td>Whole Analytical school.</td></tr>
           </tbody>
         </table>
         <p><strong>Austin ≠ Bentham (the only contrast this drill will restate, because CCS farms it):</strong> Bentham is expositor <em>and</em> censor — he asks what law ought to be on a pain/pleasure calculus and wants the statute book rewritten. Austin is drier: philosophy of positive law <em>as it is</em>; sovereign + sanction; international law demoted to positive morality. Bentham supplies the reform engine; Austin supplies the command definition the 20-marker quotes. One Indian landing for Bentham: the very idea of a comprehensive code (IPC/BNS) is a Benthamite instinct; the Constitution’s limits on that code are the anti-Austin landing.</p>`,
@@ -1028,7 +1150,7 @@
         title: "Drill — Austin vs Kelsen vs Hart",
         summary: "The distinguish 10-marker. Three positivists, three kernels: command, pyramid, ruleset. Do not mash them into ‘all haters of natural law.’",
         explainer: `<aside class="note"><h3>One-home — this is the distinguish drill, not the school essay</h3>
-        <p>Dump the table. Parent essays: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical">Analytical School</button>. Command unpack: <button type="button" class="text-link" data-nav="k1001" data-topic="j-austin-cmd">Austin</button>. RCA unpack: <button type="button" class="text-link" data-nav="k1001" data-topic="j-hart-rules">Hart</button>. Do not restart Bentham, Natural Law, or the definition rail.</p></aside>
+        <p>Dump the table. Parent essays: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical">Analytical School</button>. Command unpack: <button type="button" class="text-link" data-nav="k1001" data-topic="j-austin-cmd">Austin</button>. Pure Theory unpack: <button type="button" class="text-link" data-nav="k1001" data-topic="j-kelsen-pure">Kelsen</button>. RCA unpack: <button type="button" class="text-link" data-nav="k1001" data-topic="j-hart-rules">Hart</button>. Indian analogies (do not mash into this table): <button type="button" class="text-link" data-nav="k1001" data-topic="j-indian-parallels">Indian legal thought</button>. Do not restart Bentham, Natural Law, or the definition rail.</p></aside>
         <p><strong>One-liner:</strong> Austin explains law as the sovereign’s command backed by sanction; Kelsen explains it as a pure hierarchy of norms ending in a presupposed Grundnorm; Hart explains it as the union of duty-imposing primary rules and power-conferring secondary rules (recognition, change, adjudication). All three separate law’s validity from its moral merit. That is the only safe generalisation. Everything else is a table.</p>
         <table class="compare">
           <thead><tr><th></th><th>Austin</th><th>Kelsen</th><th>Hart</th></tr></thead>
@@ -1084,6 +1206,120 @@
           }
         ],
         check: ["Draw the table without notes.", "Hart’s three secondary rules.", "One Indian landing that wounds Austin."]
+      },
+      {
+        id: "j-indian-parallels",
+        seq: 2.55,
+        readAs: "Comparative drill — Indian thought ↔ Western schools (analogy, not identity)",
+        unit: 3,
+        yield: "high",
+        tags: ["indian jurisprudence", "dharma", "manu", "kautilya", "chanakya", "sruti", "veda", "gita", "rama-rajya", "danda", "grundnorm", "parallels"],
+        title: "Indian legal thought ↔ Western schools (side-by-side)",
+        summary: "Honest comparative jurisprudence: analogy, not identity. CCS teaches Austin–Kelsen–Hart; India has a deep juridical memory (śruti–smṛti–dharma, vyavahāra, Kauṭilya’s four legs, daṇḍa, Rāma-rājya as a justice ideal). Use this card to enrich 4–10 markers and to wound positivist dryness — never to misdefine Grundnorm.",
+        explainer: `<aside class="note"><h3>One-home — comparative map, not a third Kelsen essay and not a Manu 4-marker twice</h3>
+        <p>Kelsen’s technical unpack: <button type="button" class="text-link" data-nav="k1001" data-topic="j-kelsen-pure">Pure Theory</button>. Austin’s bark: <button type="button" class="text-link" data-nav="k1001" data-topic="j-austin-cmd">command theory</button>. Natural-law measure: <button type="button" class="text-link" data-nav="k1001" data-topic="j-natural">Natural Law</button>. Manu as a Sec A short: <button type="button" class="text-link" data-nav="k1001" data-topic="j-shorts">Sec A drill</button>. School survey: <button type="button" class="text-link" data-nav="k1001" data-topic="j-analytical">Analytical</button>. This card is <em>side-by-side analogy</em> — including the Veda/Grundnorm trap you must refuse.</p></aside>
+        <p><strong>Gold sentence:</strong> Stretching “ultimate validating source,” India locates it in śruti–smṛti–dharma, not in a presupposed Constitution-norm — a critique of positivist dryness, not a misdefinition of Grundnorm.</p>
+        <p><strong>The irony CCS will not print for you:</strong> the Sem-1 paper trains Austin (command), Kelsen (pure pyramid), Hart (recognition) as if the grammar of law were invented in London and Vienna. The subcontinent already had a juridical memory: dharma as an ought that binds the king; smṛti as a systematic normative order; Kauṭilya’s four legs of a dispute; daṇḍa as the rod that prevents <em>mātsyanyāya</em>; Rāma-rājya as a cultural ideal of a just order. That memory is not a substitute syllabus and it is not “the West had no civilisation.” The accurate claim is narrower and stronger: <strong>positivism methodologically demoted cosmic/moral order from the validity test</strong>. Austin parked morals as “positive morality.” Kelsen emptied natural law from the science of law and left only a presupposed Grundnorm. India, in its own sources, never made that methodological move as its first picture of law.</p>
+        <h3>Exam hygiene — two columns, never mashed</h3>
+        <p><strong>(A) Technical Kelsen — Grundnorm.</strong> A presupposed <em>legal</em> ought: “the historically first constitution ought to be obeyed.” It is not proved inside the system. It is not a scripture, not a moral checksum, not “what is right.” Validity is membership in the chain. Justice is expelled from the science. Full machinery: <button type="button" class="text-link" data-nav="k1001" data-topic="j-kelsen-pure">Kelsen unpack</button>.</p>
+        <p><strong>(B) Indian ultimate source — dharma / śruti as moral-legal checksum.</strong> Vedas (śruti), Upanishadic teaching, and the Gītā as a widely taught Sanātana reference can be thought, comparatively, as India’s <em>ultimate ought-reference</em>: a civilisational checksum for right and wrong, for law and morals, and for how to live. That is a <strong>natural-law flavour / higher-law</strong> picture — closer to “human law is answerable to a measure already there” than to Kelsen’s empty base. It is <em>not</em> Aquinas (no eternal-law / divine-law fourfold in those terms). It is <em>not</em> Kelsen’s doctrine. <strong>Do not write “Veda = Grundnorm.”</strong> If the question tempts that identity, open by rejecting it, then spend the marks on the comparative critique of dryness.</p>
+        <h3>Side-by-side map (analogy, not identity)</h3>
+        <table class="compare">
+          <thead><tr><th>Indian juridical memory</th><th>Western-school flavour it <em>rhymes</em> with</th><th>Do not claim</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Dharma</strong> as the already-there ought — right order of life, king included.</td><td>Natural-law <em>checksum</em> / higher-law ought (validity answerable to a measure).</td><td>Identity with Aquinas’s eternal law, or with Kelsen’s Grundnorm.</td></tr>
+            <tr><td><strong>Śruti</strong> (Veda) and related Sanātana sources (Upanishads, Gītā) as ultimate reference for the good.</td><td>A civilisational “why live this way” source — pedagogy of the good, not a presupposed constitution-norm.</td><td>“Veda = Grundnorm.” That sentence fails Kelsen and fails Indian philosophy.</td></tr>
+            <tr><td><strong>Manu / Smṛti</strong> as a systematic normative order (duty-centred, varṇa-āśrama in the texts, mixed with ritual).</td><td>A code-like body of principles (Salmond’s “first principles” flavour only as a <em>systematic order</em>).</td><td>A modern Hindu Code essay, or “Manu is India’s Austin.” The king is under dharma, not illimitable.</td></tr>
+            <tr><td><strong>Kauṭilya’s four legs</strong> of a lawsuit: <em>dharma · vyavahāra · caritra · rājaśāsana</em> (later in the list superior in case of conflict, as later texts teach).</td><td>A sources ladder (Allen: how law is made) plus a positivist flavour at the edict end.</td><td>“Chanakya invented the Grundnorm” or “rājaśāsana is Austin’s sovereign command.” The edict still sits in a dharma world.</td></tr>
+            <tr><td><strong>Daṇḍa</strong> — the rod that prevents <em>mātsyanyāya</em> (big fish eat small fish).</td><td>Closer to Austin’s <em>enforcement</em> picture: without coercion, order collapses.</td><td>Austin’s legally illimitable sovereign. The Indian king is bound by dharma; daṇḍa is a trust, not a gunman’s hobby.</td></tr>
+            <tr><td><strong>Hierarchy of authority</strong> in śāstra and the king’s edict (higher teaching constrains lower practice).</td><td>A <em>loose</em> Kelsenian intuition of higher/lower norms.</td><td>That Kauṭilya built a Stufenbau terminating in a presupposed Grundnorm.</td></tr>
+            <tr><td><strong>Caritra / custom</strong> as a living source.</td><td>Historical school / Ehrlich’s living law flavour.</td><td>Savigny’s Volksgeist as if India were one romantic nation-voice.</td></tr>
+          </tbody>
+        </table>
+        <h3>Pedagogy contrast — fear of the rod vs understanding the good</h3>
+        <p>Austin’s classroom picture trains obedience through <strong>fear of civic sanction</strong> (the evil visited on disobedience). Daṇḍa can be taught that way, and Kauṭilya is not naïve about force. The Sanātana pedagogical claim is different: the point of śruti–smṛti–dharma is that a person (and a king) should <em>understand the good from the source</em>, not merely flinch at punishment. Shift the student is being asked to see: from “law is the bark” to “law participates in an ought already taught.” Kelsen, having emptied natural law, cannot make that shift inside the science of law — he can only presuppose “the constitution ought to be obeyed” without saying why it is good. That is the dry-bones complaint in an Indian accent. Write it as critique of method, not as “Kelsen never read the Gītā.”</p>
+        <h3>Rāma-rājya — exam-safe paragraph (cultural-constitutional memory, not statute history)</h3>
+        <p>Rāma-rājya, in cultural memory, is a picture of a just political order: the ruler bound by dharma, the weak not food for the strong, punishment as a last instrument of that order rather than the definition of law. It is <strong>not</strong> a clause of the Constitution and not a source of municipal law in Article 13’s sense. It is usable in CCS as cultural-constitutional memory: the Preamble’s “justice — social, economic, political,” Gandhi’s political vocabulary, and the instinct that a king (or a Parliament) can be <em>legally and morally</em> judged. Pair it with daṇḍa/mātsyanyāya: without a rod, the big fish eat; without dharma, the rod is only Austin’s evil. One paragraph. Then get back to the school the question named.</p>
+        <h3>How to use this in CCS</h3>
+        <ul>
+          <li><strong>4-marker:</strong> Manu / “Indian legal philosophy” / dharma — punchline + one contrast (king under dharma, not Austin’s sovereign). Home for the Manu short remains the <button type="button" class="text-link" data-nav="k1001" data-topic="j-shorts">Sec A drill</button>.</li>
+          <li><strong>10-marker:</strong> “Indian legal thought and Western schools”; or the trap question “Can Vedas be treated as Grundnorm?” — reject identity, then comparative critique (worked answers below).</li>
+          <li><strong>Enrich Austin:</strong> Indian king + daṇḍa looks like enforcement, but the sovereign is not legally illimitable.</li>
+          <li><strong>Enrich Kelsen:</strong> dryness / empty of justice / “ultimate source.” Use the gold sentence. Do not gift the examiner a misdefinition of Grundnorm.</li>
+          <li><strong>Enrich Hart:</strong> smṛti + custom + royal edict as a messy recognition practice, if you have four extra lines.</li>
+        </ul>
+        <p><strong>Worked mini-example (the only identity you will ever refuse in the first sentence):</strong> “The Vedas cannot be treated as Kelsen’s Grundnorm. Grundnorm is a presupposed legal ought at the base of a positive hierarchy. Śruti is a civilisational checksum for the good. Stretching ‘ultimate validating source,’ India locates it in śruti–smṛti–dharma — a critique of positivist dryness, not a Kelsen citation.” Then land 26 January 1950 on the Kelsen card, not here.</p>`,
+        analogy: {
+          title: "Root certificate vs linter in HEAD",
+          body: "Kelsen’s Grundnorm is the self-signed root certificate you install so the rest of the TLS chain verifies — a presupposition, empty of ‘is this a good website?’ Dharma/śruti is a linter and a style-guide for what a just repo is for. Austin is kill -9 if tests fail. Daṇḍa is a CI enforcer who still reports to the style-guide, not a root user above it. Do not call the style-guide a Grundnorm."
+        },
+        diagrams: [
+          {
+            type: "compare",
+            title: "Analogy map — Indian memory ↔ Western flavour (never identity)",
+            headers: ["Indian memory", "Rhymes with", "Hard no"],
+            rows: [
+              ["Dharma as already-there ought", "Natural-law checksum / higher law", "Aquinas clone; Kelsen Grundnorm"],
+              ["Śruti / Veda / Gītā as ultimate reference", "Civilisational source of the good", "“Veda = Grundnorm”"],
+              ["Smṛti (Manu) as systematic order", "A code of first principles (Salmond flavour only)", "“Manu = Austin”"],
+              ["Four legs: dharma · vyavahāra · caritra · rājaśāsana", "Allen’s sources ladder + edict at the end", "Chanakya invented Grundnorm"],
+              ["Daṇḍa vs mātsyanyāya", "Austin’s enforcement picture", "Illimitable sovereign"],
+              ["Śāstra constraining edict", "Loose higher/lower-norm intuition", "A Kelsenian Stufenbau"],
+              ["Caritra / custom", "Historical school / living law", "One Volksgeist for all India"]
+            ]
+          },
+          {
+            type: "compare",
+            title: "Two ‘ultimate sources’ — keep the columns apart",
+            headers: ["", "(A) Kelsen’s Grundnorm", "(B) Śruti–dharma checksum"],
+            rows: [
+              ["Kind of ought", "Presupposed <em>legal</em> ought: the first constitution ought to be obeyed", "Moral-legal ought: a measure of the good, of law, and of how to live"],
+              ["Job", "Makes validity-talk possible inside a positive pyramid", "Teaches why an order is worthy, and binds the king"],
+              ["Justice", "Expelled from the science of law", "Internal to the source"],
+              ["Pedagogy", "Obey because the chain so provides (plus efficacy / daṇḍa-like coercion as structure)", "Understand the good from the source; fear of the rod is not the lesson"],
+              ["Exam sentence", "Do not call Veda a Grundnorm", "Use as critique of positivist dryness"]
+            ]
+          }
+        ],
+        mnemonic: {
+          name: "A ≠ B",
+          hook: "(A) Grundnorm = presupposed legal ought. (B) Śruti–dharma = moral-legal checksum. Four legs: D-V-C-R. Daṇḍa ≠ illimitable sovereign.",
+          recite: "Stretching ‘ultimate validating source,’ India locates it in śruti–smṛti–dharma, not in a presupposed Constitution-norm — a critique of positivist dryness, not a misdefinition of Grundnorm."
+        },
+        cases: [
+          { name: "Kauṭilya, Arthaśāstra (vyavahāra)", citation: "taught four legs of a lawsuit", point: "Dharma, vyavahāra, caritra, rājaśāsana — sources ladder. Later-prevails is a positivist flavour, still inside a dharma world." },
+          { name: "Manusmṛti as smṛti source", citation: "Dharmaśāstra (Sec A name)", point: "Duty-order; king as enforcer of an already-there dharma. Not Austin’s maker of law. Short-note home is the Sec A drill." },
+          { name: "26 January 1950 (do not steal this landing)", citation: "Kelsen card’s illustration", point: "Grundnorm shift is a reconstruction of positive legality. Śruti is not that event. Keep the columns." }
+        ],
+        pyqs: [
+          {
+            year: "theme",
+            section: "B",
+            marks: "10",
+            q: "Write a short note on Indian legal philosophy / ancient Indian thought and its relation to Western schools.",
+            outline: ["Irony of the CCS syllabus; dharma as checksum; four legs; daṇḍa vs Austin; analogy-not-identity close."]
+          },
+          {
+            year: "theme",
+            section: "C",
+            marks: "20",
+            q: "Compare Indian legal thought with the Analytical school (Austin and Kelsen). Can dharma or the Vedas be treated as a Grundnorm?",
+            outline: ["Reject identity in the open; map dharma/śruti, smṛti, four legs, daṇḍa; Austin and Kelsen properly; dryness critique; Rāma-rājya one para; close on method not civilisation-war."]
+          },
+          {
+            year: "trap 10-marker",
+            section: "B",
+            marks: "10",
+            q: "Can Vedas be treated as Grundnorm? Discuss with reference to Kelsen and Indian legal philosophy.",
+            outline: ["First sentence: no. (A) vs (B). Gold sentence. Pedagogy of the good vs fear of sanction. Close: critique of dryness, not a misdefinition."]
+          }
+        ],
+        check: [
+          "Recite the gold sentence without making Veda = Grundnorm.",
+          "Name Kauṭilya’s four legs in order and the ‘later prevails’ caveat.",
+          "Daṇḍa vs Austin in two sentences (enforcement yes; illimitable no).",
+          "One exam-safe Rāma-rājya paragraph that never cites it as a statute."
+        ]
       },
     ]
   };
