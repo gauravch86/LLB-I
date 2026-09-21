@@ -19,7 +19,7 @@
       {
         id: "c-nature",
         seq: 1,
-        readAs: "Kumar ch. 3 — salient features / federal + parliamentary form",
+        readAs: "Unit 1 — Union / quasi-federal + parliamentary form (nature home)",
         unit: 1,
         yield: "high",
         tags: ["federal", "quasi-federal", "parliamentary", "k.c. wheare"],
@@ -30,7 +30,7 @@
         <p><strong>Unitary turbo (list 6):</strong> strong Centre; single Constitution; single citizenship; unified judiciary; All-India Services; residuary with Union (Art. 248 / List I-97); emergency provisions (Arts. 352, 356, 360) that can turn the system into a de facto unitary State; Parliament can legislate on State list in listed situations (Arts. 249, 250, 252, 253); Art. 3 — Parliament can reorganise States without their consent as a veto; appointment of Governors.</p>
         <p><strong>Labels:</strong> K.C. Wheare — “quasi-federal.” Granville Austin — “cooperative federalism.” Jennings — more unitary than federal. Indian SC in <em>State of W.B. v Union of India</em> and later <em>S.R. Bommai</em> (federalism as basic feature) — you must show the doctrine moved from “Centre is the boss” toward “federalism is a basic feature,” without denying the turbo.</p>
         <p><strong>Form of government:</strong> parliamentary / cabinet. Features: nominal head (President, Art. 53 read with 74); real executive is Council of Ministers collectively responsible to the Lok Sabha (Art. 75(3)); rule of majority; political homogeneity; ministerial responsibility (collective + individual); possibility of dissolution. Contrast presidential (US): fixed tenure, separation, President as real executive. India also has republicanism, secularism (42nd Amendment express; SC as basic feature in <em>S.R. Bommai</em> / <em>Kesavananda</em> line), and a socialist aspiration in the Preamble word — do not dump these into federalism unless the question is “salient features.”</p>
-        <p><strong>Exam trap:</strong> “neither federal nor unitary but quasi-federal” is the Dec 2024 10-marker shape. Do not pick a team and rant. Draw the two columns, then land on Wheare + Bommai.</p>`,
+        <p><strong>Exam trap:</strong> “neither federal nor unitary but quasi-federal” is the Dec 2024 10-marker shape. The full model answer — two columns, Wheare, Bommai, emergency turbo — is in <strong>Worked answers</strong> below. Do not pick a team and rant.</p>`,
         analogy: {
           title: "Federal hardware + unitary overclock",
           body: "Dual government is the motherboard. Emergency Arts. 352/356 are a BIOS turbo that clocks the Centre to 100% and throttles the States. Parliamentary form is a process manager: the PM is not a separately elected kernel; the kernel lives only while it holds a majority in the lower house."
@@ -141,13 +141,15 @@
       {
         id: "c-fr-general",
         seq: 3,
-        readAs: "Kumar ch. 7 — Fundamental Rights (general)",
+        readAs: "Unit 3 — FR map (Art. 12 / 13 / 358 live on drill cards)",
         unit: 3,
         yield: "high",
         tags: ["article 12", "article 13", "state", "eclipse", "severability", "waiver", "suspension"],
         title: "Fundamental Rights — scheme, who can claim, against whom, suspension",
         summary: "Part III is the justiciable core. Know Art. 12 ‘State’, Art. 13 (voiding inconsistent law, doctrines), rightholders, and Emergency suspension.",
-        explainer: `<p><strong>Scheme:</strong> Arts. 12–35. Equality (14–18), freedoms (19–22), exploitation (23–24), religion (25–28), minorities (29–30), remedies (32). Art. 31 property was stripped; 300A is a legal right, not an FR — 2022 short notes still poke “right to property.”</p>
+        explainer: `<aside class="note"><h3>One-home — this is the FR map, not three essays</h3>
+        <p>Art. 12 tests: <button type="button" class="text-link" data-nav="k1002" data-topic="c-art12-state">State under Article 12</button>. Eclipse / severability / waiver: <button type="button" class="text-link" data-nav="k1002" data-topic="c-art13-doctrines">Article 13 doctrines</button>. 358 vs 359: <button type="button" class="text-link" data-nav="k1002" data-topic="c-emergency-fr">Emergency suspension</button>. Five writs: <button type="button" class="text-link" data-nav="k1002" data-topic="c-32-writs">HMPCQ</button>. This card is scheme, rightholders, vertical/horizontal, and a short pointer to those drills.</p></aside>
+        <p><strong>Scheme:</strong> Arts. 12–35. Equality (14–18), freedoms (19–22), exploitation (23–24), religion (25–28), minorities (29–30), remedies (32). Art. 31 property was stripped; 300A is a legal right, not an FR — 2022 short notes still poke “right to property.”</p>
         <p><strong>Against whom:</strong> primarily the <strong>State (Art. 12)</strong> — Government and Parliament of India, Government and Legislature of each State, local authorities, “other authorities” (instrumentalities / agencies of the State). Tests from <em>Ajay Hasia</em> / <em>Pradeep Kumar Biswas</em>: deep and pervasive State control, public function, etc. Horizontal application is exceptional (e.g. Art. 15(2), 17, 23, 24 bind private actors in text or doctrine). <em>Puttaswamy</em> privacy is primarily vertical but radiates.</p>
         <p><strong>Who can claim:</strong> citizens for some (Art. 19, 15, 16, 29–30 in specified ways); persons for others (Art. 14, 20, 21 — foreigners included, with caveats). Corporations: Art. 19 traditionally citizens-only, so companies cannot claim 19 as such (<em>State Trading Corp</em> line) but may claim 14/21. NGOs/PIL: standing liberalised under 32.</p>
         <p><strong>Art. 13:</strong> pre-constitutional laws inconsistent with Part III are void to the extent of inconsistency; post-constitutional laws too. State shall not make laws taking away FRs. “Law” includes ordinances, bye-laws, custom; constitutional amendments were held “law” in <em>Golaknath</em> then reversed as to Art. 13 in <em>Kesavananda</em> / 24th Amendment — know the story in 8 lines.</p>
@@ -198,7 +200,7 @@
       {
         id: "c-14-18",
         seq: 4,
-        readAs: "Kumar ch. 8 — Right to Equality",
+        readAs: "Unit 3 — equality home (14–18 survey; classification &amp; reservation are drills)",
         unit: 3,
         yield: "high",
         tags: ["article 14", "15", "16", "17", "18", "reservation", "royappa"],
@@ -254,7 +256,7 @@
       {
         id: "c-19a",
         seq: 5,
-        readAs: "Kumar ch. 9 — Right to Freedom (Art. 19(1)(a) as CCS focus)",
+        readAs: "Unit 3 — 19(1)(a) speech home (other freedoms = trap sheet)",
         unit: 3,
         yield: "high",
         tags: ["19(1)(a)", "press", "19(2)", "speech"],
@@ -355,7 +357,7 @@
       {
         id: "c-21",
         seq: 7,
-        readAs: "Kumar ch. 9 — Right to Freedom (Art. 21)",
+        readAs: "Unit 3 — Art. 21 home (privacy drill is a sibling)",
         unit: 3,
         yield: "high",
         tags: ["article 21", "maneka", "privacy", "environment", "gopalan"],
@@ -575,7 +577,7 @@
       {
         id: "c-32",
         seq: 12,
-        readAs: "Kumar ch. 15 — Constitutional remedies",
+        readAs: "Unit 3 — Art. 32 / PIL home (five writs are a drill)",
         unit: 3,
         yield: "high",
         tags: ["article 32", "writs", "pil", "hmpc q"],
@@ -706,7 +708,7 @@
       {
         id: "c-art12-state",
         seq: 3.2,
-        readAs: "Kumar — Art. 12 ‘State’ (unpack from FR general)",
+        readAs: "Drill — Art. 12 ‘State’ unpack (from FR map)",
         unit: 3,
         yield: "high",
         tags: ["article 12", "state", "other authorities", "instrumentality"],
@@ -749,7 +751,7 @@
       {
         id: "c-art13-doctrines",
         seq: 3.4,
-        readAs: "Kumar — Art. 13; eclipse, severability, waiver",
+        readAs: "Drill — eclipse / severability / waiver (from FR map)",
         unit: 3,
         yield: "high",
         tags: ["article 13", "eclipse", "severability", "waiver", "golaknath"],
@@ -798,7 +800,7 @@
       {
         id: "c-emergency-fr",
         seq: 3.6,
-        readAs: "Kumar — suspension of FRs (Arts. 358–359)",
+        readAs: "Drill — Arts. 358–359 suspension (from FR map)",
         unit: 3,
         yield: "high",
         tags: ["emergency", "358", "359", "44th amendment", "adm jabalpur"],
@@ -845,7 +847,7 @@
       {
         id: "c-14-classification",
         seq: 4.2,
-        readAs: "Kumar — Art. 14 reasonable classification",
+        readAs: "Drill — Art. 14 classification + Royappa (from equality home)",
         unit: 3,
         yield: "high",
         tags: ["article 14", "intelligible differentia", "nexus", "royappa"],
@@ -891,7 +893,7 @@
       {
         id: "c-15-16-reservation",
         seq: 4.4,
-        readAs: "Kumar — Arts. 15–16 reservation (Indra Sawhney / Janhit / EWS)",
+        readAs: "Drill — reservation spine (from equality home)",
         unit: 3,
         yield: "high",
         tags: ["reservation", "indra sawhney", "janhit", "ews", "creamy layer"],
@@ -933,7 +935,7 @@
       {
         id: "c-19-suite",
         seq: 5.2,
-        readAs: "Kumar — Art. 19 suite (CCS lists only 19(1)(a); exam traps)",
+        readAs: "Trap sheet — 19(1)(b)–(g) (CCS lists only speech)",
         unit: 3,
         yield: "high",
         tags: ["article 19", "freedoms", "reasonable restrictions"],
@@ -982,7 +984,7 @@
       {
         id: "c-21-privacy",
         seq: 7.2,
-        readAs: "Kumar — Art. 21 expansion (privacy, dignity, livelihood)",
+        readAs: "Drill — Puttaswamy privacy / dignity / livelihood",
         unit: 3,
         yield: "high",
         tags: ["article 21", "puttaswamy", "privacy", "dignity", "livelihood"],
@@ -1026,7 +1028,7 @@
       {
         id: "c-32-writs",
         seq: 12.2,
-        readAs: "Kumar — Art. 32 writ types",
+        readAs: "Drill — five writs HMPCQ (from Art. 32 home)",
         unit: 3,
         yield: "high",
         tags: ["article 32", "writs", "habeas", "mandamus", "certiorari", "pil"],
@@ -1074,7 +1076,7 @@
       {
         id: "c-fr-dpsp-cases",
         seq: 13.2,
-        readAs: "Kumar — FR vs DPSP case ladder",
+        readAs: "Drill — FR vs DPSP case ladder (Champakam → Minerva)",
         unit: 4,
         yield: "high",
         tags: ["dpsp", "champakam", "golaknath", "kesavananda", "minerva mills"],

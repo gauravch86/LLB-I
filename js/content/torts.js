@@ -19,7 +19,7 @@
       {
         id: "t-intro",
         seq: 1,
-        readAs: "Bangia ch. 1 — nature of a tort (plus capacity notes from ch. 3)",
+        readAs: "Unit 1 — damnum / injuria home (pigeon-hole &amp; capacity are drill cards)",
         unit: 1,
         yield: "high",
         tags: ["damnum", "injuria", "pigeon hole", "constituents"],
@@ -28,7 +28,7 @@
         explainer: `<p><strong>Definition cluster:</strong> Winfield — tortious liability arises from the breach of a duty primarily fixed by law; this duty is toward persons generally; its breach is redressable by an action for unliquidated damages. Salmond — a civil wrong for which the remedy is a common-law action for unliquidated damages, and which is not exclusively the breach of a contract or trust. Fraser / Ratanlal exam lines: violation of a right <em>in rem</em> (against the world) rather than <em>in personam</em>.</p>
         <p><strong>Pigeon-hole theory (Salmond) vs Winfield:</strong> Salmond — you must fit a named tort (negligence, defamation…). Winfield — a general principle of liability for unjust harm, with defences. CCS Section A loves the label. Indian courts are pragmatic: they use nominate torts but stretch negligence and constitutional torts.</p>
         <p><strong>Constituents:</strong> (1) a wrongful act or omission; (2) legal damage (injuria); (3) legal remedy (usually damages; sometimes injunction/specific restitution). Mental element varies: some torts need intention (deceit, some trespass readings), negligence is fault without intent, strict/absolute skip fault.</p>
-        <p><strong>Damnum sine injuria:</strong> damage without violation of a legal right → no action. <em>Gloucester Grammar School</em> (competition); <em>Mogul Steamship</em>; <em>Mayor of Bradford v Pickles</em> (malicious extraction of water on one’s land); Indian: <em>Ushaben v Bhagyalaxmi Chitra Mandir</em> style facts sometimes cited. <strong>Injuria sine damno:</strong> violation of a right without proved actual loss → actionable. <em>Ashby v White</em> (vote refused); <em>Marzetti v Williams</em> (banker’s refusal). This pair is the Dec 2024 20-marker spine: “mere causing of actual loss is not necessarily a tort but mere wrong without actual loss is a tort.”</p>
+        <p><strong>Damnum sine injuria:</strong> damage without violation of a legal right → no action. <em>Gloucester Grammar School</em> (competition); <em>Mogul Steamship</em>; <em>Mayor of Bradford v Pickles</em> (malicious extraction of water on one’s land). <strong>Injuria sine damno:</strong> violation of a right without proved actual loss → actionable. <em>Ashby v White</em> (vote refused); <em>Marzetti v Williams</em> (banker’s refusal). The Dec 2024 20-marker on this pair is written in full in <strong>Worked answers</strong> below. Pigeon-hole as a 4-marker lives on <button type="button" class="text-link" data-nav="k1003" data-topic="t-pigeonhole">Pigeon-hole theory</button>; capacity on <button type="button" class="text-link" data-nav="k1003" data-topic="t-who-may-sue">who may sue</button>.</p>
         <p><strong>Malice, motive, negligence:</strong> motive is generally irrelevant if the act is lawful (<em>Bradford v Pickles</em>; <em>Allen v Flood</em>) — except where malice is an ingredient (malicious prosecution) or qualified privilege is defeated. Negligence is both a specific tort and a mode of liability. Malice-in-law (wrongful act done intentionally without just cause) vs malice-in-fact (spite).</p>
         <p><strong>Who may sue / be sued:</strong> Bangia’s capacity chapter sits next: generally any person with a right. Convicts can sue. Aliens (friendly) can. Husband-wife unity is historical debris (mostly gone). Independent contractor vs servant (see vicarious). The State (Bangia ch. 5). Minors can sue by next friend; can be sued; parent not automatically liable. Corporations: ultra vires issues. Deceased: survival statutes / fatal accidents — mention <em>fatal accidents</em> without dumping English 1846 Act history unless asked. Who may <em>not</em>: no right, no locus; judicial officers’ immunity for acts in jurisdiction; foreign sovereigns (classic — now nuanced).</p>
         <p>Bangia treats <strong>strict and absolute liability as a later dedicated chapter</strong> (after negligence/premises). CCS still plants the maxims in the intro unit — open that topic next; do not dump <em>Rylands</em> / <em>Mehta</em> here except as a one-line trailer.</p>`,
@@ -131,7 +131,7 @@
       {
         id: "t-vicarious",
         seq: 3,
-        readAs: "Bangia ch. 4–5 — vicarious liability and the State",
+        readAs: "Survey — vicarious / State (Kasturilal line is a drill)",
         unit: 3,
         yield: "high",
         tags: ["vicarious", "sovereign immunity", "kasturilal", "joint tortfeasors"],
@@ -182,13 +182,15 @@
       {
         id: "t-strict",
         seq: 4,
-        readAs: "Bangia ch. 16 — strict and absolute liability",
+        readAs: "Survey — strict vs absolute (Rylands &amp; Mehta are drills)",
         unit: 1,
         yield: "high",
         tags: ["rylands", "mehta", "strict", "absolute"],
         title: "Strict liability and absolute liability",
         summary: "Bangia isolates this as its own chapter: Rylands is the leaky tank with excuses; M.C. Mehta is the hazardous enterprise with none. CCS still plants both in the intro unit — write them here at Bangia depth.",
-        explainer: `<p>CCS bunches this with “nature of tort.” Bangia does not: after vicarious liability and (in his order) several nominate torts, he gives <strong>Rules of Strict and Absolute Liability</strong> a full chapter. For Dec 2026, treat it as a standalone 20-marker engine.</p>
+        explainer: `<aside class="note"><h3>One-home — survey here; ingredients on the drills</h3>
+        <p>Rylands elements and exceptions: <button type="button" class="text-link" data-nav="k1003" data-topic="t-rylands-elements">Rylands drill</button>. Oleum gas / no excuses: <button type="button" class="text-link" data-nav="k1003" data-topic="t-mehta-absolute">absolute liability drill</button>. This card is the contrast engine for the 20-marker.</p></aside>
+        <p>CCS bunches this with “nature of tort.” Bangia does not: after vicarious liability and (in his order) several nominate torts, he gives <strong>Rules of Strict and Absolute Liability</strong> a full chapter. For Dec 2026, treat it as a standalone 20-marker engine.</p>
         <p><strong>Strict liability — <em>Rylands v Fletcher</em>:</strong> a person who for his own purposes brings on his land and collects and keeps there anything likely to do mischief if it escapes, must keep it in at his peril. Ingredients Indian answers must list: (1) dangerous thing; (2) brought/collected on land; (3) escape; (4) non-natural use of land. Damage is to the plaintiff from the escape.</p>
         <p><strong>Defences (the whole point of calling it ‘strict’ not ‘absolute’):</strong> plaintiff’s default; act of God / vis major; consent / <em>volenti</em>; act of a stranger / third party; statutory authority. Inevitable accident is argued; it is weaker than Act of God. If the defendant was negligent in keeping the thing, you may also have ordinary negligence — but Rylands does not need proof of negligence.</p>
         <p><strong>Absolute liability — <em>M.C. Mehta v Union of India</em> (Oleum gas, 1987):</strong> an enterprise engaged in a hazardous or inherently dangerous industry owes an <em>absolute and non-delegable</em> duty to the community; if harm results, liability is absolute. No Rylands defences. Compensation correlated to the magnitude and capacity of the enterprise (so a large chemical house cannot plead poverty). Follow-ons: <em>Indian Council for Enviro-Legal Action</em> (polluter pays in public law); Bhopal as the political shadow of why the Court refused English excuses.</p>
@@ -243,7 +245,7 @@
       {
         id: "t-negligence",
         seq: 7,
-        readAs: "Bangia ch. 11–13 — negligence, medical, contributory",
+        readAs: "Negligence home (res ipsa / medical / contributory / shock are drills)",
         unit: 4,
         yield: "high",
         tags: ["negligence", "donoghue", "res ipsa", "nervous shock"],
@@ -349,7 +351,7 @@
       {
         id: "t-defamation",
         seq: 5,
-        readAs: "Bangia ch. 8 — defamation",
+        readAs: "Defamation home (full defences are a drill)",
         unit: 4,
         yield: "high",
         tags: ["defamation", "libel", "slander", "privilege"],
@@ -392,7 +394,7 @@
       {
         id: "t-cpa",
         seq: 9,
-        readAs: "Bangia Part III / ch. 26 — Consumer Protection Act 2019",
+        readAs: "CPA 2019 home (hierarchy &amp; service/for-service are drills)",
         unit: 5,
         yield: "high",
         tags: ["cpa 2019", "consumer", "commission", "shantha"],
@@ -442,7 +444,7 @@
       {
         id: "t-pigeonhole",
         seq: 1.2,
-        readAs: "Bangia — nature of tort (Winfield vs Salmond)",
+        readAs: "Drill — pigeon-hole (from nature home)",
         unit: 1,
         yield: "high",
         tags: ["pigeon-hole", "winfield", "salmond", "nominate torts"],
@@ -488,7 +490,7 @@
       {
         id: "t-rylands-elements",
         seq: 4.2,
-        readAs: "Bangia — Rylands v Fletcher elements + exceptions",
+        readAs: "Drill — Rylands elements + exceptions",
         unit: 1,
         yield: "high",
         tags: ["rylands", "strict liability", "non-natural", "escape"],
@@ -529,7 +531,7 @@
       {
         id: "t-mehta-absolute",
         seq: 4.4,
-        readAs: "Bangia — absolute liability (M.C. Mehta)",
+        readAs: "Drill — Oleum gas / no Rylands excuses",
         unit: 1,
         yield: "high",
         tags: ["absolute liability", "mehta", "oleum", "hazardous"],
@@ -575,7 +577,7 @@
       {
         id: "t-kasturilal",
         seq: 3.2,
-        readAs: "Bangia — State liability / sovereign immunity evolution",
+        readAs: "Drill — Kasturilal → Nagendra Rao (from vicarious survey)",
         unit: 3,
         yield: "high",
         tags: ["kasturilal", "sovereign immunity", "peninsular", "nilabati"],
@@ -747,7 +749,7 @@
       {
         id: "t-defamation-defences",
         seq: 5.2,
-        readAs: "Bangia — defamation defences (full set)",
+        readAs: "Drill — defamation defences in full",
         unit: 4,
         yield: "high",
         tags: ["defamation", "justification", "fair comment", "privilege", "apology"],
@@ -790,7 +792,7 @@
       {
         id: "t-cpa-hierarchy",
         seq: 9.2,
-        readAs: "Bangia / CPA 2019 — commissions, unfair trade, product liability",
+        readAs: "Drill — commissions / UTP / product liability",
         unit: 5,
         yield: "high",
         tags: ["cpa 2019", "commissions", "unfair trade", "product liability"],
@@ -832,7 +834,7 @@
       {
         id: "t-who-may-sue",
         seq: 1.4,
-        readAs: "Bangia — capacity: who may sue / who may be sued",
+        readAs: "Drill — capacity (from nature home)",
         unit: 1,
         yield: "high",
         tags: ["capacity", "parties", "who may sue", "actio personalis"],
@@ -952,7 +954,7 @@
       {
         id: "t-service-vs-for",
         seq: 9.4,
-        readAs: "Bangia / CPA — contract of service vs contract for service",
+        readAs: "Drill — of service vs for service (from CPA home)",
         unit: 5,
         yield: "high",
         tags: ["contract of service", "contract for service", "shantha", "vicarious"],

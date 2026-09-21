@@ -763,7 +763,6 @@
 
   g.LLB.timelines = timelines;
   g.LLB.topicTimelines = {
-    "j-intro": [{ id: "juris-defs", mode: "compact" }],
     "j-def-evolution": [{ id: "juris-defs", mode: "full" }],
     "j-natural": ["nl-revival"],
     "j-analytical": ["analytical-akh"],

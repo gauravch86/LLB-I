@@ -127,7 +127,7 @@
       return `<article class="topic" id="topic-publishers" data-jump="publishers">
         <p class="kicker">Gaurav’s shelf · then Unique drill · then extras</p>
         <h1>Primary textbooks, exam drill, secondary refs</h1>
-        <p class="lede">The five books below are the <strong>authoritative physical shelf</strong> this site tracks for structure, landmark cases, and depth. Read the matching chapter there; this website is original teaching prose (syllabus + bare acts + public case law + PYQ themes). It does not reproduce those textbooks or Unique/Nitin Q&amp;A. Track new content in <button type="button" class="text-link" data-nav="logbook">Logbook</button>.</p>
+        <p class="lede">The five books below are the <strong>optional physical shelf</strong> this site tracks for structure and longer case extracts. <strong>Read the card first</strong> — doctrine, landmarks, and worked answers are the study source (original teaching prose from syllabus + bare acts + public case law + PYQ themes). The site does not reproduce those textbooks or Unique/Nitin Q&amp;A. Track new content in <button type="button" class="text-link" data-nav="logbook">Logbook</button>.</p>
 
         <h2 class="section-title">1. Primary textbooks (buy / use)</h2>
         <table class="compare">

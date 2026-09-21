@@ -287,8 +287,22 @@
       )
       .join("");
     const checks = (topic.check || []).map((c) => `<li>${c}</li>`).join("");
+    const worked = (topic.workedAnswers || (window.LLB.workedAnswers && window.LLB.workedAnswers[topic.id]) || [])
+      .map(
+        (w) => `<article class="worked">
+          <div class="meta">${[w.year || "theme", w.section, w.marks ? w.marks + " marks" : ""].filter(Boolean).join(" · ")}</div>
+          <h3>${w.title}</h3>
+          <div class="worked-body">${w.answer}</div>
+        </article>`
+      )
+      .join("");
+    const workedBlock = worked
+      ? `<h2 class="section-title">Worked answers (adapt in the hall)</h2>
+      <p class="note">Full original model answers for public CCS themes (≈2020–2025). This is the study source — not a prompt to “pick an example.” Adapt the prose; do not paste Unique/Nitin or textbook language. Confirm the year’s wording with college.</p>
+      ${worked}`
+      : "";
     const shelf = paper.shelf
-      ? `<aside class="note shelf-banner"><h3>Primary textbook</h3><p>${paper.shelf.primary}${topic.readAs ? ` · <em>${topic.readAs}</em>` : ""}. Site prose is original — use the book for full case extracts, then Unique only as a question drill.</p></aside>`
+      ? `<aside class="note shelf-banner"><h3>Primary textbook (optional extract lookup)</h3><p>${paper.shelf.primary}${topic.readAs ? ` · <em>${topic.readAs}</em>` : ""}. <strong>This card is the study source</strong> — doctrine, landmarks, and worked answers below. The physical book is optional for longer case extracts. Unique/Nitin is last-week question-shape drill only.</p></aside>`
       : "";
     return `<article class="topic" id="topic-${topic.id}">
       <div class="topic-head">
@@ -317,8 +331,9 @@
       }
       <h2 class="section-title">Landmark cases / statutes</h2>
       <div class="cases">${cases}</div>
-      <h2 class="section-title">CCS-style questions (public themes)</h2>
-      <p class="note">Worded from public PYQ themes (≈2018–2025 blogs/indexes). Unique/Nitin and the five primary textbooks are not reproduced. Write your own English; confirm the year’s paper with college.</p>
+      ${workedBlock}
+      <h2 class="section-title">CCS-style questions (skeleton only)</h2>
+      <p class="note">Public PYQ <em>themes</em> (≈2018–2025). The full prose to reuse is in <strong>Worked answers</strong> above where this card has them. Outlines here are a hall checklist, not the study source.</p>
       ${pyqs}
       <h2 class="section-title">Seal checklist</h2>
       <ul class="check-list">${checks}</ul>
@@ -406,7 +421,7 @@
       <table class="compare">
         <thead><tr><th>Paper</th><th>Official unit</th><th>On this site</th></tr></thead>
         <tbody>
-          <tr><td>K-1001</td><td>Intro; Natural (Stammler/Kohler); Analytical (Austin/Kelsen/Hart); Historical (Savigny/Maine); Sociological (Pound/Duguit); American Realism; Marxist economic</td><td>17 sidebar topics — school units plus definition-evolution card; Historical jurisprudence vs legal history; law &amp; morals; Austin–Kelsen–Hart drill; Bentham/Manu/Salmond/Stone shorts; Pound’s interests. Vertical <strong>evolution timelines</strong> on intro, schools, and the dedicated definitions card</td></tr>
+          <tr><td>K-1001</td><td>Intro; Natural (Stammler/Kohler); Analytical (Austin/Kelsen/Hart); Historical (Savigny/Maine); Sociological (Pound/Duguit); American Realism; Marxist economic</td><td>17 sidebar topics with a <strong>one-home</strong> rule: intro = nature/utility; evolution card = Rail | Matrix changelog (not duplicated on intro); Sec A drill = unique shorts + pointers; school cards = doctrine; drills = one angle. Full <strong>worked answers</strong> on every high-yield card. Vertical evolution timelines on schools and the dedicated definitions card — not on intro</td></tr>
           <tr><td>K-1002</td><td>Nature (federal + form of govt); Preamble; FR general; 14–18; 19(1)(a); 20; 21; 21A; 23–24; 25–28; 29–30; 32; DPSP; Duties</td><td>24 sidebar topics — official units plus Art. 12; eclipse/severability/waiver; Emergency 358/359; 14 classification; 15–16/EWS; 19 suite traps; privacy; HMPCQ writs; FR–DPSP ladder; Art. 300A bridge. 21A / 23–24 / Duties expanded. CCS lists only <em>19(1)(a)</em>. Timelines on Art. 21, basic structure, reservation, press</td></tr>
           <tr><td>K-1003</td><td>Intro (incl. damnum/injuria, mental element, parties, strict/absolute); justifications; vicarious/State/joint; negligence, nuisance, trespass, defamation; CPA consumer / service / enforcement</td><td>22 topics. Pigeon-hole; who may sue; Rylands/Mehta/Kasturilal; Wagon Mound; res ipsa; medical negligence; contributory vs composite; nervous shock; nuisance/trespass deepened; service vs for service; CPA 2019 hierarchy. Timelines: strict→absolute; Kasturilal→constitutional torts; Donoghue reception</td></tr>
           <tr><td>K-1004</td><td>General principles; inchoate; general exceptions; body; property; State/public tranquility; marriage (bigamy/adultery)</td><td>27 topics. Dedicated BNS cards include stages essay; definitions shorts; legal vs medical insanity; WR/WC &amp; riot/affray; dowry death 80 vs 304B; stalking 78; child cluster; snatching 304. Official PDF still says IPC; site teaches <strong>BNS first</strong>. Timelines: IPC→BNS code shifts; CH/murder numbering map</td></tr>
@@ -537,6 +552,8 @@
           t.mnemonic && t.mnemonic.hook,
           (t.cases || []).map((c) => c.name).join(" "),
           (t.tags || []).join(" "),
+          (t.pyqs || []).map((q) => q.q).join(" "),
+          ((t.workedAnswers || (window.LLB.workedAnswers && window.LLB.workedAnswers[t.id]) || []).map((w) => (w.title || "") + " " + (w.answer || "")).join(" ")),
           window.LLBTimeline ? window.LLBTimeline.searchBlob(t.id) : ""
         ]
           .join(" ")
