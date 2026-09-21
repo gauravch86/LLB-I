@@ -728,7 +728,7 @@
             type: "pyramid",
             title: "Stufenbau — hierarchy of norms",
             layers: [
-              { kicker: "(1) Grundnorm", title: "Presupposed base", sub: "first Constitution ought to be obeyed" },
+              { kicker: "(1)", title: "Grundnorm", sub: "presupposed: first Constitution ought to be obeyed" },
               { kicker: "(2)", title: "Constitution" },
               { kicker: "(3)", title: "Statutes / Acts" },
               { kicker: "(4)", title: "Delegated legislation / rules" },
@@ -1209,7 +1209,7 @@
       },
       {
         id: "j-indian-parallels",
-        seq: 2.7,
+        seq: 2.55,
         readAs: "Comparative drill — Indian thought ↔ Western schools (analogy, not identity)",
         unit: 3,
         yield: "high",

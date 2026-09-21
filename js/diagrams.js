@@ -76,12 +76,12 @@
   function pyramid(d) {
     const layers = d.layers || [];
     const n = layers.length || 1;
-    const W = 440;
-    const topW = 210;
-    const botW = 420;
-    const layerH = 56;
+    const W = 460;
+    const topW = 248;
+    const botW = 440;
+    const layerH = 58;
     const gap = 5;
-    const padY = 10;
+    const padY = 14;
     const svgH = padY * 2 + n * layerH + (n - 1) * gap;
     const fills = ["#1e3d48", "#1a4550", "#164a58", "#125560", "#0e5c68"];
     const strokes = ["#d4af37", "#c9a84a", "#d4af37", "#c9a84a", "#d4af37"];
@@ -95,15 +95,13 @@
         const bx = (W - bw) / 2;
         const pts = `${tx.toFixed(1)},${y} ${(tx + tw).toFixed(1)},${y} ${(bx + bw).toFixed(1)},${y + layerH} ${bx.toFixed(1)},${y + layerH}`;
         const cx = W / 2;
-        const titleY = L.sub ? y + 22 : y + 32;
-        const kicker = L.kicker
-          ? `<text x="${cx}" y="${y + 14}" text-anchor="middle" fill="#f0d78c" font-size="10" font-family="Fraunces, Georgia, serif">${esc(L.kicker)}</text>`
-          : "";
-        const title = `<text x="${cx}" y="${titleY}" text-anchor="middle" fill="#f4ead6" font-size="13" font-weight="650" font-family="Fraunces, Georgia, serif">${esc(L.title)}</text>`;
+        const head = [L.kicker, L.title].filter(Boolean).join(" — ");
+        const mid = L.sub ? y + 24 : y + layerH / 2 + 5;
+        const title = `<text x="${cx}" y="${mid}" text-anchor="middle" fill="#f4ead6" font-size="13" font-weight="650" font-family="Fraunces, Georgia, serif">${esc(head)}</text>`;
         const sub = L.sub
-          ? `<text x="${cx}" y="${y + 40}" text-anchor="middle" fill="#b8ae97" font-size="10" font-family="Figtree, sans-serif">${esc(L.sub)}</text>`
+          ? `<text x="${cx}" y="${y + 42}" text-anchor="middle" fill="#b8ae97" font-size="10" font-family="Figtree, sans-serif">${esc(L.sub)}</text>`
           : "";
-        return `<polygon points="${pts}" fill="${fills[i % fills.length]}" fill-opacity="0.92" stroke="${strokes[i % strokes.length]}" stroke-width="1.2"/>${kicker}${title}${sub}`;
+        return `<polygon points="${pts}" fill="${fills[i % fills.length]}" fill-opacity="0.92" stroke="${strokes[i % strokes.length]}" stroke-width="1.2"/>${title}${sub}`;
       })
       .join("");
     const label = layers
